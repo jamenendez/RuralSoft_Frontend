@@ -1,0 +1,64 @@
+/*
+  AUDIT TRAIL: 7.1 
+  1. 					     rk 2/10/2003
+    Changes related to suppressing header
+    Defect 103774
+    Fixed typo on DIV.backlinkdiv 
+  AUDIT TRAIL: 6.0 
+  1. 					     rk 2/10/2003
+     Change File name from web_Defaultprint.css to web_defaulthelp.css
+  AUDIT TRAIL: 5.3
+  1. Initial release.                        rk 6/14/2002
+
+     This style sheet will be used only to display help.
+     This can also be used to override application page styles.
+
+  AUDIT TRAIL END
+
+  FILE NAME..: web_defaulthelp.css
+  RELEASE....: 7.1 
+  PRODUCT....: WTLWEB
+  COPYRIGHT..: Copyright (C) SCT Corporation 2002. All rights reserved.
+*/
+
+
+  /* style sheet for print goes here */
+
+BODY {
+background-image: none;
+background-repeat: no-repeat;
+font-family: Arial, verdana, helvetica, sans-serif;
+font-style: normal;
+text-align: left;
+/* BROWSER CONSIDERATION - Override browser settings for BODY margin */
+margin-top: 2%;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+DIV.backlinkdiv {
+display:none
+}
+
+DIV.headerlinksdiv2 {
+display: none 
+}
+DIV.pageheaderlinks {
+display: none 
+}
+DIV.pageheaderdiv1{
+display: none 
+}
+
+DIV.pageheaderdiv2 {
+display: none 
+}
+
+DIV.headerlinksdiv {
+display: none 
+}
+
+DIV.poweredbydiv {
+display: none 
+}
+

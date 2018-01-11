@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>MéxicoX
+</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <!--Javascript-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script src="js/efectos.js"></script>
+        <!--Fuentes-->
+        <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <!--favicon-->
+        <link rel="shortcut icon" href="favicon.ico" >
+        <!--Css extra-->
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+        <!--MODAL-->
+         <!--<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>-->
+
+    <body>
+        <header>
+            <link rel="stylesheet" href="css/encabezado.css"/>
+    <nav class="navbar navbar-default navbar-fixed-top barra">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="index.html"><img class="img-responsive logoPrincipal" src="img/logo.png"></a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse esquinaDerecha">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cursos <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+					<li><a class="ligaCategoria" value="0">Recientes</a></li>
+					<li><hr style="color: #0056b2;" /></li>
+					                                        <li><a class="ligaCategoria" value="5">Administraci&oacute;n de empresas y derecho</a></li>
+                                                            <li><a class="ligaCategoria" value="9">Agricultura, silvicultura, pesca y veterinaria</a></li>
+                                                            <li><a class="ligaCategoria" value="3">Artes y humanidades</a></li>
+                                                            <li><a class="ligaCategoria" value="6">Ciencias naturales, matem&aacute;ticas y estad&iacute;stica</a></li>
+                                                            <li><a class="ligaCategoria" value="4">Ciencias sociales,periodismo e informaci&oacute;n</a></li>
+                                                            <li><a class="ligaCategoria" value="2">Educaci&oacute;n</a></li>
+                                                            <li><a class="ligaCategoria" value="8">Ingenier&iacute;a, industr&iacute;a y construcci&oacute;n</a></li>
+                                                            <li><a class="ligaCategoria" value="1">Programas y certificaciones g&eacute;nericos</a></li>
+                                                            <li><a class="ligaCategoria" value="10">Salud y bienestar</a></li>
+                                                            <li><a class="ligaCategoria" value="11">Servicios</a></li>
+                                                            <li><a class="ligaCategoria" value="7">Tecnolog&iacute;as de la informaci&oacute;n y la comunicaci&oacute;n (TIC)</a></li>
+                                                        </ul>
+            </li>
+            <li><input type="button" class="btnmorado" value="Regístrate" onclick="window.location.href = 'http://mx.mexicox.gob.mx/register?next=%2Fdashboard'"></li>
+
+            <li><input type="button" class="btnverde" value="Iniciar Sesión" onclick="window.location.href = 'http://mx.mexicox.gob.mx/login'"></li>            
+            <li class="buscar">
+                <div class="navbar-form">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Búsqueda por curso" id="termino">
+                         <input type="hidden" name="_token" value="a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" onclick="busquedaCurso('http://mexicox.gob.mx/Home2017/buscaCurso', 'a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3')"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </li>            
+        </ul>
+    </div><!--/.nav-collapse -->
+</nav>
+<script src="js/encabeza2.js"></script>
+<script>
+    $('#termino').keypress(function(e) {
+        if(e.which == 13) {
+            busquedaCurso("http://mexicox.gob.mx/Home2017/buscaCurso", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3");
+        }
+    });
+    $(document).on('click', 'a.ligaCategoria', function () {
+        var $element = $(this);
+        /*   *****  mostrar cursos recientes   *****   */
+        llenaCursosCategoria("http://mexicox.gob.mx/Home2017/filtrarCurso", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3", $element, 0);
+        /*   *****  mostrar cursos archivados   *****   */
+        llenaCursosCategoria("http://mexicox.gob.mx/Home2017/filtrarCurso", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3", $element, 1);
+        /*  *****   Llenar lista de instituciones   *****   */
+        llenaInstitucionesCat("http://mexicox.gob.mx/Home2017/obtenerInstitucion", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3", $element);
+    });
+</script>        </header>
+        <!--<div class="modal fade" id="modalInf" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-info" style="background-image: url('img/encabezado.jpg')">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <h2 class="text-center">Servicio Social</h2>
+            <div class="modal-body modal-sm"   style="background-image: url('img/fondo1.png'); width: 100%;">            
+                <h3 class="text-justify">Si deseas realizar tu servicio social o prácticas profesionales, MéxicoX es el lugar para ti.
+                    Necesitamos personas proactivas, con entusiasmo y ganas de formar parte de un gran equipo.
+                </h3>
+                <h4 class="text-center">Para mayores Informes puedes consultar <a href="http://mx.mexicox.gob.mx/donate">  Informes Servicio Social</a></h4>
+            </div>
+            <div class="modal-footer"  style="background: url('img/pie.png') no-repeat; width: 100%;">
+                <br><br><br><a href="#" data-dismiss="modal" class="btn btn-danger center-block">Cerrar</a><br>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-top: 60px;">
+    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                </ol>
+    
+    <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                        <a href="http://mx.mexicox.gob.mx/donate" target="_blank">
+                <img src="http://reportes.mexicox.gob.mx/imagenes/banner/bannerserviciosocial.jpg"  alt="" class="imgBanner">
+                    </a>
+                </div>
+                        <div class="item">
+                        <img src="http://reportes.mexicox.gob.mx/imagenes/banner/banner%20front%20evaluacion%20de%20estructuras%20(Cenapred).jpg"  alt="" class="imgBanner">
+                </div>
+                        <div class="item">
+                        <img src="http://reportes.mexicox.gob.mx/imagenes/banner/banner%20front%20desastres%20y%20efectos%20psicologicos%20(Cenapred).jpg"  alt="" class="imgBanner">
+                </div>
+                        <div class="item">
+                        <img src="http://reportes.mexicox.gob.mx/imagenes/banner/banner%20front%20finanzas%20para%20jovenes%20(1).jpg"  alt="" class="imgBanner">
+                </div>
+                        <div class="item">
+                            <a href="http://mx.mexicox.gob.mx/courses/course-v1:INEE+EVAL17062X+06_2017/about" target="_blank">
+                <img src="http://reportes.mexicox.gob.mx/imagenes/banner/EVALUACI%C3%93N%20EDUCATIVA%20EN%20UN%20CLIC.jpg"  alt="" class="imgBanner">
+                    </a>
+                </div>
+                        <div class="item">
+                        <img src="http://reportes.mexicox.gob.mx/imagenes/banner/MexicoX%20fuera%20de%20servicio.jpg"  alt="" class="imgBanner">
+                </div>
+        </div>
+    <a class="left carousel-control" href="index.html#carousel-example-generic" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="index.html#carousel-example-generic" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<style>.imgBanner{
+        width:100%;
+    }
+</style>
+<script>
+    $('.carousel').carousel({
+        interval: 8000
+    })
+</script><div class="barraGuia col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12" >        
+        <h3 class="">CURSOS</h3>
+    </div>      
+    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+        <h3  id="clasificacion">Recientes</h3>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="selectInstitucion" style="padding-top:10px; padding-bottom:5px;"></div>
+</div>
+<!--    <div class="col-md-12">
+        <article>
+            <button type="button" class="close" style="color: red;">&times</button><br>
+            <h5 class="text-justify">Si deseas realizar tu servicio social o prácticas profesionales de forma presencial, MéxicoX es el lugar para ti.
+                Necesitamos personas proactivas, con entusiasmo y ganas de formar parte de un gran equipo.
+            </h5>
+            <h5 class="text-center">Para mayores Informes puedes consultar <a class="linkcolor" href="http://mx.mexicox.gob.mx/donate">  Informes Servicio Social</a></h5>
+        </article>
+    </div>-->
+<div id="contenedorCursos" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> </div>
+
+<div class="barraGuia col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="col-lg-1 col-md-2 col-sm-2 col-xs-12" >
+        <h3 class="">Archivados </h3>
+    </div>      
+    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+        <h3  id="clasificacionArchivados"></h3>
+    </div>
+    <!--div class="col-lg-2 col-md-2 col-sm-2 col-xs-6" id="selectInstitucion" style="padding-top:10px; padding-bottom:5px;"></div-->
+</div>
+<div id="contenedorCursosArchivados" class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> </div>
+<script src="js/mexicoxInicio.js"></script>
+<script>
+/*   *****  mostrar cursos recientes   *****   */
+llenaCursos("http://mexicox.gob.mx/Home2017/filtrarCurso/0/0", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3", 0);
+/*   *****  mostrar cursos archivados   *****   */
+llenaCursos("http://mexicox.gob.mx/Home2017/filtrarCurso/0/1", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3", 1);
+/*  *****   Llenar lista de instituciones   *****   */
+llenaInstituciones("http://mexicox.gob.mx/Home2017/obtenerInstitucion/0", "a7rMXQUK3xl1YcSzQHgmHLHL1YcVuDVi38kBUAw3");
+</script>
+<script>
+    $(document).ready(function ()
+    {
+//        $("#modalInf").modal("show");
+        $("article").slideToggle("slow");
+    });
+    $('.close').click(function () {
+        $("article").slideToggle("slow");
+    });
+</script>
+        <ul class="nav navbar-nav navbar-left col-md-12 col-sm-12 col-xs-12 col-lg-12 lineaSeparacion"> 
+    <li class="col-md-1 col-sm-3 col-xs-6 col-lg-1">
+        <a href="http://mx.mexicox.gob.mx/contact" class="textoLigas"><strong>Contacto</strong></a>
+    </li>
+    <li class="col-md-2 col-sm-3 col-xs-6 col-lg-2">
+        <a href="http://mx.mexicox.gob.mx/donate" class="textoLigas"><strong>Servicio Social</strong></a>
+    </li> 
+    <li class="col-md-1 col-sm-3 col-xs-6 col-lg-1"><a href="http://mx.mexicox.gob.mx/faq" class="textoLigas"><strong>FAQs</strong></a></li>
+    <li class="col-md-1 col-sm-3 col-xs-6 col-lg-1"><a href="http://mx.mexicox.gob.mx/about" class="textoLigas"><strong>Nosotros</strong></a></li>
+    <li class="col-md-3 col-sm-3 col-xs-6 col-lg-2">
+        <a href="aliados.html" class="textoLigas"><strong>Aliados Estratégicos</strong></a>
+    </li>
+    <li class="col-md-3 col-sm-3 col-xs-6 col-lg-2">
+        <a href="blog.html" class="textoLigas"><strong>Blog</strong></a>
+    </li>
+    <li class="col-md-3 col-lg-5 hidden-sm hidden-xs"></li>
+</ul>  
+<div class="col-md-2 col-sm-4 col-xs-6 col-lg-1">
+    <a href="http://www.gob.mx/sep">
+        <img src="img/sep.png" alt="Secretaría de Educación Pública" class="alturaImg">
+    </a>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6 col-lg-2">
+    <center>
+        <a href="https://www.gob.mx/mexicodigital/">
+            <img src="img/mexico_digital.png" alt="México Digital" class="imgMexDig">
+        </a>
+    </center>
+</div>
+<div class="visible-xs col-xs-12 division"></div>
+<div class="col-md-2 col-sm-4 col-xs-6 col-lg-1">
+    <a href="http://www.televisioneducativa.gob.mx/">
+        <img src="img/dgtve.png" alt="Televisión Educativa" class="alturaImg">
+    </a>
+</div>
+<div class="visible-sm col-sm-12 division"></div>
+<div class="col-md-2 col-sm-4 col-xs-6 col-lg-1">
+    <a href="index.html">
+        <img src="img/mexicox.png" alt="MéxicoX" class="imgMexicoX">
+    </a>
+</div>
+<div class="visible-xs col-xs-12 division"></div>
+<div class="hidden-md  hidden-sm hidden-xs col-lg-4"></div>
+<div class="col-md-2  col-sm-4 col-xs-6 col-lg-2">
+    <center>
+        <a href="http://open.edx.org">
+            <img src="https://files.edx.org/openedx-logos/edx-openedx-logo-tag.png" alt="Con la tecnología de Open edX" class="alturaImg">
+        </a>
+    </center>
+</div>
+<div class="col-md-2 col-sm-4 col-xs-6 col-lg-1">
+    <a href="http://groups.itu.int/stocktaking/WSISPrizes/WSISPrizes2016.aspx#home">
+        <img src="img/logo-swis.png" alt="Premio WSIS" class="alturaImg">
+    </a>
+</div>
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <br>
+    <p class="text-muted col-md-12 col-sm-12 txtLegales">© MéxicoX. Todos los derechos reservados, excepto cuando se indique. EdX, Open edX, y los logos de edX y Open edX son marcas registradas de edX Inc.</p>        
+    <a href="http://mx.mexicox.gob.mx/privacy" class="colorLegales txtLegales" aria-expanded="false">Política de privacidad </a> <span style="padding-right:10px; padding-left:10px;"> - </span>
+    <a href="http://mx.mexicox.gob.mx/honor" class="colorLegales txtLegales" aria-expanded="false">Código de Honor</a>
+
+</div>
+<style>.alturaImg{
+        height: 40px;
+    }
+    .imgMexDig{
+        height: 35px;
+    }
+    .imgMexicoX{
+        height:48px; margin-top: -5px;
+    }
+    .textoLigas{
+        color: black;
+    }
+    .division{
+        padding:10px;
+    }
+    .txtLegales{
+        font-size: 10px;
+    }
+    .colorLegales{
+        color: red; 
+    }
+    .lineaSeparacion{
+        border-top: solid 2px black;
+    }
+</style>       
+    </body>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-64255351-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>    
+</html>

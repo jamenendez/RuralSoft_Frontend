@@ -1,0 +1,300 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Opciones de pago</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs({
+      event: "mouseover"
+    });
+  });
+  </script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<style type="text/css">.b {
+  
+  font-size:11px;
+}
+
+.a {
+  
+  font-size:12px;
+}
+.c {
+  
+  font-size:10px;
+}
+
+
+</style> 
+
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+
+
+  <script>
+  $(function() {
+    $( document ).tooltip({
+      position: {
+        my: "center bottom-20",
+        at: "center top",
+        using: function( position, feedback ) {
+          $( this ).css( position );
+          $( "<div>" )
+            .addClass( "arrow" )
+            .addClass( feedback.vertical )
+            .addClass( feedback.horizontal )
+            .appendTo( this );
+        }
+      }
+    });
+  });
+  </script>
+  <style>.ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+  </style>
+  </head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li class="a"><a href="pagostab.html#tabs-1">Pago en ventanilla</a></li>
+    <li class="a"><a href="pagostab.html#tabs-2">Pago en linea</a></li>
+    <li class="a"><a href="pagostab.html#tabs-3">Pago por SPEI</a></li>
+  <!--  <li class="a"><a href="#tabs-4">Pago por SPEI para Impuestos y derechos de este portal</a></li> -->
+  </ul>
+  <div id="tabs-1">
+    <p class="b">
+
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="b"><span class="badge">1</span>Genere el formato del servcio o impuesto a pagar.</td>
+        </tr>
+        <tr>
+          <td class="b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/img/pcformato.jpg" alt="" width="195" height="114" /></td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+
+        <tr>
+          <td class="b"><span class="badge">2</span> Imprima el formato</td>
+        </tr>
+        <tr>
+          <td class="b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/img/imprimante-icone-8350-128.png" width="128" height="128" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/img/flecha%20azul.gif" width="106" height="73" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/img/formato_.jpg" width="130" height="155" /></td>
+            </tr>
+          </table></td>
+        </tr>
+        <tr>
+          <td class="b"><span class="badge">3</span> Acuda a la ventanilla de la sucursal del banco correspondiente a efectuar su banco.
+</br></br>
+          </td>
+        </tr>
+        <tr>
+          <td class="b"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/logosBancos/Bancomer.gif" width="97" height="21" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/logosBancos/Banamex.gif" width="99" height="22" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/logosBancos/banorte.gif" width="111" height="22" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/img/hsbc.png" width="99" height="22" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/logosBancos/santander.gif" width="107" height="22" /></td>
+              <td><img src="http://www.hacienda-nayarit.gob.mx/finanzas/logosBancos/scotia.gif" width="129" height="17" /></td>
+            </tr>
+          </table></td>
+        </tr>
+
+    </table>
+    </p>
+  </div>
+  <div id="tabs-2">
+
+<p class="b">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="b"><span class="badge">1</span>Genere el formato del servcio o impuesto a pagar.</td>
+        </tr>
+
+        <tr>
+          <td class="b"><p><span class="badge">2</span>Acceda a la pantalla de pago en l&iacute;nea mediante la imagen cualquier logotipo de los bancos que aparece en el píe del formato: </p>
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/formatoLogs.jpg" width="117" height="146"></td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flecha%20azul.gif" width="56" height="47"></td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/logosLogs.jpg" width="352" height="44"></td>
+              </tr>
+            </table>
+          <p>&nbsp;</p></td>
+        </tr>
+        <tr>
+          <td class="b"><span class="badge">3</span>En la siguiente pantalla podr&aacute; acceder al servicio de pago en l&iacute;nea a trav&eacute;s el banco que se muesta en la pantalla:.</td>
+        </tr>
+
+    </table>
+    </p>
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td><img src="http://www.hacienda-nayarit.gob.mx/img/pago%20en%20linea.jpg" width="169" height="152"></td>
+        <td class="b">Servicios disponibles: 
+          <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr bgcolor="#F5F5F5">
+                <td><div align="center"></div></td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Banamex</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" width="17" height="17"></td>
+                <td>BancaNet                                       Directo</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Bancomer</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" alt="" width="17" height="17"></td>
+                <td>CIE                                       por Internet</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Santander</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" alt="" width="17" height="17"></td>
+                <td>Micrositio                                       de Pagos</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Banorte</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" alt="" width="17" height="17"></td>
+                <td>Cheque                                       Electr&oacute;nico</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Scotiabnak</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" alt="" width="17" height="17"></td>
+                <td>Cobranza                                       Lite</td>
+              </tr>
+              <tr bgcolor="#F5F5F5">
+                <td>Tarjetas de Cr&eacute;dito Master Card - Visa</td>
+                <td><img src="http://www.hacienda-nayarit.gob.mx/img/flechita.jpg" alt="" width="17" height="17"></td>
+                <td>PayworksHosted3Dsecure</td>
+              </tr>
+            </tbody>
+        </table></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="b"><span class="badge">4</span>Una v&eacute;z indicado el banco de su preferencia, deber &aacute; con el usuario y constraseña que el banco le facilit &oacute; </td>
+        </tr>
+        <tr>
+          <td>
+            
+            <ul class="list-group b" >
+            <li class="list-group-item">1. Firmarse con el usuario y contraseña (Token), que el banco le proporcionó.</li>
+            <li class="list-group-item">2. Seleccionar la cuenta de retiro desde la banca electronica y seguir con los pasos que el banco le solicita hasta  Confirmar el pago.</li>
+            <li class="list-group-item">
+            3. Imprimir el formato como comprobante de su pago.</li>
+          </ul>
+        </td>
+        </tr>
+    </table>
+
+  </p>
+  </div>
+
+
+  <div id="tabs-3">
+
+   <div class="alert alert-info Estilo5" role="alert">
+<table width="99%"  border="0"  >
+<tr >
+  <td >
+    <div align="center">
+     <strong>Pago por SPEI para todos los Impuestos mediante el servicio CIE Interbancario de Bancomer</strong>
+    </div>
+  </td>
+</tr>
+<tr>  
+  <td class="Estilo5 b">
+      <BR/>  <span class="badge">1</span> Ingrese a la pantalla de <a href="pagostab.html#" title="Para acceder a la ventana de pago en l&iacute;nea genere el formato de pago y acceda mediante algun bot&oacute;n de la imagen de los bancos que aparece en el pie de la p&aacute;gina del formato.">pago en l&iacute;nea </a>de este portal.<BR/><span class="badge">2 </span>Acceda al servicio CIE por Internet de Bancomer.
+        <br/><div align="center"><a href="pagostab.html#" title="El bot&oacute;n de esta imagen lo encontrar&aacute; en la pantalla de pago en l&iacute;nea junto a los dem&aacute;s bancos participantes"><img src="http://www.hacienda-nayarit.gob.mx/img/spei/spei.jpg"></a></div>
+        <br/><span class="badge">3 </span>Indique el medio de pago</br><div align="center"><img src="http://www.hacienda-nayarit.gob.mx/img/spei/metodo.jpg"></div>
+         <span class="badge">4 </span>Acceda al bot&oacute;n "Realizar pago".<br/><ul><i><font color="#0431B4">En este paso obtendr&aacute; la ficha para pago interbancario en donde se mostrar&aacute;n los datos necesarios para la transferencia(Clabe Interbancaria, Importe, Concepto y N&uacute;mero de referencia)</font>.</i></ul><span class="badge">5 </span>Acceda a su banca electr&oacute;nica con su usuario, constrase&ntilde;a y token.<br/><ul><i>Por &uacute;nica vez realice la alta de la cuenta interbancaria de 18 d&iacute;gitos como se indica en su ficha, el banco destino deber&aacute; ser "BBVA Bancomer"</i></ul><span class="badge">6</span>Finalmente realice la transferencia Interbancaria.
+  <td>
+</tr>
+</table>
+  
+</div>
+<div class="a">
+
+</div>
+  </div>
+
+
+   
+  
+
+
+  
+
+
+ 
+</body>
+</html>

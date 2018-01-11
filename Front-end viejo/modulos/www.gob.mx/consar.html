@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html class='no-js' lang='es'>
+  <head>
+      <title>Comisión Nacional del Sistema de Ahorro para el Retiro | Gobierno | gob.mx</title>
+
+    <meta charset='UTF-8'>
+    <meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4f61afea51","applicationID":"33469196,9905304","transactionName":"JQlfFxEJCV5VQx9RXAsDHgoNAgBK","queueTime":0,"applicationTime":625,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    
+
+    <meta content="authenticity_token" name="csrf-param" />
+<meta content="2E/JQEt8T5XlFDyO2gs4H480H41Su2lxjgfQ3eSot6E=" name="csrf-token" />
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300' rel='stylesheet' type='text/css'>
+    <link href='https://framework-gb.cdn.gob.mx/favicon.ico' rel='shortcut icon'>
+    <link data-turbolinks-track="true" href="cms/application.css" media="all" rel="stylesheet" />
+    
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="cms/application.js"></script>
+  </head>
+  <body>
+        <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse">
+              <span class="sr-only">Interruptor de Navegación</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" style="padding-left: 6px;" class="navbar-brand" title="Ir a la página inicial"><img alt="gob.mx" src="cms/gobmxlogo.svg" /></a>
+          </div>
+          <div id="navbarMainCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="tramites.html" title="Trámites">Trámites</a></li>
+              <li><a href="gobierno.html" style="background: black;" title="Gobierno">Gobierno</a></li>
+              <li><a href="participa/welcome.html" title="Participación Ciudadana">Participa</a></li>
+              <li><a href="http://datos.gob.mx" title="Datos Abiertos">Datos</a></li>
+              <li>
+                <form accept-charset="UTF-8" action="/busqueda" method="get"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                    <input type="hidden" name="site" value="consar">
+                    <input type="text" style="background: transparent; border: 0 none; border-bottom: 1px dotted white; color: white" name="q" placeholder="Ingresar Búsqueda" >
+                    <button type="submit" class="btn" title="buscar" value="buscar" style="background-color: #393c3e">
+                      <img alt="Búsqueda" class="optical-adjust-search" src="https://framework-gb.cdn.gob.mx/assets/search.svg" width="20" />
+                    </button>
+</form>              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+          <nav class="havbar navbar-inverse sub-navbar navbar-fixed-top">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">Submenú</button>
+                <!-- a href="/" class="navbar-brand logo"></a -->
+              </div>
+                      <div class="collapse navbar-collapse" id="subenlaces"><ul class="nav navbar-nav navbar-right">
+
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/articulos" data-section=".news.section">Blog</a></li>
+
+
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/multimedia" data-section=".multimedia">Fotos y Videos</a></li>
+                        <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/prensa" data-section=".press">Prensa</a></li>
+
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/agenda" data-section=".schedule">Agenda</a></li>
+                        <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/acciones_y_programas" data-section=".programs">Acciones y Programas</a></li>
+                        <!-- li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li>
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="//archivo/reformas" data-section=".reforms"></a></li -->
+                        
+
+                        <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.gob.mx/consar/archivo/documentos" data-section=".documents">Documentos</a></li>
+
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="http://www.consar.gob.mx/gobmx/Transparencia/transparencia.aspx" data-section=".tran.section">Transparencia</a></li>
+
+                          <!--
+                            <li><a class="home_menu" style="font-size: 16px !important;" href="" data-section=".tran.section"></a></li>
+                          -->
+
+
+                              <li><a class="home_menu" style="font-size: 16px !important;" href="consar.html#" data-section=".contacto">Contacto</a></li>
+
+                      </ul></div>
+
+
+
+          </nav>
+
+          <div class="warning-nav">
+            <div class="container">
+              <div class="row clearfix">
+            <div class="col-xs-12 col-sm-12 col-md-12">Este contenido será modificado temporalmente en atención a las disposiciones legales y normativas en materia electoral, con motivo del inicio de periodo de campaña</div>
+            </div>
+            </div>
+          </div>
+
+    </header>
+
+    <main class="home">
+  <h1 class="sr-only">Sitio de Comisión Nacional del Sistema de Ahorro para el Retiro</h1>
+    <!-- banner -->
+  <div class="flag-banner hidden-xs"
+       style="background-image: url('http://www.gob.mx/cms/uploads/identity/image/7032/head_heroes_2.jpg'); margin-top:46px;" >
+      <img src="http://www.gob.mx/cms/uploads/identity/image/1796/img-nada.png" alt="Comisión Nacional del Sistema de Ahorro para el Retiro">
+  </div>
+
+<!-- mobile banner -->
+  <div class="mobile-flag-banner hidden-sm"
+       style="background-image: url('http://www.gob.mx/cms/uploads/identity/image/7032/head_heroes_2.jpg'); margin-top:46px;" >
+      <img src="http://www.gob.mx/cms/uploads/identity/image/1796/img-nada.png" alt="Comisión Nacional del Sistema de Ahorro para el Retiro">
+  </div>
+
+
+    <!-- div class="banner-campaign bottom-buffer">
+      <a href="/" title="Anuncio de la campaña ">
+      <div class="campaign-banner" style="background-image: url( );">
+        <span class="pull-right ad-sign">Anuncio</span>
+      </div>
+      </a>
+    </div -->
+
+
+  <div class="font-changer print"></div>
+
+           <span class="anchor"></span>
+<section class="section blog">
+  <div class="container">
+  <h2 class='sr-only'>Blog</h2>
+  <div class="row">
+    <div class="col-md-12 acess_hover">
+        <div class="row">
+            <div class="col-md-8 bottom-buffer">
+    <img alt="Cómo ser mamá, ama de casa y retirarse como las grandes." class="img img-responsive" src="http://www.gob.mx/cms/uploads/article/main_image/35905/highlight_ban_dia.jpg" title="Cómo ser mamá, ama de casa y retirarse como las grandes." />
+  </div>
+  <div class="col-md-4">
+    <article class="post-article first bottom-buffer">
+      <time date="2017-05-10 00:01:00">miércoles, 10 de mayo de 2017</time>
+      <h3>Cómo ser mamá, ama de casa y retirarse como las grandes</h3>
+      <p>La situación de la mujer en la sociedad mexicana ha logrado avances significativos durante las últimas décadas aunque persisten importantes retos para lograr una verdadera equidad de género y mejorar su calidad de vida en la vejez y para ello es necesario tener autonomía financiera.</p>
+        <a class="small-link" href="http://www.gob.mx/consar/articulos/como-ser-mama-ama-de-casa-y-retirarse-como-las-grandes?idiom=es">continuar leyendo</a>
+      <hr>
+    </article>
+  </div>
+
+        </div>
+      <div class="row">
+              <div class="col-md-4">
+    	<article class="post">
+        <img alt="Movilidad y formalidad laboral en México." class="img img-responsive" src="http://www.gob.mx/cms/uploads/article/main_image/35817/post_ban_movilidad.jpg" title="Movilidad y formalidad laboral en México." />
+    	  <time datetime="2017-05-09 06:46:00">09 de mayo de 2017</time>
+    	  <h4>Movilidad y formalidad laboral en México</h4>
+               <a class="small-link" href="http://www.gob.mx/consar/articulos/movilidad-y-formalidad-laboral-en-mexico-106253?idiom=es">continuar leyendo</a>
+    	</article>
+    </div>
+    <div class="col-md-4">
+    	<article class="post">
+        <img alt="Comunicado de la CONSAR" class="img img-responsive" src="http://www.gob.mx/cms/uploads/article/main_image/35652/post_24-_comunicado_cofece-02.jpg" title="Comunicado de la CONSAR" />
+    	  <time datetime="2017-05-04 10:27:00">04 de mayo de 2017</time>
+    	  <h4>Comunicado de la CONSAR ante la resolución de la COFECE sobre la investigación en el mercado de las AFORE</h4>
+               <a class="small-link" href="http://www.gob.mx/consar/articulos/comunicado-de-la-consar-ante-la-resolucion-de-la-cofece-sobre-la-investigacion-en-el-mercado-de-las-afore?idiom=es">continuar leyendo</a>
+    	</article>
+    </div>
+    <div class="col-md-4">
+    	<article class="post">
+        <img alt="Las ventajas y desventajas de las Rentas Vitalicias: lo bueno, lo malo y lo feo." class="img img-responsive" src="http://www.gob.mx/cms/uploads/article/main_image/35494/post_22-_Renta_Vitalicia-01.jpg" title="Las ventajas y desventajas de las Rentas Vitalicias: lo bueno, lo malo y lo feo." />
+    	  <time datetime="2017-05-01 22:14:00">01 de mayo de 2017</time>
+    	  <h4>Las ventajas y desventajas de las Rentas Vitalicias: lo bueno, lo malo y lo feo</h4>
+               <a class="small-link" href="http://www.gob.mx/consar/articulos/las-ventajas-y-desventajas-de-las-rentas-vitalicias-lo-bueno-lo-malo-y-lo-feo?idiom=es">continuar leyendo</a>
+    	</article>
+    </div>
+
+      </div>
+    </div>
+      <div class="col-md-12 clearfix top-buffer"><a class="pull-right" href="http://www.gob.mx/consar/archivo/articulos?idiom=es">ver historial</a></div>
+  </div>
+  </div>
+</section>
+
+          
+
+
+          
+
+
+
+          
+
+
+           <span class="anchor" id="multimedia"></span>
+<section class="section multimedia">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>Fotos y Videos</h2>
+			<hr class="red">
+			<div class="row blog-images">
+				<div class="col-md-12 clearfix top-buffer"><a class="pull-right" href="http://www.gob.mx/consar/archivo/galerias?idiom=es">ver historial</a></div>
+			</div>
+			<h4>Videos</h4>
+			<hr>
+			<div class="row videos">
+		      			<div class="col-md-4">
+		<figure>
+			<div class="guard-of">
+				<a class="video-img" href="http://www.gob.mx/consar/videos/infografia-cuenta-afore-ninos?idiom=es">
+					<img alt="Mqdefault" src="https://img.youtube.com/vi/kpfcFfyYL54/mqdefault.jpg" style="width: 100%;" />
+</a>			</div>
+			<figcaption>
+				<blockquote>Cuenta AFORE niños                                   </blockquote>
+			</figcaption>
+		</figure>
+	</div>
+
+			      			<!-- div class="col-md-4">
+			<figure>
+				<div class="guard-of">
+				</div>
+				<figcaption>
+					<blockquote></blockquote>
+				</figcaption>
+			</figure>
+		</div -->
+			<div class="col-md-4">
+				<figure>
+					<div class="guard-of">
+						<a class="video-img" href="http://www.gob.mx/consar/videos/heroes-94014?idiom=es">
+							<img alt="Mqdefault" src="https://img.youtube.com/vi/Gxwap1x7Vps/mqdefault.jpg" style="width: 100%;" />
+</a>					</div>
+					<figcaption>
+						<blockquote>Héroes                                                                            </blockquote>
+					</figcaption>
+				</figure>
+			</div>
+			<div class="col-md-4">
+				<figure>
+					<div class="guard-of">
+						<a class="video-img" href="http://www.gob.mx/consar/videos/por-que-suben-y-a-veces-bajan-los-rendimientos-en-mi-afore?idiom=es">
+							<img alt="Mqdefault" src="https://img.youtube.com/vi/xqRIjzGcm9o/mqdefault.jpg" style="width: 100%;" />
+</a>					</div>
+					<figcaption>
+						<blockquote>¿Por qué suben y a veces bajan los rendimientos en mi AFORE?                             </blockquote>
+					</figcaption>
+				</figure>
+			</div>
+
+			    	<!-- div class="col-md-4">
+			    		<figure>
+			    			<figcaption>
+								<blockquote>Mi foto con el Presidente <br> </blockquote>
+							</figcaption>
+						</figure>
+			    	</div -->
+			</div>
+			<div class="col-md-12 clearfix top-buffer"><a class="pull-right" href="http://www.gob.mx/consar/archivo/videox?idiom=es">ver historial</a></div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+
+           <span class="anchor" id="Ligas de interes"></span>
+<section class="structure dependency col-md-12 bottom-buffer clearfix list-article slider_articles">
+  <div class="container">
+    <div class="bottom-buffer">
+      <h3>Ligas de interés</h3>
+      <hr class="red">
+    </div>
+    <div class="slider-articles" id="sliderArticles">
+      <ul class="list-unstyled slides">
+        <li>
+          <a href="https://www.gob.mx/consar/articulos/todo-sobre-el-retiro-100587?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Todo sobre el Retiro de recursos del SAR" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/267088/outstanding_ban_retiros_ligas.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Todo sobre el Retiro de recursos del SAR</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/acciones-y-programas/todo-sobre-el-ahorro-voluntario?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Todo sobre el Ahorro Voluntario" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/218393/outstanding_ban_todo_sobre_av.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Todo sobre el Ahorro Voluntario</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/acciones-y-programas/trabajadores-independientes-30078?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Trabajadores Independientes" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/217586/outstanding_ban_indepen.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Trabajadores Independientes</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/acciones-y-programas/informacion-para-ahorradores">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería " class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182882/outstanding_para_ahorradores.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Información para Ahorradores</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/informacion-estadistica-61314?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Información estadística del SAR" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182866/outstanding_ban_estad.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Información estadística</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/documentos/informacion-financiera-58416?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Información financiera" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/185660/outstanding_ban_info_financiera.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Información financiera</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/radiografia-operativa-de-las-afore?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Radiografía operativa de las AFORE" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/257527/outstanding_03-_radiografi_a_afore-01.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Radiografía operativa de las AFORE</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/acciones-y-programas/como-entender-tu-ahorro-para-el-futuro?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Conoce más sobre el funcionamiento del Sistema de Ahorro para el Retiro y la importancia que tiene en todas las etapas de nuestra vida el hábito del ahorro." class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/179302/outstanding_ban_como_eleg.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">¿Cómo entender tu ahorro para el futuro? (Blog)</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/documentos-de-trabajo-63213?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Documentos de trabajo" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/193204/outstanding_ban_documentos.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Documentos de trabajo</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/realiza-una-consulta">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería http://www.gob.mx/consar/articulos/realiza-una-consulta" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182878/outstanding_Realiza_una_consulta.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Resuelve las dudas de tu cuenta AFORE</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/por-que-suben-y-bajan-los-rendimientos-en-el-sar?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería ¿Por qué suben y bajan los rendimientos en el SAR?" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/225296/outstanding_ban_porq.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">¿Por qué suben y a veces bajan los rendimientos en el SAR?</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="https://www.gob.mx/consar/articulos/cuenta-afore-ninos?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Ahora los más pequeños ya pueden tener AFORE. Comienza a involucrarlos en el tema del ahorro con la Cuenta AFORE Niños. " class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/225300/outstanding_banner_infograf_a_ni_os-01.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Infografía &quot;Cuenta AFORE Niños&quot; </h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/documentos/normatividad-consar">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Normatividad de la CONSAR" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182895/outstanding_ban_normatividad.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Normatividad</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/acciones-y-programas/herramientas-consar?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Calculadoras, Radiografía Financiera, Consultas, Cuánto aportas para tu retiro" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182865/outstanding_ban_herra.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Herramientas CONSAR </h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="https://www.gob.mx/consar/articulos/contacta-a-tu-afore">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Las AFORE cuentan con diferentes canales de comunicación para que puedas ponerte en contacto con ellas." class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/182867/outstanding_ban_contacta.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Contacta a tu AFORE</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="https://www.gob.mx/consar/articulos/sartel?idiom=es">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Atención personalizada" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/179293/outstanding_ban_atenc.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Atención personalizada</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.gob.mx/consar/articulos/glosario-del-sistema-de-ahorro-para-el-retiro">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Glosario del Sistema de Ahorro para el Retiro" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/188818/outstanding_ban_glosario.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Glosario del Sistema de Ahorro para el Retiro</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+        <li>
+          <a href="http://www.consar.gob.mx/gobmx/aplicativo/coti/opinion_iso.aspx">
+            <article class="slider_articles--item">
+              <header>
+                <figure>
+                  <img alt="Imagen para la gallería Opinión del sitio" class="img-responsive img-outstanding" src="http://www.gob.mx/cms/uploads/image/file/260672/outstanding_ban_opinio.jpg" style="width: 100%;" />
+                </figure>
+              </header>
+              <main>
+                <h3 style="color: #555; font-size: 1.2em;">Opinión del sitio</h3>
+              </main>
+              <footer class="text-right">
+                <p></p>
+              </footer>
+            </article>
+</a>        </li>
+      </ul>
+    </div>    
+</section>
+<script type="text/javascript">
+  $(function() {
+    $('#sliderArticles').flexslider( {
+      animation: "slide",
+      animationLoop: true,
+      prevText: "Anterior",
+      nextText: "Siguiente",
+      itemWidth: 360,
+      itemMargin: 30,
+      minItems: 1,
+      maxItems: 3
+    });
+  });
+</script>
+
+
+           <span class="anchor"></span>
+<section class="section quehacemos">
+	<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>¿Qué hacemos?</h2>
+			<hr class="red">
+			<div class="row quehacemos">
+					<div class="col-md-4">
+							<div class="explain">
+									 CONSAR es la 
+Comisión Nacional del Sistema de Ahorro para el Retiro y su labor 
+fundamental es la de regular el Sistema de Ahorro para el Retiro (SAR) 
+que está constituido por las cuentas individuales a nombre de los 
+trabajadores que manej...
+							</div>
+
+							<br>
+								<a href="http://www.gob.mx/consar/que-hacemos">Leer más de este tema</a>
+					</div>
+					<div class="col-md-4">
+						<h4 style="margin-top:0;">Enlaces externos</h4>
+						<ul class="list-unstyled">
+								<li>
+									<a a="" b="" class="sendEst" href="http://www.hellohelp.org/hellohelp/userlogin.php?custid=1514&amp;langkey=es&amp;email=&amp;dni=&amp;referer=http://172.16.51.48/&amp;pwd=&amp;rows=&amp;un=&amp;cc=&amp;EN" target="_blank">
+										<span style="font-size: 58%; top:-1px" class="glyphicon glyphicon-new-window"></span>
+										Chat del SAR
+</a>								</li>
+								<li>
+									<a a="" b="" class="sendEst" href="https://www.e-sar.com.mx/PortalEsar/public/index.do" target="_blank">
+										<span style="font-size: 58%; top:-1px" class="glyphicon glyphicon-new-window"></span>
+										e-sar
+</a>								</li>
+								<li>
+									<a a="" b="" class="sendEst" href="https://www.e-sar.com.mx/PortalEsar/public/consultaAforeInicio.do" target="_blank">
+										<span style="font-size: 58%; top:-1px" class="glyphicon glyphicon-new-window"></span>
+										¿En qué AFORE estás?
+</a>								</li>
+								<li>
+									<a a="" b="" class="sendEst" href="http://www.imss.gob.mx/derechoH/semanas-cotizadas" target="_blank">
+										<span style="font-size: 58%; top:-1px" class="glyphicon glyphicon-new-window"></span>
+										Reporte de semanas cotizadas
+</a>								</li>
+								<li>
+									<a a="" b="" class="sendEst" href="http://www.imss.gob.mx/patrones/sipare" target="_blank">
+										<span style="font-size: 58%; top:-1px" class="glyphicon glyphicon-new-window"></span>
+										Sistema de Pago Referenciado (SIPARE)
+</a>								</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<h4 style="margin-top:0;">Síguenos</h4>
+						<ul class="fa-ul social-follow">
+								<li>
+									<a href="https://twitter.com/CONSAR_mx" class="sendEst" target="_blank" aria-label="Twitter de consar">
+										<span class="fa-li fa fa-twitter"></span>
+										<span style="color: #545454;" >Twitter</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/ConsarMexico" class="sendEst" target="_blank" aria-label="Facebook de consar">
+										<span class="fa-li fa fa-facebook"></span>
+										<span style="color: #545454;" >Facebook</span>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/CONSARMexico" class="sendEst" target="_blank" aria-label="Youtube de consar">
+										<span class="fa-li fa fa-youtube-play"></span>
+										<span style="color: #545454;" >Youtube</span>
+									</a>
+								</li>
+						</ul>
+					</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</section>
+
+
+          
+
+
+           <span class="anchor" id="estructura"></span>
+<section class="structure dependency list-article">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Directorio</h3>
+        <hr class="red">
+        <div class="structure-wrapper">
+          <div class="container">				
+              <div class="row">
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Carlos Ramírez Fuentes" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/838/thumb_CRF_dir.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/carlos-ramirez-fuentes">Carlos Ramírez Fuentes</a>
+                      </h5>
+                      <span class="attribues small">Presidente de la Comisión Nacional del Sistema de Ahorro para el Retiro, CONSAR</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Hugo Alejandro Garduño Arredondo" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/1768/thumb_foto_vpf2.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/hugo-alejandro-garduno-arredondo">Hugo Alejandro Garduño Arredondo</a>
+                      </h5>
+                      <span class="attribues small">Vicepresidente Financiero</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Carlos Arturo Marmolejo Trujillo" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/840/thumb_Marmolejo3.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/carlos-arturo-marmolejo-trujillo">Carlos Arturo Marmolejo Trujillo</a>
+                      </h5>
+                      <span class="attribues small">Vicepresidente de Operaciones</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Antonio Salvador Reyna Castillo" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/775/thumb_T.reyna.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/antonio-salvador-reyna-castillo">Antonio Salvador Reyna Castillo</a>
+                      </h5>
+                      <span class="attribues small">Vicepresidente Jurídico</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Fernanda Vaudrecourt Salcido" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/751/thumb_fernanda.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/fernanda-vaudrecourt-salcido">Fernanda Vaudrecourt Salcido</a>
+                      </h5>
+                      <span class="attribues small">Coordinadora General de Planeación Estratégica y Proyectos Especiales</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Mónica L. Mendoza Archer" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/837/thumb_Monica_2.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/monica-l-mendoza-archer">Mónica L. Mendoza Archer</a>
+                      </h5>
+                      <span class="attribues small">Coordinadora General de Información y Vinculación</span>
+                    </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Carlos Maximiliano Huitrón Escamilla" class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/821/thumb_Huitro_n.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/carlos-maximiliano-huitron-escamilla">Carlos Maximiliano Huitrón Escamilla</a>
+                      </h5>
+                      <span class="attribues small">Coordinador General de Administración y Tecnologías de la Información</span>
+                    </div>
+                  </div>
+                  <div class="col-md-4 office-sm-structure pull-left">
+                    <img alt="Foto de Rubén Durán Miranda                                                                                                               " class="media-object pull-left right-mini-space" src="http://www.gob.mx/cms/uploads/structure/main_image/1030/thumb_contralor_dir1.jpg" style="margin-right: 8px;" />
+                    <div class="figure">							
+                      <h5 class="structure-heading">
+                      	<a href="http://www.gob.mx/consar/estructuras/guadalupe-munoz-trejo">Rubén Durán Miranda                                                                                                               </a>
+                      </h5>
+                      <span class="attribues small">Titular del Órgano Interno de Control</span>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+             <span class="anchor"></span>
+    <section class="press section  bottom-buffer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>Prensa</h2>
+            <hr class="red">
+                  <div class="row">
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/movilidad-y-formalidad-laboral-en-mexico-106252">Movilidad y formalidad laboral en México</a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-05-09 06:31:00">09 de mayo de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>La CONSAR presenta hoy la cuarta entrega de su serie “Documentos de Trabajo” (Working papers) dedicado en esta ocasión al tema del mercado laboral y su relación con el sistemas de pensiones.</p>
+                        </article>
+                      </div>
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/actualizacion-mensual-de-recursos-y-rendimientos-del-sar-al-cierre-de-abril-del-2017">Actualización mensual de recursos y rendimientos del SAR al cierre de abril del 2017 </a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-05-08 07:00:00">08 de mayo de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>Al cierre de abril de 2017, el Sistema de Ahorro para el Retiro (SAR) acumula recursos por  2,913,850 millones de pesos. Esta cifra ya descuenta los flujos de retiros correspondientes al mismo mes que ascendieron a 5,231 mdp. </p>
+                        </article>
+                      </div>
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/cofece">Comunicado de la CONSAR ante la resolución de la COFECE sobre la investigación en el mercado de las AFORE</a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-05-04 10:00:00">04 de mayo de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>El día de hoy la Comisión Federal de Competencia Económica (COFECE) emitió su fallo en relación con la investigación iniciada en febrero de 2015, para identificar y sancionar, en términos de la propia Ley de Competencia, posibles prácticas monopólicas entre Administradoras de Fondos para el Retiro (AFORE). </p>
+                        </article>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/aportaciones-voluntarias-en-farmacias-del-ahorro">Se triplicaron las aportaciones al ahorro voluntario</a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-04-26 17:54:00">26 de abril de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>•La subsecretaria de Hacienda y Crédito Público dijo que las aportaciones realizadas entre 2013 y 2017 crecieron 323 por ciento 
+
+•Farmacias del Ahorro se suma al programa “Ahorrar en tu AFORE nunca fue tan fácil”, que cuenta ya con 6 mil 700 puntos de 
+        captación de ahorro en todo el país
+</p>
+                        </article>
+                      </div>
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/resultados-del-censo-de-la-industria-de-afore-al-cierre-de-2016">Resultados del Censo de la Industria de AFORE al cierre de 2016 </a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-04-24 07:36:00">24 de abril de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>Se presentan los resultados del Censo de las AFORE 2016 que da a conocer la CONSAR anualmente sobre la composición y distribución de la industria de las administradoras de fondos para el retiro, segmentada entre las distintas áreas que la conforman. </p>
+                        </article>
+                      </div>
+                      <div class="col-md-4">
+                        <article class="post">
+                          <h4><a href="http://www.gob.mx/consar/prensa/actualizacion-mensual-de-recursos-y-rendimientos-del-sar-al-cierre-de-marzo-2017">Actualización mensual de recursos y rendimientos del SAR al cierre de marzo 2017</a></h4>
+                          <p class="clearfix">
+                            <time datetime="2017-04-05 07:53:00">05 de abril de 2017</time>
+                              <span class="tag-presses small">Comunicado</span>
+                          </p>
+                          <p>Al cierre de marzo de 2017, el Sistema de Ahorro para el Retiro (SAR) acumula recursos por  2,886,533 millones de pesos. Esta cifra ya descuenta los flujos de retiros correspondientes al mismo mes que ascendieron a 6,877 mdp. </p>
+                        </article>
+                      </div>
+                  </div>
+          <div class="col-md-12 clearfix vertical-buffer"><a class="pull-right" href="http://www.gob.mx/consar/archivo/prensa?idiom=es">ver historial</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+             <span class="anchor"></span>
+  <section class="col-md-12 list-article programs clearfix">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>
+                Acciones y Programas
+            </h2>
+            <hr class="red">	
+			  <div class="row">
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/como-entender-tu-ahorro-para-el-futuro">Cómo entender tu Ahorro para el futuro (Blog)</a></h4>
+					  <p>Conoce más sobre el funcionamiento del Sistema de Ahorro para el Retiro y la importancia que tiene en todas las etapas de nuestra vida el hábito del ahorro. </p>
+					</article>
+				  </div>
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/todo-sobre-el-ahorro-voluntario">Todo sobre el Ahorro Voluntario</a></h4>
+					  <p>Ahorrar voluntariamente ALGO MÁS en tu AFORE, tiene importantes beneficios.</p>
+					</article>
+				  </div>
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/como-elegir-la-mejor-afore">¿Cómo elegir la mejor AFORE? Rendimientos, comisiones y servicios</a></h4>
+					  <p>¿Tienes AFORE? ¡Elige bien! Para ello debes tomar en cuenta 3 factores: Rendimientos que te da a ganar, Comisión que te cobra y Servicios que te ofrece. </p>
+					</article>
+				  </div>
+			  </div>
+			  <div class="row">
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/acuerdo-institucional-de-integridad-de-la-consar-49952">Integridad Pública                                                                           </a></h4>
+					  <p>Información relacionada con el Comité de Ética y de Prevención de Conflictos de Interés.</p>
+					</article>
+				  </div>
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/calculadoras-de-ahorro-y-retiro">Calculadoras de Ahorro y Retiro</a></h4>
+					  <p>Te presentamos las CALCULADORAS de ahorro y retiro que permitirán estimar, bajo ciertos supuestos, cuál podría ser tu pensión o ahorro al finalizar tu vida laboral. </p>
+					</article>
+				  </div>
+				  <div class="col-md-4">
+					<article>
+					  <h4><a href="http://www.gob.mx/consar/acciones-y-programas/herramientas-consar">Herramientas CONSAR                                                                                                </a></h4>
+					  <p>Consulta las herramientas que te pueden ayudar a tomar mejores decisiones sobre tu ahorro para el futuro.</p>
+					</article>
+				  </div>
+			  </div>
+			<div class="col-md-12 clearfix vertical-buffer">
+			  <a class="pull-right" href="http://www.gob.mx/consar/archivo/acciones_y_programas?idiom=es">ver historial</a>
+			</div>
+		  </div>
+	    </div>
+		</div>
+	</section>
+
+
+
+             <span id="documentos" class="anchor"></span>
+  <section class="col-md-12 list-article documents">
+  	  <div class="container">
+		<div class="row">
+		  <div class="col-md-12">
+		    <h2>Documentos</h2>
+		    <hr class="red">
+		    <div class="row"><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/informacion-financiera-58416?idiom=es">Información Financiera</a></h2><p>Aquí encontrarás información sobre carteras, diversificación y límites de inversión, riesgos, así como las medidas de sensibilidad (Valor en Riego, coeficiente de liquidez y Plazo Promedio Ponderado) y mucho más.</p></article></div><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/movilidad-y-formalidad-laboral-en-mexico?idiom=es">Movilidad y formalidad laboral en México</a></h2><p>Este documento analiza mediante un estudio estadístico la permanencia y movilidad laboral de corto plazo (5 trimestres) de los trabajadores en México entre las categorías de: a) empleo formal, b) empleo informal, c) desocupación y d) población no económicamente activa (PNEA).</p></article></div><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/panorama-general-del-sar-56798?idiom=es">Panorama General del SAR</a></h2><p>El Panorama General del SAR te brinda una visión del Sistema de Ahorro para el Retiro en cifras a través de sus principales indicadores.</p></article></div></div><div class="row"><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/como-entender-tu-ahorro-para-el-futuro-versiones-pdf?idiom=es">Cómo entender tu Ahorro para el futuro (versiones pdf)</a></h2><p>Conoce más sobre el funcionamiento del Sistema de Ahorro para el Retiro y la importancia que tiene en todas las etapas de nuestra vida el hábito del ahorro. </p></article></div><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/administracion-recursos-materiales-adquisiciones-invitacion-a-por-lo-menos-3-personas-2017?idiom=es">Administración / Recursos Materiales / Adquisiciones / Invitación a por lo menos 3 Personas 2017</a></h2><p>Adquisiciones</p></article></div><div class="col-sm-4"><article class="post mylink" tabindex="0"><h2 style="font-size: 1.2em"><a class="mylink" href="http://www.gob.mx/consar/documentos/boletines-de-prensa-de-la-consar?idiom=es">Boletines de prensa de la CONSAR</a></h2><p>Consulta los boletines de prensa de la Comisión Nacional del Sistema de Ahorro para el Retiro.</p></article></div></div>
+		    <div class="col-md-12 clearfix vertical-buffer"><a class="pull-right" href="http://www.gob.mx/consar/archivo/documentos?idiom=es">ver historial</a></div>
+    	  </div>
+	    </div>
+      </div>
+  </section>
+
+
+           <span class="anchor"></span>
+<section class="col-md-12 list-article contacto" id="contacto">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Información de Contacto</h3>
+      	<hr class="red">
+      	<div class="row">
+      		<div class="col-md-4 col-sm-12 bottom-buffer">
+      			<address>Camino a Santa Teresa  #1040 piso 2, <br/>Jardines en la montaña, Ciudad de México. C.P. 14210<br/><br/>Teléfono: 1328 5000 sin costo desde todo el país <br/>Atención a la ciudadanía: 1328 5000 sin costo desde todo el país <br/>Comisión Nacional del Sistema de Ahorro para el Retiro <br/> <br/><a href="http://www.consar.gob.mx/principal/orienta_trabajador.aspx">Mesa de ayuda</a> <br/><input name='organization[latitude]' type='hidden' value='19.3021772483732'><input name='organization[longitude]' type='hidden' value='-99.1983852814883'></address>
+        			<h4>¿De qué se trata tu petición?</h4>
+        			<div class="content" id="respuestaMail">
+                <form class="form-horizontal home-form" role="form" action="#{ @organization_site.nested_path }/contacto" class="search-form">
+                  <div class="form-group-icon">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="descripcion" class="sr-only">Descripción</label>
+                        <textarea class="form-control" id="descripcion" placeholder="Descripción" rows="4" name="descripcion" required></textarea>
+                        <div class="content col-xs-7" id="dDesc"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <input type="submit" class="btn btn-primary pull-right" style="margin-top:14px; margin-bottom: 18px;" id="btnAtencionCiudadana" value="Enviar">
+                  <!-- button type="button" class="btn btn-primary pull-right" style="margin-top:14px;" id="btnAtencionCiudadana">Enviar</button -->
+                </form>
+              </div>
+      		</div>
+      		<div class="col-md-8 col-sm-12">
+            <a href="https://maps.google.com/?q=19.3021772483732,-99.1983852814883" target="_blank" title="Enlace abre en nueva ventana">
+      			<div id="googleMap" class="small-bottom-buffer" style="border-radius: 6px; overflow: hidden; width:100%; height:486px; position: relative; background: url('https://framework-gb.cdn.gob.mx/maps/placeholder-mapa.jpg') no-repeat center; background-size: cover;">
+            <!-- div id="googleMap" class="form-control small-bottom-buffer" style="width:100%;height:486px;" -->
+              <!-- div id="mapIndicator" style="position: absolute; width: 284px; height: 144px; left: 33%; top: 46%; text-align: center; font-weight: 800; color: white; text-shadow: 1px 1px 1px rgba(0,0,0,0.7);">Da clic para ver la ubicación</div -->
+              <p style="text-align: center; margin-top: 40%; font-size: 1.2em; font-weight: 600; color: white; ">Da clic para ver la ubicación</p>
+            </div>
+            </a>
+      		</div>
+      	</div>
+      </div>
+    </div>
+  </div>
+</section>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">  
+  $("#btnAtencionCiudadana").click(function(event) {
+    event.preventDefault();
+    var description = $("#descripcion").val();
+    var url = "/atencion?description="+description+"&site=consar";
+    window.open(url, "_blank");
+  });
+</script>
+
+
+             <span class="anchor"></span>
+  <section class="opendata">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-12">
+		  <h3>Datos Abiertos</h3>
+		  <hr class="red">
+			<div class="row">
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/rendimientos-con-precios-de-bolsa" target="_blank">Rendimientos con Precios de Bolsa</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/precios-de-gestion-de-las-siefores" target="_blank">Precios de Gestión de las SIEFORES</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/recursos-registrados-en-las-afore" target="_blank">Recursos Registrados en las AFORE</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/activos-netos-de-las-siefore" target="_blank">Activos Netos de las SIEFORE</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/inventario-institucional-de-datos-de-consar" target="_blank">Inventario Institucional de Datos de CONSAR</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/precios-de-bolsa-de-las-siefores" target="_blank">Precios de Bolsa de las SIEFORES</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/comisiones-de-las-siefore-basicas" target="_blank">Comisiones de las SIEFORE Básicas</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/cuentas-administradas-por-las-afore" target="_blank">Cuentas Administradas por las AFORE</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+				<div class="col-md-4">
+				  <div class="panel panel-default text-center opendata_panel">
+					<div class="panel-body">
+					  <h4><a href="https://datos.gob.mx/busca/dataset/medidas-de-sensibilidad-de-las-siefore" target="_blank">Medidas de Sensibilidad de las SIEFORE</a></h4>
+					  <p style="font-size: 0.8em;"></p>
+				      <!-- p style="font-size: 0.8em;"></p -->
+					  <span class="pull-right" style="font-size: 0.7em;">
+						Modificado 03 de mayo de 2017
+					  </span>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  <div class="clearfix pull-right small-top-buffer"><a href="https://datos.gob.mx/busca/organization/consar">Ver más</a></div>
+		</div>
+	  </div>
+	</div>
+  </section>
+
+
+</main>
+<div class="space_bottom clearfix vertical-buffer"></div>
+
+
+    <footer class="main-footer">
+	<div class="list-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h2>Enlaces</h2>
+					<ul>	
+							
+						<li><a href="http://www.gob.mx/accesibilidad">Declaración de Accesibilidad</a></li>
+						<li><a href="http://www.gob.mx/privacidad">Política de privacidad</a></li>
+						<li><a href="http://www.gob.mx/terminos">Términos y Condiciones</a></li>
+						<li><a href="http://www.ordenjuridico.gob.mx" target="_blank" title="opens new window">Marco Jurídico</a></li>
+                            <li><a href="http://portaltransparencia.gob.mx/buscador/search/search.do%3Bjsessionid=n77GXhmGCS4WhJ5hnYnCSMCzYnMVB4P2TnjNHVygXDyHXpvdhV0p!1446470758?method=begin&amp;searchBy=0&amp;idDependenciaZoom=06121" target="blank" title="opens new window">Portal de Obligaciones de Transparencia</a></li>
+						<li><a href="https://www.infomex.org.mx/gobiernofederal/home.action" target="_blank" title="opens new window">Sistema Infomex</a></li>
+						<li><a href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" target="_blank" title="opens new window">INAI</a></li>
+            			<li><a href="http://www.gob.mx/sitemap">Mapa de sitio</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2>¿Qué es gob.mx?</h2>
+					<p>Es el portal único de trámites, información y participación ciudadana. <a href="http://www.gob.mx/que-es-gobmx">Leer más</a></p>					
+					<ul>
+							
+									<li><a href="http://www.gob.mx/consar/en" title="Versión en inglés del sitio web">English</a></li>
+							
+						<li><a href="http://www.gob.mx/temas">Temas</a></li>
+						<li><a href="http://reformas.gob.mx" target="_blank">Reformas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2>Contacto</h2>
+					<!-- p>Insurgentes Sur 1735, Col. Guadalupe Inn. <br>Delegación Álvaro Obregón <br> México, D.F. C.P. 01020</p -->
+					<p>Mesa de ayuda <br> gobmx@funcionpublica.gob.mx</p>					
+					<p><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<form accept-charset="UTF-8" action="subscribe" data-remote="true" id="subscribe" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+						<h2>Mantente informado. Suscríbete.</h2>
+						<div class="form-group-icon">
+							<label class="sr-only" for="email">Subcribirse</label>
+							<input id="email" type="text" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" maxlength="255">
+							<button type="submit" class="blue-button-footer btn registerMail" title="Subcribirse">
+								<span class="icon-caret-right" title=">"></span>
+							</button>
+						</div>
+						<div id="responseEmail" aria-live="polite"></div>
+</form>				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<h2>Síguenos en</h2>
+					<ul class="list-inline">
+						<li>
+			              <a href="https://www.facebook.com/gobmx" target="_blank" class="sendEst share-info" title="enlace a facebook abre en una nueva ventana">
+			                <img alt="Facebook" src="https://framework-gb.cdn.gob.mx/assets/images/facebook_footer.png" />
+			              </a>
+			            </li>
+						<li>
+			              <a href="https://twitter.com/gobmx" target="_blank" class="sendEst share-info" title="Enlace a twitter abre en una nueva ventana">
+			                <img alt="Twitter" src="https://framework-gb.cdn.gob.mx/assets/images/twitter_footer.png" />
+			              </a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img alt="gob.mx" class="gobmx-footer" height="39" src="cms/gobmxlogo.svg" width="126" />
+			</div>
+			<div class="col-sm-4 col-sm-offset-4">
+			</div>
+		</div>
+	</div>
+</footer>
+
+    <input class="hidden" id="route" value="/consar" type="hidden" >
+    <!-- div id="fb-root"></div -->
+
+    
+  <script src="http://www.gob.mx/cms/homepage.js"></script>
+
+    
+
+      <script src="https://sb.scorecardresearch.com/c2/17183199/ct.js"></script>
+
+
+      <script type="text/javascript">
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-69802193-1', 'auto');
+        ga('send', 'pageview');
+
+        var _sf_startpt=(new Date()).getTime();
+        var _sf_async_config = { uid: 43659, domain: 'www.gob.mx', useCanonical: true } ;
+        (function() {
+          function loadChartbeat() { window._sf_endpt = (new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); };
+          var oldonload = window.onload;
+          window.onload = (typeof window.onload != 'function') ?
+          loadChartbeat : function()
+          { oldonload(); loadChartbeat(); };
+        })();
+        var ele = "/consar";
+        if( "#{(@organization_site.present? ? @organization_site.category : 'gobmx')}" == "Campaña") {
+          var siteEls = 'campaign';
+        } else {
+          var siteEls = 'gobierno';
+        }
+
+        for( var i = 1; i < ele.split('/').length; i++ ) {
+          siteEls = siteEls + '.' + ele.split('/')[i];
+        }
+
+        function udm_(e){var t="comScore=",n=document,r=n.cookie,i="",s="indexOf",o="substring",u="length",a=2048,f,l="&ns_",c="&",h,p,d,v,m=window,g=m.encodeURIComponent||escape;if(r[s](t)+1)for(d=0,p=r.split(";"),v=p[u];d<v;d++)h=p[d][s](t),h+1&&(i=c+unescape(p[d][o](h+t[u])));e+=l+"_t="+ +(new Date)+l+"c="+(n.characterSet||n.defaultCharset||"")+"&c8="+g(n.title)+i+"&c7="+g(n.URL)+"&c9="+g(n.referrer),e[u]>a&&e[s](c)>0&&(f=e[o](0,a-8).lastIndexOf(c),e=(e[o](0,f)+l+"cut="+g(e[o](f+1)))[o](0,a)),n.images?(h=new Image,m.ns_p||(ns_p=h),h.src=e):n.write("<","p","><",'img src="',e,'" height="1" width="1" alt="*"',"><","/p",">")};
+        function uid_call(a, b){
+          ui_c2 = 17183199; // your corporate c2 client value
+          ui_ns_site = 'gobmx'; // your sites identifier
+          window.b_ui_event = window.c_ui_event != null ? window.c_ui_event:"",window.c_ui_event = a;
+          var ui_pixel_url = 'https://sb.scorecardresearch.com/p?c1=2&c2='+ui_c2+'&ns_site='+ui_ns_site+'&name='+a+'&ns_type=hidden&type=hidden&ns_ui_type='+b;
+          var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));ui_pixel_url+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer)+"&b_ui_event="+b_ui_event+"&c_ui_event="+c_ui_event,ui_pixel_url[h]>i&&ui_pixel_url[f](l)>0&&(j=ui_pixel_url[g](0,i-8).lastIndexOf(l),ui_pixel_url=(ui_pixel_url[g](0,j)+k+"cut="+r(ui_pixel_url[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=ui_pixel_url):c.write("<p><img src='",ui_pixel_url,"' height='1' width='1' alt='*'></p>");
+        }
+        udm_('https://sb.scorecardresearch.com/b?c1=2&c2=17183199&ns_site=gobmx&name='+siteEls);
+      </script>
+
+      <noscript><img src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=17183199&amp;ns_site=gobmx&amp;name=gobierno.consar" height="1" width="1" alt="*"  />
+      />
+      </noscript>
+  </body>
+</html>

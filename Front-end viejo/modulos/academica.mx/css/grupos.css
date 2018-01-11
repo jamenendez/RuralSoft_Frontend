@@ -1,0 +1,91 @@
+.grupos-title {
+  color: #337ab7;
+  font-weight: bold;
+}
+
+.grupo-acciones {
+  margin-bottom: 10px;
+}
+
+.grupo-acciones .buttons {
+  float: right;
+}
+
+.cb-item-main {
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  text-align: center;
+  vertical-align: middle;
+  width: 30px;
+}
+
+.cb-item-main input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.cb-item-main:hover,
+.cb-item-main.checked {
+  background-color: #e0f7e0;
+}
+
+.grupo-item .grupo-img {
+  background-image: url('../images/ic_imagen_dft.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  height: 80px;
+  width: 100%;
+}
+
+.grupo-item .grupo-owner {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.grupo-item .created-at {
+  color: #aaa;
+  font-weight: lighter;
+}
+
+.grupo-item .grupo-owner img {
+  border: 1px solid #c1bcbc;
+  margin-right: 5px;
+  width: 30px;
+}
+
+.grupo-item .media {
+  overflow: visible;
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.grupo-item .cb-item {
+  cursor: pointer;
+  display: table-cell;
+  float: left;
+  height: 60px;
+  vertical-align: middle;
+  width: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.grupo-item .cb-item input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.grupo-item .cb-item:hover,
+.grupo-item .cb-item.checked {
+  background-color: #e0f7e0;
+}
+
+.floating-actions {
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}

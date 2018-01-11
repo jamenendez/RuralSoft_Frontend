@@ -1,0 +1,589 @@
+html#static-share-drug a.blue-label {
+  text-decoration:none !important;
+  color:#006699;
+}
+html#static-share-drug a.blue-label:hover, html#static-share-drug a.blue-label:focus {
+  color:#a5b413 !important;
+}
+html#static-share-drug a.blue-label:visited {
+  color:#006699;
+}
+.sec-mb {
+  display:none;
+}
+.btn-ec {
+  cursor:pointer !important;
+}
+.no-border {
+  border:none !important;
+  box-shadow:none !important;
+  cursor:default !important;
+}
+#az-section2 .alpha-links {
+  padding:0 !important;
+} 
+.section-body .no-clk .section-title h2 {
+  padding-left:0;
+}
+/*
+#static-share-drug .alphanav .alpha-links li {
+  padding: 0.5em 0.3em 0.5em 0.3em;
+}
+*/
+#static-share-drug .main .section-body {
+  padding-left: 0.8em;
+}
+#section2 .bluearea {
+  text-align:center;
+}
+#static-share-drug .blue-label {
+  padding:0;
+}
+.alphalink {
+  font-size:1.5em;
+}
+.cloud {
+    font-family: verdana,arial;
+    font-size: 1em;
+    line-height: normal;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.cloud li {
+    display: inline;
+    padding-right: 5px;
+    line-height:230%;
+}
+ul.cloud a.highest {
+    font-size: 225%;
+}
+.cloud a:link {
+    text-decoration: none;
+}
+ul.cloud a.low {
+    font-size: 125%;
+}
+ul.cloud a.high {
+    font-size: 175%;
+}
+.cloud span {
+    left: -9999px;
+    position: absolute;
+    width: 990px;
+}
+.hide {
+  display:none;
+}
+.tpgroupcat .expand {
+  background-image: url("https://medlineplus.gov/images/plus.gif");
+  background-position: left center;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+.tpgroupcat .contract {
+    background-image: url("https://medlineplus.gov/images/minus.gif");
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+.tpgroup .rssicon {
+    background-image: url("https://medlineplus.gov/images/rss.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    text-decoration: underline;
+}
+.tpgroupcat ul li a {
+    padding-left: 15px;
+}
+.fl {
+  float:left;
+}
+.adam-logo {
+  text-align:center;
+}
+article {
+  clear:both;
+}
+.simple {
+  padding-right:0.2em !important;
+}
+#static-share-about h3 {
+  font-size:1.0em;
+}
+#about-side {
+  background-color:#c6dbfb;
+}
+#about-side ul {
+  margin-bottom:1.0em;
+}
+#about-side ul:last-child {
+  margin-bottom:0 !important;
+}
+#about-side ul li {
+  line-height: 100% !important;
+}
+#about-side h2 {
+  margin-bottom:0.4em !important;
+}
+#section1 img {
+  margin-right:0.9em;
+}
+.c-l {
+  margin-right:3.0em;
+}
+dt {
+  font-weight:bold;
+  margin-top:1.2em;
+}
+ul.fl {
+  width:50%;
+}
+.bibliography p {
+  word-wrap:break-word;
+}
+.wider .side-section {
+  width:28em;
+}
+.recog-img {
+  width:53%;
+  float:left;
+  text-align:center;
+}
+.recog p {
+  width:46%;
+  padding-left:0.2em;
+  float:left;
+} 
+.recog div.group {
+  margin-bottom:2.5em;
+}
+.recog div.group:last-child {
+  margin-bottom:0 !important;
+}
+ul.bullet, .faq_suite ul {
+  list-style:disc outside !important;
+  margin-left:2.5em;
+}
+
+.faq_suite ul li {
+  line-height:190%;
+}
+h2 strong {
+  color:#404040;
+  font-size:1.2em;
+}
+
+.page-nav {
+  display:none;
+}
+@media only screen and (min-width: 220px) and (max-width: 659px) {
+  .page-nav {
+    display:none;
+  }
+  .wider .side-section {
+    width:100% !important;
+  }
+  #drug-herb-img,#static-share-drug .side {
+    display:none !important;
+  }
+  .sec-mb {
+    display:block;
+  }
+  #sh_drugs, #sh_herbs {
+    background-image:none !important;
+    padding: 1em 0 1em 1.14286em !important;
+    height:auto !important;
+  }
+}
+
+/* OCCS STYLES */
+.resrow {
+  clear: both;
+}
+.resrow .full-half {
+  display: block;
+}
+.resrow .full-third {
+  display: block;
+}
+.resrow .half-quarter {
+  display: block;
+  float: left;
+  width: 50%;
+}
+#static-share .resimg {
+  max-width: 100%;
+}
+#static-share-stats .table-box {
+  max-width: 42.85714em;
+}
+#static-share-stats .section-normal, #static-share-stats .stat-links {
+  margin-bottom: 1.42857em;
+}
+#static-listserv .gov-delivery {
+  margin-bottom: 1.42857em;
+}
+#static-sitemap .lositemap li a{
+  font-weight: bold;
+}
+#static-sitemap .lositemap li li a{
+  font-weight: normal;
+}
+#static-sitemap .topiclabel {
+  margin-left: 1em;
+  margin-top: 0.71428em;
+  margin-bottom: 0.42857em;
+}
+#static-widgets .codebox {
+    border: 0.07142em solid #cccccc;
+    height: 7.14285em;
+    margin-top: 1.07142em;
+    overflow: auto;
+    width: auto;
+}
+#static-widgets .awidget {
+  margin: 2.14285em 0;
+  padding: 0;
+}
+#static-widgets .acode {
+  margin-top: 2.14285em;
+  margin-bottom: 1.42857em;
+}
+#static-widgets h3, #static-widgets h2, #static-widgets #search2nd {
+  clear: both;
+}
+#static-widgets #search1st input[type=text], #static-widgets #search2nd input[type=text]{
+  padding: 0.14285em;
+  width: auto;
+  border-radius: 0;
+  transition: none;
+  box-shadow: none;
+}
+#static-widgets #search1st label, #static-widgets #search2nd label{
+  display: inline-block;
+  font-weight: normal;
+}
+#static-widgets #mpw_container {
+  display: block;
+  margin: 0 auto; 
+}
+#static-widgets #mpbuttons dd {
+  margin-left: 1.42857em;
+}
+#static-widgets .search-block {
+  display: inline-block;
+}
+#static-widgets #cloud-widget {
+  border: 0.07143em solid #dddddd;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  padding: 0.71428em 0;
+}
+#static-share #videoarea.bluearea {
+  padding: 1.42857em;
+}
+#static-share  #videoarea .caption {
+  margin-top: 0.71429em;
+}
+/* OCCS STYLES FOR TABLET/DESKTOP RELEASE */
+@media only screen and (min-width: 660px) {
+  .resrow {
+    clear: both;
+  }
+  .resrow .full-half {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  .resrow .full-third {
+    display: block;
+    float: left;
+    width: 33.33%;
+  }
+  .resrow .half-quarter {
+    display: block;
+    float: left;
+    width: 25%;
+  }
+  #static-sitemap .col1st, #static-sitemap .col2nd {
+    display: table-cell;
+    width: 50%;
+    vertical-align: top;
+    padding-bottom: 0.71428em;
+  }
+  #static-tutorials #tut_col1, #static-tutorials #tut_col2{
+    display: table-cell;
+    vertical-align: top;
+  }
+  #static-tutorials #tut_col2{
+    padding-left: 2.14285em;
+  }
+  #static-listserv .gov-delivery, #static-share .gov-delivery, #sorrySearch {
+    max-width: 21.4286em;
+  }
+    #static-widgets .awidget {
+    float: left;
+    width: 44%;
+  }
+  #static-widgets .acode {
+    float: right;
+    width: 54%;
+  }
+  #static-widgets #cloud-widget {
+    border: none;
+    padding: 0;
+  }
+  .survey-answer .answer {
+    width: 8.57142em;
+    font-weight: normal;
+  }
+  .survey-answer .graph {
+    width: 32.85714em;
+  }
+  .survey-answer .answer, .survey-answer .graph {
+    display: table-cell;
+    vertical-align: top;
+  }
+}
+
+/* ==================== Styles added by LO for static pages - begin ==================== */
+
+p.announcement_text {
+    font-size: 1.2em;
+}
+
+p.announcement_text a {
+    font-size: 1.1em;
+}
+
+.clear {clear:both;}
+
+.width80 {width:80%}
+.width100 {width:100%}
+
+div.thumbBox {
+  float:left;
+  width:196px; 
+  margin-left: 75px;
+}
+div.thumbBox p {
+  text-align:center;
+  text-decoration:none;
+  font-weight: bold
+}
+
+blockquote.quote_wrapbreakword {
+    word-wrap:break-word
+}
+
+th.column15 {
+    width: 15%}
+
+
+th.column30 {
+    width:30%
+}
+
+th.column70 {
+    width:70%
+}
+
+th.column25 {
+    width:25%
+}
+
+th.column50 {
+    width:50%
+}
+
+p.torightofimage {
+  float:left;
+  margin-top:20px;
+  width:55%;
+  padding-left: 20px;
+}
+
+/* Styles for presenting XML markup - begin */
+.e{margin-left:1em;text-indent:-1em;margin-right:1em}
+.c{cursor:hand; TEXT-INDENT: -2em; MARGIN-LEFT: 1em}
+.m{color:blue}
+.t{color:#990000}
+.b{color:red;font-family:'Courier New';font-weight:bold;text-decoration:none}
+.tx{font-weight:bold}
+.y {TEXT-INDENT: -2em; MARGIN-LEFT: 1em}
+.w {MARGIN-LEFT: 1em; TEXT-INDENT: -2em}
+
+span.t1
+  {color:#990000;
+}
+span.m1
+  {color:blue;
+}
+span.tx1
+  {font-weight:bold;
+}
+
+.b{color:red;font-family:'Courier New';font-weight:bold;text-decoration:none}
+.pi{color:blue}
+.d{color:blue}
+.c{cursor:hand}
+
+.style3 {
+  color: red;
+  font-family: 'Courier New';
+  text-decoration: none;
+}
+
+/* Styles for general purpose tables - begin */
+  table.general 
+{
+  border:0;
+  padding:5px;
+  margin:0;
+  border-collapse: collapse;
+} 
+  
+  table.general th
+{
+  font-weight: bold;
+  color:#0082c8;
+  text-align: left;
+  vertical-align: text-top;
+  padding:5px;
+  border-bottom:#0082c8 solid 1px;
+  
+  
+}
+
+  table.general td 
+{
+  /*font-size: small;*/
+  text-align: left;
+  padding:5px;
+  white-space:nowrap;
+  border-bottom:#0082c8 solid 1px;
+  
+}
+  table.general tr.alt 
+{
+  background-color:#F2FBFF; 
+  
+}
+
+/* Styles for general purpose tables - end */
+
+/*For Spanish nihinstitutes.html from internal styles to display headings acronyms - begin*/
+
+.acronym_spa {
+      
+     font-size:84%;
+     font-weight:normal;
+     color:#333;
+   
+     }
+/*For Spanish nihinstitutes.html from internal styles to display headings acronyms - end*/
+
+
+.survey-answer {
+  margin-bottom: 1.42857em;
+  width: 100%;
+  display: table;
+}
+.survey-answer .answer {
+  padding-right: 0.71428em;
+  width: 25%;
+  display: table-cell;
+  vertical-align: middle;
+  font-weight: normal;
+}
+.survey-answer .graph {
+  display: block;
+  padding-left: 0.71428em;
+  border-left: 0.07142em solid #ddd;
+}
+.survey-answer .graph ul{
+  margin-bottom: 0;
+}
+.survey-answer .bar-area {
+  display: table;
+  width: 100%;
+}
+.survey-answer .pct, .survey-answer .blue-bar, .survey-answer .gold-bar {
+  display: table-cell;
+  vertical-align: middle;
+}
+.survey-answer .blue-bar {
+    background-color: #274ec1;
+    height: 1.21428em;
+    margin-bottom: 0.71428em;
+}
+.survey-answer .gold-bar {
+    background-color: #ecbc00;
+    height: 1.21428em;
+    margin-bottom: 0.71428em;
+}
+.survey-answer .pct {
+  padding-left: 0.42857em;
+}
+.blue-bar-leg, .gold-bar-leg {
+    display: inline-block;
+    height: 17px;
+    margin-right: 10px;
+    vertical-align: text-bottom;
+    width: 17px;
+}
+.gold-bar-leg {
+  background: #ecbc00;
+}
+.blue-bar-leg {
+  background: #274ec1;
+}
+
+/* to fix long lines - start */
+.break { 
+	word-break:break-all; 
+	} 
+ 
+/* to fix long lines - end */
+
+
+/* Styles for FAQs  - start */
+
+ul.faq-bulletlist {
+   list-style: disc;
+   padding-left: 2.71429em;
+   margin-top: 20px;
+}
+
+ul.faq-bulletlist li{
+   margin-bottom: 20px;
+}
+                
+.faq-bottomlink {
+   margin-top: 30px;
+}
+
+/* Styles added for multiple columns */
+
+  .resrow .two-thirds {
+    display: block;
+    float: left;
+    width: 66.66%;
+  } 
+  .resrow .three-quarters {
+    display: block;
+    float: left;
+    width: 75%;
+  }
+
+/* Styles for FAQs  - end */
+
+/* ==================== Styles added by LO for static pages - end ==================== */
+
+
+
+
+

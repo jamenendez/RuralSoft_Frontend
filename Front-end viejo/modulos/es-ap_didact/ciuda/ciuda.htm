@@ -1,0 +1,314 @@
+<html>
+
+
+<!-- Mirrored from www.aplicaciones.info/ciuda/ciuda.htm by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 03:26:52 GMT -->
+<head>
+<title>Educación para la ciudadanía de Aplicaciones Didácticas</title>
+<style type="text/css">
+  P {COLOR:black; FONT-FAMILY:arial; 
+     FONT-SIZE:18};
+</style>
+<script LANGUAGE="JavaScript">
+function f_onmouseover(){
+   Elemento=window.event.srcElement
+   Elemento.style.color="red"
+   Elemento.style.fontSize="18"
+}
+
+function f_onmouseout(){
+   Elemento=window.event.srcElement
+   Elemento.style.color="blue"
+   Elemento.style.fontSize="18"
+}
+</script>
+<style type="text/css">
+#dhtmltooltip{
+position: absolute;
+width: 230px;
+border: 2px solid black;
+padding: 2px;
+background-color: lightyellow;
+visibility: hidden;
+z-index: 100;
+/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+}
+</style>
+</head>
+
+<body BGCOLOR="#F5E6CF" TEXT="#000000" LINK="#0000FF" ALINK="#FF0000" VLINK="#0000FF">
+<div id="dhtmltooltip"></div>
+
+<script type="text/javascript">
+
+/***********************************************
+* Cool DHTML tooltip script- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+var offsetxpoint=-60 //Customize x offset of tooltip
+var offsetypoint=20 //Customize y offset of tooltip
+var ie=document.all
+var ns6=document.getElementById && !document.all
+var enabletip=false
+if (ie||ns6)
+var tipobj=document.all? document.all["dhtmltooltip"] : document.getElementById? document.getElementById("dhtmltooltip") : ""
+
+function ietruebody(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function ddrivetip(thetext, thecolor, thewidth){
+if (ns6||ie){
+if (typeof thewidth!="undefined") tipobj.style.width=thewidth+"px"
+if (typeof thecolor!="undefined" && thecolor!="") tipobj.style.backgroundColor=thecolor
+tipobj.innerHTML=thetext
+enabletip=true
+return false
+}
+}
+
+function positiontip(e){
+if (enabletip){
+var curX=(ns6)?e.pageX : event.clientX+ietruebody().scrollLeft;
+var curY=(ns6)?e.pageY : event.clientY+ietruebody().scrollTop;
+//Find out how close the mouse is to the corner of the window
+var rightedge=ie&&!window.opera? ietruebody().clientWidth-event.clientX-offsetxpoint : window.innerWidth-e.clientX-offsetxpoint-20
+var bottomedge=ie&&!window.opera? ietruebody().clientHeight-event.clientY-offsetypoint : window.innerHeight-e.clientY-offsetypoint-20
+
+var leftedge=(offsetxpoint<0)? offsetxpoint*(-1) : -1000
+
+//if the horizontal distance isn't enough to accomodate the width of the context menu
+if (rightedge<tipobj.offsetWidth)
+//move the horizontal position of the menu to the left by it's width
+tipobj.style.left=ie? ietruebody().scrollLeft+event.clientX-tipobj.offsetWidth+"px" : window.pageXOffset+e.clientX-tipobj.offsetWidth+"px"
+else if (curX<leftedge)
+tipobj.style.left="5px"
+else
+//position the horizontal position of the menu where the mouse is positioned
+tipobj.style.left=curX+offsetxpoint+"px"
+
+//same concept with the vertical position
+if (bottomedge<tipobj.offsetHeight)
+tipobj.style.top=ie? ietruebody().scrollTop+event.clientY-tipobj.offsetHeight-offsetypoint+"px" : window.pageYOffset+e.clientY-tipobj.offsetHeight-offsetypoint+"px"
+else
+tipobj.style.top=curY+offsetypoint+"px"
+tipobj.style.visibility="visible"
+}
+}
+
+function hideddrivetip(){
+if (ns6||ie){
+enabletip=false
+tipobj.style.visibility="hidden"
+tipobj.style.left="-1000px"
+tipobj.style.backgroundColor=''
+tipobj.style.width=''
+}
+}
+
+document.onmousemove=positiontip
+
+</script>
+<div align="center"><center>
+
+<table BORDER="6" CELLSPACING="0" CELLPADDING="0" bgcolor="#F3F78A" width="410">
+  <tr>
+    <td WIDTH="396"><p align="center"><strong>
+	<font face="Arial" size="5" color="#FF0000">
+	Educación para la ciudadanía</font></strong></td>
+  </tr>
+</table></div>
+<p align="center">
+<img border="0" src="rema51.jpg" width="414" height="390"></p>
+<div align="center"><center>
+<div onmouseover="f_onmouseover()" onmouseout="f_onmouseout()">
+<table border="1" width="80%" id="table1">
+
+	<tr>
+		<td width="20%" rowspan="3">
+		
+		<p align="center">
+		<img border="0" src="_chat.gif" width="32" height="32"></td>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Con 40 temas interactivos sobre Los novios y ocho exámenes. Con sopas de letras, juegos de palabras y crucigramas.')" ; onMouseout="hideddrivetip()" href="../novios/novios.htm">Los novios</a>&nbsp;&nbsp;
+			</td>		
+		<td width="20%" rowspan="3">
+		
+		<p align="center">
+		<img border="0" src="_descargas.gif" width="32" height="32"></td>
+	</tr>
+
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 40 temas interactivos sobre virtudes y valores humanos y 8 exámenes. Con sopas de letras, juegos de palabras y crucigramas.')" ; onMouseout="hideddrivetip()" href="../autoedu/autoedu.htm">Autoeducación</a>&nbsp;&nbsp;
+			</td>		
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 28 artículos sobre educación sexual.')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=44">Educación sexual</a>&nbsp;&nbsp;
+			</td>		
+	</tr>
+
+</table>
+</center></div><br>
+<br>
+<div align="center"><center>
+
+<table BORDER="4" CELLSPACING="0" CELLPADDING="0" bgcolor="#F3F78A" width="405">
+  <tr>
+    <td WIDTH="395"><p align="center"><strong>
+	<font face="Arial" size="4" color="#FF0000">
+	<a href="http://aramo.wordpress.com/?page_id=1511">Vídeos de Educación para 
+	la ciudadanía</a></font></strong></td>
+  </tr>
+</table>
+</div>
+<br>
+<div align="center"><center>
+<div onmouseover="f_onmouseover()" onmouseout="f_onmouseout()">
+<table border="1" width="80%" id="table1">
+
+	<tr>
+		<td width="20%" rowspan="4">
+		
+		<p align="center">
+		<img border="0" src="_enlaces1.gif" width="32" height="32"></td>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 12 vídeos sobre el amor, la solidaridad, la ley natural el bien común, el medio ambiente y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=884">Ética social cristiana</a></td>		
+		<td width="20%" rowspan="4">
+		
+		<p align="center">
+		<img border="0" src="_foro.gif" width="32" height="32"></td>
+	</tr>
+
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 14 vídeos sobre la familia, el divorcio, matrimonio, ideología de género yleyes de la familia, entre otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=1443">Familia y sociedad</a>&nbsp;
+			</td>		
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 13 vídeos sobre el derecho, la pena de muerte, la tolerancia, objeción de conciencia y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=1969">Derecho y justicia</a>&nbsp;&nbsp;
+			</td>		
+	</tr>
+</table>
+</center></div>
+<br>
+<div align="center"><center>
+
+&nbsp;<table BORDER="4" CELLSPACING="0" CELLPADDING="0" bgcolor="#F3F78A" width="405">
+  <tr>
+    <td WIDTH="395"><p align="center"><strong>
+	<font face="Arial" size="4" color="#FF0000">
+	<a href="http://aramo.wordpress.com/?page_id=109">Vídeos de Cultura de la 
+	vida</a></font></strong></td>
+  </tr>
+</table>
+</div>
+<br>
+<div align="center"><center>
+<div onmouseover="f_onmouseover()" onmouseout="f_onmouseout()">
+<table border="1" width="80%" id="table1">
+
+	<tr>
+		<td width="20%" rowspan="7">
+		
+		<p align="center">
+		<img border="0" src="_chat.gif" width="32" height="32"></td>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 17 vídeos sobre los derechos humanos, logros científicos, el bioderecho, fenotipo, ambiente y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=110">Orígenes de la bioética</a></td>		
+		<td width="20%" rowspan="7">
+		
+		<p align="center">
+		<img border="0" src="_descargas.gif" width="32" height="32"></td>
+	</tr>
+
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 19 vídeos sobre el aborto, la vida, la RU-486, la píldora la eugenesia y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=111">El aborto</a>&nbsp;
+			</td>		
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 22 vídeos sobre el bebé probeta, infertilidad, eserilidad, fecundación, la adopción y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=669">Reproducción humana</a>&nbsp;&nbsp;
+			</td>		
+
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contiene 21 vídeos sobre medicina regenerativa, el cigoto, células madre, eugenismo y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=671">
+			La clonación</a></td>		
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contendrá 21 vídeos sobre muertes por el sida, el preservativo, homosexualidad, Uganda, la abstinencia sexual y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=2084">
+			El sida</a></td>		
+	</tr>
+	<tr>
+
+            <td width="40%" bgcolor="#FDFCDB" ><p STYLE="background-color='cyan'"
+    onmouseover="this.style.backgroundColor='yellow'"
+    onmouseout="this.style.backgroundColor='cyan'" align="center">
+			<a onMouseover="ddrivetip('Contendrá 22 vídeos sobre la autanasia, la sedación, calidad de vida, eutanasia pasiva y otros')" ; onMouseout="hideddrivetip()" href="http://aramo.wordpress.com/?page_id=2088">
+			La eutanasia</a>&nbsp;
+			</td>		
+	</tr>
+
+</table></div>
+
+<strong><p align="center"><b><font face="Arial" size="3">| <a href="../index-2.html">Aplicaciones
+didácticas</a> | <a href="../religion/alterna.htm">
+Alternativa a la Religión</a> |<br></font>
+&nbsp;</font></b><hr></strong>
+<p align="center"> <font
+    face="Verdana" size="2">®Arturo Ramo García. Licenciado en Pedagogía. Inspector de Educación jubilado.Contacto:
+	<a href="mailto:arturo@aplicaciones.info">arturo@aplicaciones.info</a> Registro de
+	Propiedad Intelectual de Teruel nº 141, de 29-IX-1999<br>
+&nbsp;La <b>Revista de aplicaciones</b> ha sido autorizada por el Centro Nacional Español&nbsp;<b>ISSN</b> (Biblioteca Nacional, Ministerio de Cultura)&nbsp;con el número 1886-5828, 
+	de 5 
+	de julio de 2006.</font>
+<!--
+<p align="center"><font face="Verdana" size="2">®Arturo Ramo García.-Registro de Propiedad Intelectual
+de Teruel nº 141, de 29-IX-1999<br>
+Plaza Playa de Aro, 3, 1º DO 44002-TERUEL</font>
+</p>
+-->
+</body>
+
+<!-- Mirrored from www.aplicaciones.info/ciuda/ciuda.htm by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 03:26:54 GMT -->
+</html>

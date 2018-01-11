@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang='es' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='es' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='es'> <!--<![endif]-->
+<head>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='description' content='aprende.org te ofrece conocimiento para mejorar tu calidad de vida. Todos nuestros cursos y certificados son gratuitos.'>
+  
+  <meta property='og:url' content='pages.php-r=.index.html'>
+  <meta property='og:site_name' content='aprende.org - Fundación Carlos Slim'>
+  <meta property='og:image' content='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pantalla_1.jpg'>
+  
+  <title>aprende.org</title>
+  <link rel='stylesheet' type='text/css' href='fonts/fonts.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/reset.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/text.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/grid.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui-1.10.3.custom.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/style.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/css.css?20161205011531'/>
+
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/ipad.css?20161205011531' media='only screen and (max-width:1000px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/idesk.css?20161205011531' media='only screen and (min-width:501px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/iphone.css?20161205011531' media='only screen and (max-width:500px)'>
+  <style type='text/css'>.section_title{border-radius:0px;background:#2341c0;}
+
+  #main_banner_container{background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/banner_cfcs.jpg');}
+  #div_search{display:none;}
+  #q{background:transparent;border:1px solid white;color:white;height:20px;font-size:x-large;}
+
+  #area_title{background:#233d5c;}
+  #comp_title{padding:10px 0px; margin:10px 0px;margin-bottom:20px;}
+
+  .nomargin{font-size:small;line-height:1.5;}
+  #lis_clases li div, #lis_clases_soon li div, .alpha_temas li div{width:133px !important;}
+
+  .pymes_frame{background:rgba(0,0,0,.4);margin-left:2.5%;margin-bottom:10px;min-height:405px;line-height:1.2;}
+
+
+      #div_disclaimer_text{font-size:x-small;}
+      #div_disclaimer_text img{vertical-align:middle;max-height:20px;}
+    
+  #back-top{z-index:10000;}
+</style>
+
+
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-1.11.2.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.pack.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/common.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.validate.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/messages_es.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/js.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.scrollTo.min.js'></script>
+  
+    <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.min.css'>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/ie8/videojs-ie8.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/videojs-contrib-hls.min.js'></script>
+  
+
+
+  <script>
+    url_services='https://aprende.org/services.php';
+    videojs.options.flash.swf='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.swf';
+    function login_show(){ $.fancybox({'type':'ajax','href':'https://aprende.org/pages.php?r=.login&only_content=true','width':'90%','padding':'5',afterLoad:function(){loaddown();}}); return false;}
+  
+  window.onpageshow = function(event){
+    if(event.persisted){window.location.reload();}
+  };
+
+  $(window).blur(function(){
+    loaddown();
+  });
+
+  var portada_s='',playtime=0;;
+  function portada_notifier(){
+    $.post(url_services,{r:'portada_analytics',event:'unload',s:portada_s,playtime:playtime},function(d){ },'json');
+  }
+  function portada_uptade_vars(s,pt){
+    portada_s=s; playtime=pt;
+  }
+
+    $(document).ready(function(){ $('.fancybox').fancybox({padding:0,
+  afterLoad:function(){
+    loaddown();
+  },
+  beforeClose:function(){
+    portada_notifier();
+  },
+}); 
+  $('#section_search_toggle').click(function(){ $('#div_search').toggle();});
+  $('#user_lnks_ul').simplyScroll();
+  $('#menu_group_DIP').click(function(e){
+    if(!e.isTrigger){ $('html, body').animate({scrollTop: $('#diplomados').offset().top},1000);}
+  });
+  $('.menu_group').click(function(e){
+    var btt=this;
+    $('#area_title').html($(btt).html()).css('background', $(btt).attr('data-color'));
+    $('.btt_curso').each(function(c){ if($(btt).attr('data-area')==$(this).attr('data-area')){ $(this).show();}else{ $(this).hide();}});
+    if($(btt).attr('data-area')=='ALL'){ $('.btt_curso').each(function(){ $(this).show();});}
+    if(!e.isTrigger){ $('html, body').animate({scrollTop: $('#area_title').offset().top},1000);}
+  });
+  $('#menu_group_ALI').click(function(e){
+    if(!e.isTrigger){ $('html, body').animate({scrollTop: $('#alianzas').offset().top},1000);}
+  });
+
+$('a').filter(function(){
+  return this.hostname && this.hostname !== location.hostname;
+  $(this).attr('target','_blank');
+  if(this.hostname=='ocw.aprende.org'){return false;}
+}).append("&nbsp;<img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:10px;'>");
+ });
+  </script>
+</head>
+<body>
+
+  <div id='loader_container'>
+    <div id='loader'></div>
+  </div>
+
+  
+    <div id='div_header' class='container_16'>
+    <div class='g960'>
+
+      <div class='grid_16 center' style='line-height:0;'>
+      <a href='pages.php-r=.index.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/logo.png' id='site_logo' class='al' target='_blank' alt='aprende.org'>
+      </a>
+      </div>
+
+      <div class='whole'>
+
+        <div class='show_mobile_block hid_desk' style='max-width:400px;margin:0px auto;font-size:medium;'>
+          <div class='half left'>
+            <div class='pad10'>
+              <a href='pages.php-r=.index.html'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/home.png'></a>
+            </div>
+          </div>
+          <div class='half right'>&nbsp</div>
+        </div>
+
+        <div id='menu_container' class='whole gmax center'>
+          <div id='menu_content' class='whole center'>
+            <div id='menu_content_inner'>
+              
+      <div id='menu_0' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.index';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.index.html'  style='color:white;'>Inicio</a>
+        </div>
+      </div>
+    
+      <div id='menu_1' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.registro';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.registro.html'  style='color:white;'>Regístrate</a>
+        </div>
+      </div>
+    
+      <div id='menu_4' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.certificate';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.certificate.html'  style='color:white;'>Certifícate</a>
+        </div>
+      </div>
+    
+      <div id='menu_login' class='main_menu_opt_out al hid_mobile' onclick="login_show();" style='width:24.5%;' onclick="window.location.href='javascript:void();';">
+        <div class='main_menu_opt'>
+          <a href='javascript:void();' onclick="login_show();" style='color:white;'>Entrar</a>
+        </div>
+      </div>
+    
+            </div>
+            <div class='clearfix'></div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='pad10'></div>
+      <div class='clearfix'></div>
+
+    </div>
+    </div>
+    <div class='clearfix'></div>
+  
+  <div id='divcontent' class='container_16'>
+    <div style='min-height:150px;'>
+      
+  <div class='section_title wole' style='position:relative;'>
+    <div class='absolute' style='left:10px;top:0px;'>
+      <a href='pages.php-r=.index.html'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Regresar.png'></a>
+    </div>
+    <img class='section_logo' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/cfcs.png'>
+    <div class='section_search_toggle_container center'>
+      <img id='section_search_toggle' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Buscar.png'>
+    </div>
+  </div>
+  
+  <div class='whole'>
+  <div class='pad10'>
+    <span id='breadcrumb' style='color:grey;'><a href='pages.php-r=.index.html'>aprende.org</a> >> <a href='pages.php-r=program&amp;programID=cfcs.html'>Capacítate para el Empleo</a></span>
+    <div class='pad5'></div>
+    <div class='clearfix'></div>
+  </div><div class='clearfix'></div>
+  </div><div class='clearfix'></div>
+  
+  <div class='clearfix'></div>
+  <div id='div_search' class='whole'>
+    <form method='post' action='https://aprende.org/pages.php?r=.cfcs_search'>
+    <div class='grid_14 div_mobile_full'>
+      <input type='text' id='q' name='q' class='whole center' placeholder='Buscar en Capacítate para el Empleo'>
+    </div>
+    <div class='grid_2 center div_mobile_full' style='padding:5px 0px;vertical-align:middle;'>
+      <button id='buscar'>Buscar</button>
+    </div>
+    </form>
+    <div class='pad20'></div>
+  </div>
+  <div class='clearfix'></div>
+
+<div class='g960'>
+
+<div class='grid_16 center'>
+  <div class='clearfix'></div>
+
+  <div class='pad10'></div>
+  <button onclick="fancyme('iframe','https://aprende.org/pages.php?r=.quickvid&vidID=cfcs_es');" id='button_about'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/play.png' style='max-height:15px;'> ¿Qué es Capacítate?</button>
+  <div class='pad20'></div>
+
+    
+    <div style='margin-left:auto;margin-right:auto;'>
+  <div id='menu_group_ALL' class='menu_group al' style='background:#0072bc;border:3px solid white;' data-area='ALL' data-color='#005a71'>TODOS LOS CURSOS</div>
+  <div id='menu_group_DIP' class='menu_group_not al' style='background:#0072bc;border:3px solid white;'>DIPLOMADOS</div>
+  <a href='pages.php-r=.cfcs_empleo.html'>
+    <div id='menu_group_DIP' class='menu_group_not al' style='background:#0072bc;border:3px solid white;'>BOLSA DE TRABAJO</div>
+  </a>
+  <div class='pad20'></div>
+<div id='menu_group_13' class='menu_group al' style='background:#7b5b7b;border:4px solid #7b5b7b;' data-area='13' data-color='#7b5b7b'>Administración y Finanzas</div><div id='menu_group_1' class='menu_group al' style='background:#35a959;border:4px solid #35a959;' data-area='1' data-color='#35a959'>Agropecuario</div><div id='menu_group_12' class='menu_group al' style='background:#99cc33;border:4px solid #99cc33;' data-area='12' data-color='#99cc33'>Alimentos</div><div id='menu_group_2' class='menu_group al' style='background:#e15156;border:4px solid #e15156;' data-area='2' data-color='#e15156'>Comercio</div><div id='menu_group_3' class='menu_group al' style='background:#e86b2d;border:4px solid #e86b2d;' data-area='3' data-color='#e86b2d'>Construcción</div><div id='menu_group_22' class='menu_group al' style='background:#ff6a48;border:4px solid #ff6a48;' data-area='22' data-color='#ff6a48'>Energía</div><div id='menu_group_15' class='menu_group al' style='background:#2f519f;border:4px solid #2f519f;' data-area='15' data-color='#2f519f'>Formación</div><div id='menu_group_4' class='menu_group al' style='background:#f8ab12;border:4px solid #f8ab12;' data-area='4' data-color='#f8ab12'>Industria</div><div id='menu_group_10' class='menu_group al' style='background:#e88791;border:4px solid #e88791;' data-area='10' data-color='#e88791'>Moda y belleza</div><div id='menu_group_5' class='menu_group al' style='background:#0e82c5;border:4px solid #0e82c5;' data-area='5' data-color='#0e82c5'>Servicio al Cliente</div><div id='menu_group_7' class='menu_group al' style='background:#88326b;border:4px solid #88326b;' data-area='7' data-color='#88326b'>Social</div><div id='menu_group_11' class='menu_group al' style='background:#ad333f;border:4px solid #ad333f;' data-area='11' data-color='#ad333f'>Transportes</div><div id='menu_group_8' class='menu_group al' style='background:#19aaa3;border:4px solid #19aaa3;' data-area='8' data-color='#19aaa3'>Tecnología</div><div id='menu_group_17' class='menu_group al' style='background:#32b5d3;border:4px solid #32b5d3;' data-area='17' data-color='#32b5d3'>Salud</div><div id='menu_group_19' class='menu_group al' style='background:#36454f;border:4px solid #36454f;' data-area='19' data-color='#36454f'>Sociedad global</div><div id='menu_group_21' class='menu_group al' style='background:#52d8ce;border:4px solid #52d8ce;' data-area='21' data-color='#52d8ce'>Sustentabilidad</div><div id='menu_group_20' class='menu_group al' style='background:#7a38c6;border:4px solid #7a38c6;' data-area='20' data-color='#7a38c6'>Turismo</div><div id='menu_group_97' class='menu_group al' style='background:#2751ff;border:4px solid #2751ff;' data-area='97' data-color='#2751ff'>PyMES</div><div id='menu_group_98' class='menu_group al' style='background:#2b9775;border:4px solid #2b9775;' data-area='98' data-color='#2b9775'>Profesionalización</div> <div id='menu_group_ALI' class='menu_group_clone al' style='background:#c90976;border:4px solid #c90976;' data-color='#005a71'>Alianzas</div> <div class='clearfix'></div></div>
+
+    <a id='cursos'></a>
+    <h1 style='margin:0px;'></h1>
+    <div id='area_title' class='whole round10' style='background:rgba(0,0,0,.3);'>Cursos</div>
+    <div id='welcome_clases' class='grid_16'>
+      <ul id='lis_clases'>
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='pages.php-r=.cfcs_course&amp;tagID=4669.html'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4669.png' alt='Administrador de Servidores'><p class='nomargin'>Administrador de Servidores</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='pages.php-r=.cfcs_course&amp;tagID=4066.html'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4066.png' alt='Administrador de bases de datos'><p class='nomargin'>Administrador de bases de datos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='pages.php-r=.cfcs_course&amp;tagID=6790.html'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6790.png' alt='Administrador de plataformas digitales de aprendizaje'><p class='nomargin'>Administrador de plataformas digitales de aprendizaje</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='pages.php-r=.cfcs_course&amp;tagID=4684.html'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4684.png' alt='Administrador de proyectos para ambientes virtuales de aprendizaje'><p class='nomargin'>Administrador de proyectos para ambientes virtuales de aprendizaje</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='pages.php-r=.cfcs_course&amp;tagID=2845.html'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2845.png' alt='Agente de ventas digital'><p class='nomargin'>Agente de ventas digital</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=355'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/355.png' alt='Albañil'><p class='nomargin'>Albañil</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=750'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/750.png' alt='Almacenista-montacarguista'><p class='nomargin'>Almacenista-montacarguista</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4668'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4668.png' alt='Analista de Necesidades de Formación'><p class='nomargin'>Analista de Necesidades de Formación</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4682'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4682.png' alt='Analista de datos'><p class='nomargin'>Analista de datos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='20'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7622'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7622.png' alt='Anfitrión Turístico'><p class='nomargin'>Anfitrión Turístico</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4687'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4687.png' alt='Arquitecto de ambientes virtuales de aprendizaje '><p class='nomargin'>Arquitecto de ambientes virtuales de aprendizaje </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=296'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/296.png' alt='Aseador de oficina'><p class='nomargin'>Aseador de oficina</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='10'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2281'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2281.png' alt='Asesor de Belleza'><p class='nomargin'>Asesor de Belleza</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=275'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/275.png' alt='Asistente de Mesero'><p class='nomargin'>Asistente de Mesero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=739'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/739.png' alt='Asistente web'><p class='nomargin'>Asistente web</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3842'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3842.png' alt='Banderero'><p class='nomargin'>Banderero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1354'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1354.png' alt='Bartender'><p class='nomargin'>Bartender</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4670'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4670.png' alt='Bodeguero (Restaurante)'><p class='nomargin'>Bodeguero (Restaurante)</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='13'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6229'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6229.png' alt='Bolsa de valores'><p class='nomargin'>Bolsa de valores</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=737'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/737.png' alt='Cajero de restaurante'><p class='nomargin'>Cajero de restaurante</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3843'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3843.png' alt='Cajero de tienda de autoservicio'><p class='nomargin'>Cajero de tienda de autoservicio</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=73'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/73.png' alt='Carpintero'><p class='nomargin'>Carpintero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7550'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7550.png' alt='Ciudadano global'><p class='nomargin'>Ciudadano global</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=928'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/928.png' alt='Cocinero'><p class='nomargin'>Cocinero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3335'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3335.png' alt='Conductor de Transporte Ejecutivo'><p class='nomargin'>Conductor de Transporte Ejecutivo</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2282'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2282.png' alt='Conductor de transporte público'><p class='nomargin'>Conductor de transporte público</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7242'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7242.png' alt='Consumo responsable'><p class='nomargin'>Consumo responsable</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='10'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1754'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1754.png' alt='Corte y confección'><p class='nomargin'>Corte y confección</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5575'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5575.png' alt='Cosecha y cultivo de Agua'><p class='nomargin'>Cosecha y cultivo de Agua</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='7'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=738'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/738.png' alt='Cuidador de adultos mayores'><p class='nomargin'>Cuidador de adultos mayores</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='7'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=926'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/926.png' alt='Cuidador de niños '><p class='nomargin'>Cuidador de niños </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=936'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/936.png' alt='Curador de datos'><p class='nomargin'>Curador de datos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6274'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6274.png' alt='Derechos Humanos para el Servidor Público'><p class='nomargin'>Derechos Humanos para el Servidor Público</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6725'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6725.png' alt='Desarrollador Back-end'><p class='nomargin'>Desarrollador Back-end</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6726'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6726.png' alt='Desarrollador Front-end'><p class='nomargin'>Desarrollador Front-end</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2284'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2284.png' alt='Desarrollador de Contenido Digital'><p class='nomargin'>Desarrollador de Contenido Digital</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4685'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4685.png' alt='Desarrollador de Contenidos de Aprendizaje'><p class='nomargin'>Desarrollador de Contenidos de Aprendizaje</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6227'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6227.png' alt='Desarrollador de aplicaciones móviles'><p class='nomargin'>Desarrollador de aplicaciones móviles</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6226'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6226.png' alt='Desarrollador de videojuegos'><p class='nomargin'>Desarrollador de videojuegos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=12'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/12.png' alt='Electricista '><p class='nomargin'>Electricista </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6219'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6219.png' alt='Embalado'><p class='nomargin'>Embalado</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6220'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6220.png' alt='Empaquetado'><p class='nomargin'>Empaquetado</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1902'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1902.png' alt='Empleado de comida rápida'><p class='nomargin'>Empleado de comida rápida</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3616'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3616.png' alt='Encargado de envoltura de regalos'><p class='nomargin'>Encargado de envoltura de regalos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6221'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6221.png' alt='Envasado'><p class='nomargin'>Envasado</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6413'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6413.png' alt='Etiquetado'><p class='nomargin'>Etiquetado</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5992'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5992.png' alt='Evaluador de Ambientes Virtuales de Aprendizaje'><p class='nomargin'>Evaluador de Ambientes Virtuales de Aprendizaje</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5947'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5947.png' alt='Evaluador de aprendizaje digital'><p class='nomargin'>Evaluador de aprendizaje digital</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4686'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4686.png' alt='Facilitador de aprendizaje digital '><p class='nomargin'>Facilitador de aprendizaje digital </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2286'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2286.png' alt='Finder'><p class='nomargin'>Finder</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2287'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2287.png' alt='Gestor de Imagen Web'><p class='nomargin'>Gestor de Imagen Web</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2962'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2962.png' alt='Granjero de lechería (ordeña y alimentación)'><p class='nomargin'>Granjero de lechería (ordeña y alimentación)</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='98'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4020'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4020.png' alt='Guía para Entrevistas de Trabajo'><p class='nomargin'>Guía para Entrevistas de Trabajo</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=602'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/602.png' alt='Herrero, balconero, aluminador y forjador'><p class='nomargin'>Herrero, balconero, aluminador y forjador</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='97'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4005'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4005.png' alt='Ideas para crecer tu negocio'><p class='nomargin'>Ideas para crecer tu negocio</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4067'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4067.png' alt='Instalador de cables de cobre'><p class='nomargin'>Instalador de cables de cobre</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2710'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2710.png' alt='Instalador de fibra óptica'><p class='nomargin'>Instalador de fibra óptica</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1347'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1347.png' alt='Instalador de paneles de yeso '><p class='nomargin'>Instalador de paneles de yeso </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=755'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/755.png' alt='Instalador de pisos de loseta '><p class='nomargin'>Instalador de pisos de loseta </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1346'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1346.png' alt='Instalador de tejados'><p class='nomargin'>Instalador de tejados</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5045'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5045.png' alt='Introducción a la facilitación presencial en pequeños grupos'><p class='nomargin'>Introducción a la facilitación presencial en pequeños grupos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=736'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/736.png' alt='Introducción al cajero de banco'><p class='nomargin'>Introducción al cajero de banco</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=749'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/749.png' alt='Jardinero a gran escala'><p class='nomargin'>Jardinero a gran escala</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4671'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4671.png' alt='Jefe de Cocina'><p class='nomargin'>Jefe de Cocina</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='15'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5356'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5356.png' alt='La trascendencia del educador durante la primera infancia'><p class='nomargin'>La trascendencia del educador durante la primera infancia</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1900'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1900.png' alt='Lavaplatos'><p class='nomargin'>Lavaplatos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6609'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6609.png' alt='Manejo Higiénico de los alimentos'><p class='nomargin'>Manejo Higiénico de los alimentos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1753'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1753.png' alt='Mecánico automotriz'><p class='nomargin'>Mecánico automotriz</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6231'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6231.png' alt='Mecánico de bicicletas'><p class='nomargin'>Mecánico de bicicletas</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='98'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5715'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5715.png' alt='Mejora de procesos'><p class='nomargin'>Mejora de procesos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7618'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7618.png' alt='Mercadotecnia digital'><p class='nomargin'>Mercadotecnia digital</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3457'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3457.png' alt='Mesero'><p class='nomargin'>Mesero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4674'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4674.png' alt='Movilidad No Motorizada'><p class='nomargin'>Movilidad No Motorizada</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4673'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4673.png' alt='Movilidad motorizada'><p class='nomargin'>Movilidad motorizada</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6425'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6425.png' alt='Negocios móviles'><p class='nomargin'>Negocios móviles</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5705'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5705.png' alt='Operador de autotransporte'><p class='nomargin'>Operador de autotransporte</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1751'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1751.png' alt='Panadero'><p class='nomargin'>Panadero</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=756'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/756.png' alt='Pintor'><p class='nomargin'>Pintor</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=309'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/309.png' alt='Planchador'><p class='nomargin'>Planchador</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=674'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/674.png' alt='Plomeros, fontaneros e instaladores de tubería'><p class='nomargin'>Plomeros, fontaneros e instaladores de tubería</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='17'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4456'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4456.png' alt='Primer respondiente (Introducción)'><p class='nomargin'>Primer respondiente (Introducción)</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='13'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5355'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5355.png' alt='Programa de educación financiera'><p class='nomargin'>Programa de educación financiera</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4244'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4244.png' alt='Programador (orientado a objetos)'><p class='nomargin'>Programador (orientado a objetos)</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=934'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/934.png' alt='Reparador de aire acondicionado'><p class='nomargin'>Reparador de aire acondicionado</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1527'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1527.png' alt='Reparador de celulares y tablets'><p class='nomargin'>Reparador de celulares y tablets</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3402'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3402.png' alt='Representante telefónico'><p class='nomargin'>Representante telefónico</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7222'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7222.png' alt='Salud Digital'><p class='nomargin'>Salud Digital</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5693'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5693.png' alt='Servidor público'><p class='nomargin'>Servidor público</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=308'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/308.png' alt='Soldador y oxicortador '><p class='nomargin'>Soldador y oxicortador </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='20'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5704'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5704.png' alt='Steward'><p class='nomargin'>Steward</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='19'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6224'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6224.png' alt='Tecnologías de la Información para servidor público'><p class='nomargin'>Tecnologías de la Información para servidor público</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2654'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2654.png' alt='Tester'><p class='nomargin'>Tester</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=3545'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/3545.png' alt='Trabajador doméstico'><p class='nomargin'>Trabajador doméstico</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=4688'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4688.png' alt='Técnico en cultivo de vegetales orgánicos '><p class='nomargin'>Técnico en cultivo de vegetales orgánicos </p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1349'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1349.png' alt='Técnico en cultivos vegetales'><p class='nomargin'>Técnico en cultivos vegetales</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2842'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2842.png' alt='Técnico en electrónica'><p class='nomargin'>Técnico en electrónica</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=743'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/743.png' alt='Técnico en informática'><p class='nomargin'>Técnico en informática</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=517'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/517.png' alt='Técnico en instalación y reparación de equipo de cómputo'><p class='nomargin'>Técnico en instalación y reparación de equipo de cómputo</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=55'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/55.png' alt='Técnico en redes de datos'><p class='nomargin'>Técnico en redes de datos</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=7231'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7231.png' alt='Técnico en reparación de laptops'><p class='nomargin'>Técnico en reparación de laptops</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2841'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2841.png' alt='Técnico en seguridad informática (análisis de riesgos)'><p class='nomargin'>Técnico en seguridad informática (análisis de riesgos)</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=1387'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/1387.png' alt='Técnico procesador de frutas y verduras'><p class='nomargin'>Técnico procesador de frutas y verduras</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2773'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2773.png' alt='Vendedor de piso'><p class='nomargin'>Vendedor de piso</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='2'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=741'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/741.png' alt='Vendedor por catálogo'><p class='nomargin'>Vendedor por catálogo</p></a>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=2289'><img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2289.png' alt='Visualizador de Big Data'><p class='nomargin'>Visualizador de Big Data</p></a>
+  </div>
+</li>
+</ul>
+      <h4>Próximamente...</h4>
+      <div class='pad10'></div>
+      <ul id='lis_clases'>
+<li class='btt_curso' data-area='10'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7235_gris.png' alt='Barbero'><p class='nomargin'>Barbero</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7229_gris.png' alt='Desarrollador de UX / UI'><p class='nomargin'>Desarrollador de UX / UI</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7226_gris.png' alt='Diseñador de techos verdes'><p class='nomargin'>Diseñador de techos verdes</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='10'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7236_gris.png' alt='Estilista'><p class='nomargin'>Estilista</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='13'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6791_gris.png' alt='Fondos de inversión'><p class='nomargin'>Fondos de inversión</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='7'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6345_gris.png' alt='Fundamentos del trastorno del espectro autista'><p class='nomargin'>Fundamentos del trastorno del espectro autista</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7241_gris.png' alt='Instalador de paneles solares'><p class='nomargin'>Instalador de paneles solares</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='13'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/6223_gris.png' alt='Introducción a la economía'><p class='nomargin'>Introducción a la economía</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='3'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4691_gris.png' alt='Jefe de Mantenimiento'><p class='nomargin'>Jefe de Mantenimiento</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='13'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5711_gris.png' alt='Management operativo'><p class='nomargin'>Management operativo</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7326_gris.png' alt='Productor de artículos orgánicos'><p class='nomargin'>Productor de artículos orgánicos</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2844_gris.png' alt='Productor de cacao'><p class='nomargin'>Productor de cacao</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='1'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/2843_gris.png' alt='Productor de café'><p class='nomargin'>Productor de café</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='7'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7233_gris.png' alt='Promotor comunitario'><p class='nomargin'>Promotor comunitario</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5716_gris.png' alt='Técnico Instalador de Triple Play'><p class='nomargin'>Técnico Instalador de Triple Play</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='4'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5708_gris.png' alt='Técnico en mantenimiento industrial'><p class='nomargin'>Técnico en mantenimiento industrial</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5706_gris.png' alt='Tronco Común Alimentos'><p class='nomargin'>Tronco Común Alimentos</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='5'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5707_gris.png' alt='Tronco Común Ventas'><p class='nomargin'>Tronco Común Ventas</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='17'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4692_gris.png' alt='Técnico en Emergencias Médicas'><p class='nomargin'>Técnico en Emergencias Médicas</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7228_gris.png' alt='Técnico en Home Networking'><p class='nomargin'>Técnico en Home Networking</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='17'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/4676_gris.png' alt='Técnico en Prevención Proactiva'><p class='nomargin'>Técnico en Prevención Proactiva</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7224_gris.png' alt='Técnico en ahorro de energía'><p class='nomargin'>Técnico en ahorro de energía</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='12'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/5712_gris.png' alt='Técnico en alimentos'><p class='nomargin'>Técnico en alimentos</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7230_gris.png' alt='Técnico en domótica'><p class='nomargin'>Técnico en domótica</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='22'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7234_gris.png' alt='Técnico en energías renovables'><p class='nomargin'>Técnico en energías renovables</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7227_gris.png' alt='Técnico en internet of things M2M'><p class='nomargin'>Técnico en internet of things M2M</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7223_gris.png' alt='Técnico en manejo de residuos sólidos urbanos'><p class='nomargin'>Técnico en manejo de residuos sólidos urbanos</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='21'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7225_gris.png' alt='Técnico en reciclaje'><p class='nomargin'>Técnico en reciclaje</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='11'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7239_gris.png' alt='Técnico en reparación de motocicletas'><p class='nomargin'>Técnico en reparación de motocicletas</p>
+  </div>
+</li>
+
+<li class='btt_curso' data-area='8'>
+  <div class='center'>
+    <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/7232_gris.png' alt='Técnico en seguridad informática / servidores'><p class='nomargin'>Técnico en seguridad informática / servidores</p>
+  </div>
+</li>
+</ul>
+
+      
+  <div class='g960 btt_curso' data-area='97' style='display:none;'>
+    <div class='tenths3 div_mobile_full pymes_frame'>
+      <div class='grid_16 center'>
+      <div class='pad10'>
+        <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/pymes_crea.png'> <div class='bold center uppercase'>Crea tu negocio</div>
+      </div>
+      </div>
+      <div class='grid_16'>
+      <div class='pad10'>
+        <hr><div class='bold center uppercase'>Cursos</div>
+        <ul class='left'>
+          <li>Formulación y evaluación de proyectos</li> <li>Estrategia formal de autoempleo</li> <li>Ética empresarial</li> <li>Identidad empresarial</li> <li>Creación de tu negocio</li> <li>Relaciones comerciales</li> <li>Ecología industial</li> <li>Estándares de calidad</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class='tenths3 div_mobile_full pymes_frame'>
+      <div class='grid_16 center'>
+      <div class='pad10'>
+        <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/pymes_opera.png'> <div class='bold center uppercase'>Opera tu negocio</div>
+      </div>
+      </div>
+      <div class='grid_16'>
+      <div class='pad10'>
+        <hr><div class='bold center uppercase'>Cursos</div>
+        <ul class='left'>
+          <li>Consolidación del negocio</li> <li>Servicio al cliente</li> <li>Almacén e inventario</li> <li>Administración del negocio</li> <li>Bienestar laboral (Salud)</li> <li>Contabilidad empresarial</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <div class='tenths3 div_mobile_full pymes_frame'>
+      <div class='grid_16 center'>
+      <div class='pad10'>
+        <img src='https://cdn3.capacitateparaelempleo.org/media/icons/ocupaciones/pymes_extiende.png'> <div class='bold center uppercase'>Profesionaliza y extiende tu negocio</div>
+      </div>
+      </div>
+      <div class='grid_16'>
+      <div class='pad10'>
+        <hr><div class='bold center uppercase'>Cursos</div>
+        <ul class='left'>
+          <li>Mercadotecnia empresarial</li> <li>Comercialización / Redes de distribución / Micromenuedo</li> <li>Comercio digital</li> <li>Exportación</li> <li>Negocios móviles</li> <li>Mejora de procesos</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class='clearfix'></div>
+  
+    </div>
+    <div class='clearfix'></div>
+    
+      <a id='diplomados'></a>
+      <div class='pad10'></div>
+      <div id='comp_title' class='whole center round10'>Diplomados</div>
+      <div class='g960 center'>
+        <div class='whole center imgw'>
+          <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/sep.png'>
+          <br><br>
+        </div>
+        <br><br>
+        <div class='grid_1 div_mobile_full'>&nbsp;</div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dtsi'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dtsi.png'><br><span class='grey'>Diplomado Técnico en Sistemas Informáticos</span>
+        </a>
+        </div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dtiw'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dtiw.png'><br><span class='grey'>Diplomado Técnico en Integridad Web</span>
+        </a>
+        </div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dtbd'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dtbd.png'><br><span class='grey'>Diplomado Técnico en Big Data</span>
+        </a>
+        </div>
+        <div class='grid_1'>&nbsp;</div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dtgava'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dtgava.png'><br><span class='grey'>Gestión de Ambientes Virtuales de Aprendizaje</span>
+        </a>
+        </div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dteda'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dteda.png'><br><span class='grey'>Diplomado de Desarrollo de Estrategias Digitales de Aprendizaje</span>
+        </a>
+        </div>
+        <div class='grid_5 imgh imgw nomargin div_mobile_half'>
+        <a href='https://aprende.org/pages.php?r=.cfcs_oficial_infographic&amp;diplomadoID=dswam'>
+          <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/dswam.png'><br><span class='grey'>Diplomado en Desarrollo de sitios web y aplicaciones móviles</span>
+        </a>
+        </div>
+      </div>
+      <div class='clearfix'></div>
+    
+    
+<a id='alianzas'></a>
+<div class='pad20'></div>
+<div id='comp_title' class='whole center' style='background:#c90976;'>Alianzas</div>
+<div class='grid_16'>
+  <div class='grid_16 center'>
+    <img src='https://cdn1.capacitateparaelempleo.org/media/images/LogoSedesol.png'>
+    <br>
+
+  <ul id='lis_clases'>
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/sedesol_1.png' onclick="fancyme('iframe','https://aprende.org/pages.php?r=.quickvid&vidID=sedesol1')"><br>Video introductorio
+    </div>
+    </li>
+
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5376'>
+        <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/5376.png'><br>Solicitud de apoyo para tu proyecto productivo: Fomento a la economía social
+      </a>
+    </div>
+    </li>
+
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5377'>
+        <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/5377.png'><br>Oportunidades que  SEDESOL te brinda: Inducción a la economía social
+      </a>
+    </div>
+    </li>
+
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5473'>
+        <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/5473.png'><br>Proyectos Productivos
+      </a>
+    </div>
+    </li>
+
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=5378'>
+        <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/5378.png'><br>Conoce el micromenudeo
+      </a>
+    </div>
+    </li>
+
+    <br>
+
+    <li>
+    <div class='pad10 center imgw imgh nomargin'>
+      <a href='https://aprende.org/pages.php?r=.cfcs_course&amp;tagID=6483'>
+        <img src='https://cdn1.capacitateparaelempleo.org/media/icons/ocupaciones/6483.png'><br>Responsable Tienda Diconsa
+      </a>
+    </div>
+    </li>
+
+  </ul>
+
+  </div>
+  <div class='clearfix'></div>
+</div>
+<div class='clearfix'></div>
+
+    <div class='clearfix'></div>
+    <div class='pad10'><br></div>
+    <div id='welcome_clases_soon' class='whole center'>
+      
+    </div>
+
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  <div class='pad10'></div>
+</div>
+<div class='clearfix'></div>
+</div>
+
+      <p id='back-top'><span id='arrows'></span><span id='text'>Ir arriba</span></p>
+    </div>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  
+    <div class='clearfix'></div>
+    <div id='div_footer' style='position:relative;'>
+      <div id='div_footlinks' class='g960'>
+          <div class='quarter'>&nbsp;</div>
+          <div class='half center' id='bottom_terms'>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.privacidad.html'>Aviso de privacidad</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.terminos.html'>Términos de uso</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.contacto.html'>Contáctanos</a>
+            </div>
+          </div>
+          <div class='quarter'>&nbsp;</div>
+          <div class='whole center'>
+            <div class='pad10'></div>
+            
+  <div class='quarter'>&nbsp;</div>
+  <div class='half center'>
+    <a href='https://itunes.apple.com/us/app/aprende/id1123194881?ls=1&amp;mt=8' target='_blank'><img alt='Descárgalo de la appstore' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/appstore_apple.svg' style='max-height:60px;margin:9px;'></a>
+    <a href='https://play.google.com/store/apps/details?id=org.aprende.app&amp;utm_source=aprende.org&amp;utm_medium=web&amp;utm_content=aprende.org_badge&amp;utm_campaign=PartBadge&amp;pcampaignid=aprende.org_badge' target='_blank'><img alt='Disponible en Google Play' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/es_badge_web_generic.png' style='max-height:60px;'></a>
+  </div>
+  <div class='quarter'>&nbsp;</div>
+  <div class='clearfix'></div>
+
+          </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  
+      <div class='pad10'></div>
+      <div class='container_16' style='background:rgba(0,0,0,.5);margin:0px !important;width:100% !important;'>
+      <div class='pad10'></div>
+        <div class='grid_16'>
+          <div class='grid_3 imgw center'>
+            <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/Aprende_BR.png'>
+          </div>
+          <div class='grid_13' id='div_disclaimer_text'>
+            <h5>¡Aprende sin costo a través de las redes <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/telcel.png'> <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/infinitum.png'>!</h5>
+            <p>
+              El acceso a ligas y recursos externos puede generar cargos por consumo de datos de acuerdo a tu proveedor de internet y plan de acceso contratado y se rige por Avisos de Privacidad y Términos y Condiciones de uso distintos a aprende.org, las ligas y recursos externos se indicarán con el ícono <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:15px;'> cuando esto sea posible.
+            </p>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    
+  
+  <!--render-->
+
+  </body>
+  <script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/analytics.js','ga');
+    ga('create','UA-47293185-3','auto');ga('send','pageview');
+  </script>
+
+<!--
+  <script type='text/javascript'>
+    var _paq = _paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+    (function(){
+      var u='//cdn3.capacitateparaelempleo.org/pwk/'; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src='//cdn3.capacitateparaelempleo.org/pwk/piwik.php?idsite=1' style='border:0;' alt='' /></p></noscript>
+-->
+</html>

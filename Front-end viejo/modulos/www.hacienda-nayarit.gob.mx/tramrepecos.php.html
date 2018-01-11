@@ -1,0 +1,291 @@
+<script language="JavaScript">
+function valida(accion){
+	forma = document.frmVal;
+	forma.txtRFC.value=forma.txtRFC.value.toUpperCase();  
+	if ((forma.txtRFC.value.length > 12)&&(forma.txtRFC.value.length < 14))
+      {
+	  	if (forma.tipo[2].checked)
+			{
+					var x=window.confirm("Ha elegido Determinación por Ley, y no podrá cambiar a otro tipo de declaración durante 60 meses. ¿Desea continuar con esta opción?");
+					if (x)
+					return true;
+					else
+					return false;	
+				
+			}
+			else
+			{
+			  return true;
+			} 
+      }	
+	else
+	{  
+	  alert ("La longitud del RFC tiene que ser de 13 posiciones\n");
+	  return false;
+	}
+
+	
+}
+
+function upperMe() {
+var field =document.frmVal.txtRFC;
+var upperCaseVersion = field.value.toUpperCase();
+field.value = upperCaseVersion;
+}
+function Alternar(Seccion){
+var form=document.form; 
+//var b= "txtIngresos";
+    if(form.chkceros.checked)
+	{
+		Seccion.style.display="";
+		noceros.style.display="none";
+		form.ttar.focus();
+	}
+	else
+	{
+	 	Seccion.style.display="none";
+		noceros.style.display="";
+		form.txtIngresos.focus();
+	}
+	}
+</script>
+<html>
+<head>
+  
+<title>Secretar&iacute;a de Administraci&oacute;n y Finanzas::Servicios en l&iacute;nea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<style type="text/css"><!--
+.Estilo1 {font-size: xx-small}
+.Estilo2 {font-size: 12px}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-repeat: no-repeat;
+}
+.Estilo4 {color: #666666}
+.Estilo5 {
+	font-size: 12px;
+	color: #666666;
+	font-style: italic;
+}
+a:link {
+	text-decoration: underline;
+	color: #000000;
+}
+a:visited {
+	text-decoration: underline;
+	color: #333333;
+}
+a:hover {
+	text-decoration: none;
+	color: #0000CC;
+}
+a:active {
+	text-decoration: underline;
+	color: #000000;
+}
+.Estilo17 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+}
+.Estilo30 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; }
+.Estilo55 {color: #FFFF00}
+.Estilo56 {font-size: 10px; font-family: Arial, Helvetica, sans-serif;}
+.Estilo57 {color: #FFFFFF}
+.Estilo63 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #FFFF00; }
+.Estilo66 {color: #333333}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body onLoad="document.frmVal.txtRFC.focus();">
+<table width="748" border="0" align="center" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="Sin t&iacute;tulo" fwbase="plantilla.jpg" fwstyle="Dreamweaver" fwdocid = "1720129781" fwnested="0" -->
+  <tr>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="10" height="1" border="0" alt="" /></td>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="728" height="1" border="0" alt="" /></td>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="9" height="1" border="0" alt="" /></td>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="1" height="1" border="0" alt="" /></td>
+  </tr>
+  <tr>
+    <td background="https://www.hacienda-nayarit.gob.mx/img/plantilla_r2_c1.jpg">&nbsp;</td>
+    <td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td><table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="626"><table width="100%"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FAEFEF">
+              <tr>
+                <td background="https://www.hacienda-nayarit.gob.mx/img/fod.jpg"></td>
+              </tr>
+              <tr>
+                <td background="https://www.hacienda-nayarit.gob.mx/img/fod.jpg"><img src="https://www.hacienda-nayarit.gob.mx/img/repecos.jpg" width="724" height="100" border="0" /></td>
+              </tr>
+              <tr height="20px">
+                <td width="27%" background="https://www.hacienda-nayarit.gob.mx/img/fod.jpg"><div align="right" class="Estilo55">
+                  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="70%"><div align="left" class="Estilo56">&nbsp;<span class="Estilo57">&nbsp;</span></div></td>
+                      <td width="13%"><div align="right"></div></td>
+                      <td width="17%"><div align="right" class="Estilo63"><font face="Arial, Helvetica, sans-serif">01-11-2017</font></div></td>
+                    </tr>
+                  </table>
+                </div></td>
+              </tr>
+            </table>
+                    <div align="right" class="Estilo2">
+                      <br>
+                      <table width="100%"  border="0" cellpadding="0" cellspacing="0" >
+                        <tr>
+                          <td width="25%"><p align="center"><a href="https://www.hacienda-nayarit.gob.mx/opciones_pag.html" target="_self"></a><a  onClick="nuevaVentana=window.open('tabla.htm', '', 'width=400,height=520');" href="tramrepecos.php.html#"><img src="https://www.hacienda-nayarit.gob.mx/img/btnTabla.jpg" border="0" /></a></p></td>
+                          <td width="27%"><div align="center"><a href="https://www.hacienda-nayarit.gob.mx/infoBasica.php" target="_self"><img src="https://www.hacienda-nayarit.gob.mx/img/btnInformacion.jpg" border="0"></a></div></td>
+                          <td width="27%"><div align="center"><a href="https://www.hacienda-nayarit.gob.mx/repecosPreguntas.php" target="_self"><img src="https://www.hacienda-nayarit.gob.mx/img/btnPreg.jpg" border="0" /></a></div></td>
+                        </tr>
+                      </table>
+                    </div>
+              <div align="left" class="Estilo2">
+                      <table width="100%"  border="0">
+                        <tr>
+                          <td width="69%">&nbsp;</td>
+                          <td width="31%" class="Estilo30">&nbsp;</td>
+                        </tr>
+                      </table>
+                <div align="right" class="Estilo4"></div>
+              </div>
+              <form action="repecos.php" method="post"  name="frmVal" id="frmVal" onSubmit="return valida(1)">
+                <table width="52%" border="1"  align="center" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC"  style="border:groove; border-width:0px" >
+                  <tr>
+                    <td><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td bgcolor="#E8E8E8" class="Estilo17">Instrucciones para   &quot;pago en l&iacute;nea&quot;: </td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#F7F7F7"><blockquote>
+                              <p class="Estilo30">1) Acceder al formato de pago. </p>
+                          </blockquote></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#F5F5F5"><blockquote>
+                              <p class="Estilo30">2) Dar clic sobre la imagen de alg&uacute;n banco que presenta el formato </p>
+                          </blockquote></td>
+                        </tr>
+                        <tr>
+                          <td><blockquote>
+                              <div align="center"><img src="https://www.hacienda-nayarit.gob.mx/img/accesopago.jpg" width="392" height="109"></div>
+                          </blockquote></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#F7F7F7"><blockquote>
+                              <p class="Estilo30">3) Iniciar y finalizar la transacci&oacute;n bancaria </p>
+                          </blockquote></td>
+                        </tr>
+                        <tr>
+                          <td bgcolor="#F7F7F7"><blockquote>
+                              <p class="Estilo30">4) Imprimir su comprobante de pago </p>
+                          </blockquote></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                <br>
+                <table width="67%"   align="center" cellpadding="0" cellspacing="0" bordercolor="#A2B9EA" bgcolor="#FAFBFE"  style="border:groove; border-width:1px">
+                  <tr>
+                    <td><table width="100%" border="0" align="center">
+                        <tr>
+                          <td width="64%"><div align="center"><font face="Arial, Helvetica, sans-serif">
+                            </font><font size="2" face="Arial, Helvetica, sans-serif">RFC:</font><font face="Arial, Helvetica, sans-serif">
+                              <input name="txtRFC" type="text" id="txtRFC" title="Ingrese aqui su Registro Federal de Contrubuyente" onChange="upperMe();" />
+                              </font><font face="Arial, Helvetica, sans-serif"><br>
+                               <br> <input type="submit" name="Submit22" value="Aceptar">
+                                </font></div></td>
+                        </tr>
+                    </table></td>
+                  </tr>
+                </table>
+                <div align="center">
+                  <table width="100%"  border="0">
+                    <tr>
+                      <td width="22%">&nbsp;</td>
+                      <td width="58%"><div align="center"></div></td>
+                      <td width="20%">&nbsp;</td>
+                    </tr>
+                  </table>
+                </div>
+              </form>
+              <table width="135" border="0" cellpadding="2" cellspacing="0" title="Haga clic para verificar ? Este sitio ha elegido VeriSign SSL para que la comunicaci&oacute;n sea confidencial y el comercio electr&oacute;nico sea seguro.">
+                <tr>
+                  <td width="135" align="center" valign="top"><script src="https://seal.verisign.com/getseal?host_name=www.hacienda-nayarit.gob.mx&amp;size=L&amp;use_flash=YES&amp;use_transparent=YES&amp;lang=es"></script>
+                      <br />
+                    <a href="http://www.verisign.es/certificados-ssl" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">Acerca de los certificados SSL</a></td>
+                </tr>
+              </table>
+              </p>
+              <p align="left"><span class="Estilo2"><font face="Arial, Helvetica, sans-serif"><strong>Fecha 
+                    l&iacute;mite de pago sin recargos: Hasta el d&iacute;a 17 
+                    del mes posterior al bimestre. (con los d&iacute;as h&aacute;biles 
+                    adicionales de acuerdo al <br />
+                    <a href="https://www.hacienda-nayarit.gob.mx/rmf.php" target="_self" onClick=""> 6to. D&iacute;gito 
+                    num&eacute;rico del R.F.C. establecido en RMF2006).</a></strong></font></span> 
+                    <span class="Estilo5"></span> </p>
+                  <div align="center" class="Estilo5">
+<hr align="center" noshade style="background:no-repeat;"/>
+<table width="100%"  border="0">
+                      <tr bgcolor="#FFFFFF"> 
+                        <td width="70%"><p class="Estilo1"><font face="Arial, Helvetica, sans-serif"><span class="Estilo66"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Para 
+                            mayor informaci&oacute;n:<br />
+                            Direcci&oacute;n General de Ingresos<br />
+                            de la Secretar&iacute;a de Administraci&oacute;n y 
+                            Finanzas. .Departamento de Asistencia al Contribuyente<br />
+                            <a href="mailto:asistenciacontribuye@nayarit.gob.mx">asistenciacontribuye@nayarit.gob.mx</a><br />
+                            Av. Allende No.276 Poniente entre Oaxaca y Morelia Col. 
+                            Centro<br />
+                            Tel.(01-311) 2-16-96-49 y 2-58-04-50<br />
+                            Lada sin Costo 01800 72775234
+                            Tepic, Nayarit.</font></span><br />
+                            </font></p></td>
+                        <td width="30%"><div align="right"> 
+                            <table width="100%"  border="0">
+                              <tr> 
+                                <td width="82%">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </div></td>
+                      </tr>
+            
+                    </table>
+              </div>              </td>
+          </tr>
+          <tr>
+            <td bgcolor="#CCCCCC"><div align="center" class="Estilo30"><a href="https://www.hacienda-nayarit.gob.mx/servicios.php">Servicios 
+                    de la Secretar&iacute;a de Administraci&oacute;n y Finanzas</a> 
+                    | <a href="http://www.nayarit.gob.mx">Gobierno del Estado</a> 
+
+ <div align="center"><a href="https://www.hacienda-nayarit.gob.mx/politicas_de_uso_y_privacidad.htm" target="_blank" >Politicas de uso y privacidad</a></div> 
+                  </div>              </td>
+          </tr>
+        </table></td>
+      </tr>
+    </table></td>
+    <td background="https://www.hacienda-nayarit.gob.mx/img/plantilla_r2_c3.jpg">&nbsp;</td>
+    <td rowspan="2"></td>
+    <td><img src="https://www.hacienda-nayarit.gob.mx/spacer.gif" width="1" height="365" border="0" alt="" /></td>
+  </tr>
+  <tr> </tr>
+</table>
+</body>
+</html>
+

@@ -1,0 +1,429 @@
+.biblioteca-holder-img {
+  background-position: top left;
+  background-size: cover;
+  height: 100px;
+  margin-top: 15px;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.biblioteca-holder-img.ciencias-agropecuarias {
+  background-image: url('../images/biblioteca/cabecera_ciencias_agropecuarias.jpg');
+}
+.biblioteca-holder-img.ciencias-de-la-salud {
+  background-image: url('../images/biblioteca/cabecera_ciencias_salud.jpg');
+}
+.biblioteca-holder-img.ciencias-naturales {
+  background-image: url('../images/biblioteca/cabecera_ciencias_naturales.jpg');
+}
+.biblioteca-holder-img.ciencias-sociales-y-administrativas {
+  background-image: url('../images/biblioteca/cabecera_ciencias_sociales.jpg');
+}
+.biblioteca-holder-img.educacion-humanidades-y-artes {
+  background-image: url('../images/biblioteca/cabecera_educacion_humanidades_arte.jpg');
+}
+.biblioteca-holder-img.ingenieria-y-tecnologia {
+  background-image: url('../images/biblioteca/cabecera_ingenieria_tecnologia.jpg');
+}
+
+.biblioteca-holder-img h1 {
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 100px;
+  margin-left: 35px;
+  margin-top: 0;
+  opacity: 0.5;
+  text-align: left;
+  text-shadow: 1px 1px rgba(0,0,0,0.5);
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding-top: 2% !important;
+}
+
+
+.biblioteca-title {
+  color: #337ab7;
+  overflow: hidden;
+  text-align: left;
+  font-weight: bold;
+}
+
+.biblioteca-title:before, .biblioteca-title:after {
+  background-color: #337ab7;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.biblioteca-title:before {
+    right: 0.5em;
+    margin-left: -100%;
+}
+
+.biblioteca-title:after {
+    left: 0.5em;
+    margin-right: -100%;
+}
+
+#biblioteca-destacados-carrusel {
+  margin-top: 15px;
+}
+
+#biblioteca-destacados-carrusel .carousel-indicators {
+  bottom: -30px;
+}
+
+#biblioteca-destacados-carrusel .carousel-indicators li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 0px 1px rgba(0,0,0,0.5);
+  height: 12px;
+  margin: 3px;
+  width: 12px;
+}
+
+#biblioteca-destacados-carrusel .carousel-indicators li.active {
+  border-radius: 15px;
+  height: 15px;
+  width: 15px;
+}
+
+.biblioteca-item {
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 2px rgba(200,200,200,0.8);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.biblioteca-item.top-border {
+  border-top: 5px solid #333;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.biblioteca-item.tiny {
+  border: 1px solid #ddd;
+  border-left: 5px solid #333;
+  border-top-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.biblioteca-item.tiny .biblioteca-item-content {
+  height: auto;
+}
+.biblioteca-item:hover {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.biblioteca-item.ciencias-agropecuarias {
+  border-color: #f2ae43;
+}
+.biblioteca-item.ciencias-agropecuarias:hover {
+  border-color: #f2ae43 !important;
+}
+.biblioteca-item.ciencias-de-la-salud {
+  border-color: #56c0e0;
+}
+.biblioteca-item.ciencias-de-la-salud:hover {
+  border-color: #56c0e0 !important;
+}
+.biblioteca-item.ciencias-naturales {
+  border-color: #58b957;
+}
+.biblioteca-item.ciencias-naturales:hover {
+  border-color: #58b957 !important;
+}
+.biblioteca-item.ciencias-sociales-y-administrativas {
+  border-color: #ea7500;
+}
+.biblioteca-item.ciencias-sociales-y-administrativas:hover {
+  border-color: #ea7500 !important;
+}
+.biblioteca-item.educacion-humanidades-y-artes {
+  border-color: #004fba;
+}
+.biblioteca-item.educacion-humanidades-y-artes:hover {
+  border-color: #004fba !important;
+}
+.biblioteca-item.ingenieria-y-tecnologia {
+  border-color: #db524b;
+}
+.biblioteca-item.ingenieria-y-tecnologia:hover {
+  border-color: #db524b !important;
+}
+/*
+.biblioteca-item.video {
+  border-color: #db524b;
+}
+.biblioteca-item.video:hover {
+  border-color: #db524b !important;
+}
+
+.biblioteca-item.audio {
+  border-color: #f2ae43;
+}
+.biblioteca-item.audio:hover {
+  border-color: #f2ae43 !important;
+}
+
+.biblioteca-item.documento {
+  border-color: #56c0e0;
+}
+.biblioteca-item.documento:hover {
+  border-color: #56c0e0 !important;
+}
+
+.biblioteca-item.libro-de-texto {
+  border-color: #58b957;
+}
+.biblioteca-item.libro-de-texto:hover {
+  border-color: #58b957 !important;
+}
+
+.biblioteca-item.libro {
+  border-color: #ff9e6d;
+}
+.biblioteca-item.libro:hover {
+  border-color: #ff9e6d !important;
+}
+
+.biblioteca-item.articulo-cientifico {
+  border-color: #ff91b9;
+}
+.biblioteca-item.articulo-cientifico:hover {
+  border-color: #ff91b9 !important;
+}
+
+.biblioteca-item.articulo {
+  border-color: #ea7500;
+}
+.biblioteca-item.articulo:hover {
+  border-color: #ea7500 !important;
+}
+
+.biblioteca-item.objeto-interactivo {
+  border-color: #004fba;
+}
+.biblioteca-item.objeto-interactivo:hover {
+  border-color: #004fba !important;
+}
+
+.biblioteca-item.animacion {
+  border-color: #004fba;
+}
+.biblioteca-item.animacion:hover {
+  border-color: #004fba !important;
+}
+
+.biblioteca-item.otro {
+  border-color: #ff7584;
+}
+.biblioteca-item.otro:hover {
+  border-color: #ff7584 !important;
+}
+*/
+.biblioteca-item .img-container {
+  background-color: #fff;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 120px;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.biblioteca-item .img-container img {
+  display: inline-block;
+  width: 100%;
+}
+
+.biblioteca-item-content {
+  height: 220px;
+  padding: 15px 10px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.biblioteca-item-content .footer {
+  background-color: #fff;
+  bottom:0;
+  /*font-size: 1.5em;*/
+  left:0;
+  padding: 0 15px;
+  position: absolute;
+  right:0;
+  text-align: right;
+}
+
+.biblitoca-item-header-title {
+  height: 60px;
+  position: relative;
+}
+
+.biblitoca-item-header-title .glyphicon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 2.5em;
+  position: absolute;
+}
+
+.biblitoca-item-header-title .title {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.biblitoca-item-header-title .title > span {
+  font-size: 1em;
+  font-weight: bolder;
+  /*display: -moz-box;*/
+  display: box;
+  display: -webkit-box;
+  line-height: 1.1em;
+  max-height: 2.2em;
+  word-wrap: break-word;
+  /*-overflow: hidden;
+  text-overflow: ellipsis;
+  webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;*/
+
+}
+
+.biblitoca-item-header-title .title > .authors {
+  font-size: 0.85em;
+  display: box;
+  display: -webkit-box;
+  line-height: 1.1em;
+  max-height: 2.2em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.biblioteca-item-content .description {
+  font-size: 0.95em;
+  display: box;
+  display: -webkit-box;
+  line-height: 1.1em;
+  max-height: 6.6em;
+  margin-top: 5px;
+  text-align: justify;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+}
+
+.biblioteca-item-show,
+.biblioteca-item-recomendados
+ {
+  margin-top: 15px;
+}
+
+.biblioteca-item-show {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+}
+
+.biblioteca-item-show h1 {
+  color: #000;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 2.1em;
+  text-align: left;
+  margin-top: 0;
+}
+
+.biblioteca-item-label {
+  font-size: 0.4em;
+  vertical-align: middle;
+}
+
+.biblioteca-item-show .description {
+  background: #999;
+  color: #fff;
+  margin: 15px -15px 10px;
+  padding: 20px 35px;
+}
+
+.biblioteca-item-show .description.ciencias-agropecuarias,
+.biblioteca-item-label.ciencias-agropecuarias {
+  background-color: #f2ae43;
+}
+.biblioteca-item-show .description.ciencias-de-la-salud,
+.biblioteca-item-label.ciencias-de-la-salud {
+  background-color: #56c0e0;
+}
+.biblioteca-item-show .description.ciencias-naturales,
+.biblioteca-item-label.ciencias-naturales {
+  background-color: #58b957;
+}
+.biblioteca-item-show .description.ciencias-sociales-y-administrativas,
+.biblioteca-item-label.ciencias-sociales-y-administrativas {
+  background-color: #ea7500;
+}
+.biblioteca-item-show .description.educacion-humanidades-y-artes,
+.biblioteca-item-label.educacion-humanidades-y-artes {
+  background-color: #004fba;
+}
+.biblioteca-item-show .description.ingenieria-y-tecnologia,
+.biblioteca-item-label.ingenieria-y-tecnologia {
+  background-color: #db524b;
+}
+
+/*.biblioteca-item-show .description.video,
+.biblioteca-item-label.video {
+  background-color: #db524b;
+}
+
+.biblioteca-item-show .description.audio,
+.biblioteca-item-label.audio {
+  background-color: #f2ae43;
+}
+
+.biblioteca-item-show .description.documento,
+.biblioteca-item-label.documento {
+  background-color: #56c0e0;
+}
+
+.biblioteca-item-show .description.libro-de-texto,
+.biblioteca-item-label.libro-de-texto {
+  background-color: #58b957;
+}
+
+.biblioteca-item-show .description.libro,
+.biblioteca-item-label.libro {
+  background-color: #ff9e6d;
+}
+
+.biblioteca-item-show .description.articulo-cientifico,
+.biblioteca-item-label.articulo-cientifico {
+  background-color: #ff91b9;
+}
+
+.biblioteca-item-show .description.articulo,
+.biblioteca-item-label.articulo {
+  background-color: #ea7500;
+}
+
+.biblioteca-item-show .description.objeto-interactivo,
+.biblioteca-item-label.objeto-interactivo {
+  background-color: #004fba;
+}
+
+.biblioteca-item-show .description.animacion,
+.biblioteca-item-label.animacion {
+  background-color: #004fba;
+}
+
+.biblioteca-item-show .description.otro,
+.biblioteca-item-label.otro {
+  background-color: #ff7584;
+}*/

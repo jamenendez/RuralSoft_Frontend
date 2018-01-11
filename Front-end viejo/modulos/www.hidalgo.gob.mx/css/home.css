@@ -1,0 +1,1096 @@
+
+@font-face {
+	font-family: gob;
+	font-weight: bold;
+	src: url("../fonts/Graphik-Light.otf") format("opentype");
+}
+
+::-webkit-input-placeholder {
+   color: #727272;
+}
+
+body{
+	background: #fefefe;
+	overflow-x: hidden;
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+}
+
+body *{
+	font-family: gob, tahoma, sans-serif;
+}
+
+p{
+	font-size: 12px;
+}
+
+hr{
+	border: 0px;
+	border-bottom: 1px #B3B3B3 solid;
+}
+
+span{
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+	display: block;
+}
+
+h1{
+	margin: 0px;
+	padding: 0px;
+	color: #FFFFFF;
+	font-weight: lighter;
+}
+
+h3{
+	font-size: 16px;
+}
+
+a{
+	cursor: pointer;
+}
+
+button{
+	outline: none;
+}
+
+
+h3.l1:before{
+	position: absolute;
+	content: " ";
+	width: 7px;
+	height: 7px;
+	top: 23px;
+	left: 0px;
+	background-color: red;
+}
+
+h3.l2:before{
+	position: absolute;
+	content: " ";
+	width: 7px;
+	height: 7px;
+	top: 23px;
+	left: 0px;
+	background-color: white;
+}
+
+input:focus, textarea:focus{
+	outline: none !important;
+    border:1px solid #ccc;
+}
+
+.targetmar{
+	color:#FFFFFF !important;
+	padding-top: 9px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	padding-right: 40px;
+	border-style: solid;
+	border-width: 0px 20px 0px 5px;
+	-moz-border-image: url("../images/remate.png") 0 42 0 18 stretch;
+	-webkit-border-image: url("../images/remate.png") 0 42 0 18 stretch;
+	-o-border-image: url("../images/remate.png") 0 42 0 18 stretch;
+	border-image: url("../images/remate.png") 0 42 0 18 fill stretch;
+    display: block;
+}
+
+#webpage{
+	text-align: left;
+	min-width: 1024px;
+	max-width: 1024px;
+}
+
+@media (min-width: 800px) and (max-width: 1023px) {
+	#webpage{
+		min-width: 100% !important;
+		max-width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+@media (min-width: 1px) and (max-width: 799px) {
+	#webpage{
+		min-width: 799px !important;
+		max-width: 799px !important;
+		height: 799px !important;
+	}
+}
+
+#webpage header #logo{
+	position: absolute;
+	margin-left: -15px;
+	z-index: 5;
+}
+
+#webpage header .principal{
+	text-align: left;
+	background: #575757;
+	max-height: 52px;
+	min-height: 52px;
+	height: 52px;
+	padding: 8px;
+}#webpage header .principal h1{
+	font-size: 22px;
+	height: 52px;
+  	line-height: 52px;
+  	margin-top: -8px;
+  	margin-left: -30px;
+}
+
+@media (min-width: 320px) and (max-width: 1023px) {
+	#webpage header .principal h1{
+		font-size: 16px;
+		height: 52px;
+	  	line-height: 52px;
+	  	margin-top: -8px;
+	  	margin-left: 5px;
+	}
+}
+
+#webpage header .principal input{
+	width: 100%;
+	padding: 10px;
+	height: 36px;
+	max-height: 36px;
+	min-height: 36px;
+}
+
+#webpage header .menu{
+	background: #f6f6f6;
+	max-height: 39px;
+	min-height: 39px;
+	height: 39px;
+	padding: 0px;
+	border:0px;
+	border-bottom: 4px #EAEAEA solid;
+}
+
+#webpage header .menu a{
+	height: 39px;
+  	line-height: 39px;
+  	color: #727272;
+}
+
+#webpage header .menu a:hover{
+	color: #575757;
+	text-decoration: none;
+}
+
+#webpage header .menu img.social{
+	display: inline-block;
+	height: 26px;
+	width: 26px;
+	margin-top: 6.5px;
+	margin-bottom: 6.5px;
+}
+
+#webpage header .menu img.middle:nth-child(1){
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#webpage header .menu img.middle:nth-child(2){
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+
+#webpage header .menu img.btnmenu{
+	height: 19px;
+	width: 53px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#webpage article.noticias_carrete div.capa{
+	min-height: 429px;
+	max-height: 429px;
+	height: 429px;
+}
+
+#webpage article.noticias_carrete div.carrete{
+	background-image: url("../images/noticia.jpg");
+	background-size: cover;
+}#webpage article.noticias_carrete div.carrete .icons{
+	position: absolute;
+	left: 0px;
+	bottom: 30px;
+	width: 100%;
+}
+#webpage article.noticias_carrete div.carrete .icons .icon:before{
+	content: " ";
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	border: 2pt #71B631 solid; 
+	margin: 0 auto;
+}
+
+#webpage article.noticias_carrete div.carrete .icons .iconselected:before{
+	background-color: #71B631; 
+}
+
+#webpage article.noticias_carrete div.info{
+	background-color: #092432; 
+	padding: 0px;
+	padding-top: 36px;
+	padding-bottom: 30px;
+	line-height: 22px;
+}
+
+#webpage article.noticias_carrete div.info h3{
+	color: #71B631;
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 32px;
+}
+#webpage article.noticias_carrete div.info p{
+	font-size: 12px;
+	color: #FFFFFF;
+}
+
+#webpage article.noticias_carrete div.info .buttonroll{
+	position: absolute;
+	width: 100%;
+	left:3%;
+	bottom: 30px;
+}
+#webpage article.noticias_carrete div.info .buttonroll button{
+	width: 100%;
+	height: 50px;
+	background-color: #E73C4E;
+	border: 0px;
+	color: #FFFFFF;
+}
+
+#webpage article.contenido{
+	color: #FFFFFF;
+}
+
+#webpage article.contenido div#plangob{
+	min-height: 173px;
+	max-height: 173px;
+	height: 173px;
+	background: url("http://www.hidalgo.gob.mx/images/plan.jpg");
+	background-size: cover;
+}
+#webpage article.contenido div#plangob button{
+	width: 100%;
+	height: 50px;
+	background-color: #E73C4E;
+	border: 0px;
+	color: #FFFFFF;
+}
+
+#webpage article.contenido div#plangob:before{
+	position: absolute;
+	content: " ";
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+	background: url("../images/elem.png") rgba(115, 99, 87, 0.75);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+}
+
+#webpage article.contenido div#plangob div.contenido{
+	position: absolute;
+	content: " ";
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+#webpage article.contenido div#efemerides{
+	min-height: 173px;
+	max-height: 173px;
+	height: 173px;
+	background: url("../images/efem_bg.jpg");
+	background-size: cover;
+}
+
+#webpage article.contenido div#efemerides div.fecha h2{
+	font-family: Tahoma;
+	font-weight: bold;
+	margin: 0px;
+}
+
+#webpage article.contenido div#efemerides div.parrafo{
+	max-height: 101px;
+	overflow: auto;
+}
+
+#webpage article.contenido div#efemerides div.viewmore a{
+	position: absolute;
+	left: 20px;
+	bottom: -10px;
+	color: #FFFFFF;
+}
+#webpage article.contenido div#eventouno{
+	min-height: 172px;
+	max-height: 251px;
+	height: 251px;
+	background: url("../images/evento1.jpg.png") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+#webpage article.contenido div#eventodos{
+	min-height: 172px;
+	max-height: 251px;
+	height: 251px;
+	background: url("../images/evento2.jpg") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+#webpage article.contenido div#eventotres{
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	background: url("../images/evento3.jpg") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+#webpage article.contenido div#eventocuatro{
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	background: url("../images/evento4.jpg") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+	width: 50%;
+}
+#webpage article.contenido div#eventocuatro p.link1{
+    position: relative;
+    top: 100px;
+    left: 330px;
+    color: #727272;
+    font-weight: bold;
+}
+#webpage article.contenido div#educacion{
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	background: url("../images/medio.jpg") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+
+#webpage article.contenido div#educacion h5{
+	color: #71B631;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	#webpage article.contenido div#educacion {
+		min-height: 172px;
+		max-height: 172px;
+		height: 172px;
+		background: #727272;
+		background-position: right -30px;
+		background-repeat: no-repeat;
+	}
+}
+
+#webpage article.contenido div#salud1{
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	background: url("http://www.hidalgo.gob.mx/images/policias.jpg") #727272;
+	background-position: cover;
+	background-repeat: no-repeat;
+}
+
+#webpage article.contenido div#salud1 h5{
+	color: #71B631;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	#webpage article.contenido div#salud1{
+		min-height: 172px;
+		max-height: 172px;
+		height: 172px;
+		background: #727272;
+		background-position: right -30px;
+		background-repeat: no-repeat;
+	}
+}
+
+#webpage article.contenido div#salud{
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	background: url("../images/salud_bg.jpg") #F15A24;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	#webpage article.contenido div#salud{
+		min-height: 172px;
+		max-height: 172px;
+		height: 172px;
+		background: #F15A24;
+		background-position: right;
+		background-repeat: no-repeat;
+	}
+}
+
+#webpage article.contenido div#salud:before{
+	content: " ";
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: calc((100%/12)*10);
+	background: -webkit-linear-gradient(-20deg, #F15A24 87%, transparent 13%);
+}
+
+#webpage article.contenido div#salud span{
+	font-size: 11px;
+}
+
+#webpage article.contenido div#salud div.separete{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	width: calc((100%/12)*10);
+	min-height: 172px;
+	max-height: 172px;
+	height: 172px;
+	color: #FFF;
+}
+
+#webpage article.servicios{
+	background: #FFFFFF;
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	min-height: 530px;
+	max-height: 530px;
+	height: 530px;
+	color: #000000;
+}
+
+#webpage article.servicios h3{
+	color: #71B631;
+	margin-bottom: 16px;
+}
+
+#webpage article.servicios div.contenido{
+	padding: 0px;
+	padding-left: 20px;
+}
+
+#webpage article.servicios div.contenido span{
+	margin-bottom: 5px;
+}
+
+#webpage article.servicios div.contenido span:before{
+	position: absolute;
+	content: " ";
+	width: 11px;
+	height: 13px;
+	left: 18px;
+	background: url("../images/vineta.png") no-repeat left bottom;
+}
+
+#webpage article.servicios button{
+	min-height: 65px;
+	max-height: 65px;
+	height: 65px;
+	background: #808080;
+	color: #FFFFFF;
+	border: 0px;
+	padding: 0px;
+	margin-bottom: 50px;
+}
+
+#webpage article.servicios button img{
+	margin-right: -2px;
+}
+
+#webpage article.servicios button.w1{
+	width: 100%;
+	margin-top: 33px;
+}
+
+#webpage article.servicios button.w2{
+	width: 49%;
+	margin-top: 45px;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px){
+	#webpage article.servicios button.w2{
+		width: 100%;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+}
+
+
+#webpage article.canalyt{
+	min-height: 480px;
+	max-height: 480px;
+	height: 480px;
+}
+
+#webpage article.canalyt div#contenidoyt{
+	min-height: 480px;
+	max-height: 480px;
+	height: 480px;
+	background: #092432;
+	color: #FFFFFF;
+}
+
+#webpage article.canalyt div#contenidoyt .btn{
+	width: 110%;
+	background: #001F28;
+	color: #FFFFFF;
+	min-height: 37px;
+	max-height: 37px;
+	height: 37px;
+}
+#webpage article.canalyt div#contenidoyt .btn.sig{
+	position: absolute;
+	bottom: 0px;
+}
+
+#webpage article.canalyt div#contenidoyt .btn a{
+	color: #FFFFFF;
+	font-size: 12pt;
+}
+#webpage article.canalyt div#contenidoyt .btn img{
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: -5px;
+}
+#webpage article.canalyt div#contenidoyt div.contenido h3{
+	color: #71B631;
+}
+#webpage article.canalyt div#contenidoyt div.contenido p{
+	margin-bottom: 14px;
+}
+
+#webpage article.canalyt div#contenidoyt div.viewcanal{
+	position: absolute;
+	bottom: 67px;
+	width: 100%;
+}
+
+#webpage article.canalyt div#contenidoyt div.viewcanal button{
+	width: 100%;
+	height: 50px;
+	background-color: #E73C4E;
+	border: 0px;
+	color: #FFFFFF;
+}
+
+#webpage article.canalyt div#contenidoytvideo{
+	min-height: 480px;
+	max-height: 480px;
+	height: 480px;
+	background: #000000;
+}
+
+#webpage article.gobierno{
+	padding-top: 22px;
+	background: #FFFFFF;
+}
+
+#webpage article.gobierno div.agregados{
+	background: #E6E6E6;
+	padding: 0px;
+	padding-top: 37px;
+	padding-bottom: 37px;
+	min-height: 252px;
+	max-height: 252px;
+	height: 252px;
+}
+
+#webpage article.gobierno div.agregados .item{
+	min-height: 178px;
+	max-height: 178px;
+	height: 178px;
+	background-color: #000000;
+	cursor: pointer;
+}
+
+#webpage article.gobierno div.agregados .item:hover{
+	background-size: 101%;
+}
+
+#webpage article.gobierno div.agregados .informe{
+	background-image: url("../images/informe.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#webpage article.gobierno div.agregados .plan{
+	background-image: url("../images/gob_plan.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#webpage article.gobierno div.agregados .indicadores{
+	background-image: url("../images/gob_ind.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#webpage article.gobierno div.agregados .programas{
+	background-image: url("../images/gob_prog.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+#webpage article.buzon{
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 0px;
+}
+
+#webpage article.buzon h3{
+	color: #71B631;
+}
+
+
+#webpage article.buzon p{
+	margin: 0px;
+	padding: 26px;
+	color: #000000;
+}
+
+#webpage article.buzon p.first{
+	padding-bottom: 0px;
+}
+
+#webpage article.buzon p.gris{
+	background-color: #F6F6F6;
+	color: #666666;
+	font-size: 10px;
+}
+
+#webpage article.buzon input{
+	width: 100%;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 5px;
+	border: 1px #666666 solid;
+}
+
+#webpage article.buzon textarea{
+	min-width: 100%;
+	max-width: 100%;
+	width: 100%;
+	min-height: 120px;
+	max-height: 120px;
+	height: 120px;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	padding: 5px;
+	border: 1px #666666 solid;
+}
+
+#webpage article.buzon button{
+	width: 100%;
+	height: 65px;
+	background-color: #808080;
+	border: 0px;
+	color: #FFFFFF;
+}
+
+
+#webpage footer{
+	height: auto;
+	background-color: #092432;
+	background-image: url("../images/footer_bg.png");
+	background-repeat: no-repeat;
+	background-position: right;
+	border: 0px;
+	border-bottom: 8px #E73C4E solid;
+	padding: 0px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	color: #FFFFFF;
+}
+
+#webpage footer div.contact img.logo{
+	margin-bottom: 31px;
+}
+
+#webpage footer div.contact img.escudo{
+	margin-bottom: 50px;
+}
+
+#webpage footer div.contact b{
+	color: #71B631;
+}
+
+#webpage footer div.contact .email{
+	margin-bottom: 50px;
+}
+
+#webpage footer div.contact img.social{
+	display: inline-block;
+	height: 26px;
+	width: 26px;
+	margin-top: 6.5px;
+	margin-bottom: 6.5px;
+}
+
+#webpage footer div.contact img.middle{
+	margin-left: calc((100%-150px)/24);
+	margin-right: calc((100%-150px)/24);
+}
+
+#webpage footer div.middlediv{
+}
+
+#webpage footer div.middlediv div{
+	max-width: 70%;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#webpage footer div.footerlinks{
+	margin-top: 29px !important;
+}
+
+#webpage footer h3{
+	color: #71B631;
+	margin: 0px;
+}
+
+#webpage footer a{
+	display: block;
+	color: #FFFFFF;
+	font-size:12px;
+}
+
+#webpage footer p{
+	margin-top: 20px;
+	font-size: 10px;
+}
+/******************/
+
+#headerfloat{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10;
+	background: #F6F6F6;
+	width: 100%;
+	height: 47px;
+	border: 0px;
+	border-bottom: 4px #EAEAEA solid;
+}
+
+#headerfloat main{
+	min-width: 1024px;
+	max-width: 1024px;
+	width: 1024px;
+}
+
+
+
+#headerfloat main div.logo{
+	background: #092432;
+	min-height: 47px;
+	max-height: 47px;
+	padding-top: 5px;
+}
+
+#headerfloat main a{
+	height: 47px;
+  	line-height: 47px;
+  	color: #727272;
+}
+
+#headerfloat main a:hover{
+	color: #575757;
+	text-decoration: none;
+}
+
+#headerfloat main div.search{
+	background: #727272;
+	min-height: 47px;
+	max-height: 47px;
+	border: 0px;
+	border-bottom: 4px #4D4D4D solid;
+	padding: 4px;
+}
+
+#headerfloat main div.search input{
+	width: 100%;
+	height: 36px;
+	padding: 5px;
+}
+
+#headerfloat main img.btnmenu{
+	height: 19px;
+	width: 53px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.searchinput{
+	background: url("../images/buscar.png") #FFFFFF no-repeat 97% center;
+	padding-right: 40px !important;
+}
+
+/******************************/
+
+aside#menufloater{
+	background-color: transparent;
+	position: fixed;
+	min-width: 768px;
+	max-width: 768px;
+	width: 768px;
+	height: 550px;
+	z-index: 11;
+	top: 52px;
+	display: none;
+}
+
+aside#menufloater img.close{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 11;
+	opacity: 1;
+	border: 10px transparent solid;
+}
+
+aside#menufloater div.bar{
+	background-color: #666666;
+	height: 550px;
+	border: 0px;
+	border-bottom: 4px #4D4D4D solid;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+}
+
+aside#menufloater div.nuller{
+	background-color: transparent;
+	height: 550px;
+	border: 0px;
+}
+
+aside#menufloater div.selectors{
+	background-color: #4D4D4D;
+}
+
+aside#menufloater div.selectors button{
+	display: block;
+	width: 100%;
+	height: 64px;
+	text-align: left;
+	padding-left: 20px;
+	border:0px;
+	background-color: #4D4D4D;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+aside#menufloater div.selectors button:before{
+	position: absolute;
+	content: " ";
+	width: 6px;
+	height: 6px;
+	border: 1px #FFFFFF solid;
+	left: 7px;
+}
+
+aside#menufloater div.selectors button:nth-child(1):before{
+	top: 27px;
+}
+
+aside#menufloater div.selectors button:nth-child(2):before{
+	top: 92px;
+}
+
+aside#menufloater div.selectors button:nth-child(3):before{
+	top: 156px;
+}
+
+aside#menufloater div.selectors button:nth-child(4):before{
+	top: 220px;
+}
+
+aside#menufloater div.selectors button:nth-child(5):before{
+	top: 284px;
+}
+
+aside#menufloater div.selectors button.selected{
+	background-color: #666666 !important;
+}
+
+aside#menufloater div.selectors button.selected:before{
+	background-color: #FFFFFF;
+}
+
+aside#menufloater div.selectors div.bottom{
+	position: absolute;
+	bottom:0px;
+	height: calc(48px*3);
+	width: 100%;
+}
+
+aside#menufloater div.selectors div.bottom button{
+	display: block;
+	width: 100%;
+	height: 48px;
+	text-align: left;
+	padding-left: 60px;
+	border:0px;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+aside#menufloater div.selectors div.bottom button:before{
+	content: "";
+	border: 0px;
+}
+
+aside#menufloater div.selectors div.bottom button.fam{
+	background-color: #77658E;
+	background-image: url("../images/fam.png");
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+}
+
+aside#menufloater div.selectors div.bottom button.sal{
+	background-color: #B5788D;
+	background-image: url("../images/salud.png");
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+}
+
+aside#menufloater div.selectors div.bottom button.cul{
+	background-color: #93AF77;
+	background-image: url("../images/cultura.png");
+	background-repeat: no-repeat;
+	background-position: left 10px center;
+}
+
+
+aside#menufloater div.links{
+	padding: 15px !important;
+}
+
+aside#menufloater div.links a{
+	color: #FFFFFF;
+	font-size: 12px;
+	display: block;
+	line-height: 23px;
+}
+
+aside#menufloater div.linkstatic{
+	padding: 15px !important;
+}
+
+aside#menufloater div.linkstatic a{
+	color: #FFFFFF;
+	font-size: 12px;
+	display: block;
+	line-height: 23px;
+}
+
+aside#menufloater div.linkstatic div.table{
+	height: 100%;
+	border:0;
+	border-left: 1px #999999 solid;
+	padding-left: 15px;
+}
+
+aside#menufloater div.linkstatic div.table h3{
+	padding: 0px;
+	margin: 0px;
+	color: #FFFFFF;
+}
+
+aside#menufloater div.linkstatic div.table hr{
+	margin: 0px;
+	margin-top:7px;
+	margin-bottom: 7px;
+	border:0px;
+	border-bottom: 1px #999999 solid;
+}
+
+/**********************************/
+
+#webpage article.noticias_carrete_dep div#myCarousel{
+	min-height: 200px;
+	max-height: 200px;
+	height: 200px;
+	color: #000000 !important;
+}
+
+#webpage article.noticias_carrete_dep div#myCarousel div.carousel-caption{
+	top: 0px !important;
+}
+
+.carousel-inner > .item > .backg,
+.carousel-inner > .item > a > .backg {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+}
+
+#myCarousel div.carousel-caption img{
+	padding-top:30px;
+	margin-left:-50px;
+}
+
+#myCarousel div.carousel-caption div.content{
+	text-align:left;
+	padding:0px;
+	padding-left:15px;
+	max-height:200px;
+	min-height:200px;
+	height:200px;
+}
+
+#myCarousel div.carousel-caption div.content h3.t{
+	padding:0px;
+	margin:0px;
+	color:#71B631 !important;
+	padding-bottom:5px;
+}
+
+#myCarousel div.carousel-caption div.content button{
+	background: transparent;
+	border:0px;
+	font-size:16px;
+}
+
+#myCarousel div.carousel-caption div.content div.btns{
+	position:absolute;
+	bottom:32px;
+}
+
+#myCarousel div.carousel-caption div.content span{
+	color:#E73C4E;
+	display:inline-block;
+}
+
+canvas{
+	border:2px #000 solid;
+	display:none;
+}

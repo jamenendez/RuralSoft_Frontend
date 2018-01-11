@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap-tagsinput.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="socket.io/socket.io.js"></script> 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/ruts.css">
+	<meta charset="utf-8">
+	<title>Registro Único de Trámites y Servicios</title>
+</head>
+<body spellcheck="true">
+	<div id="loader">
+		<div class="child">
+			<center>
+				<img src="images/loader.gif">
+				<h1>Obteniendo los datos</h1>
+				<h3></h3>
+				<button type="button" class="btn btn-danger">Volver a Intentar</button>
+			</center>
+		</div>
+	</div>
+	<div id="visita">
+		<div class="child">
+			<center>
+				<h1 class="show">Selecciona una categoría.</h1>
+				<p>
+					Desliza el cursor y click izquierdo por encima del nombre de la categoría.
+				</p>
+			</center>
+		</div>
+	</div>
+	<ruts></ruts>
+	<script type="riot/tag" src="tags/ruts.tag"></script>
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/g/riot@2.2.4(riot.min.js+compiler.min.js)"></script>
+	<script type="text/javascript" src="js/ruts.js"></script>
+	<script type="text/javascript">
+		var socket = io.connect();
+		var objtoruts = {};
+	    socket.on('connect', function(data) {
+	        socket.emit('getData', {});
+	    });
+	    socket.on('setData', function(data) {
+	        var key = data.name;
+	        var value = data.data;
+	        objtoruts[key] = value;
+	        console.log(objtoruts);
+	        //riot.mount("ruts",{data:data.data});
+	    });
+	    socket.on('error', function(data) {
+	    	$("#loader h1").hide();
+	        $("#loader h3").text("Intente mas tarde");
+	    });
+
+	    socket.on('finishData', function(data) {
+	    	riot.mount("ruts",objtoruts);
+	    });
+	</script>
+</body>
+</html>

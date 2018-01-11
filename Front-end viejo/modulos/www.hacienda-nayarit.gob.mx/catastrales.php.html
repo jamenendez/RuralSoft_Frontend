@@ -1,0 +1,499 @@
+<script language="JavaScript">
+
+function uno(src,color_entrada) { 
+    src.bgColor=color_entrada;src.style.cursor="hand"; 
+} 
+function dos(src,color_default) { 
+    src.bgColor=color_default;src.style.cursor="default"; 
+} 
+function chk(){
+	if (document.contact.elements[a].checked==true)
+	document.contact.checkbox.checked=false;
+	else
+	document.contact.checkbox.checked=true;
+}
+
+
+
+
+function foco(nombre){ 
+var a= "c"+nombre;
+var b= "t"+nombre;
+
+//alert (nombre);
+if (document.contact.elements[a].checked==true)
+   {
+   document.contact.elements[b].focus();
+   }
+else
+   {
+   document.contact.elements[a].focus();   
+   }
+}
+
+</script> 
+  <script language=JavaScript>
+
+function jdk1x() {
+location="impinm.php?nom="+document.contact.txtAPaterno.value+" "+document.contact.txtAMaterno.value+" "+document.contact.txtNombre.value+"&rfcc="+document.contact.Rfc.value+"&curp="+document.contact.txtCurp.value;
+    }
+//-->
+    </script>
+
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Servicios Catastrales</title>
+<style type="text/css"><!--
+.Estilo2 {font-size: 10px}
+.Estilo3 {color: #0000FF}
+.Estilo5 {
+	font-size: 10px;
+	font-weight: bold;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo4 {	font-family: Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	color: #FFFF00;
+}
+.Estilo7 {color: #FF0000}
+.Estilo8 {font-size: 8px}
+.Estilo9 {color: #666666}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+function Alternar(){
+var form=document.contact; 
+    if(form.c14.checked)
+	{
+		r.style.display='inline';	
+		
+	}
+	else
+	{
+		r.style.display='none';
+				
+	}
+	}
+</script>
+
+<link href="https://www.hacienda-nayarit.gob.mx/css/bootstrap.css" rel="stylesheet">
+<link href="https://www.hacienda-nayarit.gob.mx/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" type="text/css" media="all" href="https://www.hacienda-nayarit.gob.mx/style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="https://www.hacienda-nayarit.gob.mx/fancybox/jquery.fancybox.css"> 
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://www.hacienda-nayarit.gob.mx/fancybox/jquery.fancybox.js?v=2.0.6"></script>
+   <script type="text/javascript" src="https://www.hacienda-nayarit.gob.mx/fancybox/jquery.fancy.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="document.contact.txtNombre.focus();">
+<blockquote>
+<form action="formrppcatas.php?14coakpo35kpavkirg25r5s1g5" method="post" name="contact" id="contact">
+    <table width="41%"  border="1" align="center" bgcolor="#CCCCCC">
+      <tr>
+        <td>  <table width="99%"  border="0" align="center" bgcolor="#FFFFFF">
+            <tr>
+              <td><table width="100%"  border="0">
+                <tr>
+                    <td><img src="https://www.hacienda-nayarit.gob.mx/img/catastrales.jpg" width="724" height="107"></td>
+                </tr>
+                <tr>
+                  <td background="https://www.hacienda-nayarit.gob.mx/img/bar.png"><div align="right"><span class="Estilo4">Ventana de acceso </span></div></td>
+                </tr>
+              </table>
+              </td>
+            </tr>
+            <tr>
+              <td><!--		  <form name="form2" method="post" action="impinm.php"> !-->
+  <table width="99%"  border="1" bordercolorlight="#FFCC00" bgcolor="#DFDFDF" frame="above">
+                  <tr>
+                    <td><div align="center"><span class="Estilo5">Proporcione los siguientes datos </span></div>
+                      <table class="table" width="99%"  border="0" align="center">
+                      <tr>
+                        <td width="7%" class="Estilo2"></td>
+                        <td width="22%" class="Estilo2">
+                          Nombre(s):<br>
+                            <input name="txtNombre" type="text" id="txtNombre" size="30">
+                        </td>
+                        <td width="1%"></td>
+                        <td width="15%"><div align="right" class="Estilo2"></div></td>
+                        <td width="19%" class="Estilo2">
+                        Apellido Paterno:<br>
+                        <input name="txtAPaterno" type="text" id="txtAPaterno" size="20">
+      </td>
+                        <td width="1%"></td>
+                        <td width="10%"><div align="right" class="Estilo2"></div></td>
+                        <td width="25%" class="Estilo2"><span class="Estilo2">Apellido Materno:</span>
+                          <input name="txtAMaterno" type="text" id="txtAMaterno" size="20"></td>
+                      </tr>
+                      <tr>
+                        <td class="Estilo2"></td>
+                          <td class="Estilo2"><font color="#FF0000">Clave Catastral</font>:<br> <input name="txtClave" type="text" id="txtClave" size="30"></td>
+                        <td class="Estilo2"></td>
+                        <td class="Estilo2"><div align="right"></div></td>
+                        <td class="Estilo2">RFC:<br>
+                          <input name="Rfc" type="text" id="Rfc" size="15"></td><td class="Estilo2"></td>
+                        <td ></td>
+                        <td class="Estilo2"><span class="Estilo2">CURP:</span><br>
+                          <input name="txtCurp" type="text" id="txtCurp" size="15">
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td class="Estilo2"></td>
+                          <td class="Estilo2"><font color="#FF0000">Municipio</font>:<br> <input name="txtMunicipio" type="text" id="txtMunicipio" size="30"></td>
+                        <td class="Estilo2"></td>
+                        <td class="Estilo2"><div align="right"></div></td>
+                        <td class="Estilo2">Localidad:<br>
+                          <input name="txtLocalidad" type="text" id="txtLocalidad" size="15"></td><td class="Estilo2"></td>
+                        <td></td>
+                        <td class="Estilo2"><span class="Estilo2">Col&oacute;nia:</span><br>
+                          <input name="txtColonia" type="text" id="txtColonia" size="15">
+                        </td>
+                      </tr>                      
+
+                      <tr>
+                        <td class="Estilo2"></td>
+                          <td class="Estilo2"><font color="#FF0000">Calle</font>:<br> <input name="txtCalle" type="text" id="txtCalle" size="30"></td>
+                        <td class="Estilo2"></td>
+                        <td class="Estilo2"><div align="right"></div></td>
+                        <td class="Estilo2">N&uacute;mero:<br>
+                          <input name="txtNumero" type="text" id="txtNumero" size="15"></td><td class="Estilo2"></td>
+                        <td ></td>
+                        <td class="Estilo2"><span class="Estilo2">Tel&eacute;fono:</span><br>
+                          <input name="txtTelefono" type="text" id="txtTelefono" size="15">
+                        </td>
+                      </tr>  
+
+
+                    </table>
+                  </td>
+                  </tr>
+                </table>
+               
+                  <table width="99%"  border="1" frame="hsides">
+                    <tr>
+                      <td bordercolor="#FFFFFF"><div align="center">
+                          
+                      </div></td>
+                    </tr>
+                  </table>
+       <!--           </form>           !-->
+       <div class="alert alert-info">
+		        <p><span class="Estilo2"><span class="Estilo7">*</span>Marque el recuadro que aparece en la primer columna del lado izquierdo para agregar el concepto correspondiente a su recibo. <br>
+                    <span class="Estilo7">**</span>Despues de haber marcado el recuadro se habilitar&aacute; un nuevo campo en donde deber&aacute; indicar el n&uacute;mero de veces que desea agregar el concepto seleccionado.</span></p>
+</div>                    
+		        <table width="99%"  border="0" align="center">
+                  <tr>
+                    <td><table width="100%"  border="0" align="center" >
+                      <tr bordercolor="#FFFFFF" bgcolor="#EAF2FF">
+					   <td width="5%" class="Estilo8"><div align="center"><span class="Estilo3">TRAMITE<span class=Estilo7></span></span></div></td>
+                        <td width="5%" class="Estilo8"><div align="center"><span class="Estilo3">MARQUE<span class=Estilo7>*</span></span></div></td>
+                        <td width="8%" bgcolor="#EAF2FF" class="Estilo8"><div align="center" class="Estilo3">CANTIDAD<span class=Estilo7>**</span></div></td>
+                        <td width="65%" bgcolor="#EAF2FF" class="Estilo8"><div align="center" class="Estilo3">CONCEPTO</div></td>
+                        <td width="8%" bgcolor="#EAF2FF" class="Estilo8"><div align="center" class="Estilo3">MONTO BASE ($) </div></td>
+                      </tr>
+                    </table>
+                      <div id="Layer1" style="position:absolute; width:715px; height:694px; z-index:1; overflow: auto; background-color: #CDCDCD; layer-background-color: #CDCDCD; border: 1px none #000000;">
+    
+                  <table width="100%" class="table"  border="0">
+                          <tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>1</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c1 value=1 onClick=(Alternar(),document.contact.t1.style.display=checked?'':'none',foco(1)) title='Marque en este recuadro si desea agregar este concepto 41475'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t1 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"EXPEDICION DE AVALUO CATASTRAL CON MEDIDAS,COLINDANCIAS Y/O VALORE COMERCIALES, PARA EFECTOS DE TRASLADO DE DOMINIO E INSCRIPCOIN EN EL REGISTRO . SERVICIO URGNTEPUBLICODE LA PROPIEDAD"</p></td><td width=8%><p align=center class=Estilo2><strong>1156.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>3</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c3 value=1 onClick=(Alternar(),document.contact.t3.style.display=checked?'':'none',foco(3)) title='Marque en este recuadro si desea agregar este concepto 41476'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t3 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE PLANOS POR LOTIFI. URG.</p></td><td width=8%><p align=center class=Estilo2><strong>1806.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>4</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c4 value=1 onClick=(Alternar(),document.contact.t4.style.display=checked?'':'none',foco(4)) title='Marque en este recuadro si desea agregar este concepto 41444'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t4 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>LIBERACION DEL USUFRUCTO VITALICO</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>5</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c5 value=1 onClick=(Alternar(),document.contact.t5.style.display=checked?'':'none',foco(5)) title='Marque en este recuadro si desea agregar este concepto 4145501'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t5 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXPEDICION DE CONSTANCIA DE REGISTRO DE PERITO VALUADOR</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>7</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c7 value=1 onClick=(Alternar(),document.contact.t7.style.display=checked?'':'none',foco(7)) title='Marque en este recuadro si desea agregar este concepto 41479'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t7 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXP. DE CONSTANCIA DE INSCRIP. CATA. URG.</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>9</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c9 value=1 onClick=(Alternar(),document.contact.t9.style.display=checked?'':'none',foco(9)) title='Marque en este recuadro si desea agregar este concepto 41477'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t9 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRES. DE TESTIMONIO DE LOT. DE P URG.</p></td><td width=8%><p align=center class=Estilo2><strong>2166.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>10</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c10 value=1 onClick=(Alternar(),document.contact.t10.style.display=checked?'':'none',foco(10)) title='Marque en este recuadro si desea agregar este concepto 41432'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t10 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>TRAMITE DE DESMANCOMUNIZACION DE BIENES INMUEBLES</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>11</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c11 value=1 onClick=(Alternar(),document.contact.t11.style.display=checked?'':'none',foco(11)) title='Marque en este recuadro si desea agregar este concepto 4142401'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t11 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""PRESENTACION DE REGIMEN DE CONDOMINIO, POR DEPARTAMENTO."""</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>12</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c12 value=1 onClick=(Alternar(),document.contact.t12.style.display=checked?'':'none',foco(12)) title='Marque en este recuadro si desea agregar este concepto 4145501'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t12 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EXPEDICION DE CARTOGRAFIA CATASTRAL EN FORMATO DIGITAL, PREDIO RUSTICO Y/O SUBURBANO MANZANA URBANA"""</p></td><td width=8%><p align=center class=Estilo2><strong>180.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>13</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c13 value=1 onClick=(Alternar(),document.contact.t13.style.display=checked?'':'none',foco(13)) title='Marque en este recuadro si desea agregar este concepto 41426'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t13 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE SEGUNDO TESTIMONIO</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>14</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c14 value=1 onClick=(Alternar(),document.contact.t14.style.display=checked?'':'none',foco(14)) title='Marque en este recuadro si desea agregar este concepto 41431'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t14 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>TRAMITE DE AVISO DE ADQUISICION DE BIENES INMUEBLES Y ACTUALIZACION DEL PADRON CATASTRAL</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><div  id='r' name='r' style='display:none'><tr   bgcolor=#F4F4F4><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=8%><p align=center><span class=Estilo7>-</span></td></p><td width=65%><p align=center><span class=Estilo2><span class=Estilo7>IMP. DIRECTO S/ADQUISICION BIEN  (capture el total en la siguiente casilla)</span></span></p></td><td width=8%><input type=text  maxlength=20 size=15 name=txt14></td></tr><tr   bgcolor=#F4F4F4><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=6%><p align=center><span class=Estilo7>-</span></td></p><td width=65%><p align=center><span class=Estilo2><span class=Estilo7>MULTA (capture el total en la siguiente casilla)</span></span></p></td><td width=8%><input type=text  maxlength=20 size=15 name=txt141></td></tr><tr  bgcolor=#F4F4F4><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=5%><p align=center><span class=Estilo7>-</span></td></p><td width=6%><p align=center><span class=Estilo7>-</span></td></p><td width=65%><p align=center><span class=Estilo2><span class=Estilo7>RECARGO (capture el total en la siguiente casilla)</span></span></p></td><td width=8%><input type=text  maxlength=20 size=15 name=txt142></td></tr></div><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>15</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c15 value=1 onClick=(Alternar(),document.contact.t15.style.display=checked?'':'none',foco(15)) title='Marque en este recuadro si desea agregar este concepto 41430'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t15 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PROTOCOLIZACION DE MANIFESTACION Y/O DOCUMENTOS</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>16</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c16 value=1 onClick=(Alternar(),document.contact.t16.style.display=checked?'':'none',foco(16)) title='Marque en este recuadro si desea agregar este concepto 41445'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t16 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE FIDEICOMISO NO TRASLATIVO DE DOMINIO DE BIENES INMUEBLES POR EL PRIMER PREDIO</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>17</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c17 value=1 onClick=(Alternar(),document.contact.t17.style.display=checked?'':'none',foco(17)) title='Marque en este recuadro si desea agregar este concepto 41429'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t17 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>RECTIFICACION DE ESCRITURAS</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>18</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c18 value=1 onClick=(Alternar(),document.contact.t18.style.display=checked?'':'none',foco(18)) title='Marque en este recuadro si desea agregar este concepto 4145402'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t18 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS URBANOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL, A COSTA DEL PROMOVENTE, BAJO LA SIGUIENTE BASE: SOBRE EXCEDENTE POR CADA 20 M2."""</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>19</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c19 value=1 onClick=(Alternar(),document.contact.t19.style.display=checked?'':'none',foco(19)) title='Marque en este recuadro si desea agregar este concepto 41423'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t19 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXPEDICION DE CONSTANCIAS DE NO INSCRIPCION CATASTRAL</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>21</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c21 value=1 onClick=(Alternar(),document.contact.t21.style.display=checked?'':'none',foco(21)) title='Marque en este recuadro si desea agregar este concepto 41421'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t21 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EXPEDICION DE CONSTANCIAS DE INSCRIPCION CATASTRAL, POR PREDIO"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>23</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c23 value=1 onClick=(Alternar(),document.contact.t23.style.display=checked?'':'none',foco(23)) title='Marque en este recuadro si desea agregar este concepto 4144001'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t23 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>COPIA DE DOCUMENTO SIMPLE</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>24</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c24 value=1 onClick=(Alternar(),document.contact.t24.style.display=checked?'':'none',foco(24)) title='Marque en este recuadro si desea agregar este concepto 41422'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t24 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EXPEDICION DE CONSTANCIAS DE INSCRIPCION CATASTRAL, CON ANTECEDENTES HISTORICOS"""</p></td><td width=8%><p align=center class=Estilo2><strong>434.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>25</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c25 value=1 onClick=(Alternar(),document.contact.t25.style.display=checked?'':'none',foco(25)) title='Marque en este recuadro si desea agregar este concepto 41480'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t25 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXP. DE CONST. DE INSC. CAT. C/ANTEC URG.</p></td><td width=8%><p align=center class=Estilo2><strong>578.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>26</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c26 value=1 onClick=(Alternar(),document.contact.t26.style.display=checked?'':'none',foco(26)) title='Marque en este recuadro si desea agregar este concepto 41478'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t26 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRES.TESTIMONIO SUBDIVISION PREDIOS/LOTE</p></td><td width=8%><p align=center class=Estilo2><strong>578.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>30</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c30 value=1 onClick=(Alternar(),document.contact.t30.style.display=checked?'':'none',foco(30)) title='Marque en este recuadro si desea agregar este concepto 41437'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t30 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>INFORMACION DE PROPIETARIO DE BIEN INMUEBLE</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>31</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c31 value=1 onClick=(Alternar(),document.contact.t31.style.display=checked?'':'none',foco(31)) title='Marque en este recuadro si desea agregar este concepto 41435'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t31 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR MAQUINAR Y ESTRUCTURAR EL CONTENIDO DEL AVISO DE TRASLADO DE DOMINIO Y/O MANIFESTACION DE PREDIOS URBANOS Y RUSTICOS.</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>32</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c32 value=1 onClick=(Alternar(),document.contact.t32.style.display=checked?'':'none',foco(32)) title='Marque en este recuadro si desea agregar este concepto 41428'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t32 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>LIBERACION DE PATRIMONIO FAMILIAR DE ESCRITURA</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>33</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c33 value=1 onClick=(Alternar(),document.contact.t33.style.display=checked?'':'none',foco(33)) title='Marque en este recuadro si desea agregar este concepto 41441'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t33 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>FORMATO DE TRASLADO DE DOMINIO Y/O MANIFESTACION</p></td><td width=8%><p align=center class=Estilo2><strong>36.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>34</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c34 value=1 onClick=(Alternar(),document.contact.t34.style.display=checked?'':'none',foco(34)) title='Marque en este recuadro si desea agregar este concepto 41420'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t34 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXPEDICION DE CLAVE CATASTRAL POR PREDIO</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>35</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c35 value=1 onClick=(Alternar(),document.contact.t35.style.display=checked?'':'none',foco(35)) title='Marque en este recuadro si desea agregar este concepto 41443'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t35 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE TESTIMONIO DE LOTIFICACION DE PREDIO</p></td><td width=8%><p align=center class=Estilo2><strong>1806.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>36</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c36 value=1 onClick=(Alternar(),document.contact.t36.style.display=checked?'':'none',foco(36)) title='Marque en este recuadro si desea agregar este concepto 41427'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t36 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""CANCELACION DE INSCRIPCION CATASTRAL, DE ESCRITURAS"""</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>37</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c37 value=1 onClick=(Alternar(),document.contact.t37.style.display=checked?'':'none',foco(37)) title='Marque en este recuadro si desea agregar este concepto 41438'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t37 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>INFORMACION DE FECHA DE ADQUISICION Y/O ANTECEDENTES DE PROPIEDAD PARA BUSQUEDA EN EL REGISTRO PUBLICO DE PROPIEDAD</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>38</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c38 value=1 onClick=(Alternar(),document.contact.t38.style.display=checked?'':'none',foco(38)) title='Marque en este recuadro si desea agregar este concepto 41436'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t38 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""INFORMACION GENERAL, POR PREDIO"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>39</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c39 value=1 onClick=(Alternar(),document.contact.t39.style.display=checked?'':'none',foco(39)) title='Marque en este recuadro si desea agregar este concepto 41419'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t39 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EXPEDICION DE AVALUO CATASTRAL CON MEDIDAS, COLINDANCIAS Y/O VALORES COMERCIALES, PARA EFECTOS DE TRASLADO DE DOMINIO E INSCRIPCION EN EL REGISTRO PUBLICO DE LA PROPIEDAD"""</p></td><td width=8%><p align=center class=Estilo2><strong>938.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>40</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c40 value=1 onClick=(Alternar(),document.contact.t40.style.display=checked?'':'none',foco(40)) title='Marque en este recuadro si desea agregar este concepto 41439'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t40 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>LISTADO GENERAL POR MANZANA DE BIENES INMUEBLES POR ORDEN ALFABETICO Y/O CLAVE CATASTRAL.</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>41</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c41 value=1 onClick=(Alternar(),document.contact.t41.style.display=checked?'':'none',foco(41)) title='Marque en este recuadro si desea agregar este concepto 41448'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t41 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE TESTIMONIO POR RELOTIFICACION</p></td><td width=8%><p align=center class=Estilo2><strong>578.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>42</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c42 value=1 onClick=(Alternar(),document.contact.t42.style.display=checked?'':'none',foco(42)) title='Marque en este recuadro si desea agregar este concepto 41460'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t42 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""COPIA DE FOTOGRAFIA DE CONTACTO BLANCO NEGRO 23X23 CM. ESCALAS 1:50000, 1:20000, 1:8000 Y 1:4500 AL AÑO 1992, VARIAS LOCALIDADES: EN COPIA FOTOSTATICA SIMPLE"""</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>43</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c43 value=1 onClick=(Alternar(),document.contact.t43.style.display=checked?'':'none',foco(43)) title='Marque en este recuadro si desea agregar este concepto 41456'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t43 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""CANCELACION DE INSCRIPCION CATASTRAL, EXCEPTO DE ESCRITURAS"""</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>45</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c45 value=1 onClick=(Alternar(),document.contact.t45.style.display=checked?'':'none',foco(45)) title='Marque en este recuadro si desea agregar este concepto 41458'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t45 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR SOLICITUD DE FUSION DE PREDIOS</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>46</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c46 value=1 onClick=(Alternar(),document.contact.t46.style.display=checked?'':'none',foco(46)) title='Marque en este recuadro si desea agregar este concepto 41404'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t46 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""CARTOGRAFIA MULTIFINALITARIA FORMATO 90X60 CM, EN PAPEL BOND POR SUBPRODUCTO AL AÑO 1992, MISMA QUE COMPRENDE PERIMETRO DE MANZANAS, BANQUETAS Y NOMBRE DE CALLES"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>47</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c47 value=1 onClick=(Alternar(),document.contact.t47.style.display=checked?'':'none',foco(47)) title='Marque en este recuadro si desea agregar este concepto 41405'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t47 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""PLANO ESTATAL ESCALA 1:250000 EN PAPEL BOND CON DIVISION MUNICIPAL, FORMATO:1.15 X 0.90 AL AÑO 1992"""</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>48</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c48 value=1 onClick=(Alternar(),document.contact.t48.style.display=checked?'':'none',foco(48)) title='Marque en este recuadro si desea agregar este concepto 41405'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t48 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""PLANOS MUNICIPALES GENERALES, ESCALAS 1:250000 Y 1:50000 EN PAPEL BOND, FORMATO 60 X 90 CM, AL AÑO 1992"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>49</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c49 value=1 onClick=(Alternar(),document.contact.t49.style.display=checked?'':'none',foco(49)) title='Marque en este recuadro si desea agregar este concepto 41461'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t49 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>IMPRESION DE CARTOGRAFIA RUSTICA O URBANA CON IMAGEN DIGITAL DE FONDO.</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>50</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c50 value=1 onClick=(Alternar(),document.contact.t50.style.display=checked?'':'none',foco(50)) title='Marque en este recuadro si desea agregar este concepto 4140701'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t50 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""PLANOS CASTASTRALES POR LOCALIDAD, DIFERENTES ESCALAS Y FORMATOS, CON MANZANAS, NOMBRE DE CALLES Y COLONIAS, IMPRESION EN PAPEL BOND: CON CLAVE CATASTRAL DE LA MANZANA"""</p></td><td width=8%><p align=center class=Estilo2><strong>434.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>51</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c51 value=1 onClick=(Alternar(),document.contact.t51.style.display=checked?'':'none',foco(51)) title='Marque en este recuadro si desea agregar este concepto 41408'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t51 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""PLANOS CATASTRALES DE SECTORES POR LOCALIDAD EN PAPEL BOND, AL AÑO 1998 Y/O ACTUALIZADO"""</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>52</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c52 value=1 onClick=(Alternar(),document.contact.t52.style.display=checked?'':'none',foco(52)) title='Marque en este recuadro si desea agregar este concepto 41449'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t52 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>COPIA DE CARTOGRAFIA CATASTRAL PREDIAL RUSTICO ESCALA 1:10000 EN PAPEL BOND FORMATO 90X80 CM. ELABORADAS ENTRE LOS AÑOS 1979 Y 1985</p></td><td width=8%><p align=center class=Estilo2><strong>252.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>53</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c53 value=1 onClick=(Alternar(),document.contact.t53.style.display=checked?'':'none',foco(53)) title='Marque en este recuadro si desea agregar este concepto 4141001'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t53 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""IMPRESION CARTOGRAFIA CATASTRAL MANZANERA PREDIAL URBANO Y/O. PREDIOS RUSTICOS DIFERENTES ESCALAS, EN PAPEL BOND: TAMAÑO CARTA."""</p></td><td width=8%><p align=center class=Estilo2><strong>108.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>54</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c54 value=1 onClick=(Alternar(),document.contact.t54.style.display=checked?'':'none',foco(54)) title='Marque en este recuadro si desea agregar este concepto 4141105'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t54 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""ELABORACION DE CROQUIS CATASTRAL DE PREDIO RUSTICO CON APOYO FOTOGRAMETRICO, CARTOGRAFICO, ACOTAMIENTO, COLINDANCIAS Y SUPERFICIES HASTA 50 HECTAREAS."""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>58</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c58 value=1 onClick=(Alternar(),document.contact.t58.style.display=checked?'':'none',foco(58)) title='Marque en este recuadro si desea agregar este concepto 4141101'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t58 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""ELABORACION DE CROQUIS CATASTRAL DE PREDIO CON ACOTAMIENTO, COLINDANCIAS, SUPERFICIE DE TERRENO Y CONSTRUCCION, PREDIOS URBANOS Y SUBURBANOS: HASTA 500 M2"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>62</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c62 value=1 onClick=(Alternar(),document.contact.t62.style.display=checked?'':'none',foco(62)) title='Marque en este recuadro si desea agregar este concepto 4145401'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t62 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS URBANOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL, A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 1 M2 HASTA 200 M2"""</p></td><td width=8%><p align=center class=Estilo2><strong>1084.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>63</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c63 value=1 onClick=(Alternar(),document.contact.t63.style.display=checked?'':'none',foco(63)) title='Marque en este recuadro si desea agregar este concepto 4141201'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t63 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>LEVANTAMIENTO TOPOGRAFICO DE PREDIO RUSTICO: POR LAS PRIMERAS 10 HECTÁREAS DE 10.1 HECTÁREAS EN ADELANTE PO HECTÁREA EXCEDENTE</p></td><td width=8%><p align=center class=Estilo2><strong>3610.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>64</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c64 value=1 onClick=(Alternar(),document.contact.t64.style.display=checked?'':'none',foco(64)) title='Marque en este recuadro si desea agregar este concepto 41434'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t64 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>CERTIFICACION DE PLANOS CATASTRALES</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>65</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c65 value=1 onClick=(Alternar(),document.contact.t65.style.display=checked?'':'none',foco(65)) title='Marque en este recuadro si desea agregar este concepto 41416'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t65 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""UBICACION Y VERIFICACION DE MEDIDAS FISICAS, COLINDANCIAS DE PREDIO URBANO"""</p></td><td width=8%><p align=center class=Estilo2><strong>866.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>66</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c66 value=1 onClick=(Alternar(),document.contact.t66.style.display=checked?'':'none',foco(66)) title='Marque en este recuadro si desea agregar este concepto 41478'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t66 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"UBICACION Y VERIFICACION DE MEDIDAS FISICAS, COLINDANCIAS DE PREDIO URBANO. SERVICIO URGENTE"</p></td><td width=8%><p align=center class=Estilo2><strong>1010.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>67</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c67 value=1 onClick=(Alternar(),document.contact.t67.style.display=checked?'':'none',foco(67)) title='Marque en este recuadro si desea agregar este concepto 41457'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t67 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE TESTIMONIO POR FUSION DE PREDIOS O LOTES</p></td><td width=8%><p align=center class=Estilo2><strong>578.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>68</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c68 value=1 onClick=(Alternar(),document.contact.t68.style.display=checked?'':'none',foco(68)) title='Marque en este recuadro si desea agregar este concepto 4144002'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t68 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>COPIA DE DODUMENTO CERTIFICADA</p></td><td width=8%><p align=center class=Estilo2><strong>108.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>69</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c69 value=1 onClick=(Alternar(),document.contact.t69.style.display=checked?'':'none',foco(69)) title='Marque en este recuadro si desea agregar este concepto 41471'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t69 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR PRESENTACION E INSPECCION FISICA DE AVALUO COMERCIAL</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>70</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c70 value=1 onClick=(Alternar(),document.contact.t70.style.display=checked?'':'none',foco(70)) title='Marque en este recuadro si desea agregar este concepto 41472'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t70 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR EXPEDICION O REFRENDO ANUAL DE CREDENCIA DE PERITO VALUADOR</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>71</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c71 value=1 onClick=(Alternar(),document.contact.t71.style.display=checked?'':'none',foco(71)) title='Marque en este recuadro si desea agregar este concepto 41473'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t71 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR PRESENTACION DE PLANOS DE FRACCIONAMIENTO </p></td><td width=8%><p align=center class=Estilo2><strong>2166.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>72</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c72 value=1 onClick=(Alternar(),document.contact.t72.style.display=checked?'':'none',foco(72)) title='Marque en este recuadro si desea agregar este concepto 41474'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t72 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE PLANOS Y TESTIMONIO DE FRACCIONAMIENTOS</p></td><td width=8%><p align=center class=Estilo2><strong>2528.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>73</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c73 value=1 onClick=(Alternar(),document.contact.t73.style.display=checked?'':'none',foco(73)) title='Marque en este recuadro si desea agregar este concepto 4142501'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t73 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>CANCELACION Y REVERSION DE FIDEICOMISO</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>74</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c74 value=1 onClick=(Alternar(),document.contact.t74.style.display=checked?'':'none',foco(74)) title='Marque en este recuadro si desea agregar este concepto 41446'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t74 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>SUSTITUCION DE FIDUCARIO O FIDEICOMISARIO</p></td><td width=8%><p align=center class=Estilo2><strong>3610.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>75</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c75 value=1 onClick=(Alternar(),document.contact.t75.style.display=checked?'':'none',foco(75)) title='Marque en este recuadro si desea agregar este concepto 41447'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t75 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRESENTACION DE PLANOS POR LOTIFICACION</p></td><td width=8%><p align=center class=Estilo2><strong>1444.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>76</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c76 value=1 onClick=(Alternar(),document.contact.t76.style.display=checked?'':'none',foco(76)) title='Marque en este recuadro si desea agregar este concepto 41462'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t76 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR SOLICITUD DE SUBDIVISION DE PREDIOS</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>78</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c78 value=1 onClick=(Alternar(),document.contact.t78.style.display=checked?'':'none',foco(78)) title='Marque en este recuadro si desea agregar este concepto 41450'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t78 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>SERVICIOS GEODESICOS ESPECIALES POR CADA PUNTO DE APOYO TERRESTRE POSICIONADO EN CAMPO EN COORDENADAS TRANSVERSALES DE MERCATOR CON UN MINIMO DE DOS PUNTOS</p></td><td width=8%><p align=center class=Estilo2><strong>506.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>79</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c79 value=1 onClick=(Alternar(),document.contact.t79.style.display=checked?'':'none',foco(79)) title='Marque en este recuadro si desea agregar este concepto 4141202'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t79 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>LEVANTAMIENTO TOPOGRAFICO O DESLINDE RUSTICO 10 HECTARIAS EN ADELANTE</p></td><td width=8%><p align=center class=Estilo2><strong>144.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>84</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c84 value=1 onClick=(Alternar(),document.contact.t84.style.display=checked?'':'none',foco(84)) title='Marque en este recuadro si desea agregar este concepto 41463'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t84 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>DICTAMEN TECNICO RELATIVO A EXCEDENCIAS DE SUPERFICIE DE PREDIO RUSTICO</p></td><td width=8%><p align=center class=Estilo2><strong>434.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>85</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c85 value=1 onClick=(Alternar(),document.contact.t85.style.display=checked?'':'none',foco(85)) title='Marque en este recuadro si desea agregar este concepto 41481'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t85 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>DICTAMEN DIF. SUPERF. RUST O URB. URG.</p></td><td width=8%><p align=center class=Estilo2><strong>578.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>89</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c89 value=1 onClick=(Alternar(),document.contact.t89.style.display=checked?'':'none',foco(89)) title='Marque en este recuadro si desea agregar este concepto 4145302'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t89 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS RUSTICOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 0.1 A 10.0 HECTAREAS"""</p></td><td width=8%><p align=center class=Estilo2><strong>6138.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>90</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c90 value=1 onClick=(Alternar(),document.contact.t90.style.display=checked?'':'none',foco(90)) title='Marque en este recuadro si desea agregar este concepto 4145303'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t90 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS RUSTICOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 10.1 A 50.0 HECTAREAS (POR HECTAREA EXCEDENTE DE 10 HECTAREAS)."""</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>91</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c91 value=1 onClick=(Alternar(),document.contact.t91.style.display=checked?'':'none',foco(91)) title='Marque en este recuadro si desea agregar este concepto 4145304'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t91 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS RUSTICOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 50.1 A 100.0 HECTAREAS (POR HECTAREA EXCEDENTE DE 50 HECTAREAS)"""</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>92</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c92 value=1 onClick=(Alternar(),document.contact.t92.style.display=checked?'':'none',foco(92)) title='Marque en este recuadro si desea agregar este concepto 4145305'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t92 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS RUSTICOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 100.1 A 300.0 HECTAREAS (POR HECTAREA EXCEDENTE DE 100 HECTAREAS)."""</p></td><td width=8%><p align=center class=Estilo2><strong>72.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>93</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c93 value=1 onClick=(Alternar(),document.contact.t93.style.display=checked?'':'none',foco(93)) title='Marque en este recuadro si desea agregar este concepto 4145306'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t93 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EL APEO Y DESLINDE DE PREDIOS RUSTICOS, SE EFECTUARAN UNICAMENTE POR MANDATO JUDICIAL A COSTA DEL PROMOVENTE, BAJO LAS SIGUIENTES BASES: DE 300.1 HECTAREAS EN ADELANTE (POR HECTAREA EXCEDENTE DE 300 HECTAREAS)."""</p></td><td width=8%><p align=center class=Estilo2><strong>36.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>94</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c94 value=1 onClick=(Alternar(),document.contact.t94.style.display=checked?'':'none',foco(94)) title='Marque en este recuadro si desea agregar este concepto 0'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t94 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>SERVICIOS GEODESICOS ESPECIALES POR CADA PUNTO DE APOYO TERRESTRE POSICIONADO EN CAMPO EN COORDENADAS TRANSVERSALES DE MERCATOR CON UN MINIMO DE DOS PUNTOS</p></td><td width=8%><p align=center class=Estilo2><strong>722.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>95</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c95 value=1 onClick=(Alternar(),document.contact.t95.style.display=checked?'':'none',foco(95)) title='Marque en este recuadro si desea agregar este concepto 41482'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t95 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PRES. E INSPECCION FISICA DE AVALUO URGE</p></td><td width=8%><p align=center class=Estilo2><strong>506.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>96</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c96 value=1 onClick=(Alternar(),document.contact.t96.style.display=checked?'':'none',foco(96)) title='Marque en este recuadro si desea agregar este concepto 4140702'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t96 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>PLANOS CATAST. X LOC. PAPEL BOND S/CVE</p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>97</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c97 value=1 onClick=(Alternar(),document.contact.t97.style.display=checked?'':'none',foco(97)) title='Marque en este recuadro si desea agregar este concepto 4141002'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t97 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""IMPRESION CARTOGRAFIA CATASTRAL MANZANERA PREDIAL URBANO Y/O PREDIOS RUSTICOS DIFERENTES ESCALAS, EN PAPEL BOND: DOBLE CARTA"""</p></td><td width=8%><p align=center class=Estilo2><strong>180.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>98</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c98 value=1 onClick=(Alternar(),document.contact.t98.style.display=checked?'':'none',foco(98)) title='Marque en este recuadro si desea agregar este concepto 4145502'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t98 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""EXPEDICION DE PLANO EN FORMATO DIGITAL, POR PREDIO: SUBURBANO Y RUSTICO"""</p></td><td width=8%><p align=center class=Estilo2><strong>108.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>99</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c99 value=1 onClick=(Alternar(),document.contact.t99.style.display=checked?'':'none',foco(99)) title='Marque en este recuadro si desea agregar este concepto 41460'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t99 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>"""COPIA DE PLANO PROPIEDAD RUSTICA, TAMAÑO DOBLE CARTA"""</p></td><td width=8%><p align=center class=Estilo2><strong>180.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>100</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c100 value=1 onClick=(Alternar(),document.contact.t100.style.display=checked?'':'none',foco(100)) title='Marque en este recuadro si desea agregar este concepto 41483'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t100 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>UBIC. Y VERIF.MED.FIS.PRED.URBANO URG.</p></td><td width=8%><p align=center class=Estilo2><strong>1010.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>101</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c101 value=1 onClick=(Alternar(),document.contact.t101.style.display=checked?'':'none',foco(101)) title='Marque en este recuadro si desea agregar este concepto 41475'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t101 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXPEDICION DE CONSTANCIA DE INSCRIP. RUSTICA</p></td><td width=8%><p align=center class=Estilo2><strong>288.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>102</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c102 value=1 onClick=(Alternar(),document.contact.t102.style.display=checked?'':'none',foco(102)) title='Marque en este recuadro si desea agregar este concepto 41476'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t102 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>EXP. DE CONSTANCIA DE INSCRIP. RUST.URG</p></td><td width=8%><p align=center class=Estilo2><strong>362.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>103</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c103 value=1 onClick=(Alternar(),document.contact.t103.style.display=checked?'':'none',foco(103)) title='Marque en este recuadro si desea agregar este concepto 41477'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t103 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>CONSULTA A BASE DE DATOS ALFANUMERICA</p></td><td width=8%><p align=center class=Estilo2><strong>36.00</strong></p></td></tr><tr bgcolor=#F4F4F4 class=Estilo2  onMouseOver=uno(this,'#FFAE79'); onMouseOut=dos(this,'F4F4F4') ><td width=5%><p align=center class=Estilo2><span class=Estilo9>105</span></p></td><td width=5%><p align=center class=Estilo2><input  type=checkbox name=c105 value=1 onClick=(Alternar(),document.contact.t105.style.display=checked?'':'none',foco(105)) title='Marque en este recuadro si desea agregar este concepto 41479'></td><td width=8%><p align=center class=Estilo2><input style=display:none type=text maxlength=3 size=2 name=t105 title='Inserte en este recuadro el n&uacute;mero de veces que desee agregar a su reporte' value=1 onfocus=this.select() ></p></td><td width=65%><p align=justify class=Estilo2 class=Estilo2>POR SOLICITUD DE RELOTIFICACION DE PREDIOS </p></td><td width=8%><p align=center class=Estilo2><strong>216.00</strong></p></td></tr>                        </table>
+                      
+
+                    <p>&nbsp;</p>
+                      </div>
+                    <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p>
+                      <p>&nbsp;</p></td>
+                  </tr>
+                </table>		  
+		        <div align="center">
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+  		            <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+  		            <p class="Estilo9">&nbsp;</p>
+  		            <p class="Estilo9">&nbsp;</p>
+  		            
+                  <p class="Estilo9">&nbsp;</p>
+                  <p class="Estilo9">&nbsp;</p>
+  		            <p class="Estilo9"><hr>
+   	                <br><br><br><br>
+  		            <p>
+			  	      <input type="hidden" name="nombre" value="">
+
+        <input type='hidden' name='rfc2' id='rfc2'><input type='hidden' name='email2' id='email2'><input type='hidden' name='edo2' id='edo2'><input type='hidden' name='mun2' id='mun2'><input type='hidden' name='loc2' id='loc2'><input type='hidden' name='col2' id='col2'><input type='hidden' name='calle2' id='calle2'><input type='hidden' name='cod2' id='cod2'><input type='hidden' name='num_1' id='num_1'><input type='hidden' name='num_2' id='num_2'><input type='hidden' name='requiere2' id='requiere2'><input type='hidden' name='appaterno2' id='appaterno2'><input type='hidden' name='apmaterno2' id='apmaterno2'><input type='hidden' name='nombre2' id='nombre2'><input type='hidden' name='razon2' id='razon2'><input type='hidden' name='tipoPago2' id='tipoPago2'><input type='hidden' name='slfactura' id='slfactura'>
+
+<div class="alert alert-danger" >
+ 
+ <!--<!doctype html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>jQuery Modal Contact Demo</title>
+  <meta name="author" content="Jake Rocheleau">
+  
+  <link rel="stylesheet" type="text/css" media="all" href="style.css">
+  <link rel="stylesheet" type="text/css" media="all" href="fancybox/jquery.fancybox.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.0.6"></script> 
+</head>
+
+<body> -->
+
+	<a  class="modalbox alert-link" href="catastrales.php.html#inline">
+	<img src="https://www.hacienda-nayarit.gob.mx/img/facturacion.png" aling="center"><br>
+	<div style="font-size:11px;">
+	Si deseas obtener tu Factura Electr&oacute;nica,<br> Ingresa a esta opci&oacute;n para capturar los datos correspondientes.</div></a>
+
+
+<!-- hidden inline form -->
+<div id="inline">
+	<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0"> 
+		<tr>
+			<td>
+	<h5><strong>Datos para la Factura Electr&oacute;nica</strong></h5>
+ 			</td>
+
+	<td aling="rigth">
+		<img src="https://www.hacienda-nayarit.gob.mx/img/banner_lat.png">
+	</td>
+</tr>
+</table>
+
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0"> 
+<tr> 
+	<td >
+
+		<div class="alert alert-success" role="alert">
+		<table width="100%"  border="0"   align="center" cellpadding="0" cellspacing="0">
+			<tr>
+			
+				<!-- <td>
+		<input type="checkbox" name="slfactura" id="slfactura" value="1"  title="Seleccione esta casilla para confirmar que desea recibir por correo electr&oacute;nico la factura digital">*Deseo recibir por correo la Factura Electr&oacute;nica de este pago.
+			</td> -->
+			<td style="font-size:10px;" >
+				<strong>&iquest;Cu&aacute;l es la forma de pago que usted llevar&aacute; a cabo para este tr&aacute;mite?</strong>			
+				<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+					<tr>
+						<td  style="font-size:8px;" width="15%"  >
+							<div style="text-align:center">
+							 <input type="radio" name="tipoPag" value="Efectivo" checked>Efectivo
+							</div>
+						</td>	
+						<td  style="font-size:8px;" width="15%">
+							<div style="text-align:center">
+							 <input type="radio" name="tipoPag" value="Cheque">Cheque
+							</div>
+						</td>							 
+						<td  style="font-size:8px;" width="30%" >
+							<div style="text-align:center">
+							 <input type="radio" name="tipoPag" value="Transferencia">Transferencia Interbancaria
+							</div>
+						</td>
+						<td  style="font-size:8px;" width="20%" >
+							<div style="text-align:center">
+							 <input type="radio" name="tipoPag" value="linea">Pago en linea
+							</div>
+						</td>	
+						<td  style="font-size:8px;" width="20%" >
+							<div style="text-align:center">
+							 <input type="radio" name="tipoPag" value="Otro">Otro medio de pago
+							</div>
+						</td>	
+						
+					</tr>
+				</table>
+			</td>
+		</tr>
+		</table>
+</div>
+		
+	</td>
+</tr>
+
+
+<tr>
+	<td>
+		
+<!--<form id="contact" name="contact" action="form.php" method="post"> -->
+<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+<tr>
+	<td bgcolor="#DBEAF9" style="width:25%">
+		<input type="radio" checked name="persona" id="perfisica" onclick="tipoper();" value="Fisica" title="Tipo de persona f&iacute;sica" ><label>Persona F&iacute;sica</label>
+	</td>
+	<td bgcolor="#DBEAF9" style="width:25%">
+		<input type="radio" name="persona" id="permoral" onclick="tipoper();" value="Moral" title="Tipo de persona Moral"><label>Persona Moral</label>
+	</td>
+
+ </tr>
+ 
+<tr>
+	<td >
+
+</br>
+		<input type="msg" id="email"  placeholder="*Correo Electr&oacute;nico" name="email" class="txt" title="Ingrese aqui una cuenta de correo v&aacute;lida" >
+	</td>
+	<td >
+		<input type="msg" id="rfc"  placeholder="*RFC" name="rfc" class="txt" onkeypress="return changeToUpperCase(event,this)" title="RFC Pesona F&iacute;sica(13 posiciones),RFC pesona moral(12 posiciones)" >
+	</td>
+
+ </tr>
+  <tr>
+
+
+		<td >
+			<div id="tipoF" style="display:inline">
+			<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+			<td >
+		
+				<input type="msg" placeholder="*Apellido Paterno" id="appaterno" style="width:120px"  name="appaterno" class="txt" onkeypress="return changeToUpperCase(event,this)" title="Ingrese aqui el Apellido paterno">
+			</td>
+			<td >
+			
+				<input type="msg" id="apmaterno" placeholder="*Apellido Materno"  name="apmaterno" style="width:120px" class="txt" onkeypress="return changeToUpperCase(event,this)"  title="Ingrese aqui el Apellido materno">
+			</td>	
+			</table>
+			</div>
+
+
+			<div id="tipoM" style="display:none">
+			<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+			<td >
+	
+				<input type="msg" id="razon" placeholder="*Razon Social" style="width:300x"  name="razon" class="txt" onkeypress="return changeToUpperCase(event,this)"  title="Ingrese aqui la raz&oacute;n social">
+			</td>
+			
+			</table>
+			</div>
+
+		</td>
+
+
+		<td >
+			 <div id="tipoFNombre" style="display:inline">
+
+			<input type="msg" id="nombre" placeholder="*Nombre" name="nombre"  class="txt" onkeypress="return changeToUpperCase(event,this)" title="Ingrese aqui el nombre">
+			</div>
+		</td>		
+
+</div>
+</tr>
+
+
+ <tr>
+	<td > 
+
+		<input type="msg" id="calle" placeholder="*Calle" name="calle" class="txt" onkeypress="return changeToUpperCase(event,this)">
+	</td >
+	<td>
+
+		<input type="msg" id="num2" name="num2" placeholder="*N&uacute;mero Exterior" class="txt" onkeypress="return changeToUpperCase(event,this)">
+
+	</td>
+
+</tr>	
+ <tr>
+	<td >
+
+		<input type="msg" id="num1" name="num1" placeholder="*N&uacute;mero Interior" class="txt" onkeypress="return changeToUpperCase(event,this)">
+	</td>
+	<td >
+
+		<input type="msg" id="col" placeholder="*Colonia"  name="col" class="txt" onkeypress="return changeToUpperCase(event,this)">
+
+	</td>
+</tr>
+ <tr>
+	<td > 
+
+		<input type="msg" id="cod" placeholder="*C&oacute;digo Postal"  name="cod" class="txt" onkeypress="return changeToUpperCase(event,this)">
+	</td>
+	<td >
+
+		<input type="msg" id="loc" name="loc"  placeholder="*Localidad" class="txt" onkeypress="return changeToUpperCase(event,this)">
+
+	</td>
+</tr>
+ <tr>
+	<td >
+
+		<input type="msg" id="mun" name="mun" placeholder="*Municipio" class="txt" onkeypress="return changeToUpperCase(event,this)">
+	</td> 	
+	<td >
+
+		<input type="msg" id="edo" name="edo" placeholder="*Estado"  class="txt" onkeypress="return changeToUpperCase(event,this)">
+
+	</td>
+
+</tr>	
+		<!--<label for="msg">Enter a Message</label>
+		<textarea id="msg" name="msg" class="txtarea"></textarea>-->
+		</table>
+
+	</td>
+</tr>
+</table>
+<br>
+<!--<div class="g-recaptcha" data-sitekey="6LfIuyUTAAAAAOzX2UU29wp4f-3h6a3PuLORmUzb"></div>-->
+	<table width="100%"  border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr>
+			<td > 
+		<button id="send">Confirmar</button> 
+	</td>
+<td><div class="Estilo30" style="font-size:10px">
+  **Es responsabilidad del contribuyente la autenticidad de esta la informaci&oacute;n.<br>
+  **Su correo ser&aacute; enviado en las pr&oacute;ximas 72 horas.
+</div>
+</td>
+	</tr>
+</table>
+	<!-- </form> -->
+</div>
+
+<!-- basic fancybox setup -->
+
+<!--
+</body>
+</html> 
+--></div>        
+  		              <input type="submit" name="Submit" value="Obtener Formato para Pago">
+                    </p>
+	                     <p></p>
+		        </div>
+              </td></tr>
+          </table>
+	     
+        </td>
+      </tr>
+    </table>
+  </form>
+</blockquote>
+</body>
+</html>

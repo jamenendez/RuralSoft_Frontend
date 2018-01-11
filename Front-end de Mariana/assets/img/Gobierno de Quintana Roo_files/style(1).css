@@ -1,0 +1,203 @@
+/*
+Theme Name: Oaxaca
+Theme URI: oaxaca.gob.mx
+Author: 
+Author URI: 
+Description: 
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: 
+Tags: 
+*/
+
+/*
+[COLORES INTITUCIONALES GOBIERNO FEDERAL]
+Verde: #00853E
+Rojo: #CD163F
+Gris: #9B9A9A
+Escala de grises: Negro al 80%, 60% y 50%
+Blanco
+*/
+
+body{
+    color: #575756;
+}
+.cover{
+    /* background: url(images/bg.jpg) no-repeat center center fixed; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*
+img.logo{
+    padding-left: 16px;
+}
+*/
+.separador-superior{
+    padding-top: 30px;
+}
+.divisor-vertical-derecho{
+    border-right: 1px solid #868686;
+}
+.divisor-vertical-derecho:last-child{
+    border-right: none;
+}
+.divisor-vertical-izquierdo{
+    border-left: 1px solid #868686;
+}
+.divisor-vertical-izquierdo:first-child{
+    border-left: none;
+}
+/*[REDES SOCIALES]*/
+.redes-sociales a{
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #00853E;
+}
+.redes-sociales a:hover{
+    color: #CD163F;
+}
+
+ul.social-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.social-list li{
+    display: inline-block;
+    padding: 4px;
+}
+
+.icon_soc{ width: 45px; height: auto; }
+
+/*[SLIDER]*/
+ul.slides li.slide a{
+    display: block;
+    /*height: 420px;*/
+    text-decoration: none;
+}
+
+/*[NOTICIAS]*/
+div.noticia a{
+    display: block;
+    height: 180px;
+}
+
+/*[BUSQUEDA]*/
+input[type="text"].search{
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: rgba(134, 134, 134, 1);
+    padding: 2px 5px 2px 5px;
+    width: 195px;
+}
+input[type="submit"].search{
+    border: none;
+    background: none;
+}
+input[type="submit"].search:hover{
+    color: #ffffff;
+    background-color: rgba(214, 0, 113, 1);
+}
+input[type="submit"].search:active{
+    
+    background-color: rgba(214, 0, 113, 0.8);
+}
+
+/*[FOOTER]*/
+footer .footer{
+    min-height: 50px;
+    background-image: url('bootstrap/images/footer.png');
+}
+
+/*[BOOTSTRAP]*/
+.navbar-collapse{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.navbar{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 0;
+    min-height: 1px;
+}
+.navbar-default{
+    background-color: #ffffff;
+    border: none;
+    border-top: 1px solid #575756;
+}
+.navbar-nav>li>a{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+    color: #ffffff;
+    background-color: #B7156D;
+    /* background-color: rgba(214, 0, 113, 1);*/
+}
+.navbar-default .navbar-nav>li{ padding-right: 5px; }
+.navbar-default .navbar-nav>li:last-child{ padding-right: 0px; }
+.navbar-default .navbar-nav>li>a{
+
+    color: #FFF;
+    background-color: #818282;
+    /*color: #575756;
+    background-color: #efefef;
+     width: 150px; */
+    text-align: center;
+}
+
+
+    /*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        .logo{
+                float: none;
+                margin: 0 auto;
+            }
+            .buscador{
+                text-align: center; 
+            }
+            .redes-sociales{
+                text-align: center; 
+            }
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        .logo{
+                float: none;
+                margin: 0 auto;
+            }
+            .buscador{
+                text-align: center; 
+            }
+            .redes-sociales{
+                text-align: center; 
+            }
+        
+    }

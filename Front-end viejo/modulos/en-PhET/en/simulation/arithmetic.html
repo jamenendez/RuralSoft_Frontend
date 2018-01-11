@@ -1,0 +1,1722 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+        "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
+
+<!-- Mirrored from phet.colorado.edu/en/simulation/arithmetic by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 22 Jan 2014 08:28:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Arithmetic - Arithmetic, Multiplication, Division - PhET</title>
+    
+        <meta name="description" content="Remember your multiplication tables? ... me neither. Brush up on your multiplication, division, and factoring skills with this exciting game. No calculators allowed!"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="../../css/phet-v17-min.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6fix-v3.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/css/ie7fix-v2.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8fix-v1.css"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script defer type="text/javascript" src="/js/pngfix.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie-v1.css"/>
+    <![endif]-->
+    <!-- class edu.colorado.phet.website.content.simulations.SimulationPage -->
+    <!-- host phet.colorado.edu -->
+    
+    <script type="text/javascript" src="../../js/phet-v12-min.js"></script>
+
+        
+    
+        <meta property="og:title" content="Arithmetic"/><meta property="og:type" content="phet:simulation"/><meta property="og:url" content="http://phet.colorado.edu/en/simulation/arithmetic"/><meta property="og:image" content="http://phet.colorado.edu/sims/arithmetic/arithmetic-thumbnail.jpg"/><meta property="og:site_name" content="PhET"/><meta property="og:description" content="Remember your multiplication tables? ... me neither. Brush up on your multiplication, division, and factoring skills with this exciting game. No calculators allowed!"/><meta property="keywords" content="Arithmetic, Multiplication, Division, Factoring, Calculation, Math"/>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var phetSimSponsors = {totalWeight:67.0,sponsors:[{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.hewlett.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/hewlett-logo.jpg\" alt=\"The William and Flora Hewlett Foundation logo\" width=\"132\" height=\"32\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.nsf.gov/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/nsf-logo.gif\" alt=\"The National Science Foundation logo\" width=\"38\" height=\"38\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ksu.edu.sa/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ERCSME-combined-logo-regular.png\" alt=\"ERCSME at King Saud University logo\" width=\"130\" height=\"35\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.odf.org/\" class=\"external\" rel=\"nofollow\"><span style=\"padding-top: 5px; border: none;font-size: 14px; padding: 0.3em 0; color: #000; text-decoration: none;\"><span>The O&#39;Donnell Foundation</span></span></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://jila.colorado.edu/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jila_logo_medium.gif\" alt=\"JILA logo\" width=\"136\" height=\"56\" style=\"padding-top: 5px; border: none;padding: 4px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.techsmith.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/techsmith.png\" alt=\"TechSmith logo\" width=\"137\" height=\"31\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://bitrock.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/bitrock-small.png\" alt=\"BitRock logo\" width=\"159\" height=\"65\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.jetbrains.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jetbrains.gif\" alt=\"JetBrains logo\" width=\"124\" height=\"44\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ej-technologies.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ej-small.png\" alt=\"ej-technologies logo\" width=\"150\" height=\"31\" style=\"padding-top: 5px; border: none;padding: 4px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.idahodigitallearning.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/idaho-digital-learning-logo.png\" alt=\"Idaho Digital Learning logo\" width=\"130\" height=\"95\" style=\"padding-top: 5px; border: none;padding: 8px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.compasslearning.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/compass-learning-small.png\" alt=\"CompassLearning logo\" width=\"150\" height=\"39\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.learning.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/learning-com-extra-small.png\" alt=\"Learning.com logo\" width=\"135\" height=\"19\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.wirelessgeneration.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/wireless-generation-160x19.png\" alt=\"Wireless Generation logo\" width=\"160\" height=\"19\" style=\"padding-top: 5px; border: none;padding: 3px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:3.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ode.state.or.us\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/oregon-doe-black-small.png\" alt=\"Oregon Department of Education logo\" width=\"150\" height=\"27\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.jcesc.k12.oh.us/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jefferson-county-vla-125x128.png\" alt=\"Jefferson County Virtual Learning Academy logo\" width=\"125\" height=\"128\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.carolina.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/carolina-160x56.png\" alt=\"Carolina Biological Supply Company logo\" width=\"160\" height=\"56\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pearsoned.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pearson-medium.png\" alt=\"Pearson logo\" width=\"150\" height=\"45\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pancopty.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pan-america-medium.png\" alt=\"Pan America Construction logo\" width=\"150\" height=\"77\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://education.ti.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ti-small.png\" alt=\"Texas Instruments logo\" width=\"150\" height=\"37\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.mheonline.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/mcgraw-hill-small.png\" alt=\"McGraw-Hill Education logo\" width=\"155\" height=\"43\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.hark.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/hark-logo-full.png\" alt=\"Hark logo\" width=\"110\" height=\"80\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.zanichelli.it\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/zanichelli-small.png\" alt=\"Zanichelli logo\" width=\"150\" height=\"28\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.cybernetyx.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cybernetyx-small.png\" alt=\"Cybernetyx logo\" width=\"150\" height=\"29\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.cengage.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cengage-small.png\" alt=\"Cengage Learning logo\" width=\"150\" height=\"48\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.noas.com.br/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cnec-small.png\" alt=\"Campanha Nacional de Escolas da Comunidade logo\" width=\"150\" height=\"59\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://education.whro.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/whro-small.png\" alt=\"WHRO Education logo\" width=\"120\" height=\"89\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://ndla.no/en\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ndla-small.png\" alt=\"Norwegian Digital Learning Arena logo\" width=\"150\" height=\"61\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.zalando.co.uk\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/zalando-small.png\" alt=\"Zalando logo\" width=\"154\" height=\"33\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.whfreeman.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/whfreeman-small.png\" alt=\"W. H. Freeman logo\" width=\"150\" height=\"54\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.rsc.org/learn-chemistry\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/rsc-small.png\" alt=\"Royal Society of Chemistry logo\" width=\"150\" height=\"104\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.wiley.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/wiley-small.png\" alt=\"Wiley logo\" width=\"150\" height=\"60\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pi-usa.us/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pi-small.png\" alt=\"Physik Instrumente logo\" width=\"150\" height=\"75\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:3.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div style=\"padding-top: 5px; border: none;border: none;background-color: transparent;\">     <div style=\"margin-top: -10px;border: none;background-color: transparent;\">         <table style=\"width: 160px; height: 100px; background-image:url('/images/support/you.png'); margin: 0 auto;\">             <tr>                 <td style=\"vertical-align: middle;\">                     <a href=\"https://donatenow.networkforgood.org/1437859\"                        rel=\"external,nofollow\"                        style=\"text-decoration: none !important; color: #fff; line-height: normal;\">                         <span style=\"width: 130px; margin: 0 auto; display: block;\">                             <span style=\"font-size: 20px;\">You?</span>                             <br/>                             <span style=\"font-size: 9px;\">(support PhET today and help education worldwide.)</span>                         </span>                     </a>                 </td>             </tr>         </table>     </div> </div>                  <span>Thanks!</span>     </div> "}]};
+/* ]]> */
+</script></head>
+<body dir="ltr" class="ltr" id="offline-installer-body">
+<div id="skipNav">
+    <a href="#main-content" accesskey="0">
+        Skip to Main Content
+    </a>
+</div>
+
+
+
+
+
+<div id="page-header" class="ltr">
+    <div id="page-header-container">
+        <div id="page-header-logo">
+            <a href="../../index.html">
+                <!--<img wicket:id="page-header-logo-image" src="../../../../../../../root/images/phet-logo.gif"-->
+                <img src="../../images/phet-logo-117.svg" alt="PhET Logo" title="Go to the PhET home page" class="header-logo-image" width="223" height="106" id="phet-logo-main-image"/>
+            </a>
+        </div>
+        <div id="page-header-sims-served">
+            <span>Over 110 million simulations delivered</span>
+        </div>
+        <img id="page-header-cu" src="../../images/cu-logo-half.png" alt="University of Colorado Logo" width="150" height="77">
+        <div id="page-header-search">Created 1/22/14. The <a href="http://phet.colorado.edu/en/get-phet/full-install">most up-to-date version</a> is available online.</div>
+    </div>
+</div>
+
+<div class="log-in-out">
+    
+    
+</div>
+<div id="page-content" class="ltr">
+    
+    <div class="menu-page-content" style="width: 820px;">
+        <div id="side-panel">
+            <div>
+    <div class="side-nav">
+        <div>
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../../index.html" class="nml-link nav0" id="nav-location-nav-home">
+                        <span class="nml-link-label">Home</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/new.html" class="nml-link nav0" id="nav-location-nav-simulations">
+                        <span class="nml-link-label selected selected selected">Simulations</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/new.html" class="nml-link nav1" id="nav-location-nav-new">
+                        <span class="nml-link-label">New Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics.html" class="nml-link nav1" id="nav-location-nav-physics">
+                        <span class="nml-link-label">Physics</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/biology.html" class="nml-link nav1" id="nav-location-nav-biology">
+                        <span class="nml-link-label">Biology</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/chemistry.html" class="nml-link nav1" id="nav-location-nav-chemistry">
+                        <span class="nml-link-label">Chemistry</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/earth-science.html" class="nml-link nav1" id="nav-location-nav-earth-science">
+                        <span class="nml-link-label">Earth Science</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/math.html" class="nml-link nav1" id="nav-location-nav-math">
+                        <span class="nml-link-label">Math</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/math/tools.html" class="nml-link nav2" id="nav-location-nav-tools">
+                        <span class="nml-link-label selected">Tools</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/math/applications.html" class="nml-link nav2" id="nav-location-nav-applications">
+                        <span class="nml-link-label">Applications</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/cutting-edge-research.html" class="nml-link nav1" id="nav-location-nav-cutting-edge-research">
+                        <span class="nml-link-label">Cutting Edge Research</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level.html" class="nml-link nav1" id="nav-location-nav-by-level">
+                        <span class="nml-link-label">By Grade Level</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/elementary-school.html" class="nml-link nav2" id="nav-location-nav-elementary-school">
+                        <span class="nml-link-label selected">Elementary School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/middle-school.html" class="nml-link nav2" id="nav-location-nav-middle-school">
+                        <span class="nml-link-label selected">Middle School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/high-school.html" class="nml-link nav2" id="nav-location-nav-high-school">
+                        <span class="nml-link-label">High School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/university.html" class="nml-link nav2" id="nav-location-nav-university">
+                        <span class="nml-link-label">University</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/index.html" class="nml-link nav1" id="nav-location-nav-all">
+                        <span class="nml-link-label">All Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/translated.html" class="nml-link nav1" id="nav-location-nav-simulations-translated">
+                        <span class="nml-link-label">Translated Sims</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../for-teachers.html" class="nml-link nav0" id="nav-location-nav-teacherIdeas">
+                        <span class="nml-link-label teacher-ideas-item">For Teachers</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../stay-connected.html" class="nml-link nav0" id="nav-location-nav-stayConnected">
+                        <span class="nml-link-label">Stay Connected</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../troubleshooting.html" class="nml-link nav0" id="nav-location-nav-troubleshooting-main">
+                        <span class="nml-link-label">Troubleshooting</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../faqs.html" class="nml-link nav0" id="nav-location-nav-faqs">
+                        <span class="nml-link-label">FAQs</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../for-translators.html" class="nml-link nav0" id="nav-location-nav-forTranslators">
+                        <span class="nml-link-label">For Translators</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://donatenow.networkforgood.org/1437859" class="nml-link nav0" id="nav-location-nav-donate">
+                        <span class="nml-link-label">Donate</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../research.html" class="nml-link nav0" id="nav-location-nav-research">
+                        <span class="nml-link-label">Research</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../about.html" class="nml-link nav0" id="nav-location-nav-about">
+                        <span class="nml-link-label">About PhET</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+</div>
+    </div>
+</div>
+            <div>
+
+    <div id="spons" dir="ltr">
+        <div class="principalSponsors">
+            Principal Sponsors
+        </div>
+
+        <div class="header">
+        </div>
+        <div class="sponsors-fake-dl">
+            <div class="sponsors-fake-dt">
+                <a class="sponsor-text-link" href="http://www.hewlett.org/">The William and Flora Hewlett Foundation</a>
+
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <a href="http://www.hewlett.org/">
+                    <img src="../../images/support/hewlett-logo.jpg" alt="The Hewlett Logo" class="spons" width="132" height="32"/>
+                </a>
+                <br/>
+
+                <br/>
+                Makes grants to address the most serious social and environmental problems facing society, where risk capital, responsibly invested, may make a difference over time.
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a href="http://www.nsf.gov/">
+                    <img class="spons" src="../../images/support/nsf-logo.gif" alt="The NSF Logo" width="38" height="38"/>
+                    National Science Foundation
+                </a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <br/>
+                An independent federal agency created by Congress in 1950 to promote the progress of science.
+                <br/>
+
+                <br/>
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a href="http://www.ksu.edu.sa/">
+                    Excellence Center of Science and Mathematics Education at King Saud University
+                </a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <a href="http://www.ksu.edu.sa/">
+                    <img class="spons" src="../../images/support/ERCSME-combined-logo-regular.png" alt="The King Saud (ESCME) Logo" width="130" height="35"/>
+                </a>
+                <br/>
+                <br/>
+                King Saud University seeks to become a leader in educational and technological innovation, scientific discovery and creativity through fostering an atmosphere of intellectual inspiration and partnership for the prosperity of society.
+                <br/>
+                <br/>
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a class="sponsor-text-link" href="http://www.odf.org/">O'Donnell Foundation</a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                The O'Donnell Foundation is devoted to building model programs to enhance the quality of education.
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <div class="other-sponsors-holder" dir="ltr">
+                    <table class="other-sponsors-table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="other-sponsors-left">
+
+                            </td>
+                            <td class="other-sponsors-middle">
+                                <a href="../about/sponsors.html" id="sponsors-panel-link">
+                                    Other Sponsors &gt;&gt;
+                                </a>
+                            </td>
+                            <td class="other-sponsors-right">
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </div>
+        <div id="main-content" class="main-menu-content">
+            
+                <div class="social-div">
+    <div class="social-sub-div">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Farithmetic&amp;t=Arithmetic+-+Arithmetic%2C+Multiplication%2C+Division+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Facebook">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -0px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="https://twitter.com/share?url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Farithmetic&amp;text=Arithmetic+-+Arithmetic%2C+Multiplication%2C+Division+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Twitter">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -16px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Farithmetic&amp;title=Arithmetic+-+Arithmetic%2C+Multiplication%2C+Division+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Stumble Upon">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -32px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Farithmetic&amp;title=Arithmetic+-+Arithmetic%2C+Multiplication%2C+Division+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Digg">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -48px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://www.reddit.com/login?dest=%2Fsubmit%3Furl%3Dhttp%3A%2F%2Fhttp%253A%252F%252Fphet.colorado.edu%252Fen%252Fsimulation%252Farithmetic%26title%3DArithmetic%2B-%2BArithmetic%252C%2BMultiplication%252C%2BDivision%2B-%2BPhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Reddit">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -64px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="https://secure.delicious.com/login?jump=http%3A%2F%2Fwww.delicious.com%2Fsave%3Furl%3Dhttp%253A%252F%252Fphet.colorado.edu%252Fen%252Fsimulation%252Farithmetic%26title%3DArithmetic%2B-%2BArithmetic%252C%2BMultiplication%252C%2BDivision%2B-%2BPhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Delicious">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -80px;"></span>
+        </a>
+    </div>
+</div>
+            
+            
+    <div dir="ltr">
+    <div class="simulation-main-container" itemscope="itemscope" itemtype="http://schema.org/SoftwareApplication" dir="ltr">
+
+        <!-- educationalAlignment ! teaches for mingradelevel and maxgradelevel -->
+
+        <!-- TODO: the changelog link is included in the software version! -->
+
+        <meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11434A3"/>
+        </meta>
+
+        <!-- Schema.org contributor (for credits, etc.) -->
+
+        <meta itemprop="intendedEndUserRole" content="student"/>
+        <meta itemprop="educationalUse" content="classroom"/>
+        <meta itemprop="educationalUse" content="homework"/>
+        <meta itemprop="educationalUse" content="simulation"/>
+        <!--<meta itemprop="timeRequired" content="TODO"/>-->
+        <!--<meta itemprop="typicalAgeRange" content="TODO"/>-->
+
+        <meta itemprop="useRightsUrl" content="../about/licensing.html"/>
+        <div style="display: none;">
+            <meta itemprop="useRightsUrl" content="http://creativecommons.org/licenses/by/3.0/us/"/>
+        </div><div style="display: none;">
+            <meta itemprop="useRightsUrl" content="http://creativecommons.org/licenses/GPL/2.0/"/>
+        </div>
+
+        <meta itemprop="interactivityType" content="active"/>
+        <meta itemprop="learningResourceType" content="simulation"/>
+
+        <meta itemprop="dateCreated" content="2006-05-01T00:00:00"/>
+        <meta itemprop="dateModified" content="2013-06-05T14:21:22"/>
+
+        <meta itemprop="inLanguage" content="en"/>
+
+        <div style="display: none;" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="PhET Interactive Simulations"/>
+            <meta itemprop="url" content="../../index.html"/>
+        </div>
+        <div style="display: none;" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="PhET Interactive Simulations"/>
+            <meta itemprop="url" content="../../index.html"/>
+        </div>
+
+        <meta itemprop="thumbnailUrl" content="../../sims/arithmetic/arithmetic-thumbnail.jpg"/>
+        <!--<meta itemprop="fileFormat" content="TODO"/>-->
+
+        <meta itemprop="applicationCategory" content="Educational"/>
+
+        <h1 class="simulation-main-title" itemprop="name">Arithmetic</h1>
+
+        <div class="rating-holder">
+            
+            
+            
+        </div>
+
+        
+
+        <table class="simulation-main-table">
+            <tr>
+                <td style="width: 300px; vertical-align: top;">
+                    <div class="simulation-main-image-panel">
+                        <a href="../../sims/arithmetic/arithmetic_en.html" rel="external" class="simulation-main-link-run-main external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'en from ' + document.URL])">
+                            <img class="simulation-main-screenshot" src="../../sims/arithmetic/arithmetic-screenshot.png" width="300" id="simulation-main-screenshot-image" itemprop="image screenshot" alt="Arithmetic Screenshot" height="198"/>
+                        </a>
+                        <a class="sim-download sim-button" href="../../sims/arithmetic/arithmetic_en.jar" itemprop="downloadUrl" onclick="_gaq.push(['_trackEvent', 'Simulation Download', 'arithmetic', 'en from ' + document.URL])">
+                            Download
+                        </a>
+                        <a class="sim-run-now sim-button external" href="../../sims/arithmetic/arithmetic_en.html" itemprop="url" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'en from ' + document.URL])">
+                            Run Now!
+                        </a>
+                        <span class="sim-kb" itemprop="fileSize">456 kB</span>
+
+                        
+
+                        <div style="clear: both; width: 100%; height: 0; padding: 0; margin: 0; padding-top: 2px;"></div>
+                        <span class="sim-version" itemprop="version softwareVersion">Version: 2.03 (<a href="arithmetic/changelog.html">change log</a>)</span>
+                        
+
+                        <div style="float: left; clear: left; width: 500px; display: none;" id="embed-popup">
+                            <div style="position: absolute; background-color: #fff; border: 1px solid #666; width: 500px;">
+                                <div style="text-align: right; width: 100%; position: absolute;"><a href="#"
+                                                                                                    onclick="document.getElementById('embed-popup').style.display = 'none';return false;"
+                                                                                                    style="padding: 0.2em;">
+                                    close
+                                </a></div>
+                                <div style="padding: 0 1em 1em;">
+                                    
+                                        <p style="font-weight: bold; font-size: 14px;">
+                                            Embed a running copy of this simulation
+                                        </p>
+                                        <textarea rows="3" cols="50" id="embeddable-text">&lt;iframe src=&quot;http://phet.colorado.edu/sims/arithmetic/arithmetic_en.html&quot; width=&quot;800&quot; height=&quot;600&quot;&gt;&lt;/iframe&gt;</textarea>
+
+                                        <p>
+                                            Use this HTML to embed a running copy of this simulation. You can change the width and height of the embedded simulation by changing the "width" and "height" attributes in the HTML.
+                                        </p>
+                                    
+                                    <p style="font-weight: bold; font-size: 14px;">
+                                        Embed an image that will launch the simulation when clicked
+                                    </p>
+                                    <textarea rows="3" cols="50">&lt;div style=&quot;position: relative; width: 300px; height: 198px;&quot;&gt;&lt;a href=&quot;http://phet.colorado.edu/sims/arithmetic/arithmetic_en.html&quot; style=&quot;text-decoration: none;&quot; rel=&quot;external&quot;&gt;&lt;img src=&quot;http://phet.colorado.edu/sims/arithmetic/arithmetic-screenshot.png&quot; alt=&quot;Arithmetic&quot; style=&quot;border: none;&quot; width=&quot;300&quot; height=&quot;198&quot;/&gt;&lt;div style=&quot;position: absolute; width: 200px; height: 80px; left: 50px; top: 59px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);&quot;&gt;&lt;/div&gt;&lt;table style=&quot;position: absolute; width: 200px; height: 80px; left: 50px; top: 59px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;&quot;&gt;Click to Run&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/a&gt;&lt;/div&gt;</textarea>
+
+                                    <p>
+                                        Use this HTML code to display a screenshot with the words "Click to Run".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="simulation-main-description">
+            <span itemprop="description about">Remember your multiplication tables? ... me neither. Brush up on your multiplication, division, and factoring skills with this exciting game. No calculators allowed!</span>
+
+                    <div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+                        <a class="simStyleOrange sim-button" href="https://donatenow.networkforgood.org/1437859" target="_blank">
+                            Donate
+                        </a>
+                    </div>
+
+                    <div id="sponsor-spot" style="padding-top: 10px;display: none;"></div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        (function() {
+                            var r = Math.random() * phetSimSponsors.totalWeight;
+                            var i;
+                            for ( i = 0; i <= phetSimSponsors.sponsors.length; i++ ) {
+                                r -= phetSimSponsors.sponsors[i].weight;
+                                if ( r <= 0 ) {
+                                    break;
+                                }
+                            }
+                            var html = phetSimSponsors.sponsors[i].html;
+                            var ddToReplace = document.getElementById( 'sponsor-spot' );
+                            ddToReplace.innerHTML = html;
+                            ddToReplace.style.display = "block";
+                        })();
+                        //]]>
+                    </script>
+                    <script type="text/javascript">
+                        (function() {
+                            var otherImageSrc = document.getElementById( "phet-logo-main-image" ).src;
+                            // 0x2F is for a slash, to fool the httrack ripper
+                            var lastIndex = Math.max( otherImageSrc.lastIndexOf( String.fromCharCode( 0x2F ) ), otherImageSrc.lastIndexOf( "\\" ) );
+                            var newImagesDirectory = otherImageSrc.substring( 0, lastIndex );
+                            document.getElementById( 'sponsor-spot' ).innerHTML = document.getElementById( 'sponsor-spot' ).innerHTML.replace( /\/images/g, newImagesDirectory );
+                        })();
+                    </script>
+                    <noscript>
+                        <div style="padding-top: 10px;">
+    <div style="margin: 0 auto; text-align: center; font-size: 10px; color: #666666;">
+        <span>PhET is supported by</span>
+        <div><a href="http://www.pearsoned.com/" class="external" rel="nofollow"><img src="../../images/support/pearson-medium.png" alt="Pearson logo" width="150" height="45" style="padding-top: 5px; border: none;padding: 0px;"/></a></div>
+        
+            <span>and educators like you.</span>
+            <br/>
+        
+        <span>Thanks!</span>
+    </div>
+</div>
+                    </noscript>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <div class="see-below">
+                <h3>
+                    See Below
+                </h3>
+                <ul class="see-below-links">
+                    
+                    <li><a href="#translated-versions">
+                        Translated Versions &gt;&gt;
+                    </a></li>
+                    <li><a href="#software-requirements">
+                        Software Requirements &gt;&gt;
+                    </a></li>
+                    <li><a href="#credits">
+                        Credits &gt;&gt;
+                    </a></li>
+                </ul>
+            </div>
+            <a id="content"></a><a id="teaching-resources"></a>
+
+            <h2 id="simulation-main-panel-content-header-clear">
+                Teaching Resources
+            </h2>
+
+            
+                <h3>
+                    Main Topics
+                </h3>
+                <ul>
+                    <li>
+                        <span itemprop="keywords">Multiplication</span>
+                    </li>
+                </ul>
+            
+
+            <div style="display: none;">
+                <!-- TODO get rid of this part -->
+                
+                    <h3>
+                        Keywords
+                    </h3>
+                    <ul class="keyword-list-holder">
+                        <li class="keyword">
+                            <a href="../simulations/keyword/arithmetic.html">
+                                <span itemprop="keywords">Arithmetic</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/multiplication.html">
+                                <span itemprop="keywords">Multiplication</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/division.html">
+                                <span itemprop="keywords">Division</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/factoring.html">
+                                <span itemprop="keywords">Factoring</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/calculation.html">
+                                <span itemprop="keywords">Calculation</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/math.html">
+                                <span itemprop="keywords">Math</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+            </div>
+
+            
+                <h3>
+                    Sample Learning Goals
+                </h3>
+                <ul>
+                    <li><span>Explain how the multiplication tables help understand multiply, factor and divide.</span></li><li><span>Increase accuracy in multiplying, factoring and dividing.</span></li>
+                </ul>
+            
+
+            
+
+            
+                <a id="tips-for-teachers"></a>
+                <h3>
+                    Tips for Teachers
+                </h3>
+                <div class="teachers-tips-holder">The <a href="../../files/teachers-guide/arithmetic-guide.pdf" target="_blank">teacher's guide</a> (pdf) contains tips created by the PhET team.</div>
+            
+
+            <a id="teaching-ideas"></a>
+
+            <h3>
+                Teaching Ideas
+            </h3>
+
+            
+
+                <div class="simulation-contributions-pane">
+    <div dir="ltr">
+        
+            <table class="contribution-browse-table" id="ct-table" rel="K-5,Middle School,High School,Undergraduate - Intro,Undergraduate - Advanced,Graduate,Other|Lab,Homework,Concept Questions,Demonstration,Other">
+                <tr id="ct-table-header">
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByTitle()">
+                            Title
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByAuthors()">
+                            Authors
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByLevel()">
+                            Level
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByType()">
+                            Type
+                        </a>
+                    </th>
+                    
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByUpdated()">
+                            Updated
+                        </a>
+                    </th>
+
+                </tr>
+                <tr class="ct-contribution list-highlight-background" rel="0x1.d8bc065be07a5p-1">
+
+                    <td>
+                        <a href="../contributions/view/2867.html">
+                            <span class="ct-title">Arithmetic Games (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1373215380559">7/7/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.7b2fc8681c06cp-3">
+
+                    <td>
+                        <a href="../contributions/view/3252.html">
+                            <span class="ct-title">Arithmetic Practice Game</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Chris Bires</td>
+                    <td class="ct-level" rel="K-5,High School,Middle School">K-5<br/>HS<br/>MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1280984157778">8/4/10</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.8fe575b60f895p-1">
+
+                    <td>
+                        <a href="../contributions/view/2863.html">
+                            <span class="ct-title">Discovering divisibility rules</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Stacy Larson</td>
+                    <td class="ct-level" rel="Middle School,High School">MS<br/>HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1227337200000">11/22/08</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.dc9d532d679b8p-2">
+
+                    <td>
+                        <a href="../contributions/view/3589.html">
+                            <span class="ct-title">校舍補強</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">凃淑麗</td>
+                    <td class="ct-level" rel="Graduate,Middle School">Grad<br/>MS</td>
+                    <td class="ct-type" rel="Concept Questions">CQs</td>
+                    
+                    <td class="ct-updated" rel="1345261494146">8/17/12</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.0c30eb63886p-6">
+
+                    <td>
+                        <a href="../contributions/view/3734.html">
+                            <span class="ct-title">곱셈 나눗셈 연습 SIM 사용설명서</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">이화국(Wha Kuk Lee)</td>
+                    <td class="ct-level" rel="K-5,Middle School">K-5<br/>MS</td>
+                    <td class="ct-type" rel="Demonstration,Homework,Concept Questions">Demo<br/>HW<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1369136641603">5/21/13</td>
+
+                </tr>
+            </table>
+        
+    </div>
+</div>
+
+            
+
+            <p style="text-align: center;">You can <a href="http://phet.colorado.edu/en/for-teachers/submit-activity">submit your own ideas and activities</a>.</p>
+
+            
+
+            <a id="translated-versions"></a>
+
+            <h2>
+                Translated Versions:
+            </h2>
+
+            
+                <table class="translations-table">
+                    <tr>
+                        <th>
+                            Language
+                        </th>
+                        <th>
+                            Language (Translated)
+                        </th>
+                        <th>
+                            Simulation Title
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/af.html">
+                                <span>Afrikaans</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/af.html">
+                                <span>Afrikaans</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Rekenkunde</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_af.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'af from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ar.html">
+                                <span>Arabic</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ar.html">
+                                <span>العربية</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>arithmetic</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ar.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ar from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ar_SA.html">
+                                <span>Arabic, Saudi Arabia</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ar_SA.html">
+                                <span>العربية (السعودية)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>arithmetic</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ar_SA.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ar_SA from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/eu.html">
+                                <span>Basque</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/eu.html">
+                                <span>Basque</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_eu.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'eu from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/bs.html">
+                                <span>Bosnian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/bs.html">
+                                <span>Bosnian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>ARITMETIKA</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_bs.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'bs from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/pt_BR.html">
+                                <span>Brazilian Portuguese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/pt_BR.html">
+                                <span>português (Brasil)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmética</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_pt_BR.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'pt_BR from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/zh_CN.html">
+                                <span>Chinese - Simplified</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/zh_CN.html">
+                                <span>中文 (中国)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>算术</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_zh_CN.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'zh_CN from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/zh_TW.html">
+                                <span>Chinese - Traditional</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/zh_TW.html">
+                                <span>中文 (台灣)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>算數</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_zh_TW.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'zh_TW from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/hr.html">
+                                <span>Croatian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/hr.html">
+                                <span>hrvatski</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_hr.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'hr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/da.html">
+                                <span>Danish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/da.html">
+                                <span>Dansk</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetisk</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_da.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'da from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/nl.html">
+                                <span>Dutch</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/nl.html">
+                                <span>Nederlands</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Rekenen</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_nl.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'nl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/et.html">
+                                <span>Estonian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/et.html">
+                                <span>Eesti</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmeetika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_et.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'et from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/fr.html">
+                                <span>French</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/fr.html">
+                                <span>français</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Arithmétique</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_fr.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'fr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ka.html">
+                                <span>Georgian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ka.html">
+                                <span>Georgian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>არითმეტიკა</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ka.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ka from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/de.html">
+                                <span>German</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/de.html">
+                                <span>Deutsch</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Rechnen</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_de.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'de from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/el.html">
+                                <span>Greek</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/el.html">
+                                <span>Ελληνικά</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Αριθμητικός</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_el.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'el from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/iw.html">
+                                <span>Hebrew</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/iw.html">
+                                <span>עברית</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>חשבון</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_iw.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'iw from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/hu.html">
+                                <span>Hungarian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/hu.html">
+                                <span>magyar</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Szorzótábla játék</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_hu.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'hu from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/in.html">
+                                <span>Indonesian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/in.html">
+                                <span>Bahasa Indonesia</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmatika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_in.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'in from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/it.html">
+                                <span>Italian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/it.html">
+                                <span>italiano</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>tabelline</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_it.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'it from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ja.html">
+                                <span>Japanese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ja.html">
+                                <span>日本語</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>計算</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ja.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ja from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ko.html">
+                                <span>Korean</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ko.html">
+                                <span>한국어</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>곱셈 나눗셈 연습</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ko.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ko from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/lv.html">
+                                <span>Latvian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/lv.html">
+                                <span>Latviešu</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmētika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_lv.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'lv from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/mk.html">
+                                <span>Macedonian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/mk.html">
+                                <span>македонски</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>АРИТМЕТИКА</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_mk.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'mk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/mr.html">
+                                <span>Marathi</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/mr.html">
+                                <span>Marathi</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>अंकगणित</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_mr.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'mr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/fa.html">
+                                <span>Persian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/fa.html">
+                                <span>Persian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>حساب</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_fa.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'fa from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/pl.html">
+                                <span>Polish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/pl.html">
+                                <span>polski</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Arytmetyka</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_pl.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'pl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ro.html">
+                                <span>Romanian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ro.html">
+                                <span>română</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetica</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ro.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ro from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ru.html">
+                                <span>Russian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ru.html">
+                                <span>русский</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Арифметика</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_ru.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'ru from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/sr.html">
+                                <span>Serbian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sr.html">
+                                <span>Српски</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>АРИТМЕТИКА</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_sr.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'sr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/sk.html">
+                                <span>Slovak</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sk.html">
+                                <span>Slovenčina</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_sk.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'sk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/es.html">
+                                <span>Spanish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/es.html">
+                                <span>español</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmética</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_es.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'es from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/es_PE.html">
+                                <span>Spanish (Peru)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/es_PE.html">
+                                <span>español (Perú)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmética</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_es_PE.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'es_PE from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/sv.html">
+                                <span>Swedish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sv.html">
+                                <span>svenska</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Matteräkning</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_sv.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'sv from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/tr.html">
+                                <span>Turkish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/tr.html">
+                                <span>Türkçe</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Aritmetik</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_tr.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'tr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/tk.html">
+                                <span>Turkmen</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/tk.html">
+                                <span>Turkmen</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Arifmetika</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_tk.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'tk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/vi.html">
+                                <span>Vietnamese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/vi.html">
+                                <span>Tiếng Việt</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Số học</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/arithmetic/arithmetic_vi.html" rel="external" class="sim-run-now-play external" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'arithmetic', 'vi from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            
+
+            <a id="software-requirements"></a>
+
+            <h2>
+                Software Requirements
+            </h2>
+
+            <table class="system-requirements-table">
+                <tr>
+                    <th>Windows</th>
+                    <th>Macintosh</th>
+                    <th>Linux</th>
+                </tr>
+                <tr>
+                    <td>
+                        Microsoft Windows
+                        <br/>
+                        XP/Vista/7
+                        <br/>
+                        <span>Macromedia Flash 9 or later</span>
+                    </td>
+                    <td>
+                        OS 10.5 or later
+                        <br/>
+                        <span>Macromedia Flash 9 or later</span>
+                    </td>
+                    <td>
+                        <span>Macromedia Flash 9 or later</span>
+                    </td>
+                </tr>
+            </table>
+
+            <a id="credits"></a>
+
+            <h2>
+                Credits
+            </h2>
+
+            <table class="credits-table">
+                <tr>
+                    <th>
+                        Design Team
+                    </th>
+                    <th>
+                        Third-party Libraries
+                    </th>
+                    <th>
+                        Thanks To
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        
+                            <ul>
+                                <li><span>Michael Dubson (developer/lead)</span></li><li><span>Trish Loeblein</span></li>
+                            </ul>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+        <div class="main-footer">
+            <div class="main-footer-spacer"></div>
+            <div class="other-languages">
+                
+                
+            </div>
+            <div class="copyright">&copy; 2013 University of Colorado. <a href="../about/licensing.html">
+                Some rights reserved.
+            </a></div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<!-- Mirrored from phet.colorado.edu/en/simulation/arithmetic by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 22 Jan 2014 08:28:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>
+

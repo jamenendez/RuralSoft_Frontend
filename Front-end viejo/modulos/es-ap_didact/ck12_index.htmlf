@@ -1,0 +1,51 @@
+<!-- position:70 -->
+<div class="indexmodule">
+
+    <img src="<?php echo $dir ?>/ck12logo.jpg" alt="CK-12 Textbooks">
+
+    <h2>CK-12 Textbooks</h2>
+
+    <p>High quality textbooks on STEM (Science, Technology, Engineering and Math) from ck12.org.</p>
+
+    <ul class="double">
+    <li><a href="<?php echo $dir ?>/algebra_explorations.pdf" target="content">Algebra Explorations, Pre-K through Grade 7</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_algebra.pdf" target="content">Basic Algebra</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_algebra_concepts.pdf" target="content">Basic Algebra Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_algebra1.pdf" target="content">Algebra 1</a>
+    <li><a href="<?php echo $dir ?>/algebra1_teacher_edition.pdf" target="content">Algebra I Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_algebra2.pdf" target="content">Algebra 2</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_geometry.pdf" target="content">Basic Geometry</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_geometry_teacher_edition.pdf" target="content">Basic Geometry, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_geometry_concepts.pdf" target="content">Basic Geometry Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_geometry.pdf" target="content">Geometry</a>
+    <li><a href="<?php echo $dir ?>/ck12_geometry_teacher_edition.pdf" target="content">Geometry, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_trigonometry_concepts.pdf" target="content">CK-12 Trigonometry Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_trigonometry.pdf" target="content">Trigonometry</a>
+    <li><a href="<?php echo $dir ?>/ck12_trigonometry_teacher_edition.pdf" target="content">Trigonometry, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_prob_stats_short.pdf" target="content">Basic Probability and Statistics - A Short Course</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_prob_stats_full.pdf" target="content">Basic Probability and Statistics - A Full Course</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_prob_stats_concepts.pdf" target="content">CK-12 Basic Probability and Statistics Concepts - A Full Course</a>
+    <li><a href="<?php echo $dir ?>/ck12_adv_prob_stats_concepts.pdf" target="content">CK-12 Advanced Probability and Statistics Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_prob_stats_adv_placement.pdf" target="content">Probability and Statistics (Advanced Placement)</a>
+    <li><a href="<?php echo $dir ?>/ck12_adv_prob_stats_teacher_edition.pdf" target="content">Advanced Probability and Statistics Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_calculus.pdf" target="content">Calculus</a>
+    <li><a href="<?php echo $dir ?>/ck12_calculus_teacher_edition.pdf" target="content">Calculus, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_basic_physics.pdf" target="content">Basic Physics</a>
+    <li><a href="<?php echo $dir ?>/ck12_people_physics_concepts.pdf" target="content">CK-12 People's Physics Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_physics_star.pdf" target="content">Physics - From Stargazers to Starships</a>
+    <li><a href="<?php echo $dir ?>/ck12_physics_21st_century.pdf" target="content">21st Century Physics</a>
+    <li><a href="<?php echo $dir ?>/ck12_chemistry.pdf" target="content">Chemistry</a>
+    <li><a href="<?php echo $dir ?>/ck12_chemistry_teacher_edition.pdf" target="content">Chemistry, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_chemistry_labs_demos.pdf" target="content">Chemistry - Labs & Demos</a>
+    <li><a href="<?php echo $dir ?>/ck12_biology.pdf" target="content">Biology</a>
+    <li><a href="<?php echo $dir ?>/ck12_biology_workbook.pdf" target="content">Biology Workbook</a>
+    <li><a href="<?php echo $dir ?>/ck12_biology_teacher_edition.pdf" target="content">Biology, Teacher's Edition</a>
+    <li><a href="<?php echo $dir ?>/ck12_life_science_ms.pdf" target="content">Life Science for Middle School</a>
+    <li><a href="<?php echo $dir ?>/ck12_earth_science_concepts.pdf" target="content">Earth Science Concepts</a>
+    <li><a href="<?php echo $dir ?>/ck12_earth_science_ms.pdf" target="content">Earth Science for Middle Schools</a>
+    <li><a href="<?php echo $dir ?>/ck12_earth_science_hs.pdf" target="content">Earth Science for High Schools</a>
+    <li><a href="<?php echo $dir ?>/ck12_engineering_hs.pdf" target="content">Engineering - An Introduction for High School</a>
+    </ul>
+
+</div>
+

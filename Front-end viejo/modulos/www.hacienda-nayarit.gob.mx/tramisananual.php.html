@@ -1,0 +1,149 @@
+<script language="JavaScript">
+function valida(accion){
+	forma = document.frmVal;
+	forma.txtRFC.value=forma.txtRFC.value.toUpperCase();  
+	if ((forma.txtRFC.value.length > 11)&&(forma.txtRFC.value.length < 14))
+      {
+	  return true;
+      }	
+	else
+	{  
+	  alert ("La longitud del RFC tiene que ser de 13 o de 12 posiciones\n");
+	  return false;
+
+	}
+	
+}
+
+</script>
+<html>
+<head>
+<title>Secretar&iacute;a de Administraci&oacute;n y  Finanzas::Servicios en l&iacute;nea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<link rel="stylesheet" type="text/css" href="https://www.hacienda-nayarit.gob.mx/estilos.css" />
+<style type="text/css"><!--
+.Estilo8 {font-size: 12px; color: #FF0000; font-style: italic; }
+.Estilo2 {
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.Estilo1 {font-size: xx-small}
+.Estilo16 {
+	font-size: x-small;
+	color: #FFFF00;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.Estilo17 {
+	font-size: x-small;
+	font-style: italic;
+}
+.Estilo18 {font-size: x-small}
+.Estilo22 {color: #666666}
+.Estilo23 {font-size: xx-small; color: #666666; }
+.Estilo24 {font-family: Arial, Helvetica, sans-serif}
+.Estilo26 {font-size: 12px; color: #FF0000; font-style: italic; font-family: Verdana, Arial, Helvetica, sans-serif; }
+-->
+</style>
+
+</head>
+
+<body >
+<table width="52%" align="center">
+  <tr>
+    <td bgcolor="#CCCCCC"><table width="100%" align="center">
+        <tr>
+          <td bgcolor="#FFFFFF"><table width="100%"  border="0">
+            <tr>
+                <td><img src="https://www.hacienda-nayarit.gob.mx/img/paglinea.jpg" width="724" height="107"></td>
+            </tr>
+			
+                <tr>
+                  <td background="https://www.hacienda-nayarit.gob.mx/img/bar.png"><div align="right"><span class="Estilo4 Estilo16">Ventana de acceso al sistema </span></div></td>
+                </tr>
+              
+          </table>            
+            <p align="right"><span class="Estilo26">Fecha y Hora Actual: </span><span class="Estilo17">01/Nov/2017  06:11:58 
+              </span></p>
+            <p align="center"><img src="https://www.hacienda-nayarit.gob.mx/img/pagalinea.gif" width="603" height="229"></p>
+            <hr>
+            <table width="100%"  border="0">
+              <tr>
+                <td width="56%"><span class="Estilo11"><font face="Arial, Helvetica, sans-serif">
+				
+				<fieldset><legend><span class="Estilo22"><span class="Estilo24">INSTRUCCIONES</span>:</span></legend>
+				<span class="Estilo22"><br>
+                </span><span class="Estilo23"><span class="Estilo24">a) <font size="2">Capture su Registro Federal de Contribuyente.</font></span><font size="2"></font><font size="2"><br>
+      b) <font face="Arial, Helvetica, sans-serif">Capture el N&uacute;mero de cuenta</font></font><font size="2" face="Arial, Helvetica, sans-serif">.</font><font face="Arial, Helvetica, sans-serif"><font size="2"><br>
+                  c) Acceda al Sistema mediante el bot&oacute;n &quot;Acceder 
+                  al sistema&quot;.</font></font> </span> 
+                  </fieldset></td>
+                <td width="44%"><div align="right" class="Estilo1">
+                    <div align="center">  <font face="Arial, Helvetica, sans-serif">&gt; Preguntas m&aacute;s frecuentes</font></div>
+                </div></td>
+              </tr>
+            </table>
+            <div align="right" class="Estilo2">
+              <div align="center"><strong>DECLARACI&Oacute;N ANUAL DEL EJERCICIO DEL IMPUESTO SOBRE AUTOM&Oacute;VILE NUEVOS </strong></div>
+            </div>
+            <form action="isananual.php" method="post"  name="frmVal" id="frmVal" onSubmit="return valida(1)">
+              <table width="100%"  border="0">
+                <tr>
+                  <td><table width="53%" border="0" align="center">
+                    <tr>
+                      <td width="5%"><div align="right" class="Estilo1"><em>a)</em></div></td>
+                      <td width="55%" bgcolor="#F2F2F2"><div align="right"><font size="2" face="Arial, Helvetica, sans-serif">Registro Federal de Contribuyente:</font></div></td>
+                      <td width="40%" bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">
+                        <input name="txtRFC" type="text" id="txtRFC" title="Capture el Registro Federal de Contrubuyente" >
+                      </font></td>
+                    </tr>
+                    <tr>
+                      <td><div align="right" class="Estilo1"><em>b)</em></div></td>
+                      <td bgcolor="#F2F2F2"><div align="right"><font size="2" face="Arial, Helvetica, sans-serif">N&uacute;mero de cuenta:</font></div></td>
+                      <td bgcolor="#F2F2F2"><font face="Arial, Helvetica, sans-serif">
+                        <input name="txtCuenta" type="password" id="txtCuenta" title="Capture el n&uacute;mero de cuenta">
+                      </font></td>
+                    </tr>
+                  </table
+              >
+                    <table width="100%"  border="0">
+                      <tr>
+                        <td width="26%"><div align="right"><span class="Estilo1"><em>c)</em></span></div></td>
+                        <td width="50%"><div align="center"><span class="Estilo8"><font face="Arial, Helvetica, sans-serif">
+                            <input type="submit" name="Submit" value="Acceder al sistema" onClick="return valida(1)" style="border-top-style:hidden ">
+                        </font></span></div></td>
+                        <td width="24%">&nbsp;</td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+              <p align="center"> <font face="Arial, Helvetica, sans-serif">              </font></p>
+            </form>
+            <table width="100%"  border="0">
+              <tr>
+                <td>
+				<table width="135" border="0" cellpadding="2" cellspacing="0" title="Haga clic para verificar ? Este sitio ha elegido VeriSign SSL para que la comunicaci&#243;n sea confidencial y el comercio electr&#243;nico sea seguro.">
+					<tr>
+				<td width="135" align="center" valign="top"><script src="https://seal.verisign.com/getseal?host_name=www.hacienda-nayarit.gob.mx&amp;size=L&amp;use_flash=YES&amp;use_transparent=YES&amp;lang=es"></script><br />
+					<a href="http://www.verisign.es/certificados-ssl" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">Acerca de los certificados SSL</a></td>
+					</tr>
+				</table>
+				</td>
+              </tr>
+            </table>
+            <div align="center" class="Estilo5 Estilo18">
+              <hr>
+              <p><font face="Arial, Helvetica, sans-serif"><a href="http://www.hacienda-nayarit.gob.mx" target="_parent">Inicio</a> 
+                | <a href="http://www.hacienda-nayarit.gob.mx" target="_parent">Secretar&iacute;a 
+                de Administraci&oacute;n y Finanzas</a> <br>
+              <a href="http://www.nayarit.gob.mx" target="_blank">Gobierno del Estado</a></font></p>
+              <p>&nbsp;</p>
+          </div>            </td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

@@ -1,0 +1,632 @@
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gobierno de Quintana Roo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 0; padding: 0;
+    }
+
+    .logo {
+      margin: 0;
+      padding-bottom: 0px;
+      padding-top: -20px;
+    }
+
+    .sidenav {
+      height: inherit;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s8
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover,
+    .offcanvas a:focus {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 20px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 0;
+      margin-top: 0;
+      background: #fff none repeat;
+      position: relative;
+      z-index: 10;
+      height: 90%;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    .content-area {
+      margin-top: 0px;
+    }
+
+    .content {
+      margin-top: 100px;
+    }
+
+    .content-area {
+      align-items: center;
+      align-content: center;
+    }
+
+    #header_title {
+      font-size: 20px;
+      /*margin-top: 200x;*/
+    }
+
+    .mycontainer{
+      background: #fff none repeat;
+    }
+
+    .single-content, .big-content {
+      background: #fff none repeat;
+       margin: 0;
+      padding-top: 40px;
+      min-height: 363px;
+    }
+
+    /*.inner-content {
+      min-height: 310px;
+    }*/
+    .myframe{
+      margin-top: 120px;
+    }
+
+    .closebtn{
+      position: relative;
+      left: -70px;
+      /*left: 170px;*/
+      /*z-index: 999;*/
+      font-size:30px;
+    }
+
+    #mySidenav{
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Menu -->
+  <div  id="mySidenav" class="sidenav">
+    <nav class="col-1">
+      <a href="javascript:void(0)" class="closebtn" style="" onclick="closeNav()">Cerrar &#9776;</a><br><br>
+      <div class="logo">
+        <img src="assets/img/logo-qroo_0.png" alt="image">
+      </div>
+      <ul class="sidebar-menu">
+        <li id="gobierno_btn" class="color-1 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-home"></i>GOBIERNO</a></li>
+        <li id="educacion_btn" class="color-2 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-book"></i>EDUCACIÓN</a></li>
+        <li id="salud_btn" class="color-3 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-medkit"></i>SALUD</a></li>
+        <li id="economia_btn" class="color-4 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-money"></i>ECONOMIA</a></li>
+        <li id="cultura_btn" class="color-5 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-music"></i>CULTURA</a></li>
+      </ul>
+      <div class="sidebar-text">
+        <p>Gobierno del Estado de Chiapas</p>
+        <br>
+        <p>Derechos Reservados &copy; 2017</p>
+      </div>
+    </nav>
+  </div>
+
+  <div id="main">
+      <!-- Header -->
+      <header id="headers">
+        <div class="breadcrumb">
+          <span><a id="header_title"> GOBIERNO</a></span>
+        </div>
+      </header>
+
+      <div class="mycontainer img-responsive" style="background-color:#fff">
+
+        <!-- Contenido de Gobierno -->
+        <main id="gobierno" class="content-area">
+          <!-- <div class="myframemask"> -->
+              <iframe width="100%" class="myframe" id="qrooframe" src="modulos/quintanaroo/index.html" frameborder="0"></iframe>
+          <!-- </div> -->
+        </main>
+        <!-- Fin de Contenido de Gobierno -->
+
+        <!-- Contenido de Educación -->
+        <main id="educacion" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="http://my.content:8081/wikipedia_es_all_2016-04/?" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/wikiii.gif" alt="image"></div>
+                    <div class="content-text">
+                      <h3>WIKIPEDIA</h3><br>
+                      <p>Enciclopedia <br>Gratuita</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://my.content:85/media/preloaded/sitios/khan_ES/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/khan.jpeg" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>KHAN ACADEMY</h3><br>
+                      <p>Cursos Educativos
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://my.content:85/media/preloaded/sitios/APRENDEMX/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/aprende.jpg" alt="image">
+                      <!-- <br><br><br><br><br><br><br> -->
+                    </div>
+                    <div class="content-text">
+                      <h3>@prende</h3><br>
+                      <p>Educación de la SEP
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/es-educalab/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img style="max-width: 200px;" src="assets/img/educalab1.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>educaLAB</h3><br>
+                      <p>Cursos Educativos
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://my.content:85/media/preloaded/sitios/CONABIO2/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/conabio.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>CONABIO</h3><br>
+                      <p>Enciclopedia <br>Geográfica
+                        </p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/phet.colorado.edu/es/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/phet.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>PHET</h3><br>
+                      <p>Aprendizaje Didáctico
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/es-ap_didact/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/aplicadidac.gif" alt="image"></div>
+                    <div class="content-text">
+                      <h3>Aplicaciones Didácticas Variadas</h3><br>
+                      <p>Enciclopedia Gratuira
+                        <br></p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://my.content:85/media/preloaded/sitios/ebooks/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/ebooks.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>eBOOKS</h3><br>
+                      <p>Libros Electrónicos
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/es-blockly-games/blockly-games/es/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/blocky.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>Blockly Games</h3><br>
+                      <p>Aprender a
+                        <br>Programar</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="../var/www/moodle/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/moodle.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>MOODLE</h3><br>
+                      <p>Portal para
+                        <br>Profesores</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+        </main>
+        <!-- Fin de Contenido de Educación -->
+
+        <!-- Contenido de Salud -->
+        <main id="salud" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+                        <a href="modulos/es-medline_plus/spanish/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/mediline.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>MEDLINE PLUS</h3><br>
+                      <p>Información <br>de Salud</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/www.who.int/es/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/orgmundialsalud.jpg" alt="image"></div>
+                    <div class="content-text">
+                      <h3>OMS </h3><br>
+                      <p>Enciclopedia <br> de la Salud</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="modulos/www.campusvirtualsp.org/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img style="width:150px;" src="assets/img/orgpanasalud.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>OPS</h3><br>
+                      <p>Enciclopedia 
+                      <br>de Salud</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/www.miportaldesalud.cl/misalud/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 58px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/misalud.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>MI SALUD</h3><br>
+                      <p>Portal de Salud
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/bvsalud.org/es/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 58px;"></div>
+                  <div class="content-info">
+                    <div><img style="width: 100px; height: 100px;" src="assets/img/bibliovirtual.jpg" alt="image"></div>
+                    <div class="content-text">
+                      <h3>BIBLIOTECA <br>VIRTUAL EN SALUD</h3>
+                      <p>Enciclopedia Gratuita</p><br>
+                    </div>
+                    <div class="content-link">
+                      <a>ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+        <!-- Fin de Contenido de Salud -->
+
+        <!-- Contenido de Economia -->
+        <main id="economia" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="modulos/capacitateparaelempleo.org/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 42px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/capaci.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>CAPACÍTATE PARA <br> EL EMPLEO</h3>
+                      <p>Tutoriales de<br>Empleos</p>
+                    </div>
+                    <div class="content-link">
+                      <a>PROXIMAMENTE</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/www.gob.mx/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div>
+                      <img src="assets/img/gob.png" alt="image">
+                    </div>
+                    <div class="content-text">
+                      <h3>GOBIERNO</h3><br>
+                      <p>Trámites de Gobierno
+                        <br>General<br></p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </main>
+        <!-- Fin de Contenido de Economía -->
+
+        <!-- Contenido de Cultura -->
+        <main id="cultura" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="modulos/es-bibliofilo/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/bibliof.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>Bibliofilo</h3><br>
+                      <p>Biblioteca Filosófica
+                        <br>Política</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="modulos/es-GCF2015/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/gcf.jpg" alt="image"></div>
+                    <div class="content-text">
+                      <h3>Aprende Libre</h3><br>
+                      <p>Conocimiento y Cultura
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+                        <a href="modulos/es-soluciones/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content">
+                  <div style="height: 50px;"></div>
+                  <div class="content-info">
+                    <div><img src="assets/img/soluc.png" alt="image"></div>
+                    <div class="content-text">
+                      <h3>Soluciones Prácticas</h3><br>
+                      <p>Conocimiento y Cultura
+                        <br>General</p>
+                    </div>
+                    <div class="content-link">
+                      <a href="#">ENTRAR</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+        <!-- Fin de Contenido de Cultura -->
+      </div>
+  </div>
+
+  <!-- Script -->
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/index_conecta.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('.myframe').height($(document).height()-0);
+      $('.mycontainer').height($('#main').height() + 0);
+      $(window).resize(function() {
+        $('.myframe').height($(document).height()-0);
+        $('.mycontainer').height($('#main').height() + 0);
+      });
+    })
+
+    if ($(window).width() >= 768) {
+      openNav();
+      $(".closebtn").hide();
+    }
+    else {
+      closeNav();
+      $(".closebtn").show();
+    }
+
+    function openNav() {
+      if ($(window).width() < 768) {
+        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+        $("#header_title").fadeOut();
+        $(".mycontainer").fadeOut();
+      }
+      $("#mySidenav").fadeIn();
+      document.getElementById("mySidenav").style.width = "280px";
+      document.getElementById("main").style.marginLeft = "280px";
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.body.style.backgroundColor = "#fff";
+      if ($(window).width() < 768) {
+        $("#mySidenav").fadeOut();
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      $(".mycontainer").fadeIn();
+      $("#header_title").fadeIn();
+    }
+
+    $('#gobierno_btn').on('click', function () {
+      // var iframe = document.getElementById(qrooframe).src(index.html);
+      document.getElementById('qrooframe').src = "modulos/quintanaroo/index.html"
+      // iframe.src = "/modulos/chiapas/index.html";
+      // loaction.reload();
+      // javascript:history.go(0);
+    });
+
+  </script>
+</body>

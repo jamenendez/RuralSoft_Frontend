@@ -1,0 +1,113 @@
+
+15/05/17 9:18:35 p.m. - ERROR: La descarga de "https://es.familydoctor.org/xmlrpc.php",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/index.html",
+	falló con código de error 405 (method not allowed)
+15/05/17 9:18:36 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fes.familydoctor.org%2F",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/index.html",
+	falló con código de error 404 (not found)
+15/05/17 9:18:36 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-json/oembed/1.0/embed?url=https:%2F%2Fes.familydoctor.org%2F&format=xml",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/index.html",
+	falló con código de error 404 (not found)
+15/05/17 9:18:38 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-content/themes/socialdriver/fonts/glyphicons-halflings-regular.eot",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/wp-content/themes/socialdriver/css/style.min.css",
+	falló con código de error 404 (not found)
+15/05/17 9:18:38 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-content/themes/socialdriver/fonts/glyphicons-halflings-regular.eot?",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/wp-content/themes/socialdriver/css/style.min.css",
+	falló con código de error 404 (not found)
+15/05/17 9:18:38 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-content/themes/socialdriver/fonts/glyphicons-halflings-regular.woff",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/wp-content/themes/socialdriver/css/style.min.css",
+	falló con código de error 404 (not found)
+15/05/17 9:18:38 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-content/themes/socialdriver/fonts/glyphicons-halflings-regular.ttf",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/wp-content/themes/socialdriver/css/style.min.css",
+	falló con código de error 404 (not found)
+15/05/17 9:18:39 p.m. - ERROR: La descarga de "https://es.familydoctor.org/wp-content/themes/socialdriver/fonts/glyphicons-halflings-regular.svg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/es.familydoctor.org/wp-content/themes/socialdriver/css/style.min.css",
+	falló con código de error 404 (not found)
+
+---------------------
+
+20/05/17 7:12:36 p.m. - ERROR: La descarga de "http://enlinea.uia.mx/accesouia/frame_servicios.cfm?cuenta=191133&token=AF406642CAE94169521F263BFB1BBF21"
+	falló con código de error 500 (internal server error)
+
+---------------------
+
+20/05/17 7:12:39 p.m. - ERROR: La descarga de "http://enlinea.uia.mx/accesouia/frame_servicios.cfm?cuenta=191133&token=AF406642CAE94169521F263BFB1BBF21"
+	falló con código de error 500 (internal server error)
+
+---------------------
+
+20/05/17 7:15:19 p.m. - ERROR: La descarga de "http://enlinea.uia.mx/accesouia/frame_servicios.cfm?cuenta=191133&token=AF406642CAE94169521F263BFB1BBF21"
+	falló con código de error 500 (internal server error)
+
+---------------------
+
+23/05/17 6:28:13 p.m. - ERROR: La descarga de "http://my.content/assets/img/remberto.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/my.content/index.html",
+	falló con código de error 404 (not found)
+23/05/17 6:28:14 p.m. - ERROR: La descarga de "http://my.content/assets/img/remberto3.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/my.content/index.html",
+	falló con código de error 404 (not found)
+23/05/17 6:28:14 p.m. - ERROR: La descarga de "http://my.content/assets/img/remberto1.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/my.content/index.html",
+	falló con código de error 404 (not found)
+23/05/17 6:28:14 p.m. - ERROR: La descarga de "http://my.content/assets/img/remberto2.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/my.content/index.html",
+	falló con código de error 404 (not found)
+23/05/17 6:28:15 p.m. - ERROR: La descarga de "http://my.content/modulos/phet.colorado.edu/es/index.html",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/my.content/index.html",
+	falló con código de error 404 (not found)
+
+---------------------
+
+14/09/17 3:05:24 p.m. - ERROR: La descarga de "https://w3layouts.com/preview/?l=/notebook-landing-page-flat-responsive-web-template/"
+	falló con código de error 404 (not found)
+
+---------------------
+
+01/11/17 6:59:14 p.m. - ERROR: La descarga de "http://www.nayarit.gob.mx/style.css",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.nayarit.gob.mx/index.html",
+	falló con código de error 404 (not found)
+01/11/17 6:59:15 p.m. - ERROR: La descarga de "http://www.nayarit.gob.mx/css/nayarit.css",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.nayarit.gob.mx/transparenciafiscal/index.html",
+	falló con código de error 404 (not found)
+01/11/17 6:59:25 p.m. - ERROR: La descarga de "http://www.nayarit.gob.mx/media/images/separa.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.nayarit.gob.mx/transparenciafiscal/marco_regulatorio.asp.html",
+	falló con código de error 404 (not found)
+01/11/17 6:59:26 p.m. - ERROR: La descarga de "http://www.nayarit.gob.mx/media/images/ghost.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.nayarit.gob.mx/transparenciafiscal/marco_regulatorio.asp.html",
+	falló con código de error 404 (not found)
+
+---------------------
+
+01/11/17 7:04:19 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/css/iepngfix.htc",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/view.css",
+	falló con código de error 404 (not found)
+01/11/17 7:04:19 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/images/shadow.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/view.css",
+	falló con código de error 404 (not found)
+01/11/17 7:04:24 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/Secretar%EDa%20de%20HaciendaNayarit_archivos/pfies.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/informes.htm",
+	falló con código de error 403 (forbidden)
+01/11/17 7:04:37 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/mantenimiento.html",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/main.htm",
+	falló con código de error 404 (not found)
+01/11/17 7:04:39 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/Secretar%EDa%20de%20HaciendaNayarit_archivos/Compilacion.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/informes.htm",
+	falló con código de error 403 (forbidden)
+01/11/17 7:04:47 p.m. - ERROR: La descarga de "http://www.hacienda-nayarit.gob.mx/Secretar%EDa%20de%20HaciendaNayarit_archivos/fonreg1.gif",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hacienda-nayarit.gob.mx/informes.htm",
+	falló con código de error 403 (forbidden)
+
+---------------------
+
+06/11/17 5:48:21 p.m. - ERROR: La descarga de "http://www.hidalgo.gob.mx/images/s_eje.png",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hidalgo.gob.mx/index.html",
+	falló con código de error 404 (not found)
+06/11/17 5:48:24 p.m. - ERROR: La descarga de "http://www.hidalgo.gob.mx/images/plan.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hidalgo.gob.mx/css/home.css",
+	falló con código de error 404 (not found)
+06/11/17 5:48:25 p.m. - ERROR: La descarga de "http://www.hidalgo.gob.mx/images/policias.jpg",
+	referenciado por "/Users/jamenendez/Downloads/us.sitesucker.mac.sitesucker/www.hidalgo.gob.mx/css/home.css",
+	falló con código de error 404 (not found)
+
+---------------------

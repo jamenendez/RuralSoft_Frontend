@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang='es' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='es' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='es'> <!--<![endif]-->
+<head>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='description' content='aprende.org te ofrece conocimiento para mejorar tu calidad de vida. Todos nuestros cursos y certificados son gratuitos.'>
+  
+  <meta property='og:url' content='https://aprende.org/'>
+  <meta property='og:site_name' content='aprende.org - Fundación Carlos Slim'>
+  <meta property='og:image' content='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pantalla_1.jpg'>
+  
+  <title>aprende.org</title>
+  <link rel='stylesheet' type='text/css' href='fonts/fonts.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/reset.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/text.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/grid.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui-1.10.3.custom.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/style.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/css.css?20161205011531'/>
+
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/ipad.css?20161205011531' media='only screen and (max-width:1000px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/idesk.css?20161205011531' media='only screen and (min-width:501px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/iphone.css?20161205011531' media='only screen and (max-width:500px)'>
+  <style type='text/css'>#div_disclaimer_text{font-size:x-small;}
+      #div_disclaimer_text img{vertical-align:middle;max-height:20px;}
+    
+  #back-top{z-index:10000;}
+</style>
+
+
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-1.11.2.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.pack.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/common.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.validate.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/messages_es.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/js.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.scrollTo.min.js'></script>
+  
+    <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.min.css'>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/ie8/videojs-ie8.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/videojs-contrib-hls.min.js'></script>
+  
+
+
+  <script>
+    url_services='https://aprende.org/services.php';
+    videojs.options.flash.swf='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.swf';
+    function login_show(){ $.fancybox({'type':'ajax','href':'https://aprende.org/pages.php?r=.login&only_content=true','width':'90%','padding':'5',afterLoad:function(){loaddown();}}); return false;}
+  
+  window.onpageshow = function(event){
+    if(event.persisted){window.location.reload();}
+  };
+
+  $(window).blur(function(){
+    loaddown();
+  });
+
+  var portada_s='',playtime=0;;
+  function portada_notifier(){
+    $.post(url_services,{r:'portada_analytics',event:'unload',s:portada_s,playtime:playtime},function(d){ },'json');
+  }
+  function portada_uptade_vars(s,pt){
+    portada_s=s; playtime=pt;
+  }
+
+    $(document).ready(function(){ $('.fancybox').fancybox({padding:0,
+  afterLoad:function(){
+    loaddown();
+  },
+  beforeClose:function(){
+    portada_notifier();
+  },
+}); 
+  $('#registro').validate({
+    //submitHandler:function(form){
+      //$('#registro').attr('action','https://aprende.org/registro_do.php');
+      //form.submit();
+    //}
+  });
+
+  $('#butt_signup').click(function(){
+    $('#registro').attr('action','https://aprende.org/registro_do.php');
+    $('#registro').submit();
+  });
+
+  $('#pais').change(function(){
+    var id=$(this).val();
+    if(id=='ZZ'){
+      $('#label_zip').html('<b>Escribe el nombre de tu país</b>');
+      $('#estado').attr('required',false);
+      $('#estado').html('');
+      $('#municipio').attr('required',false);
+      $('#municipio').html('');
+    }else{ $.post('https://aprende.org/services.php?r=list_states&id='+id,function(d){ $('#estado').html(d);});}
+  });
+  $('#estado').change(function(d){
+    $.post('https://aprende.org/services.php?r=list_counties&id='+$(this).val(),function(d){ $('#municipio').html(d);});
+  });
+
+$('a').filter(function(){
+  return this.hostname && this.hostname !== location.hostname;
+  $(this).attr('target','_blank');
+  if(this.hostname=='ocw.aprende.org'){return false;}
+}).append("&nbsp;<img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:10px;'>");
+ });
+  </script>
+</head>
+<body>
+
+  <div id='loader_container'>
+    <div id='loader'></div>
+  </div>
+
+  
+    <div id='div_header' class='container_16'>
+    <div class='g960'>
+
+      <div class='grid_16 center' style='line-height:0;'>
+      <a href='pages.php-r=.index.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/logo.png' id='site_logo' class='al' target='_blank' alt='aprende.org'>
+      </a>
+      </div>
+
+      <div class='whole'>
+
+        <div class='show_mobile_block hid_desk' style='max-width:400px;margin:0px auto;font-size:medium;'>
+          <div class='half left'>
+            <div class='pad10'>
+              <a href='pages.php-r=.index.html'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/home.png'></a>
+            </div>
+          </div>
+          <div class='half right'>&nbsp</div>
+        </div>
+
+        <div id='menu_container' class='whole gmax center'>
+          <div id='menu_content' class='whole center'>
+            <div id='menu_content_inner'>
+              
+      <div id='menu_0' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.index';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.index.html'  style='color:white;'>Inicio</a>
+        </div>
+      </div>
+    
+      <div id='menu_1' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.registro';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.registro.html'  style='color:white;'>Regístrate</a>
+        </div>
+      </div>
+    
+      <div id='menu_4' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.certificate';">
+        <div class='main_menu_opt'>
+          <a href='pages.php-r=.certificate.html'  style='color:white;'>Certifícate</a>
+        </div>
+      </div>
+    
+      <div id='menu_login' class='main_menu_opt_out al hid_mobile' onclick="login_show();" style='width:24.5%;' onclick="window.location.href='javascript:void();';">
+        <div class='main_menu_opt'>
+          <a href='javascript:void();' onclick="login_show();" style='color:white;'>Entrar</a>
+        </div>
+      </div>
+    
+            </div>
+            <div class='clearfix'></div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='pad10'></div>
+      <div class='clearfix'></div>
+
+    </div>
+    </div>
+    <div class='clearfix'></div>
+  
+  <div id='divcontent' class='container_16'>
+    <div style='min-height:150px;'>
+      
+<div class='g960'>
+  <div class='grid_8'>
+    <h1>Regístrate</h1>
+
+    <p>Debes registrarte para disfrutar de todas las ventajas que te ofrece aprende.org, tales como:</p>
+    <ul>
+      <li>Historial de tus calificaciones.</li>
+      <li>Perfil personalizado.</li>
+      <li>Certificados y comprobantes de estudios.</li>
+    </ul>
+
+    <p>
+      Proporciona los datos que te pedimos a continuación.
+      <br>Todos los datos marcados con <span style='color:red;'>(*)</span> son requeridos.
+    </p>
+
+    <p>Recuerda que al crear tu cuenta o utilizar este sitio estás aceptando nuestros <a href='pages.php-r=.terminos.html'>Términos de Uso</a> y nuestro <a href='pages.php-r=.privacidad.html'>Aviso de Privacidad</a>.</p>
+
+    
+  </div>
+
+  <form class='formulario' id='registro' method='post' autocomplete='off'>
+    <div class='grid_8'>
+      <h4>Tus datos personales</h4>
+      <fieldset>
+        <div><label id='label_name' class='label'><span class='field_required'>(*)</span> Tu nombre</label><div><input type='text' name='name' id='name' value='' required minlength='3'></div></div><div><label id='label_last' class='label'><span class='field_required'>(*)</span> Apellidos</label><div><input type='text' name='last' id='last' value='' required minlength='3'></div></div><div><label id='label_sexo' class='label'><span class='field_required'>(*)</span> Género</label><div><select name='sexo' id='sexo' required><option value=''>--Selecciona una opción--</option><option value='M' >Mujer</option><option value='H' >Hombre</option></select></div></div><div><label id='label_bd_y' class='label'><span class='field_required'>(*)</span> Año en el que naciste</label><div><select name='bd_y' id='bd_y' required><option value=''>--Selecciona una opción--</option><option value='1937' >1937</option><option value='1938' >1938</option><option value='1939' >1939</option><option value='1940' >1940</option><option value='1941' >1941</option><option value='1942' >1942</option><option value='1943' >1943</option><option value='1944' >1944</option><option value='1945' >1945</option><option value='1946' >1946</option><option value='1947' >1947</option><option value='1948' >1948</option><option value='1949' >1949</option><option value='1950' >1950</option><option value='1951' >1951</option><option value='1952' >1952</option><option value='1953' >1953</option><option value='1954' >1954</option><option value='1955' >1955</option><option value='1956' >1956</option><option value='1957' >1957</option><option value='1958' >1958</option><option value='1959' >1959</option><option value='1960' >1960</option><option value='1961' >1961</option><option value='1962' >1962</option><option value='1963' >1963</option><option value='1964' >1964</option><option value='1965' >1965</option><option value='1966' >1966</option><option value='1967' >1967</option><option value='1968' >1968</option><option value='1969' >1969</option><option value='1970' >1970</option><option value='1971' >1971</option><option value='1972' >1972</option><option value='1973' >1973</option><option value='1974' >1974</option><option value='1975' >1975</option><option value='1976' >1976</option><option value='1977' >1977</option><option value='1978' >1978</option><option value='1979' >1979</option><option value='1980' >1980</option><option value='1981' >1981</option><option value='1982' >1982</option><option value='1983' >1983</option><option value='1984' >1984</option><option value='1985' >1985</option><option value='1986' >1986</option><option value='1987' >1987</option><option value='1988' >1988</option><option value='1989' >1989</option><option value='1990' >1990</option><option value='1991' >1991</option><option value='1992' >1992</option><option value='1993' >1993</option><option value='1994' >1994</option><option value='1995' >1995</option><option value='1996' >1996</option><option value='1997' >1997</option><option value='1998' >1998</option><option value='1999' >1999</option><option value='2000' >2000</option><option value='2001' >2001</option><option value='2002' >2002</option><option value='2003' >2003</option><option value='2004' >2004</option><option value='2005' >2005</option><option value='2006' >2006</option><option value='2007' >2007</option><option value='2008' >2008</option><option value='2009' >2009</option><option value='2010' >2010</option><option value='2011' >2011</option><option value='2012' >2012</option><option value='2013' >2013</option><option value='2014' >2014</option><option value='2015' >2015</option><option value='2016' >2016</option><option value='2017' >2017</option></select></div></div><div><label id='label_bd_m' class='label'><span class='field_required'>(*)</span> Mes en el que naciste</label><div><select name='bd_m' id='bd_m' required><option value=''>--Selecciona una opción--</option><option value='01' >Enero</option><option value='02' >Febrero</option><option value='03' >Marzo</option><option value='04' >Abril</option><option value='05' >Mayo</option><option value='06' >Junio</option><option value='07' >Julio</option><option value='08' >Agosto</option><option value='09' >Septiembre</option><option value='10' >Octubre</option><option value='11' >Noviembre</option><option value='12' >Diciembre</option></select></div></div><div><label id='label_bd_d' class='label'><span class='field_required'>(*)</span> Día en el que naciste</label><div><select name='bd_d' id='bd_d' required><option value=''>--Selecciona una opción--</option><option value='1' >1</option><option value='2' >2</option><option value='3' >3</option><option value='4' >4</option><option value='5' >5</option><option value='6' >6</option><option value='7' >7</option><option value='8' >8</option><option value='9' >9</option><option value='10' >10</option><option value='11' >11</option><option value='12' >12</option><option value='13' >13</option><option value='14' >14</option><option value='15' >15</option><option value='16' >16</option><option value='17' >17</option><option value='18' >18</option><option value='19' >19</option><option value='20' >20</option><option value='21' >21</option><option value='22' >22</option><option value='23' >23</option><option value='24' >24</option><option value='25' >25</option><option value='26' >26</option><option value='27' >27</option><option value='28' >28</option><option value='29' >29</option><option value='30' >30</option><option value='31' >31</option></select></div></div><div><label id='label_pais' class='label'><span class='field_required'>(*)</span> País donde vives</label><div><select name='pais' id='pais' required><option value=''>--Selecciona una opción--</option><option value='MX' >México</option><option value='US' >Estados Unidos de América</option><option value='AR' >Argentina</option><option value='BO' >Bolivia</option><option value='BR' >Brasil</option><option value='CL' >Chile</option><option value='CO' >Colombia</option><option value='CR' >Costa Rica</option><option value='CU' >Cuba</option><option value='EC' >Ecuador</option><option value='SV' >El Salvador</option><option value='ES' >España</option><option value='GT' >Guatemala</option><option value='HN' >Honduras</option><option value='NI' >Nicaragua</option><option value='PA' >Panamá</option><option value='PY' >Paraguay</option><option value='PE' >Peru</option><option value='PR' >Puerto Rico</option><option value='DO' >República Dominicana</option><option value='UY' >Uruguay</option><option value='VE' >Venezuela</option><option value='ZZ' >Mi país no está en la lista</option><option value='AF' >Afghanistan</option><option value='AX' >Åland</option><option value='DZ' >Algeria</option><option value='AS' >American Samoa</option><option value='AD' >Andorra</option><option value='AO' >Angola</option><option value='AI' >Anguilla</option><option value='AQ' >Antarctica</option><option value='AG' >Antigua and Barbuda</option><option value='AR' >Argentina</option><option value='AM' >Armenia</option><option value='AW' >Aruba</option><option value='AU' >Australia</option><option value='AZ' >Azerbaijan</option><option value='BH' >Bahrain</option><option value='BD' >Bangladesh</option><option value='BB' >Barbados</option><option value='BY' >Belarus</option><option value='BE' >Belgium</option><option value='BZ' >Belize</option><option value='BJ' >Benin</option><option value='BM' >Bermuda</option><option value='BT' >Bhutan</option><option value='BO' >Bolivia</option><option value='BA' >Bosna i Hercegovina</option><option value='BW' >Botswana</option><option value='BV' >Bouvet Island</option><option value='BR' >Brasil</option><option value='IO' >British Indian Ocean Territory</option><option value='VG' >British Virgin Islands</option><option value='BN' >Brunei</option><option value='BG' >Bulgaria</option><option value='BF' >Burkina Faso</option><option value='BI' >Burundi</option><option value='KH' >Cambodia</option><option value='CM' >Cameroon</option><option value='CA' >Canada</option><option value='CV' >Cape Verde</option><option value='KY' >Cayman Islands</option><option value='CF' >Central African Republic</option><option value='CZ' >Ceská Republika</option><option value='TD' >Chad</option><option value='CL' >Chile</option><option value='CN' >China</option><option value='CX' >Christmas Island</option><option value='VA' >Città del Vaticano</option><option value='CC' >Cocos (Keeling) Islands</option><option value='CO' >Colombia</option><option value='KM' >Comoros</option><option value='CG' >Congo</option><option value='CK' >Cook Islands</option><option value='CR' >Costa Rica</option><option value='CI' >Côte d´Ivoire</option><option value='HR' >Croatia</option><option value='CU' >Cuba</option><option value='CY' >Cyprus</option><option value='DK' >Danmark</option><option value='CD' >Democratic Republic of Congo</option><option value='DE' >Deutschland</option><option value='XX' >Disputed Territory</option><option value='DJ' >Djibouti</option><option value='DM' >Dominica</option><option value='DO' >Dominican Republic</option><option value='EC' >Ecuador</option><option value='EG' >Egypt</option><option value='SV' >El Salvador</option><option value='GR' >Ellás</option><option value='GQ' >Equatorial Guinea</option><option value='ER' >Eritrea</option><option value='ES' >España</option><option value='EE' >Estonia</option><option value='ET' >Ethiopia</option><option value='FK' >Falkland Islands</option><option value='FO' >Faroe Islands</option><option value='FM' >Federated States of Micronesia</option><option value='FJ' >Fiji</option><option value='FR' >France</option><option value='PF' >French Polynesia</option><option value='TF' >French Southern Territories</option><option value='GA' >Gabon</option><option value='GE' >Georgia</option><option value='GH' >Ghana</option><option value='GI' >Gibraltar</option><option value='GL' >Greenland</option><option value='GD' >Grenada</option><option value='GP' >Guadeloupe</option><option value='GU' >Guam</option><option value='GT' >Guatemala</option><option value='GN' >Guinea</option><option value='GW' >Guinea-Bissau</option><option value='GY' >Guyana</option><option value='GF' >Guyane Française</option><option value='HT' >Haiti</option><option value='HM' >Heard Island and McDonald Islands</option><option value='HN' >Honduras</option><option value='HK' >Hong Kong</option><option value='IS' >Iceland</option><option value='IN' >India</option><option value='IR' >Iran</option><option value='IQ' >Iraq</option><option value='XE' >Iraq-Saudi Arabia Neutral Zone</option><option value='IE' >Ireland</option><option value='IL' >Israel</option><option value='IT' >Italia</option><option value='JM' >Jamaica</option><option value='JP' >Japan</option><option value='JO' >Jordan</option><option value='KZ' >Kazakhstan</option><option value='KE' >Kenya</option><option value='KI' >Kiribati</option><option value='KW' >Kuwait</option><option value='KG' >Kyrgyzstan</option><option value='RE' >La Réunion</option><option value='LA' >Laos</option><option value='LV' >Latvija</option><option value='LB' >Lebanon</option><option value='LS' >Lesotho</option><option value='LR' >Liberia</option><option value='LY' >Libya</option><option value='LI' >Liechtenstein</option><option value='LT' >Lietuva</option><option value='LU' >Luxembourg</option><option value='MO' >Macau</option><option value='MK' >Macedonia</option><option value='MG' >Madagascar</option><option value='HU' >Magyarország</option><option value='MW' >Malawi</option><option value='MY' >Malaysia</option><option value='MV' >Maldives</option><option value='ML' >Mali</option><option value='MT' >Malta</option><option value='MH' >Marshall Islands</option><option value='MQ' >Martinique</option><option value='MR' >Mauritania</option><option value='MU' >Mauritius</option><option value='YT' >Mayotte</option><option value='MX' >México</option><option value='MD' >Moldova</option><option value='MC' >Monaco</option><option value='MN' >Mongolia</option><option value='ME' >Montenegro</option><option value='MS' >Montserrat</option><option value='MA' >Morocco</option><option value='MZ' >Mozambique</option><option value='MM' >Myanmar</option><option value='NA' >Namibia</option><option value='NR' >Nauru</option><option value='NL' >Nederland</option><option value='NP' >Nepal</option><option value='AN' >Netherlands Antilles</option><option value='NC' >New Caledonia</option><option value='NZ' >New Zealand</option><option value='NI' >Nicaragua</option><option value='NE' >Niger</option><option value='NG' >Nigeria</option><option value='NU' >Niue</option><option value='NF' >Norfolk Island</option><option value='NO' >Norge</option><option value='KP' >North Korea</option><option value='MP' >Northern Mariana Islands</option><option value='OM' >Oman</option><option value='AT' >Österreich</option><option value='PK' >Pakistan</option><option value='PW' >Palau</option><option value='PS' >Palestinian Territories</option><option value='PA' >Panamá</option><option value='PG' >Papua New Guinea</option><option value='PY' >Paraguay</option><option value='PE' >Peru</option><option value='PH' >Philippines</option><option value='PN' >Pitcairn Islands</option><option value='PL' >Polska</option><option value='PT' >Portugal</option><option value='PR' >Puerto Rico</option><option value='QA' >Qatar</option><option value='ID' >Republik Indonesia</option><option value='RO' >România</option><option value='RU' >Rossija</option><option value='RW' >Rwanda</option><option value='KN' >Saint Kitts and Nevis</option><option value='PM' >Saint Pierre and Miquelon</option><option value='VC' >Saint Vincent and the Grenadines</option><option value='BL' >Saint-Barthélemy</option><option value='MF' >Saint-Martin</option><option value='WS' >Samoa</option><option value='SM' >San Marino</option><option value='ST' >Sao Tome and Principe</option><option value='SA' >Saudi Arabia</option><option value='CH' >Schweiz</option><option value='SN' >Sénégal</option><option value='RS' >Serbia</option><option value='SC' >Seychelles</option><option value='AL' >Shqipëri</option><option value='SL' >Sierra Leone</option><option value='SG' >Singapore</option><option value='SI' >Slovenija</option><option value='SK' >Slovenská</option><option value='SB' >Solomon Islands</option><option value='SO' >Somalia</option><option value='ZA' >South Africa</option><option value='GS' >South Georgia and the South Sandwich Islands</option><option value='KR' >South Korea</option><option value='PI' >Spratly Islands</option><option value='LK' >Sri Lanka</option><option value='SH' >St Helena Ascension and Tristan da Cunha</option><option value='LC' >St. Lucia</option><option value='SD' >Sudan</option><option value='FI' >Suomi</option><option value='SR' >Suriname</option><option value='SJ' >Svalbard and Jan Mayen</option><option value='SE' >Sverige</option><option value='SZ' >Swaziland</option><option value='SY' >Syria</option><option value='TW' >Taiwan</option><option value='TJ' >Tajikistan</option><option value='TZ' >Tanzania</option><option value='TH' >Thailand</option><option value='BS' >The Bahamas</option><option value='GM' >The Gambia</option><option value='TL' >Timor-Leste</option><option value='TG' >Togo</option><option value='TK' >Tokelau</option><option value='TO' >Tonga</option><option value='TT' >Trinidad and Tobago</option><option value='TN' >Tunisia</option><option value='TR' >Turkey</option><option value='TM' >Turkmenistan</option><option value='TC' >Turks and Caicos Islands</option><option value='TV' >Tuvalu</option><option value='UG' >Uganda</option><option value='UA' >Ukrayina</option><option value='AE' >United Arab Emirates</option><option value='GB' >United Kingdom</option><option value='XD' >United Nations Neutral Zone</option><option value='US' >United States</option><option value='UM' >United States Minor Outlying Islands</option><option value='UY' >Uruguay</option><option value='VI' >US Virgin Islands</option><option value='UZ' >Uzbekistan</option><option value='VU' >Vanuatu</option><option value='VE' >Venezuela</option><option value='VN' >Vietnam</option><option value='WF' >Wallis and Futuna</option><option value='EH' >Western Sahara</option><option value='YE' >Yemen</option><option value='ZM' >Zambia</option><option value='ZW' >Zimbabwe</option><option value='ZZ' >Mi país no está en la lista</option></select></div></div><div><label id='label_estado' class='label'> Estado/Departamento/Provincia</label><div><select name='estado' id='estado' ><option value=''>--Selecciona una opción--</option></select></div></div><div><label id='label_municipio' class='label'> Municipio</label><div><select name='municipio' id='municipio' ><option value=''>--Selecciona una opción--</option></select></div></div><div><label id='label_zip' class='label'> Código Postal (opcional)</label><div><input type='text' name='zip' id='zip' value='' ></div></div><div><label id='label_telefono' class='label'> Teléfono (con código de área)</label><div><input type='tel' name='telefono' id='telefono' value='' minlength='10'></div></div><div><label id='label_mail' class='label'><span class='field_required'>(*)</span> Tu correo electrónico</label><div><input type='email' name='mail' id='mail' value='' required></div></div><div><label id='label_mail_conf' class='label'><span class='field_required'>(*)</span> Confirma tu correo electrónico</label><div><input type='email' name='mail_conf' id='mail_conf' value='' required data-rule-equalto='#mail'></div></div><div><label id='label_pass' class='label'><span class='field_required'>(*)</span> Crea una contraseña</label><div><input type='text' name='pass' id='pass' value='' required></div></div><div><label id='label_estudios' class='label'> Estudios concluidos al momento</label><div>
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiosninguno' value='ninguno' >
+        <label for='estudiosninguno'>Sin estudios</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiosprimaria' value='primaria' >
+        <label for='estudiosprimaria'>Primaria</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiossecundaria' value='secundaria' >
+        <label for='estudiossecundaria'>Secundaria</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiosbachillerato' value='bachillerato' >
+        <label for='estudiosbachillerato'>Preparatoria/Bachillerato</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiosctecnica' value='ctecnica' >
+        <label for='estudiosctecnica'>Carrera Técnica</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudioslicenciatura' value='licenciatura' >
+        <label for='estudioslicenciatura'>Licenciatura o Ingeniería</label>
+      </div>
+    
+      <div>
+        <input type='checkbox' name='estudios[]' id='estudiosposgrado' value='posgrado' >
+        <label for='estudiosposgrado'>Posgrado</label>
+      </div>
+    </div></div><div><label id='label_isTeacher' class='label'><span class='field_required'>(*)</span> ¿Eres maestro?</label><div><select name='isTeacher' id='isTeacher' required><option value=''>--Selecciona una opción--</option><option value='Y' >Si</option><option value='N' >No</option></select></div></div>
+      </fieldset>
+      <div class='pad10'>
+        <button id='butt_signup' type='button'>Crear cuenta</button>
+      </div>
+    </div>
+
+    <input type='hidden' name='signature' value='b4f03403435e0ba57a4e19b5a227f278'>
+  </form>
+  <div class='clearfix'></div>
+</div>
+
+      <p id='back-top'><span id='arrows'></span><span id='text'>Ir arriba</span></p>
+    </div>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  
+    <div class='clearfix'></div>
+    <div id='div_footer' style='position:relative;'>
+      <div id='div_footlinks' class='g960'>
+          <div class='quarter'>&nbsp;</div>
+          <div class='half center' id='bottom_terms'>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.privacidad.html'>Aviso de privacidad</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.terminos.html'>Términos de uso</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='pages.php-r=.contacto.html'>Contáctanos</a>
+            </div>
+          </div>
+          <div class='quarter'>&nbsp;</div>
+          <div class='whole center'>
+            <div class='pad10'></div>
+            
+  <div class='quarter'>&nbsp;</div>
+  <div class='half center'>
+    <a href='https://itunes.apple.com/us/app/aprende/id1123194881?ls=1&amp;mt=8' target='_blank'><img alt='Descárgalo de la appstore' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/appstore_apple.svg' style='max-height:60px;margin:9px;'></a>
+    <a href='https://play.google.com/store/apps/details?id=org.aprende.app&amp;utm_source=aprende.org&amp;utm_medium=web&amp;utm_content=aprende.org_badge&amp;utm_campaign=PartBadge&amp;pcampaignid=aprende.org_badge' target='_blank'><img alt='Disponible en Google Play' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/es_badge_web_generic.png' style='max-height:60px;'></a>
+  </div>
+  <div class='quarter'>&nbsp;</div>
+  <div class='clearfix'></div>
+
+          </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  
+      <div class='pad10'></div>
+      <div class='container_16' style='background:rgba(0,0,0,.5);margin:0px !important;width:100% !important;'>
+      <div class='pad10'></div>
+        <div class='grid_16'>
+          <div class='grid_3 imgw center'>
+            <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/Aprende_BR.png'>
+          </div>
+          <div class='grid_13' id='div_disclaimer_text'>
+            <h5>¡Aprende sin costo a través de las redes <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/telcel.png'> <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/infinitum.png'>!</h5>
+            <p>
+              El acceso a ligas y recursos externos puede generar cargos por consumo de datos de acuerdo a tu proveedor de internet y plan de acceso contratado y se rige por Avisos de Privacidad y Términos y Condiciones de uso distintos a aprende.org, las ligas y recursos externos se indicarán con el ícono <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:15px;'> cuando esto sea posible.
+            </p>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    
+  
+  <!--render-->
+
+  </body>
+  <script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/analytics.js','ga');
+    ga('create','UA-47293185-3','auto');ga('send','pageview');
+  </script>
+
+<!--
+  <script type='text/javascript'>
+    var _paq = _paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+    (function(){
+      var u='//cdn3.capacitateparaelempleo.org/pwk/'; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src='//cdn3.capacitateparaelempleo.org/pwk/piwik.php?idsite=1' style='border:0;' alt='' /></p></noscript>
+-->
+</html>

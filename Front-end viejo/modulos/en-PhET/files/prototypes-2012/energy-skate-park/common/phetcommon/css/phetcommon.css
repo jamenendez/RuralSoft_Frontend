@@ -1,0 +1,68 @@
+/* Copyright 2002-2012, University of Colorado */
+
+/* Styling of the Prototype dialog, prototype-dialog.html -----------------------------------*/
+
+/* Overlay that covers the entire document area. */
+#prototype-dialog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33); /* makes everything behind the dialog look dimmed */
+    z-index: 99; /* Make sure the dialog is in front of everything */
+}
+
+/* the content is everything inside the dialog */
+#prototype-dialog-content {
+    font-family: Arial;
+    background: white;
+    border: 2px solid #445;
+    border-radius: 1em;
+    margin: 6% 12%;
+    max-height: 75%;
+    overflow: auto;
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.5);
+    -webkit-overflow-scrolling: touch;
+}
+
+/* the body is everything except the title */
+#prototype-dialog-body {
+    margin: 1ex 1.6em;
+    padding-bottom: 1ex;
+}
+
+/* title */
+#prototype-dialog-title {
+    margin: 0 0 0.5em 0;
+    padding: 0.4em 0.6em;
+    text-align: center;
+    background: #eee;
+    border-bottom: 1px solid #444;
+}
+
+/* PhET logo */
+#prototype-dialog-logo {
+    float: left;
+    margin-right: 1em;
+}
+
+/* text message */
+#prototype-dialog-text {
+    overflow: hidden; /* prevents float at left from creating ragged edge */
+}
+
+/* Dialog buttons */
+.dialog-buttons {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.dialog-buttons button {
+    font-size: 125%;
+    margin: 1em;
+}
+
+h3 {
+    border: 1px solid red !important;
+}

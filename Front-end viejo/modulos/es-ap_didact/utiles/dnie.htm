@@ -1,0 +1,137 @@
+<html>
+
+
+<!-- Mirrored from www.aplicaciones.info/utiles/dnie.htm by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 04:17:48 GMT -->
+<head>
+<title>utilidades,Letra del DNI de Aplicaciones Didácticas</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta charset="UTF-8"> 
+<meta name="MobileOptimized" content="width" /> 
+<meta name="HandheldFriendly" content="true" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<script>
+function averigua ()
+{
+cadena="TRWAGMYFPDXBNJZSQVHLCKET"
+posicion = formulario.dni.value % 23
+letra = cadena.substring(posicion,posicion+1)
+document.formulario.dni.value=formulario.dni.value+" - "+letra
+}
+</script>
+<SCRIPT LANGUAGE="JavaScript">
+IE = (document.all);
+if (IE) {
+  var chidc = new Array();
+  var hexc = new Array('0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F');
+  var chidn = new Array(100,70,40);
+  var step = new Array(10,10,10);
+  var chway = new Array(step[0],step[1],step[2]);
+  var tone = new Array(1,1,1);
+  function chcol() {
+    for (i=0; i<3; i++) {
+      chidn[i]+=chway[i];
+      if (chidn[i]>=255) {
+        chidn[i] = 255;
+        chway[i] = -step[i];
+      }
+    else if (chidn[i]<=40) {
+        chidn[i] = 40;
+        chway[i] = step[i];
+        tone[i]>=3? tone[i] = 1:tone[i]++;
+      }
+      col1 = hexc[Math.floor(chidn[i]/16)];
+      col2 = hexc[chidn[i]%16];
+      tored = '';
+      toblue = '';
+      for (j=1; j<tone[i]; j++) tored+='00';
+      for (j=3; j>tone[i]; j--) toblue+='00';
+      chidc[i] = '#'+tored+col1+col2+toblue;
+      td = eval('document.all.chcol'+i);
+      td.style.backgroundColor = chidc[i];
+    }
+    setTimeout('chcol()',100);
+  }
+}
+
+</script>	
+</head>
+<body BGCOLOR="#F5E6CF" TEXT="#000000" LINK="#0000FF" ALINK="#FF0000" VLINK="#0000FF">
+<div align="center"><center>
+<table BORDER="2" CELLSPACING="0" CELLPADDING="0" bgcolor="#F3F78A" width="100%">
+  <tr>
+    <td><p align="center"><strong><font face="Arial" size="4" color="#FF0000">
+	Letra del DNI</font></strong></td>
+  </tr>
+</table>
+</center></div>
+<p align="center">&nbsp;<img border="0" src="std00129.gif" width="136" height="120"><p align="left"><font face="Arial" style="font-size: 11pt">
+&nbsp;&nbsp;&nbsp;Los números de identidad personales, por lo menos en España, tienen una parte 
+numérica y otra parte de texto. El número es variable para cada español y la 
+letra se calcula con una fórmula matemática a partir del número.
+<p>&nbsp;&nbsp;&nbsp; En el campo de texto colocamos el número del DNI y al 
+pulsar el botón ACEPTAR, se realiza el cálculo de la letra, colocándola dentro 
+del campo junto con el número del DNI. <br>
+<br>
+<span class="codigo">
+
+<form name="formulario">
+<p align="center">
+DNI:&nbsp; <input type="text" name="dni" maxlenght="11" size="11">&nbsp;&nbsp; <input type="button" value="Aceptar" language"JavaScript" onclick="averigua()">
+</form>
+ </span>
+</font>
+
+<br>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aplica6 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3496076724806497"
+     data-ad-slot="9881447859"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<p align="center"><b><font face="Arial" size="3">&nbsp;<a href="../indexe.html">Aplicaciones 
+didácticas</a>&nbsp;</font></b></p>
+<p align="center"><b><font face="Arial" size="3"><a href="javascript:history.back()">
+Atrás</a></font>
+</b>
+</p>
+<br>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aplica6 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3496076724806497"
+     data-ad-slot="9881447859"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+
+<p align="center"><font face="Arial" style="font-size: 11pt"> ®Arturo Ramo 
+García.-Registro de Propiedad Intelectual de Teruel nº 141, de 29-IX-1999<br>
+Plaza Playa de Aro, 3, 1º DO 44002-TERUEL (España)</font>
+</p>
+<br>
+<script async src="../../pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- aplica6 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3496076724806497"
+     data-ad-slot="9881447859"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+</body>
+
+<!-- Mirrored from www.aplicaciones.info/utiles/dnie.htm by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 04:17:48 GMT -->
+</html>

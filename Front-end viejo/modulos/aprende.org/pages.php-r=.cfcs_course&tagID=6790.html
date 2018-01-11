@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang='es' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='es' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='es'> <!--<![endif]-->
+<head>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='description' content='aprende.org te ofrece conocimiento para mejorar tu calidad de vida. Todos nuestros cursos y certificados son gratuitos.'>
+  
+  <meta property='og:url' content='https://aprende.org/'>
+  <meta property='og:site_name' content='aprende.org - Fundación Carlos Slim'>
+  <meta property='og:image' content='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pantalla_1.jpg'>
+  
+  <title>aprende.org Curso de Administrador de plataformas digitales de aprendizaje</title>
+  <link rel='stylesheet' type='text/css' href='https://aprende.org/fonts/fonts.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/reset.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/text.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/grid.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui-1.10.3.custom.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/style.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/css.css?20161205011531'/>
+
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/ipad.css?20161205011531' media='only screen and (max-width:1000px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/idesk.css?20161205011531' media='only screen and (min-width:501px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/iphone.css?20161205011531' media='only screen and (max-width:500px)'>
+  <style type='text/css'>
+  div.list_lecciones{border:8px solid #f95037 !important;}
+  audio::-internal-media-controls-download-button{display:none;}
+  audio::-webkit-media-controls-enclosure{overflow:hidden;}
+  audio::-webkit-media-controls-panel{width: calc(100% + 30px);}
+
+      #div_disclaimer_text{font-size:x-small;}
+      #div_disclaimer_text img{vertical-align:middle;max-height:20px;}
+    
+  #back-top{z-index:10000;}
+</style>
+
+
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-1.11.2.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.pack.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/common.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.validate.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/messages_es.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/js.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.scrollTo.min.js'></script>
+  
+    <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.min.css'>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/ie8/videojs-ie8.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/videojs-contrib-hls.min.js'></script>
+  
+
+
+  <script>
+    url_services='https://aprende.org/services.php';
+    videojs.options.flash.swf='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.swf';
+  history.pushState = function(state,title,url){};
+  tagID=6790;
+  function load(id,n,nn,ll,cc,seen){
+    $.post('https://capacitateparaelempleo.org/api.php?r=',{r:'item_render',id:id,n:nn,l:ll,force_cdn:true,mail:'' },function(j){
+      if(j.status==200){
+        history.pushState({},j.title+' - aprende.org','https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load='+id+'&n='+n);
+        //$('#breadcrumb').html(j.breadcrumb);
+        $('#payload1').html(j.payload1+"<div class='clearfix'></div>"); $('#payload2').html(j.payload2);
+        $('#questKey').val(j.questKey);
+        $('#l').val(id); $('#n').val(n);
+        $(document).scrollTop(0);
+        $('#img'+'-'+nn+'-'+ll+'-'+cc).attr('src',seen);
+        $('#img'+'-'+nn+'-'+ll+'-'+cc).attr('onmouseout','this.src="'+seen+'";');
+        videojs('video',{techOrder:['html5','flash']},function(){});
+        //$('#socials_container').html(window.atob('PGRpdiBjbGFzcz0nbWFrZV9zb2NpYWxzJz48aW1nIHNyYz0naHR0cHM6Ly9hcHJlbmRlLm9yZy9tZWRpYS8xNTA0L3NvY2lhbGVzL01lZ3VzdGEwLnBuZycgaWQ9J2Zhdl90b2dnbGUnIG9uY2xpY2s9ImZhdl90b2dnbGVfZnVuYygpOyI+CiAgICA8YSBocmVmPSdodHRwczovL3d3dy5mYWNlYm9vay5jb20vc2hhcmVyLnBocD91PWh0dHBzOi8vYXByZW5kZS5vcmcvcGFnZXMucGhwP3I9LmNmY3NfY291cnNlJnRhZ0lEPTY3OTAmbG9hZD02NzkwJyB0YXJnZXQ9J19ibGFuayc+CiAgICAgIDxpbWcgc3JjPSdodHRwczovL2FwcmVuZGUub3JnL21lZGlhLzE1MDQvc29jaWFsZXMvRmFjZWJvb2sucG5nJyBpZD0nc29jaWFsX2ZhY2Vib29rJz4KICAgIDwvYT4KCiAgICA8YSBocmVmPSdodHRwczovL3d3dy50d2l0dGVyLmNvbS9zaGFyZT90ZXh0PVZpc2l0YStlc3RlK2NvbnRlbmlkbyUyMSstK2FwcmVuZGUub3JnJnVybD1odHRwcyUzQSUyRiUyRmFwcmVuZGUub3JnJTJGcGFnZXMucGhwJTNGciUzRC5jZmNzX2NvdXJzZSUyNnRhZ0lEJTNENjc5MCUyNmxvYWQlM0Q2NzkwJnZpYT1hcHJlbmRlLm9yZycgdGFyZ2V0PSdfYmxhbmsnPgogICAgICA8aW1nIHNyYz0naHR0cHM6Ly9hcHJlbmRlLm9yZy9tZWRpYS8xNTA0L3NvY2lhbGVzL1R3aXR0ZXIucG5nJyBpZD0nc29jaWFsX3R3aXR0ZXInPgogICAgPC9hPgoKICAgIDxhIGhyZWY9J3doYXRzYXBwOi8vc2VuZD90ZXh0PWh0dHBzOi8vYXByZW5kZS5vcmcvcGFnZXMucGhwP3I9LmNmY3NfY291cnNlJnRhZ0lEPTY3OTAmbG9hZD02NzkwJyBkYXRhLWFjdGlvbj0nc2hhcmUvd2hhdHNhcHAvc2hhcmUnPgogICAgICA8aW1nIHNyYz0naHR0cHM6Ly9hcHJlbmRlLm9yZy9tZWRpYS8xNTA0L3NvY2lhbGVzL1doYXRzYXBwLnBuZycgaWQ9J3NvY2lhbF93aGF0c2FwcCc+CiAgICA8L2E+CiAgICA8YnI+CiAgICA8aW5wdXQgdHlwZT0ndGV4dCcgaWQ9J3NoYXJlVGV4dCcgb25jbGljaz0ic2VsZWN0VGV4dCgnc2hhcmVUZXh0Jyk7IiByZWFkb25seSB2YWx1ZT0naHR0cHM6Ly9hcHJlbmRlLm9yZy9wYWdlcy5waHA/cj0uY2Zjc19jb3Vyc2UmdGFnSUQ9Njc5MCZsb2FkPTY3OTAnIHN0eWxlPSdoZWlnaHQ6MjVweDt3aWR0aDo4MCU7dGV4dC1hbGlnbjpjZW50ZXI7Zm9udC1zaXplOjE1cHg7bWFyZ2luLXRvcDo1cHg7Jz4KICAgIDxicj4KICA8L2Rpdj4='));
+      }else{alert(j.message);}
+    },'json');
+  }
+  function test(){ alert('Inicia sesión o regístrate para contestar el cuestionario.'); }
+  function set_test(k){ $('#questKey').val(k); test(); }
+  function scroll_tabs(){ $('html,body').animate({scrollTop: $('#list_niveles').offset().top});}
+  $(function(){
+    $('#progress_6790').progressbar({value:0,});
+    $('#list_niveles').accordion({ 'collapsible':true, 'heightStyle':'content', active:0, });
+  });
+
+    function login_show(){ $.fancybox({'type':'ajax','href':'https://aprende.org/pages.php?r=.login&only_content=true','width':'90%','padding':'5',afterLoad:function(){loaddown();}}); return false;}
+  
+  window.onpageshow = function(event){
+    if(event.persisted){window.location.reload();}
+  };
+
+  $(window).blur(function(){
+    loaddown();
+  });
+
+  var portada_s='',playtime=0;;
+  function portada_notifier(){
+    $.post(url_services,{r:'portada_analytics',event:'unload',s:portada_s,playtime:playtime},function(d){ },'json');
+  }
+  function portada_uptade_vars(s,pt){
+    portada_s=s; playtime=pt;
+  }
+
+    $(document).ready(function(){ $('.fancybox').fancybox({padding:0,
+  afterLoad:function(){
+    loaddown();
+  },
+  beforeClose:function(){
+    portada_notifier();
+  },
+}); 
+  load('6790','0');
+  $('#go_plan').click(function(){ $('#ui-id-5').trigger('click');scroll_tabs();});
+  $('#go_mates').click(function(){ $('#ui-id-6').trigger('click');scroll_tabs();});
+  $('#in_tema_top_shortcut').click(function(){
+    $('.plan_trigger').click();
+    scroll_tabs();
+  });
+
+$('a').filter(function(){
+  return this.hostname && this.hostname !== location.hostname;
+  $(this).attr('target','_blank');
+  if(this.hostname=='ocw.aprende.org'){return false;}
+}).append("&nbsp;<img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:10px;'>");
+ });
+  </script>
+</head>
+<body>
+
+  <div id='loader_container'>
+    <div id='loader'></div>
+  </div>
+
+  
+    <div id='div_header' class='container_16'>
+    <div class='g960'>
+
+      <div class='grid_16 center' style='line-height:0;'>
+      <a href='https://aprende.org/pages.php?r=.index'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/logo.png' id='site_logo' class='al' target='_blank' alt='aprende.org'>
+      </a>
+      </div>
+
+      <div class='whole'>
+
+        <div class='show_mobile_block hid_desk' style='max-width:400px;margin:0px auto;font-size:medium;'>
+          <div class='half left'>
+            <div class='pad10'>
+              <a href='https://aprende.org/pages.php?r=.index'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/home.png'></a>
+            </div>
+          </div>
+          <div class='half right'>&nbsp</div>
+        </div>
+
+        <div id='menu_container' class='whole gmax center'>
+          <div id='menu_content' class='whole center'>
+            <div id='menu_content_inner'>
+              
+      <div id='menu_0' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.index';">
+        <div class='main_menu_opt'>
+          <a href='https://aprende.org/pages.php?r=.index'  style='color:white;'>Inicio</a>
+        </div>
+      </div>
+    
+      <div id='menu_1' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.registro';">
+        <div class='main_menu_opt'>
+          <a href='https://aprende.org/pages.php?r=.registro'  style='color:white;'>Regístrate</a>
+        </div>
+      </div>
+    
+      <div id='menu_4' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.certificate';">
+        <div class='main_menu_opt'>
+          <a href='https://aprende.org/pages.php?r=.certificate'  style='color:white;'>Certifícate</a>
+        </div>
+      </div>
+    
+      <div id='menu_login' class='main_menu_opt_out al hid_mobile' onclick="login_show();" style='width:24.5%;' onclick="window.location.href='javascript:void();';">
+        <div class='main_menu_opt'>
+          <a href='javascript:void();' onclick="login_show();" style='color:white;'>Entrar</a>
+        </div>
+      </div>
+    
+            </div>
+            <div class='clearfix'></div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='pad10'></div>
+      <div class='clearfix'></div>
+
+    </div>
+    </div>
+    <div class='clearfix'></div>
+  
+  <div id='divcontent' class='container_16'>
+    <div style='min-height:150px;'>
+      
+<div class='g960'>
+<div class='whole'>
+  <div class='whole'>
+    <div class='pad10'></div>
+    <div class='grid_5 center imgw hid_mobile' style='padding:5px 0px;'>
+      <a href='https://aprende.org/pages.php?r=.program&programID=cfcs'>
+        <img style='max-height:100px;' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/cfcs.png'>
+      </a>
+    </div>
+    <div class='grid_11 div_mobile_full'>
+      <div id='in_tema_top_title' class='center'>
+        <div class='grid_14' style='line-height:30px;'>Administrador de plataformas digitales de aprendizaje</div>
+        <div class='grid_2'>
+          <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/1504/Megusta_0.png' id='in_tema_top_fav' onclick="fav_toggle_func('cfcs','6790');">
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div id='in_tema_top_shortcut' class='whole right'>
+        Ver plan de capacitación <img src='https://cdn3.capacitateparaelempleo.org/media/1504/icon_menu.png'>
+      </div>
+    </div>
+    <div class='clearfix'></div>
+    
+  <div class='whole'>
+  <div class='pad10'>
+    <span id='breadcrumb' style='color:grey;'><a href='https://aprende.org/pages.php?r=.index'>aprende.org</a> >> <a href='https://aprende.org/pages.php?r=program&programID=cfcs'>Capacítate para el Empleo</a> >> <a href='https://aprende.org/pages.php?r=cfcs_course&tagID=6790'>Administrador de plataformas digitales de aprendizaje</a></span>
+    <div class='pad5'></div>
+    <div class='clearfix'></div>
+  </div><div class='clearfix'></div>
+  </div><div class='clearfix'></div>
+  
+  </div>
+  <div class='clearfix'></div>
+
+  
+
+  <div class='grid_16'>
+    <div class='pad10'></div>
+    <div class='pad10' id='payload1'>
+      [Loading...]
+    </div>
+  </div>
+  <div class='clearfix'></div>
+
+  <div id='payload2' class='grid_16'></div>
+  <div class='clearfix'></div>
+
+  <div class='grid_16'>
+    <div class='pad10'>
+      <h5>Para registrar tu avance en este curso es necesario que inicies sesión.</h5>
+    </div>
+
+    <div id='list_niveles'> <h3>Nivel 1</h3><div>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 1' rel=''>Lección 1</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-1-1-1' title='Video 1: Plataformas digitales de aprendizaje'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6861&n=0&brandID='>
+            <img id='img-1-1-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-2' title='Infografía 1: Tipos de plataformas digitales de aprendizaje'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6862&n=0&brandID='>
+            <img id='img-1-1-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-3' title='Video 2: Recursos digitales interactivos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6863&n=0&brandID='>
+            <img id='img-1-1-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-4' title='Video 3: Recursos digitales colaborativos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6864&n=0&brandID='>
+            <img id='img-1-1-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-5' title='Infografía 2: Aprendizaje e inteligencia'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6865&n=0&brandID='>
+            <img id='img-1-1-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-6' title='Video 4: Arquitectura de la información'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6866&n=0&brandID='>
+            <img id='img-1-1-6' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_4.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_04.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_4.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-7' title='Video 5: Medidas de seguridad y salud laboral'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6867&n=0&brandID='>
+            <img id='img-1-1-7' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_5.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_05.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_5.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-1-8' title='Actividad 1: Plataformas digitales de aprendizaje'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6868&n=0&brandID='>
+            <img id='img-1-1-8' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 1'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('4a6452e4d60352cffc20de24d87bdb26');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+    <hr>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 2' rel=''>Lección 2</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-1-2-1' title='Infografía 1: Equipos de trabajo'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6880&n=0&brandID='>
+            <img id='img-1-2-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-2-2' title='Video 1: Usabilidad y funcionalidad'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6881&n=0&brandID='>
+            <img id='img-1-2-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-2-3' title='Video 2: Accesibilidad e inclusión digital'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6882&n=0&brandID='>
+            <img id='img-1-2-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-2-4' title='Video 3: Diseño instruccional'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6883&n=0&brandID='>
+            <img id='img-1-2-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-2-5' title='Actividad 1: Evaluación de una plataforma digital de aprendizaje'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6916&n=0&brandID='>
+            <img id='img-1-2-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 2'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('3dbb9fa1f6b5027f81521d41a7f6fca8');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+    <hr>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 3' rel=''>Lección 3</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-1-3-1' title='Infografía 1: Claves para la comunicación efectiva'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6884&n=0&brandID='>
+            <img id='img-1-3-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-3-2' title='Video 1: Técnicas de negociación'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6885&n=0&brandID='>
+            <img id='img-1-3-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-3-3' title='Video 2: Liderazgo'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6886&n=0&brandID='>
+            <img id='img-1-3-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-3-4' title='Video 3: Toma de decisiones'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6887&n=0&brandID='>
+            <img id='img-1-3-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-1-3-5' title='Actividad 1: Desarrollo de competencias'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6917&n=0&brandID='>
+            <img id='img-1-3-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 3'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('7bb669e431fe21c96e9c026bfd85811a');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+   </div><h3>Nivel 2</h3><div>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 1' rel=''>Lección 1</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-2-1-1' title='Video 1: Proceso general de trabajo'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6888&n=1&brandID='>
+            <img id='img-2-1-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-1-2' title='Video 2: Análisis de la información de los usuarios'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6889&n=1&brandID='>
+            <img id='img-2-1-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-1-3' title='Infografía 1: Estadísticas para el análisis de la información'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6890&n=1&brandID='>
+            <img id='img-2-1-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-1-4' title='Video 3: Métodos gráficos para el análisis de la información'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6891&n=1&brandID='>
+            <img id='img-2-1-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-1-5' title='Video 4: Identificación de fallas en la operación de la plataforma'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6892&n=1&brandID='>
+            <img id='img-2-1-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_4.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_04.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_4.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-1-6' title='Actividad 1: Identificación de fallas'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6919&n=1&brandID='>
+            <img id='img-2-1-6' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 1'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('d27f9f09f2403be5f059c025f8ffb2ef');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+    <hr>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 2' rel=''>Lección 2</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-2-2-1' title='Infografía 1: Administración de proyectos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6893&n=1&brandID='>
+            <img id='img-2-2-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-2' title='Video 1: Entrevista con el cliente'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6894&n=1&brandID='>
+            <img id='img-2-2-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-3' title='Infografía 2: Reporte de modificaciones y asignación de tareas'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6895&n=1&brandID='>
+            <img id='img-2-2-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-4' title='Infografía 3: Requerimientos y especificaciones'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6896&n=1&brandID='>
+            <img id='img-2-2-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-5' title='Infografía 4: Análisis FODA'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6897&n=1&brandID='>
+            <img id='img-2-2-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_4.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_04.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_4.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-6' title='Video 2: Diseño de estrategias'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6898&n=1&brandID='>
+            <img id='img-2-2-6' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-2-7' title='Actividad 1: Diseño de estrategias'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6923&n=1&brandID='>
+            <img id='img-2-2-7' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 2'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('9a4f403cf7a59563cec3da8e5a92a7bb');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+    <hr>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 3' rel=''>Lección 3</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-2-3-1' title='Video 1: Planeación de actividades'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6899&n=1&brandID='>
+            <img id='img-2-3-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-3-2' title='Video 2: Presupuesto de proyectos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6900&n=1&brandID='>
+            <img id='img-2-3-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-3-3' title='Video 3: Factibilidad y viabilidad'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6901&n=1&brandID='>
+            <img id='img-2-3-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-3-4' title='Actividad 1: Planeación de tareas'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6922&n=1&brandID='>
+            <img id='img-2-3-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 3'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('89e21f10b93247ac808cee82e031391c');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+    <hr>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 4' rel=''>Lección 4</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-2-4-1' title='Video 1: Ejecución, monitoreo y control'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6902&n=1&brandID='>
+            <img id='img-2-4-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-4-2' title='Video 2: Cierre de proyecto'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6903&n=1&brandID='>
+            <img id='img-2-4-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-4-3' title='Infografía 1: Comparación entre el desarrollo ágil y el desarrollo tradicional'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6904&n=1&brandID='>
+            <img id='img-2-4-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-4-4' title='Video 3: Desarrollo ágil de proyectos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6905&n=1&brandID='>
+            <img id='img-2-4-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-2-4-5' title='Actividad 1: Control y cierre de proyectos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6921&n=1&brandID='>
+            <img id='img-2-4-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 4'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('a7bd39f274f28d0ea6057d2a68a1feb4');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+   </div><h3>Nivel 3</h3><div>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 1' rel=''>Lección 1</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-3-1-1' title='Video 1: Identificación de riesgos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6906&n=2&brandID='>
+            <img id='img-3-1-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-3-1-2' title='Infografía 1: Herramientas para la identificación de riesgos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6907&n=2&brandID='>
+            <img id='img-3-1-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-3-1-3' title='Video 2: Análisis de riesgos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6908&n=2&brandID='>
+            <img id='img-3-1-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-3-1-4' title='Infografía 2: Respuesta a riesgos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6909&n=2&brandID='>
+            <img id='img-3-1-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-3-1-5' title='Actividad 1: Análisis y respuesta a riesgos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6918&n=2&brandID='>
+            <img id='img-3-1-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 1'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('fbaa186551d0a7cc019c155a088807e8');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+   </div><h3>Nivel 4</h3><div>
+      <div class='grid_16'>
+        <div class='leccion_numer grid_3' title='Lección 1' rel=''>Lección 1</div>
+        <div class='mobile_breaker'></div>
+        <div class='leccion_clases grid_13'><ul class='list_clases'>
+        <li id='li-4-1-1' title='Infografía 1: Introducción a la programación'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6910&n=3&brandID='>
+            <img id='img-4-1-1' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-2' title='Infografía 2: Programación estructurada'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6911&n=3&brandID='>
+            <img id='img-4-1-2' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-3' title='Video 1: Programación orientada a objetos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6912&n=3&brandID='>
+            <img id='img-4-1-3' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_1.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-4' title='Infografía 3: Introducción a las bases de datos'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6913&n=3&brandID='>
+            <img id='img-4-1-4' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_3.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_03.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_3.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-5' title='Infografía 4: Fundamentos del desarrollo web'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6914&n=3&brandID='>
+            <img id='img-4-1-5' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_4.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_04.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Infografia_4.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-6' title='Video 2: Consultoría'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6915&n=3&brandID='>
+            <img id='img-4-1-6' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_02.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Video_2.png'" >
+          </a>
+        </li>
+      
+        <li id='li-4-1-7' title='Actividad 1: Introducción a la programación'>
+          <a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6920&n=3&brandID='>
+            <img id='img-4-1-7' class='a'  src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png' onmouseover="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_01.png'" onmouseout="this.src='https://cdn3.capacitateparaelempleo.org/media/icons/buttons/Actividad_1.png'" >
+          </a>
+        </li>
+      
+        <li title='Cuestionario de la Lección 1'>
+          <img src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png' class='a' onclick="set_test('75d77d1d70548972e47bfc87c0311c60');">
+        </li>
+      </ul></div>
+        <div class='clearfix'></div>
+      </div>
+   </div>
+    <h3 class='plan_trigger'>Plan de capacitación</h3><div>
+  <table class='tabla_mapa'>
+    <caption><h4>Plan de capacitación / </h4></caption>
+    <tbody>
+    <tr>
+      <td class='center'>Nivel 1 <br></td>
+      <td><table class='tabla_mapa'><tbody>
+      <tr>
+        <td width='80px' class='center'>Lección 1 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6861'>Video 1: Plataformas digitales de aprendizaje </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6862'>Infografía 2: Tipos de plataformas digitales de aprendizaje </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6863'>Video 3: Recursos digitales interactivos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6864'>Video 4: Recursos digitales colaborativos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6865'>Infografía 5: Aprendizaje e inteligencia </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6866'>Video 6: Arquitectura de la información </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6867'>Video 7: Medidas de seguridad y salud laboral </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6868'>Actividad 8: Plataformas digitales de aprendizaje </a></li></ul></td>
+      </tr>
+    
+      <tr>
+        <td width='80px' class='center'>Lección 2 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6880'>Infografía 1: Equipos de trabajo </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6881'>Video 2: Usabilidad y funcionalidad </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6882'>Video 3: Accesibilidad e inclusión digital </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6883'>Video 4: Diseño instruccional </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6916'>Actividad 5: Evaluación de una plataforma digital de aprendizaje </a></li></ul></td>
+      </tr>
+    
+      <tr>
+        <td width='80px' class='center'>Lección 3 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6884'>Infografía 1: Claves para la comunicación efectiva </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6885'>Video 2: Técnicas de negociación </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6886'>Video 3: Liderazgo </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6887'>Video 4: Toma de decisiones </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6917'>Actividad 5: Desarrollo de competencias </a></li></ul></td>
+      </tr>
+    </tbody></table></td>
+    </tr>
+  
+    <tr>
+      <td class='center'>Nivel 2 <br></td>
+      <td><table class='tabla_mapa'><tbody>
+      <tr>
+        <td width='80px' class='center'>Lección 1 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6888'>Video 1: Proceso general de trabajo </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6889'>Video 2: Análisis de la información de los usuarios </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6890'>Infografía 3: Estadísticas para el análisis de la información </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6891'>Video 4: Métodos gráficos para el análisis de la información </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6892'>Video 5: Identificación de fallas en la operación de la plataforma </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6919'>Actividad 6: Identificación de fallas </a></li></ul></td>
+      </tr>
+    
+      <tr>
+        <td width='80px' class='center'>Lección 2 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6893'>Infografía 1: Administración de proyectos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6894'>Video 2: Entrevista con el cliente </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6895'>Infografía 3: Reporte de modificaciones y asignación de tareas </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6896'>Infografía 4: Requerimientos y especificaciones </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6897'>Infografía 5: Análisis FODA </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6898'>Video 6: Diseño de estrategias </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6923'>Actividad 7: Diseño de estrategias </a></li></ul></td>
+      </tr>
+    
+      <tr>
+        <td width='80px' class='center'>Lección 3 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6899'>Video 1: Planeación de actividades </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6900'>Video 2: Presupuesto de proyectos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6901'>Video 3: Factibilidad y viabilidad </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6922'>Actividad 4: Planeación de tareas </a></li></ul></td>
+      </tr>
+    
+      <tr>
+        <td width='80px' class='center'>Lección 4 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6902'>Video 1: Ejecución, monitoreo y control </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6903'>Video 2: Cierre de proyecto </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6904'>Infografía 3: Comparación entre el desarrollo ágil y el desarrollo tradicional </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6905'>Video 4: Desarrollo ágil de proyectos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6921'>Actividad 5: Control y cierre de proyectos </a></li></ul></td>
+      </tr>
+    </tbody></table></td>
+    </tr>
+  
+    <tr>
+      <td class='center'>Nivel 3 <br></td>
+      <td><table class='tabla_mapa'><tbody>
+      <tr>
+        <td width='80px' class='center'>Lección 1 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6906'>Video 1: Identificación de riesgos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6907'>Infografía 2: Herramientas para la identificación de riesgos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6908'>Video 3: Análisis de riesgos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6909'>Infografía 4: Respuesta a riesgos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6918'>Actividad 5: Análisis y respuesta a riesgos </a></li></ul></td>
+      </tr>
+    </tbody></table></td>
+    </tr>
+  
+    <tr>
+      <td class='center'>Nivel 4 <br></td>
+      <td><table class='tabla_mapa'><tbody>
+      <tr>
+        <td width='80px' class='center'>Lección 1 <br> <img style='max-width:20px;' title='Cuenta con examen' src='https://cdn3.capacitateparaelempleo.org/media/icons/evaluacionNo.png'></td>
+        <td><ul><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6910'>Infografía 1: Introducción a la programación </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6911'>Infografía 2: Programación estructurada </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6912'>Video 3: Programación orientada a objetos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6913'>Infografía 4: Introducción a las bases de datos </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6914'>Infografía 5: Fundamentos del desarrollo web </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6915'>Video 6: Consultoría </a></li><li class='div_mapa'><a href='https://aprende.org/pages.php?r=.cfcs_course&tagID=6790&load=6920'>Actividad 7: Introducción a la programación </a></li></ul></td>
+      </tr>
+    </tbody></table></td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+  </div>
+    <br><p>Puedes consultar cada clase y contestar su cuestionario las veces que lo necesites. La idea es identificar los temas que ya dominas e indicarte los que necesitas reforzar.</p>
+  </div>
+  <div class='clearfix'></div>
+
+  <div class='grid_16'>
+    <h4>Simbología</h4>
+        <div style='background-color:#878787;width:10px;height:10px;display:inline-block;'></div> No has visualizado este material.
+    <br><div style='background-color:#2d5452;width:10px;height:10px;display:inline-block;'></div> Ya has visualizado este material.
+    <br><div style='background-color:#822727;width:10px;height:10px;display:inline-block;'></div> No has acreditado una prueba.
+  </div>
+</div>
+</div>
+<div class='clearfix'></div>
+
+      <p id='back-top'><span id='arrows'></span><span id='text'>Ir arriba</span></p>
+    </div>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  
+    <div class='clearfix'></div>
+    <div id='div_footer' style='position:relative;'>
+      <div id='div_footlinks' class='g960'>
+          <div class='quarter'>&nbsp;</div>
+          <div class='half center' id='bottom_terms'>
+            <div class='third_mobile'>
+              <a href='https://aprende.org/pages.php?r=.privacidad'>Aviso de privacidad</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='https://aprende.org/pages.php?r=.terminos'>Términos de uso</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='https://aprende.org/pages.php?r=.contacto'>Contáctanos</a>
+            </div>
+          </div>
+          <div class='quarter'>&nbsp;</div>
+          <div class='whole center'>
+            <div class='pad10'></div>
+            
+  <div class='quarter'>&nbsp;</div>
+  <div class='half center'>
+    <a href='https://itunes.apple.com/us/app/aprende/id1123194881?ls=1&mt=8' target='_blank'><img alt='Descárgalo de la appstore' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/appstore_apple.svg' style='max-height:60px;margin:9px;'></a>
+    <a href='https://play.google.com/store/apps/details?id=org.aprende.app&utm_source=aprende.org&utm_medium=web&utm_content=aprende.org_badge&utm_campaign=PartBadge&pcampaignid=aprende.org_badge' target='_blank'><img alt='Disponible en Google Play' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/es_badge_web_generic.png' style='max-height:60px;'></a>
+  </div>
+  <div class='quarter'>&nbsp;</div>
+  <div class='clearfix'></div>
+
+          </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  
+      <div class='pad10'></div>
+      <div class='container_16' style='background:rgba(0,0,0,.5);margin:0px !important;width:100% !important;'>
+      <div class='pad10'></div>
+        <div class='grid_16'>
+          <div class='grid_3 imgw center'>
+            <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/Aprende_BR.png'>
+          </div>
+          <div class='grid_13' id='div_disclaimer_text'>
+            <h5>¡Aprende sin costo a través de las redes <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/telcel.png'> <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/infinitum.png'>!</h5>
+            <p>
+              El acceso a ligas y recursos externos puede generar cargos por consumo de datos de acuerdo a tu proveedor de internet y plan de acceso contratado y se rige por Avisos de Privacidad y Términos y Condiciones de uso distintos a aprende.org, las ligas y recursos externos se indicarán con el ícono <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:15px;'> cuando esto sea posible.
+            </p>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    
+  
+  <!--render-->
+
+  </body>
+  <script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/analytics.js','ga');
+    ga('create','UA-47293185-3','auto');ga('send','pageview');
+  </script>
+
+<!--
+  <script type='text/javascript'>
+    var _paq = _paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+    (function(){
+      var u='//cdn3.capacitateparaelempleo.org/pwk/'; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src='//cdn3.capacitateparaelempleo.org/pwk/piwik.php?idsite=1' style='border:0;' alt='' /></p></noscript>
+-->
+</html>

@@ -1,0 +1,489 @@
+
+@font-face {
+	font-family: gob;
+	font-weight: bold;
+	src: url("http://www.hidalgo.gob.mx:8181/fonts/Graphik-Light.otf") format("opentype");
+}
+
+::-webkit-input-placeholder {
+   color: #727272;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+body *{
+	font-family: gob, tahoma, sans-serif;
+	font-size: 12px; 
+}
+
+hr{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#loader{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(255,255,255,1);
+	z-index: 9999;
+}
+
+#loader .child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#visita{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 8888;
+	display: none;
+}
+
+#visita *{
+	color: #FFFFFF !important;
+}
+
+#visita .child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#visita .child h1{
+	font-size: 26px;
+}
+
+#loader .child img{
+	width: 200px;
+	height: auto;
+}
+
+#loader .child h3{
+	color: red;
+}
+
+#loader .child button{
+	display: none;
+}
+
+/*center div.contenido{
+	max-width: 1024px;
+	min-width: 1024px;
+	width: 1024px;
+}*/
+
+div.ruts_selector{
+	border: 0px;
+	border-bottom: 4px transparent solid;
+}
+
+div.ruts_selector h3{
+	font-size: 16px;
+	cursor: pointer;
+}
+
+div.ruts_selector h3:after{
+	position: absolute;
+	content: url("http://www.hidalgo.gob.mx:8181/images/TWIRL.png");
+	padding: 0px;
+	padding-left: 5px;
+	margin-top: -2px;
+}
+
+div.ruts_selector div.menu{
+	position: absolute;
+	background: #FFFFFF;
+	border:1px solid #d6d6d6;
+	min-width: 100%; 
+	text-align: left;
+	border-radius: 2px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.16);
+	color:#333;
+	padding: 0px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 5px;
+	z-index: 888;
+}
+
+div.ruts_selector div.menu hr{
+	margin: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+div.ruts_selector div.menu hr:nth-child(1){
+	display: none;
+}
+
+div.ruts_selector div.menu a{
+	padding: 6px 16px;
+	color: #333;
+	display: block;
+	white-space: nowrap;
+}
+div.ruts_selector div.menu a:hover{
+	background-color: #f1f1f1;
+	color: #777;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav#header{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	min-height: 63px;
+	background: #F2F2F2;
+	border: 0px;
+	border-bottom: 4px #CCCCCC solid;
+	z-index: 999;
+}
+
+nav#header div.contenido{
+	min-height: 63px;
+	position: relative;
+}
+
+nav#header div.contenido img.logo{
+	line-height: 100%;
+}
+
+nav#header div.contenido div.bootstrap-tagsinput{
+	width: 100%;
+    text-align: left;
+    min-height: 45px;
+    border-radius: 0px;
+    border-color: #B3B3B3;
+    margin-top: 9px;
+    padding: 6px;
+    margin-bottom: 9px;
+}
+
+nav#header div.contenido div.bootstrap-tagsinput span.label-info {
+    background-color: #E5F9E9;
+    color: #575757 !important;
+    padding: 10px;
+    line-height: 32px;
+    border: 1px #e6e6e6 solid;
+    font-size: 12px;
+}
+
+nav#header div.contenido div.bootstrap-tagsinput input{
+	height: 30px;
+}
+
+nav#header div.contenido div.bootstrap-tagsinput:focus{
+	border-color: #58137D;
+	outline: none;
+}
+
+nav#header div.contenido div.bootstrap-tagsinput .tag [data-role="remove"] {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+nav#header div.contenido div.menu{
+	margin: 0px;
+	margin-top: 9px;
+	margin-bottom: 9px;
+	margin-left: -9px;
+	height: 45px;
+	width: 100%;
+	background-image: url("http://www.hidalgo.gob.mx:8181/images/menu.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+button#todos{
+	height: 57px;
+	border-radius: 0px;
+	border-top:0px;
+	border-bottom: 0px; 
+}
+
+button#todos.selected{
+	background-color: #58137D;
+	color: #FFFFFF;
+	outline: none;
+}
+
+#website{
+/*	min-width: 1024px;
+	max-width: 1024px;
+	width: 1024px;*/
+	padding: 0px;
+	padding-top: 67px;
+	text-align: left;
+}
+
+#website div.menuinter h6{
+	line-height: 37px;
+	color: #808080;
+}
+
+#website div.tagsinter{
+	display: block;
+	white-space: nowrap;
+	text-align: left;
+	padding: 10px;
+	overflow-y: none;
+	overflow-x: hidden;  
+}
+
+#website div.tagsinter span{
+	padding: 10px;
+	background-color: #E5F9E9;
+    color: #575757 !important;
+    line-height: 32px;
+    border: 1px #e6e6e6 solid;
+    font-size: 12px;
+    margin: 5px !important;
+}
+
+#website div.tagsinter span:after{
+	content: "x";
+    padding: 0px 2px 0px 10px;
+    cursor: pointer;
+}
+
+#website div.tagsinter span.t1{
+	background-color: #E6F8FC;
+}
+
+#website div.tagsinter span.t2{
+	background-color: #EDE7F7;
+}
+
+#website div.tagsinter span.t3{
+	background-color: #F9E5E5;
+}
+
+#website div.superbusqueda nav{
+	border: 0px;
+	border-right: 2px #CCCCCC solid;
+	border-bottom: 2px #CCCCCC solid;
+}
+
+#website div.superbusqueda nav div.option{
+	background-color: #F2F2F2;
+	color: #000000;
+	font-size: 14px;
+	padding: 0px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 5px;
+	border: 0px;
+	border-bottom: 1px #CCCCCC solid;
+	cursor: pointer;
+	width: 100%;
+}
+
+#website div.superbusqueda nav div.option:before{
+	content: url("http://www.hidalgo.gob.mx:8181/images/vineta.png");
+	padding: 0px 5px;
+	display: inline-block;
+	transition-duration: 1s;
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg); /* Standard syntax */
+}
+
+#website div.superbusqueda nav div.option.selected:before{
+	content: url("http://www.hidalgo.gob.mx:8181/images/vineta.png");
+	display: inline-block;
+	padding: 0px 5px;
+	transition-duration: 0.5s;
+	-ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg); /* Standard syntax */
+}
+
+#website div.superbusqueda nav div.option span{
+	float: right;
+	margin-right: 10px;
+	border-radius: 0px;
+	background-color: #E25800;
+	font-size: 10px;
+}
+
+#website div.superbusqueda nav div.option.selected{
+	background-color: #58137D;
+	color: #FFFFFF;
+	border: 0px;
+	border-right: 2px #2A083F solid;
+	width: calc(100% + 2px);
+}
+
+#website div.superbusqueda nav div.option div.submenu{
+	background-color: #FEF8FF;
+	margin-top: 12px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: -5px;
+	margin-bottom: -12px;
+	border:0px;
+	border-top: 1px #CCCCCC solid;
+	display: none;
+	border-right: 2px #CCCCCC solid;
+	width: calc(100% + 7px);
+}
+
+#website div.superbusqueda nav div.selected div.submenu{
+	display: block;
+	color: #4D4D4D;
+}
+
+#website div.superbusqueda nav div.option div.submenu div{
+	line-height: 24px;
+	padding-left: 21px;
+}
+
+#website div.superbusqueda nav div.option div.submenu div span{
+	margin-top: 4px;
+}
+
+#website div.superbusqueda nav div.option div.submenu div.selected{
+	background-color: #E6E6E6;
+}
+
+#website div.superbusqueda main#resultados-ruts{
+	padding: 19px;
+}
+
+#website div.superbusqueda main#resultados-ruts span.des{
+	color: #808080;
+}
+
+#website div.superbusqueda main#resultados-ruts div.resultados{
+	padding: 0px;
+	padding-top: 22px;
+}
+
+#website div.superbusqueda main#resultados-ruts div.res *{
+	display: block;
+	margin: 2px;
+}
+
+#website div.superbusqueda main#resultados-ruts div.loadering{
+	display: block;
+	margin: 2px;
+	display: none;
+}
+
+#website div.superbusqueda main#resultados-ruts section.loadering{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	background: rgba(255,255,255,0.3);
+	z-index: 9999999999999;
+	display: none;
+}
+
+#website div.superbusqueda main#resultados-ruts div.loadering img{
+	width: 150px;
+	height: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+#website div.superbusqueda main#resultados-ruts div.loadering h1{
+	font-size: 26px;
+}
+
+#website div.superbusqueda main#resultados-ruts div.res h3{
+	font-size: 14px;
+	color: #58137D;
+	cursor: pointer;
+}
+
+#website div.superbusqueda main#resultados-ruts div.res label{
+	font-size: 10px;
+	font-style: italic;
+}
+
+#website div.superbusqueda main#resultados-ruts hr{
+	margin: 0px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview{
+	display: none;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview *{
+	display: block;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview h3,span,h4{
+	color: #58137D;
+	font-size: 16px;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview label{
+	color: #808080;
+	font-size: 14px;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview button{
+	color: #58137D;
+	outline: none;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview div.contact{
+	background-color: #F9F9F9;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview div.contact input{
+	width: 100%;
+	padding: 3px;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	height: 29px;
+	border: 1px #808080 solid;
+	outline: none;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview div.contact textarea{
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	padding: 3px;
+	margin: 0px;
+	margin-top: 6px;
+	margin-bottom: 6px;
+	height: 75px;
+	min-height: 75px;
+	border: 1px #808080 solid;
+	outline: none;
+}
+
+#website div.superbusqueda main#resultados-ruts div#detallesview div.contact button{
+	border:0px;
+	background-color: #808080;
+	color: #FFFFFF;
+	border-radius: 0px;
+}
+
+#website div.contig input{
+	width: 100%;
+}

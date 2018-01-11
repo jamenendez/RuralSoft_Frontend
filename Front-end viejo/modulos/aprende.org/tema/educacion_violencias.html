@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang='es' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='es' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='es'> <!--<![endif]-->
+<head>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='description' content='aprende.org te ofrece conocimiento para mejorar tu calidad de vida. Todos nuestros cursos y certificados son gratuitos.'>
+  
+  <meta property='og:url' content='https://aprende.org/'>
+  <meta property='og:site_name' content='aprende.org - Fundación Carlos Slim'>
+  <meta property='og:image' content='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pantalla_1.jpg'>
+  
+  <title>aprende.org</title>
+  <link rel='stylesheet' type='text/css' href='../fonts/fonts.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/reset.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/text.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/grid.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui-1.10.3.custom.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/style.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/css.css?20161205011531'/>
+
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/ipad.css?20161205011531' media='only screen and (max-width:1000px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/idesk.css?20161205011531' media='only screen and (min-width:501px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/iphone.css?20161205011531' media='only screen and (max-width:500px)'>
+  <style type='text/css'>#portada_content{display:none !important;}
+  #temas_container_outter{overflow-x:scroll;overflow-y:hidden;}
+  #temas_container div{display:inline-block;}
+  #tema_description,#portada_content h4{color:black;}
+  #portada_content{background:rgba(255,255,255,1);}
+
+  .tema_thumb{max-width:200px;vertical-align:top;margin-left:40px;}
+  .tema_tag{color:#535353;font-size:12px;font-weight:bold;height:30px;margin-bottom:5px;background:white;border-bottom:5px solid #70625f;}
+
+  .elem_tag_educacion_violencias{background:#70625f;font-size:small;}
+
+  .tema_thumb_educacion_inicial{background:rgba(0,0,0,.3) !important;padding-top:10px;}
+  .tema_tag_educacion_inicial{color:white !important;background:transparent !important;border:none !important;}
+  .aprende_habilidades_bubble_outter{display:inline-block;vertical-align:top;}
+  .aprende_habilidades_bubble_outter a{color:black !important;}
+  .aprende_habilidades_bubble{text-align:center;border-radius:50%;width:110px;height:110px;margin:5px;padding:5px;font-size:small;display:table-cell;vertical-align:middle;}
+
+  .butt_arrow{top:35%;z-index:9000;}
+  .butt_arrow img{max-width:35px;}
+
+
+  .shareText{border:1px solid grey;height:25px;width:94%;text-align:center;font-size:15px;margin-top:5px;}
+
+  .playlist_elem{padding:5px 0px;}
+  .playlist_elem:nth-child(odd){background:rgba(0,0,0,.1);}
+  .playlist_elem:nth-child(even){background:rgba(0,0,0,.05);}
+
+  .playlist_elem_txt{color:black !important;}
+
+  audio::-webkit-media-controls-panel,audio{background:transparent;}
+  audio::-webkit-media-controls-play-button{color:pink;}
+  audio::-webkit-media-controls-timeline-container{background-color:pink;}
+
+  audio::-internal-media-controls-download-button{display:none;}
+  audio::-webkit-media-controls-enclosure{overflow:hidden;}
+  audio::-webkit-media-controls-panel{width: calc(100% + 30px); /* Adjust as needed */}
+
+  .section_title{margin-bottom:0px;border-radius:0px !important;}
+
+  #main_nav{background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pensador_full.png');}
+
+  #shareText{display:none !important;}
+
+  div.nivo-slice img,div.nivo-box img{margin:0px; max-width:none;}
+  .directionNav{display:none !important;}
+  .theme-bar .nivoSlider{background:none !important;}
+
+  #main_cursos div{display:inline-block;}
+  #main_cursos img{max-width:100%;}
+
+  #div_search{display:none;}
+  #q{background:transparent;border:1px solid white;color:white;height:20px;font-size:x-large;}
+
+  #area_title{background:#233d5c;}
+
+
+  #quehuevamedan{display:none;}
+
+      #div_disclaimer_text{font-size:x-small;}
+      #div_disclaimer_text img{vertical-align:middle;max-height:20px;}
+    
+  #back-top{z-index:10000;}
+</style>
+
+
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-1.11.2.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.pack.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/common.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.validate.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/messages_es.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/js.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.scrollTo.min.js'></script>
+  
+  <script type='text/javascript' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo.js'></script>
+  <link rel='stylesheet' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo.css' type='text/css' media='screen' />
+  <link rel='stylesheet' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo_bar/bar.css' type='text/css' media='screen' />
+
+    <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.min.css'>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/ie8/videojs-ie8.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/videojs-contrib-hls.min.js'></script>
+  
+
+
+  <script>
+    url_services='https://aprende.org/services.php';
+    videojs.options.flash.swf='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.swf';
+  function scrollToPosition(element) {
+    if(element!==undefined){ $('#temas_container_outter').scrollTo(element,100,{margin:true});}
+  }
+
+  $(function(){
+    var posts=$('.tema_thumb'),position=0,next=$('#next'),prev=$('#prev');
+    next.click(function(evt){ if(position === posts.length - 1){return false;} scrollToPosition(posts[position += 1]);});
+    prev.click(function(evt){ if(position === 0){return false;} scrollToPosition(posts[position -= 1]);});
+  });
+
+  document.addEventListener('play',function(e){
+    var audios=document.getElementsByTagName('audio');
+    for(var i=0, len=audios.length; i<len;i++){if(audios[i]!=e.target){ audios[i].pause();}}
+  },true);
+
+  function PNGManagement1(){setTimeout(function(){ $('.nivoSlider .nivo-main-image').animate({opacity:0},500)},20);}
+  function PNGManagement2(){setTimeout (function(){ $('.nivoSlider .nivo-main-image').css({opacity:1});},20);}
+
+  $(window).load(function(){
+    var hash = location.hash.replace('#','');
+    if(hash != ''){
+       location.hash = '';
+       //$('html, body').animate({ scrollTop: $('#main_nav').offset().top},300);
+    }
+
+    $('#sslidesk').nivoSlider({pauseTime:5000,prevText:'',nextText:'',beforeChange:function(){PNGManagement1()},afterChange:function(){PNGManagement2()}});
+    //$('#slidmov').nivoSlider({pauseTime:5000,prevText:'',nextText:'',beforeChange:function(){PNGManagement1()},afterChange:function(){PNGManagement2()}});
+
+    $('#sslidesk').show();
+  });
+
+    function login_show(){ $.fancybox({'type':'ajax','href':'https://aprende.org/pages.php?r=.login&only_content=true','width':'90%','padding':'5',afterLoad:function(){loaddown();}}); return false;}
+  
+  window.onpageshow = function(event){
+    if(event.persisted){window.location.reload();}
+  };
+
+  $(window).blur(function(){
+    loaddown();
+  });
+
+  var portada_s='',playtime=0;;
+  function portada_notifier(){
+    $.post(url_services,{r:'portada_analytics',event:'unload',s:portada_s,playtime:playtime},function(d){ },'json');
+  }
+  function portada_uptade_vars(s,pt){
+    portada_s=s; playtime=pt;
+  }
+
+    $(document).ready(function(){ $('.fancybox').fancybox({padding:0,
+  afterLoad:function(){
+    loaddown();
+  },
+  beforeClose:function(){
+    portada_notifier();
+  },
+}); 
+  setTimeout(function(){
+    showscroll('#elem_');
+  },600);
+  setTimeout(function(){
+    $('#elem_').click();
+  },800);
+
+  $('.reaction_butt').click(function(){
+    var rid=$(this).attr('data-reactionid'),s=$(this).attr('data-s');
+    $.post(url_services,
+      {r:'reactions_set',rid:rid,s:s,playtime:$('#playtime').val()},
+      function(d){ $('#img_reaction_'+rid).attr('src','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/reactions/'+rid+'_azul.png');},'json');
+  });
+
+  $('#section_search_toggle').click(function(){ $('#div_search').toggle();});
+
+$('a').filter(function(){
+  return this.hostname && this.hostname !== location.hostname;
+  $(this).attr('target','_blank');
+  if(this.hostname=='ocw.aprende.org'){return false;}
+}).append("&nbsp;<img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:10px;'>");
+ });
+  </script>
+</head>
+<body>
+
+  <div id='loader_container'>
+    <div id='loader'></div>
+  </div>
+
+  
+    <div id='div_header' class='container_16'>
+    <div class='g960'>
+
+      <div class='grid_16 center' style='line-height:0;'>
+      <a href='../pages.php-r=.index.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/logo.png' id='site_logo' class='al' target='_blank' alt='aprende.org'>
+      </a>
+      </div>
+
+      <div class='whole'>
+
+        <div class='show_mobile_block hid_desk' style='max-width:400px;margin:0px auto;font-size:medium;'>
+          <div class='half left'>
+            <div class='pad10'>
+              <a href='../pages.php-r=.index.html'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/home.png'></a>
+            </div>
+          </div>
+          <div class='half right'>&nbsp</div>
+        </div>
+
+        <div id='menu_container' class='whole gmax center'>
+          <div id='menu_content' class='whole center'>
+            <div id='menu_content_inner'>
+              
+      <div id='menu_0' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.index';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.index.html'  style='color:white;'>Inicio</a>
+        </div>
+      </div>
+    
+      <div id='menu_1' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.registro';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.registro.html'  style='color:white;'>Regístrate</a>
+        </div>
+      </div>
+    
+      <div id='menu_4' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.certificate';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.certificate.html'  style='color:white;'>Certifícate</a>
+        </div>
+      </div>
+    
+      <div id='menu_login' class='main_menu_opt_out al hid_mobile' onclick="login_show();" style='width:24.5%;' onclick="window.location.href='javascript:void();';">
+        <div class='main_menu_opt'>
+          <a href='javascript:void();' onclick="login_show();" style='color:white;'>Entrar</a>
+        </div>
+      </div>
+    
+            </div>
+            <div class='clearfix'></div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='pad10'></div>
+      <div class='clearfix'></div>
+
+    </div>
+    </div>
+    <div class='clearfix'></div>
+  
+  <div id='divcontent' class='container_16'>
+    <div style='min-height:150px;'>
+      
+  <div class='section_title whole' style='position:relative;background:#70625f !important;'>
+    <div class='absolute' style='left:10px;top:0px;'>
+      <a href='educacion.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Regresar.png'>
+      </a>
+    </div>
+    <div style='margin:10px 0px;'> Prevención de las Violencias</div>
+    <div class='section_search_toggle_container center'>
+      <img id='section_search_toggle' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Buscar.png'>
+    </div>
+  </div>
+  <div class='clearfix'></div>
+  <div id='div_search' class='whole'>
+    <form method='post' action='https://aprende.org/buscar/educacion_violencias'>
+      <div class='grid_12 div_mobile_full'>
+        <input type='text' id='q' name='q' class='whole center' placeholder='Buscar en Prevención de las Violencias'>
+        <input type='hidden' name='programID' value='educacion_violencias'>
+      </div>
+      <div class='grid_4 center div_mobile_full' style='padding:5px 0px;vertical-align:middle;'>
+        <button id='buscar'>Buscar</button>
+      </div>
+      <div class='clearfix'></div>
+    </form>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+
+  <div class='grid_16'>
+    <div class='g1200'>
+      <div class='pad20'></div>
+      
+  <div class='relative'>
+    <div class='snip_edit'></div>
+    <p style="text-align: center;">&nbsp;</p><br><p style="text-align: center;"><a href="https://violencias.xkan.com.mx/" target="_blank"><img src="https://cdn1.capacitateparaelempleo.org/cdn_aprende/assets/iwqd519.jpg" alt="" /></a></p><br><p style="text-align: center;">El ingreso a este Diplomado est&aacute; sujeto a previa validaci&oacute;n por el administrador del Programa Prevenci&oacute;n de las Violencias. Ponerse en contacto v&iacute;a correo electr&oacute;nico con el Administrador del Programa.&nbsp;<strong>Contacto : <a href="mailto:prevencionviolencias@fundacioncarlosslim.org ">prevencionviolencias@fundacioncarlosslim.org&nbsp;</a></strong></p>
+  </div>
+
+      <div class='pad20'></div>
+
+      <div class='whole'>
+        
+  
+  
+
+  
+  <div class='pad20'></div>
+
+
+  <div class='pad5'></div>
+  <div class='whole'>
+
+    <div id='portada_content' class='' style=''>
+    <div class='grid_16'>
+      <div class='pad10'></div>
+      <div class='pad10'>
+        <h4></h4>
+        <div class='pad10'></div>
+        <div id='tema_description'> </div>
+      </div>
+      <div class='pad10'></div>
+      
+      <div class='clearfix'></div>
+    </div><div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  <input type='hidden' id='playtime' value='0'>
+
+      </div>
+      <div class='clearfix'></div>
+
+      <div class='clearfix'></div>
+      <div class='pad20'></div>
+      <div class='clearfix'></div>
+
+      <div class='quarter'>&nbsp;</div>
+      <div class='half div_mobile_full'>
+        <div class='slider_container' style='max-width:100%;margin:0px auto;'>
+          
+          <div class='clearfix'></div>
+          
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='quarter'>&nbsp;</div>
+      <div class='clearfix'></div>
+
+    </div>
+    <div class='clearfix'></div>
+
+  </div>
+  <div class='clearfix'></div>
+
+      <p id='back-top'><span id='arrows'></span><span id='text'>Ir arriba</span></p>
+    </div>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  
+    <div class='clearfix'></div>
+    <div id='div_footer' style='position:relative;'>
+      <div id='div_footlinks' class='g960'>
+          <div class='quarter'>&nbsp;</div>
+          <div class='half center' id='bottom_terms'>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.privacidad.html'>Aviso de privacidad</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.terminos.html'>Términos de uso</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.contacto.html'>Contáctanos</a>
+            </div>
+          </div>
+          <div class='quarter'>&nbsp;</div>
+          <div class='whole center'>
+            <div class='pad10'></div>
+            
+  <div class='quarter'>&nbsp;</div>
+  <div class='half center'>
+    <a href='https://itunes.apple.com/us/app/aprende/id1123194881?ls=1&amp;mt=8' target='_blank'><img alt='Descárgalo de la appstore' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/appstore_apple.svg' style='max-height:60px;margin:9px;'></a>
+    <a href='https://play.google.com/store/apps/details?id=org.aprende.app&amp;utm_source=aprende.org&amp;utm_medium=web&amp;utm_content=aprende.org_badge&amp;utm_campaign=PartBadge&amp;pcampaignid=aprende.org_badge' target='_blank'><img alt='Disponible en Google Play' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/es_badge_web_generic.png' style='max-height:60px;'></a>
+  </div>
+  <div class='quarter'>&nbsp;</div>
+  <div class='clearfix'></div>
+
+          </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  
+      <div class='pad10'></div>
+      <div class='container_16' style='background:rgba(0,0,0,.5);margin:0px !important;width:100% !important;'>
+      <div class='pad10'></div>
+        <div class='grid_16'>
+          <div class='grid_3 imgw center'>
+            <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/Aprende_BR.png'>
+          </div>
+          <div class='grid_13' id='div_disclaimer_text'>
+            <h5>¡Aprende sin costo a través de las redes <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/telcel.png'> <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/infinitum.png'>!</h5>
+            <p>
+              El acceso a ligas y recursos externos puede generar cargos por consumo de datos de acuerdo a tu proveedor de internet y plan de acceso contratado y se rige por Avisos de Privacidad y Términos y Condiciones de uso distintos a aprende.org, las ligas y recursos externos se indicarán con el ícono <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:15px;'> cuando esto sea posible.
+            </p>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    
+  
+  <!--render-->
+
+  </body>
+  <script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/analytics.js','ga');
+    ga('create','UA-47293185-3','auto');ga('send','pageview');
+  </script>
+
+<!--
+  <script type='text/javascript'>
+    var _paq = _paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+    (function(){
+      var u='//cdn3.capacitateparaelempleo.org/pwk/'; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src='//cdn3.capacitateparaelempleo.org/pwk/piwik.php?idsite=1' style='border:0;' alt='' /></p></noscript>
+-->
+</html>

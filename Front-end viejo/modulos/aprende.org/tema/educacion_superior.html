@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]> <html lang='es' class='ie8'> <![endif]-->
+<!--[if IE 9 ]> <html lang='es' class='ie9'> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang='es'> <!--<![endif]-->
+<head>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+  <meta name='description' content='aprende.org te ofrece conocimiento para mejorar tu calidad de vida. Todos nuestros cursos y certificados son gratuitos.'>
+  
+  <meta property='og:url' content='https://aprende.org/'>
+  <meta property='og:site_name' content='aprende.org - Fundación Carlos Slim'>
+  <meta property='og:image' content='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pantalla_1.jpg'>
+  
+  <title>aprende.org</title>
+  <link rel='stylesheet' type='text/css' href='../fonts/fonts.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/reset.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/text.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/grid.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui-1.10.3.custom.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/style.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.css?20161205011531'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.css'/>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/css.css?20161205011531'/>
+
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/ipad.css?20161205011531' media='only screen and (max-width:1000px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/idesk.css?20161205011531' media='only screen and (min-width:501px)'>
+  <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/iphone.css?20161205011531' media='only screen and (max-width:500px)'>
+  <style type='text/css'>#buttons_contianer button{background:#4374A3;border-radius:20px; width:80%; height:30px;}
+  .div_grid{display:none;}
+
+  .aprende_habilidades_bubble_outter{display:inline-block;vertical-align:top;}
+  .aprende_habilidades_bubble{text-align:center;border-radius:50%;width:110px;height:110px;margin:5px;padding:5px;font-size:small;display:table-cell;vertical-align:middle;}
+
+  .ui-accordion .ui-accordion-content{overflow:hidden;}
+
+  #gallery img{max-height:100px;}
+  #lis_clases li{display:inline;}
+  .play_small{max-width:40px;vertical-align:middle;}
+  .subdiv .whole{background-color:rgba(0,0,0,0);padding:5px 0px;}
+  .subdiv .whole:nth-child(even){background-color:rgba(0,0,0,.3);}
+
+  .bubble_verbales{background:transparent !important;}
+
+  .section_title{margin-bottom:0px;border-radius:0px !important;}
+
+  #main_nav{background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/pensador_full.png');}
+
+  #shareText{display:none !important;}
+
+  div.nivo-slice img,div.nivo-box img{margin:0px; max-width:none;}
+  .directionNav{display:none !important;}
+  .theme-bar .nivoSlider{background:none !important;}
+
+  #main_cursos div{display:inline-block;}
+  #main_cursos img{max-width:100%;}
+
+  #div_search{display:none;}
+  #q{background:transparent;border:1px solid white;color:white;height:20px;font-size:x-large;}
+
+  #area_title{background:#233d5c;}
+
+
+  #quehuevamedan{display:none;}
+
+      #div_disclaimer_text{font-size:x-small;}
+      #div_disclaimer_text img{vertical-align:middle;max-height:20px;}
+    
+  #back-top{z-index:10000;}
+</style>
+
+
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-1.11.2.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery-ui.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/fancybox/jquery.fancybox.pack.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/common.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.validate.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/messages_es.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scroll.min.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/aths/addtohomescreen.js'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/scrolltop/js.js?20161205011531'></script>
+  <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/jquery.scrollTo.min.js'></script>
+  
+  <script type='text/javascript' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo.js'></script>
+  <link rel='stylesheet' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo.css' type='text/css' media='screen' />
+  <link rel='stylesheet' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/nivo_bar/bar.css' type='text/css' media='screen' />
+
+    <link rel='stylesheet' type='text/css' href='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.min.css'>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/ie8/videojs-ie8.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video.min.js'></script>
+    <script src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/videojs-contrib-hls.min.js'></script>
+  
+
+
+  <script>
+    url_services='https://aprende.org/services.php';
+    videojs.options.flash.swf='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/vjs/video-js.swf';
+  function PNGManagement1(){setTimeout(function(){ $('.nivoSlider .nivo-main-image').animate({opacity:0},500)},20);}
+  function PNGManagement2(){setTimeout (function(){ $('.nivoSlider .nivo-main-image').css({opacity:1});},20);}
+
+  $(window).load(function(){
+    var hash = location.hash.replace('#','');
+    if(hash != ''){
+       location.hash = '';
+       //$('html, body').animate({ scrollTop: $('#main_nav').offset().top},300);
+    }
+
+    $('#sslidesk').nivoSlider({pauseTime:5000,prevText:'',nextText:'',beforeChange:function(){PNGManagement1()},afterChange:function(){PNGManagement2()}});
+    //$('#slidmov').nivoSlider({pauseTime:5000,prevText:'',nextText:'',beforeChange:function(){PNGManagement1()},afterChange:function(){PNGManagement2()}});
+
+    $('#sslidesk').show();
+  });
+
+    function login_show(){ $.fancybox({'type':'ajax','href':'https://aprende.org/pages.php?r=.login&only_content=true','width':'90%','padding':'5',afterLoad:function(){loaddown();}}); return false;}
+  
+  window.onpageshow = function(event){
+    if(event.persisted){window.location.reload();}
+  };
+
+  $(window).blur(function(){
+    loaddown();
+  });
+
+  var portada_s='',playtime=0;;
+  function portada_notifier(){
+    $.post(url_services,{r:'portada_analytics',event:'unload',s:portada_s,playtime:playtime},function(d){ },'json');
+  }
+  function portada_uptade_vars(s,pt){
+    portada_s=s; playtime=pt;
+  }
+
+    $(document).ready(function(){ $('.fancybox').fancybox({padding:0,
+  afterLoad:function(){
+    loaddown();
+  },
+  beforeClose:function(){
+    portada_notifier();
+  },
+}); 
+  $('#div_temas').show();
+  $('#button_grados').click(function(){ $('.div_grid').hide(); $('#div_grados').show();});
+  $('#button_temas').click(function(){ $('.div_grid').hide(); $('#div_temas').show();});
+
+  $('#section_search_toggle').click(function(){ $('#div_search').toggle();});
+
+$('a').filter(function(){
+  return this.hostname && this.hostname !== location.hostname;
+  $(this).attr('target','_blank');
+  if(this.hostname=='ocw.aprende.org'){return false;}
+}).append("&nbsp;<img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:10px;'>");
+ });
+  </script>
+</head>
+<body>
+
+  <div id='loader_container'>
+    <div id='loader'></div>
+  </div>
+
+  
+    <div id='div_header' class='container_16'>
+    <div class='g960'>
+
+      <div class='grid_16 center' style='line-height:0;'>
+      <a href='../pages.php-r=.index.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/logo.png' id='site_logo' class='al' target='_blank' alt='aprende.org'>
+      </a>
+      </div>
+
+      <div class='whole'>
+
+        <div class='show_mobile_block hid_desk' style='max-width:400px;margin:0px auto;font-size:medium;'>
+          <div class='half left'>
+            <div class='pad10'>
+              <a href='../pages.php-r=.index.html'><img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/home.png'></a>
+            </div>
+          </div>
+          <div class='half right'>&nbsp</div>
+        </div>
+
+        <div id='menu_container' class='whole gmax center'>
+          <div id='menu_content' class='whole center'>
+            <div id='menu_content_inner'>
+              
+      <div id='menu_0' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.index';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.index.html'  style='color:white;'>Inicio</a>
+        </div>
+      </div>
+    
+      <div id='menu_1' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.registro';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.registro.html'  style='color:white;'>Regístrate</a>
+        </div>
+      </div>
+    
+      <div id='menu_4' class='main_menu_opt_out al '  style='width:24.5%;' onclick="window.location.href='https://aprende.org/pages.php?r=.certificate';">
+        <div class='main_menu_opt'>
+          <a href='../pages.php-r=.certificate.html'  style='color:white;'>Certifícate</a>
+        </div>
+      </div>
+    
+      <div id='menu_login' class='main_menu_opt_out al hid_mobile' onclick="login_show();" style='width:24.5%;' onclick="window.location.href='javascript:void();';">
+        <div class='main_menu_opt'>
+          <a href='javascript:void();' onclick="login_show();" style='color:white;'>Entrar</a>
+        </div>
+      </div>
+    
+            </div>
+            <div class='clearfix'></div>
+          </div>
+          <div class='clearfix'></div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='pad10'></div>
+      <div class='clearfix'></div>
+
+    </div>
+    </div>
+    <div class='clearfix'></div>
+  
+  <div id='divcontent' class='container_16'>
+    <div style='min-height:150px;'>
+      
+  <div class='section_title whole' style='position:relative;background:#ff9b00 !important;'>
+    <div class='absolute' style='left:10px;top:0px;'>
+      <a href='educacion.html'>
+        <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Regresar.png'>
+      </a>
+    </div>
+    <div style='margin:10px 0px;'> Educación Superior</div>
+    <div class='section_search_toggle_container center'>
+      <img id='section_search_toggle' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/site/Buscar.png'>
+    </div>
+  </div>
+  <div class='clearfix'></div>
+  <div id='div_search' class='whole'>
+    <form method='post' action='https://aprende.org/buscar/educacion_superior'>
+      <div class='grid_12 div_mobile_full'>
+        <input type='text' id='q' name='q' class='whole center' placeholder='Buscar en Educación Superior'>
+        <input type='hidden' name='programID' value='educacion_superior'>
+      </div>
+      <div class='grid_4 center div_mobile_full' style='padding:5px 0px;vertical-align:middle;'>
+        <button id='buscar'>Buscar</button>
+      </div>
+      <div class='clearfix'></div>
+    </form>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+
+  <div class='grid_16'>
+    <div class='g1200'>
+      <div class='pad20'></div>
+      
+  <div class='relative'>
+    <div class='snip_edit'></div>
+    <p style="text-align: center;">&nbsp;<span style="font-size: 14pt;">M&aacute;s de 500 Universidades comparten contenido de todas las especialidades.</span></p><br><p style="text-align: center;"><a title="Academica" href="http://academica.mx/#/" target="_blank"><img src="https://cdn1.capacitateparaelempleo.org/cdn_aprende/assets/pbxpi7g.jpg" alt="" /></a>&nbsp; &nbsp;&nbsp;<a title="Coursera" href="http://academica.mx/#/cursos/coursera" target="_blank"><img src="https://cdn1.capacitateparaelempleo.org/cdn_aprende/assets/ps1ka5p.jpg" alt="" /></a>&nbsp;&nbsp; &nbsp;<a title="Edx" href="http://academica.mx/#/cursos/edx" target="_blank"><img src="https://cdn1.capacitateparaelempleo.org/cdn_aprende/assets/qm1rnir.jpg" alt="" /></a>&nbsp; &nbsp;<a title="Udacity" href="https://www.udacity.com/courses/all" target="_blank"><img src="https://cdn1.capacitateparaelempleo.org/cdn_aprende/assets/5kmpfa4.jpg" alt="" /></a>&nbsp; &nbsp;</p>
+  </div>
+
+      <div class='pad20'></div>
+
+      <div class='whole'>
+        
+  
+  <div class='grid_16' id='buttons_contianer'>
+    <div class='grid_4'>&nbsp;</div>
+    <div class='grid_4 center'>&nbsp;</div>
+    <div class='grid_4 center'>&nbsp;</div>
+    <div class='grid_4'>&nbsp;</div>
+  </div><div class='clearfix'></div>
+
+  <div class='pad20'></div>
+
+  <div id='div_temas' class='div_grid center'>
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/40.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1932'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Sistemas multimedia</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/7.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1935'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Gestión pública del turismo</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/56.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1936'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Viajes 2.0: herramientas y recursos en linea</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/26.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1939'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Justicia Penal (2016 G2) </div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/30.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1944'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Segundo Imperio(2016)_1</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/25.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1947'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Creatividad </div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/14.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1956'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Factor humano en la organización</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/33.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1971'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Estructura de redes</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/27.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1973'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Derecho de la empresa </div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/9.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1976'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Legislación sanitaria</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/10.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=1999'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Tratamiento Psicopedagógico</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/58.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2008'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Seminario de Valores Humanos</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/17.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2042'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Alfabetización digital</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/2.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2050'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Vergüenza de los héroes. Realidad y mitología del panteón nacional</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/28.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2052'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Dinámica de grupos</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/34.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2075'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Fundamentos de computadores</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/57.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2095'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Ingeniería de métodos</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/29.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2106'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Contextos educativos</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/18.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2109'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC 3D</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/35.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2120'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Microcurso Fundamentos físicos de la informática</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/3.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2135'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'> MC Ecos musicales</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/19.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2138'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Arquitectura organizacional</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/22.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2142'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Capacitación digital avanzada</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/53.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2152'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Técnicas Quirúrgicas</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/38.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2159'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Imagen y lenguaje visual</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/4.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2161'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Entre la verdad histórica y la ficción literaria. La primera conspiración independentista del siglo </div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/23.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2177'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Capacitación digital básica I</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/21.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2209'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Suministro</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/11.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2223'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Mercadotecnia Analítica y CRM</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/31.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2245'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Microcurso Estimulación cognitiva</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/49.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2259'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Petróleo</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/44.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2261'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC PHP y MySQL</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/6.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2298'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Teatralidades sospechosas a dos lados del Atlántico</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/12.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2306'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC MKT Estratégica</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/34.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2311'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Computadores</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/36.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2320'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Genómica</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/54.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2339'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Tecnología GPON </div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/16.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2383'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Copy-Paste (2016 G2)</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/13.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2392'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Manufactura</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/43.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2395'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Cultura Hindú</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/37.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2396'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Historia del Libro (2016)</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/46.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2409'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Movilidad y Logística</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/45.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2426'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Microeconomía</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/39.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2449'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Ingeniería ambiental</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/42.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2463'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>La empresa</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/47.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2498'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Centro escolar</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/48.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2515'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Patrimonio</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/5.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2533'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Novela de la Revolución Mexicana</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/51.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2564'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Redes</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/55.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2570'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Usabilidad</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/41.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2583'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Biología Cáncer</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/52.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2606'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>MC Vídeo y de tratamiento de la imagen</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/50.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2618'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Porfirio Díaz (2016-G2)_1</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/59.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2646'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Vislumbraron el Pacífico (2016)</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    
+      <div class='quarter div_mobile_half al'>
+      <div class='pad10'>
+        <div style="background:url('https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/programs/academica/imagenes_aprende/20.jpg');background-repeat:no-repeat;background-size:cover;">
+          <a href='https://aprende.org/pages.php?r=.portada_course_view&amp;programID=educacion_superior&amp;courseID=2668'>
+            <div style='background:rgba(0,0,0,.5);height:100px;overflow:hidden;'>
+              <div class='pad10'></div>
+              <div class='whole bold'>Biotecnología G2</div>
+              <div class='pad10'></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div id='div_grados' class='div_grid center'></div>
+  <div class='clearfix'></div>
+
+      </div>
+      <div class='clearfix'></div>
+
+      <div class='clearfix'></div>
+      <div class='pad20'></div>
+      <div class='clearfix'></div>
+
+      <div class='quarter'>&nbsp;</div>
+      <div class='half div_mobile_full'>
+        <div class='slider_container' style='max-width:100%;margin:0px auto;'>
+          
+          <div class='clearfix'></div>
+          
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='quarter'>&nbsp;</div>
+      <div class='clearfix'></div>
+
+    </div>
+    <div class='clearfix'></div>
+
+  </div>
+  <div class='clearfix'></div>
+
+      <p id='back-top'><span id='arrows'></span><span id='text'>Ir arriba</span></p>
+    </div>
+    <div class='pad20'></div>
+    <div class='clearfix'></div>
+  </div>
+  <div class='clearfix'></div>
+  
+    <div class='clearfix'></div>
+    <div id='div_footer' style='position:relative;'>
+      <div id='div_footlinks' class='g960'>
+          <div class='quarter'>&nbsp;</div>
+          <div class='half center' id='bottom_terms'>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.privacidad.html'>Aviso de privacidad</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.terminos.html'>Términos de uso</a>
+            </div>
+            <div class='third_mobile'>
+              <a href='../pages.php-r=.contacto.html'>Contáctanos</a>
+            </div>
+          </div>
+          <div class='quarter'>&nbsp;</div>
+          <div class='whole center'>
+            <div class='pad10'></div>
+            
+  <div class='quarter'>&nbsp;</div>
+  <div class='half center'>
+    <a href='https://itunes.apple.com/us/app/aprende/id1123194881?ls=1&amp;mt=8' target='_blank'><img alt='Descárgalo de la appstore' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/appstore_apple.svg' style='max-height:60px;margin:9px;'></a>
+    <a href='https://play.google.com/store/apps/details?id=org.aprende.app&amp;utm_source=aprende.org&amp;utm_medium=web&amp;utm_content=aprende.org_badge&amp;utm_campaign=PartBadge&amp;pcampaignid=aprende.org_badge' target='_blank'><img alt='Disponible en Google Play' src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/images/es_badge_web_generic.png' style='max-height:60px;'></a>
+  </div>
+  <div class='quarter'>&nbsp;</div>
+  <div class='clearfix'></div>
+
+          </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <div class='clearfix'></div>
+  
+      <div class='pad10'></div>
+      <div class='container_16' style='background:rgba(0,0,0,.5);margin:0px !important;width:100% !important;'>
+      <div class='pad10'></div>
+        <div class='grid_16'>
+          <div class='grid_3 imgw center'>
+            <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/Aprende_BR.png'>
+          </div>
+          <div class='grid_13' id='div_disclaimer_text'>
+            <h5>¡Aprende sin costo a través de las redes <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/telcel.png'> <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/infinitum.png'>!</h5>
+            <p>
+              El acceso a ligas y recursos externos puede generar cargos por consumo de datos de acuerdo a tu proveedor de internet y plan de acceso contratado y se rige por Avisos de Privacidad y Términos y Condiciones de uso distintos a aprende.org, las ligas y recursos externos se indicarán con el ícono <img src='https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/icons/external.png' style='max-height:15px;'> cuando esto sea posible.
+            </p>
+          </div>
+        </div>
+        <div class='clearfix'></div>
+      </div>
+      <div class='clearfix'></div>
+    
+  
+  <!--render-->
+
+  </body>
+  <script type='text/javascript'>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://cdn1.capacitateparaelempleo.org/cdn_aprende/media/analytics.js','ga');
+    ga('create','UA-47293185-3','auto');ga('send','pageview');
+  </script>
+
+<!--
+  <script type='text/javascript'>
+    var _paq = _paq || []; _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']);
+    (function(){
+      var u='//cdn3.capacitateparaelempleo.org/pwk/'; _paq.push(['setTrackerUrl', u+'piwik.php']); _paq.push(['setSiteId', 1]);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  <noscript><p><img src='//cdn3.capacitateparaelempleo.org/pwk/piwik.php?idsite=1' style='border:0;' alt='' /></p></noscript>
+-->
+</html>

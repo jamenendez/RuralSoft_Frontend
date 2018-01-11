@@ -1,0 +1,69 @@
+A:link {
+	FONT-SIZE: 13px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.td12 {
+	FONT-SIZE: 13px; COLOR: #999999; FONT-FAMILY: Arial Narrow, Verdana, Arial, Helvetica, sans-serif
+}
+A:visited {
+	FONT-SIZE: 13px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A:hover {
+	FONT-SIZE: 13px; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.vinculoazul {
+	FONT-SIZE: 13px; COLOR: #2424FF; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.vinculoazul:visited {
+	FONT-SIZE: 13px; COLOR: #2424FF; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.vinculorojo:visited {
+	FONT-SIZE: 13px; COLOR: #C60000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.vinculoverde:visited {
+	FONT-SIZE: 13px; COLOR: #317B24; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.vinculoamarillo:visited {
+	FONT-SIZE: 13px; COLOR: #9E7D1B; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.vinculorojo {
+	FONT-SIZE: 13px; COLOR: #C60000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.vinculoverde {
+	FONT-SIZE: 13px; COLOR: #317B24; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold;TEXT-DECORATION: none
+}
+.vinculoamarillo {
+	FONT-SIZE: 13px; COLOR: #9E7D1B; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold;TEXT-DECORATION: none
+}
+.vinculonegro {
+	FONT-SIZE: 13px; COLOR: #666666; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.vinculonegro:hover {
+	FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.vinculonoticia {
+	FONT-SIZE: 13px; COLOR: #2e68b2; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.vinculonoticia:visited {
+	FONT-SIZE: 13px; COLOR: #2e68b2; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.vinculonoticia:hover {
+	FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+A.normal:hover {
+	FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.normal {
+	FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+p {
+	FONT-SIZE: 13px; COLOR: #000000; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+body{
+scrollbar-arrow-color:#C97901;
+scrollbar-base-color:#C97901;
+scrollbar-dark-shadow-color:#F5E6CF;
+scrollbar-track-color:#FDF9F4;
+scrollbar-face-color:#EFD2A7;
+scrollbar-shadow-color:#F5E6CF;
+scrollbar-highlight-color:#F5E6CF;
+}

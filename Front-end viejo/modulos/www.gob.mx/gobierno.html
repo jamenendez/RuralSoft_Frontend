@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html class="no-js" lang="es">
+	<head>
+		<meta name="robots" content="index, follow">
+		<meta charset="utf-8">
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"4f61afea51","applicationID":"9904535","transactionName":"JQlfFxEJCV5VQx9KRwcSWAA8FgRVVUIfSlYFFFQXAhQMU0M=","queueTime":0,"applicationTime":41,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQYCVVNXCRAJXVFWAgIC"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",s)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];n.exports=u;var y=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(m,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1026.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<link rel="shortcut icon" type="image/x-icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
+		<title>Gobierno | gob.mx</title>
+<meta name="description" content="Dependencias, entidades de la Administración Pública Federal y empresas productivas del estado, Entidadades Federativas." />
+<meta name="keywords" content="gobierno, digital, trámites, trámites en línea, gobierno digital" />
+<meta property="og:url" content="http://www.gob.mx/gobierno" />
+<meta property="og:site_name" content="gob.mx" />
+<meta property="og:title" content="gob.mx" />
+<meta property="og:image" content="https://framework-gb.cdn.gob.mx/main/home_picture.jpg" />
+<meta property="og:description" content="El portal único del gobierno." />
+<meta property="og:type" content="website" />
+<meta name="image" content="https://framework-gb.cdn.gob.mx/main/home_picture.jpg" />
+		
+    	
+		<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="JDUoba1lah+W9cgAh/JcCZvEk4Ny0ONn6pnu3lXgkPzVvVoi6UzGTJ0QkuQ04melHC7MaU8IfgaxUZjnrBUqJQ==" />
+
+		<link href= "https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" media="all" href="assets/application.css" data-turbolinks-track="true" />
+        
+
+		<!-- [if lt IE 9 ]
+    		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		-->
+		
+           <script>
+             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+             ga('create', 'UA-69802193-1', 'auto');
+             ga('send', 'pageview');
+           </script>
+	</head>
+	<body data-no-turbolink="true">
+		<header>
+	<nav class="navbar navbar-inverse navbar-fixed-top navbar" >
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-target="#navbarMainCollapse" data-toggle="collapse">
+					<span class="sr-only">Interruptor de Navegación</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.html" class="navbar-brand" title="Ir a la página inicial"><img alt="gob.mx" src="assets/gobmxlogo.svg" /></a>
+			</div>
+			<div id="navbarMainCollapse" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="tramites.html" class="" title="Trámites">Trámites</a></li>
+					<li><a href="gobierno.html" class="active" title="Gobierno">Gobierno</a></li>
+					<li><a href="participa/welcome.html" title="Participación Ciudadana">Participa</a></li>
+					<li><a href="http://datos.gob.mx" title="Datos abiertos">Datos</a></li>
+					<li>
+			            <form accept-charset="UTF-8" action="/busquedas" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+			              <button id="goSearch" type="submit" class="btn" title="buscar" value="buscar" style="background-color: #393c3e" onmouseleave="this,style.background='#393c3e'" onmouseover="this.style.background='black'" onfocus="this.style.background='black'" >
+			                <img alt="Búsqueda" width="20" class="optical-adjust-search" src="https://framework-gb.cdn.gob.mx/assets/search.svg" />
+                    </button>
+</form>          			</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="warning-nav">
+	    <p>Este contenido será modificado temporalmente en atención a las disposiciones legales y normativas en materia electoral, con motivo del inicio de periodo de campaña</p>
+	 </div>
+</header>
+		<main role="main" class="inner-page secretarias" tabindex="-1">
+  <div class="container">
+    <ol class="breadcrumb">
+      <li><a href="index.html"><span class="icon icon-home"></span><span class="sr-only">Inicio</span></a></li>
+      <li class="active">Gobierno</li>
+    </ol>
+    <h1 class="sr-only">Gobierno</h1>
+    <section class="section section-structure">
+      <div class="row bottom-buffer gobierno">
+        <div class="col-md-3">
+          <div class="media office-sm-structure circle-quotes">
+            <a href="gobierno.html#secretarias">
+              <figure>
+                <h2>18</h2>
+                <p>Secretarías</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="media office-sm-structure circle-quotes">
+            <a href="gobierno.html#dependencias">
+              <figure>
+                <h2>299</h2>
+                <p>Entidades del Gobierno</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="media office-sm-structure circle-quotes">
+            <a href="gobierno.html#estados">
+              <figure>
+                <h2>32</h2>
+                <p>Estados</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="media office-sm-structure circle-quotes">
+            <a href="gobierno/mexico-en-el-mundo.html">
+              <figure>
+                <h2>146</h2>
+                <p>Embajadas y consulados</p>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="dependencies">
+      <h2 id="secretarias">Dependencias</h2>
+      <hr class="bottom-buffer red">
+      <div class="row bottom-buffer">
+        <div class="col-sm-6 col-sm-offset-4">
+            <ul class="list-unstyled">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="presidencia.html">
+                            <span class="abbr" title="Presidencia de la República">
+                              <abbr title="Presidencia de la República">presidencia</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/segob">
+                            <span class="abbr" title="Secretaría de Gobernación">
+                              <abbr title="Secretaría de Gobernación">segob</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/policiafederal" a="gobierno.policiafederal" b="clickin">Policía Federal</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/inm" a="gobierno.inm" b="clickin">Instituto Nacional de Migración</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sre">
+                            <span class="abbr" title="Secretaría de Relaciones Exteriores">
+                              <abbr title="Secretaría de Relaciones Exteriores">sre</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sedena">
+                            <span class="abbr" title="Secretaría de la Defensa Nacional">
+                              <abbr title="Secretaría de la Defensa Nacional">sedena</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/semar">
+                            <span class="abbr" title="Secretaría de Marina">
+                              <abbr title="Secretaría de Marina">semar</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/universidadnaval" a="gobierno.universidadnaval" b="clickin">Universidad Naval</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/shcp">
+                            <span class="abbr" title="Secretaría de Hacienda y Crédito Público">
+                              <abbr title="Secretaría de Hacienda y Crédito Público">shcp</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/crezcamosjuntos" a="gobierno.crezcamosjuntos" b="clickin">Crezcamos Juntos</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sedesol">
+                            <span class="abbr" title="Secretaría de Desarrollo Social">
+                              <abbr title="Secretaría de Desarrollo Social">sedesol</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/conadis" a="gobierno.conadis" b="clickin">Consejo Nacional para el Desarrollo y la Inclusión de las Personas con Discapacidad</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/semarnat">
+                            <span class="abbr" title="Secretaría de Medio Ambiente y Recursos Naturales">
+                              <abbr title="Secretaría de Medio Ambiente y Recursos Naturales">semarnat</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/conafor" a="gobierno.conafor" b="clickin">Comisión Nacional Forestal</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/conagua" a="gobierno.conagua" b="clickin">Comisión Nacional del Agua</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sener">
+                            <span class="abbr" title="Secretaría de Energía">
+                              <abbr title="Secretaría de Energía">sener</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/se">
+                            <span class="abbr" title="Secretaría de Economía">
+                              <abbr title="Secretaría de Economía">se</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sep">
+                            <span class="abbr" title="Secretaría de Educación Pública">
+                              <abbr title="Secretaría de Educación Pública">sep</abbr>
+                            </span>
+</a>                        </h3>
+                          <a class='sectorizadas'>
+                            <span class='small sr-only'>Sectorizados en gob.mx</span>
+                            <span class='fa fa-chevron-down small' style='margin-top:14px; font-size: 0.7em;'></span>
+                          </a>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                        <div class="col-xs-10 col-xs-offset-1">
+                          <ul class="list-unstyled">
+                              <li class="clearfix">
+                                <h5 class="pull-left small">
+                                  <a href="http://www.gob.mx/conade" a="gobierno.conade" b="clickin">Comisión Nacional de Cultura Física y Deporte</a>
+                                </h5>
+                              </li>
+                              <hr class="no-space">
+                          </ul>
+                        </div>
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sagarpa">
+                            <span class="abbr" title="Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación">
+                              <abbr title="Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación">sagarpa</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sct">
+                            <span class="abbr" title="Secretaría de Comunicaciones y Transportes">
+                              <abbr title="Secretaría de Comunicaciones y Transportes">sct</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sfp">
+                            <span class="abbr" title="Secretaría de la Función Pública">
+                              <abbr title="Secretaría de la Función Pública">sfp</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style=" text-transform:uppercase;">
+                          <a href="http://www.gob.mx/salud">
+                            <span class="abbr" title="Secretaría de Salud">
+                              <abbr title="Secretaría de Salud">salud</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/stps">
+                            <span class="abbr" title="Secretaría del Trabajo y Previsión Social">
+                              <abbr title="Secretaría del Trabajo y Previsión Social">stps</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sedatu">
+                            <span class="abbr" title="Secretaría de Desarrollo Agrario, Territorial y Urbano">
+                              <abbr title="Secretaría de Desarrollo Agrario, Territorial y Urbano">sedatu</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/sectur">
+                            <span class="abbr" title="Secretaría de Turismo">
+                              <abbr title="Secretaría de Turismo">sectur</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; ">
+                          <a href="http://www.cultura.gob.mx">
+                            <span class="abbr" title="Secretaría de Cultura ">
+                              <abbr title="Secretaría de Cultura ">cultura</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/pgr">
+                            <span class="abbr" title="Procuraduría General de la República">
+                              <abbr title="Procuraduría General de la República">pgr</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+                  <li class="clearfix">
+                      <div class="clearfix">
+                        <h3 class="pull-left" style="text-transform:uppercase; text-transform:uppercase;">
+                          <a href="http://www.gob.mx/cjef">
+                            <span class="abbr" title="Consejería Jurídica del Ejecutivo Federal">
+                              <abbr title="Consejería Jurídica del Ejecutivo Federal">cjef</abbr>
+                            </span>
+</a>                        </h3>
+                      </div>
+                      <div class="row list-sectorizadas hidden">
+                      </div>
+                  </li>
+                  <hr class="no-space">
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="dependencies top-buffer">
+      <h2 id="dependencias">Entidades de la Administración Pública Federal y empresas productivas del Estado</h2>
+      <hr class="bottom-buffer red">
+      <div class="indice-dependencias">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-3">
+            <ul>
+              <li><a href="gobierno.html#a">A</a></li>
+              <li><a href="gobierno.html#b">B</a></li>
+              <li><a href="gobierno.html#c">C</a></li>
+              <li><a href="gobierno.html#d">D</a></li>
+              <li><a href="gobierno.html#e">E</a></li>
+              <li><a href="gobierno.html#f">F</a></li>
+              <li><a href="gobierno.html#g">G</a></li>
+              <li><a href="gobierno.html#h">H</a></li>
+              <li><a href="gobierno.html#i">I</a></li>
+              <li><a href="gobierno.html#j">J</a></li>
+              <li><a href="gobierno.html#k">K</a></li>
+              <li><a href="gobierno.html#l">L</a></li>
+              <li><a href="gobierno.html#m">M</a></li>
+              <li><a href="gobierno.html#n">N</a></li>
+              <li><a href="gobierno.html#%C3%B1">Ñ</a></li>
+              <li><a href="gobierno.html#o">O</a></li>
+              <li><a href="gobierno.html#p">P</a></li>
+              <li><a href="gobierno.html#q">Q</a></li>
+              <li><a href="gobierno.html#r">R</a></li>
+              <li><a href="gobierno.html#s">S</a></li>
+              <li><a href="gobierno.html#t">T</a></li>
+              <li><a href="gobierno.html#u">U</a></li>
+              <li><a href="gobierno.html#v">V</a></li>
+              <li><a href="gobierno.html#w">W</a></li>
+              <li><a href="gobierno.html#x">X</a></li>
+              <li><a href="gobierno.html#y">Y</a></li>
+              <li><a href="gobierno.html#z">Z</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-3 list-entidades">
+
+          <h3 id="a">A</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.apbp.salud.gob.mx/" class="sendEstGobierno pull-left">Administración del Patrimonio de la Beneficencia Pública (APBP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.sepdf.gob.mx/principal/index.html" class="sendEstGobierno pull-left">Administración Federal de Servicios Educativos en el Distrito Federal (AFSEDF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertoaltamira.com.mx/espi/0000001/inicio" class="sendEstGobierno pull-left">Administración Portuaria Integral de Altamira S.A de C.V (API Altamira)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertocoatzacoalcos.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Coatzacoalcos S.A de C.V (API Coatzacoalcos)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertodosbocas.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Dos Bocas S.A de C.V (API Dos Bocas)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertoensenada.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Ensenada S.A de C.V (API Ensenada)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertodeguaymas.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Guaymas S.A de C.V (API Guaymas)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertolazarocardenas.com.mx/plc25/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Lázaro Cárdenas S.A de C.V (API Lázaro Cárdenas)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertomanzanillo.com.mx/espi/0000001/inicio" class="sendEstGobierno pull-left">Administración Portuaria Integral de Manzanillo S.A de C.V (API Manzanillo)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertomazatlan.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Mazatlán S.A de C.V (API Mazatlán)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertosyucatan.com/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Progreso S.A de C.V (API Progreso)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertochiapas.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Puerto Madero S.A de C.V (API Puerto Madero)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertosalinacruz.com.mx/espi/0000001/inicio" class="sendEstGobierno pull-left">Administración Portuaria Integral de Salina Cruz S.A de C.V (API Salina Cruz)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertodetampico.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Tampico S.A de C.V (API Tampico)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertotopolobampo.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Topolobampo S.A de C.V (API Topolobampo)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertotuxpan.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Tuxpan S.A de C.V (API Tuxpan)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertodeveracruz.com.mx/apiver/" class="sendEstGobierno pull-left">Administración Portuaria Integral de Veracruz S.A de C.V (API Veracruz)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.puertodevallarta.com.mx/" class="sendEstGobierno pull-left">Administración Portuaria Integral Puerto Vallarta S.A de C.V (API Puerto Vallarta)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.aicm.com.mx/" class="sendEstGobierno pull-left">	Aeropuerto Internacional de la Ciudad de México, S.A. de C.V. (AICM)	</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/asa" class="sendEstGobierno pull-left">Aeropuertos y Servicios Auxiliares (ASA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.pgr.gob.mx/Documents/AIC.html" class="sendEstGobierno pull-left">	Agencia de Investigación Criminal (AIC)	</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.aserca.gob.mx/Paginas/default.aspx" class="sendEstGobierno pull-left">Agencia de Servicios a la Comercialización y Desarrollo de Mercados Agropecuarios , antes Apoyos y Servicios a la Comercialización Agropecuaria (ASERCA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.asea.gob.mx/" class="sendEstGobierno pull-left">Agencia de Seguridad, Energía y Ambiente (ASEA)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/aem" class="sendEstGobierno pull-left">Agencia Espacial Mexicana (AEM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/amexcid" class="sendEstGobierno pull-left">Agencia Mexicana de Cooperación Internacional para el Desarrollo	(AMEXCID)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/agroasemex" class="sendEstGobierno pull-left">AGROASEMEX S.A</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/agn" class="sendEstGobierno pull-left">Archivo General de la Nación (AGN)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="b">B</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.banxico.org.mx/" class="sendEstGobierno pull-left">Banco de México (BM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.bansefi.gob.mx/" class="sendEstGobierno pull-left">Banco del Ahorro Nacional y Servicios Financieros S.N.C. (BANSEFI)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/bancomext" class="sendEstGobierno pull-left">Banco Nacional de Comercio Exterior S.N.C (BANCOMEXT)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/banobras" class="sendEstGobierno pull-left">Banco Nacional de Obras y Servicios Públicos S.N.C (BANOBRAS)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.banjercito.com.mx/" class="sendEstGobierno pull-left">Banco Nacional del Ejército, Fuerza Aérea y Armada S.N.C (BANJERCITO) </a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="c">C</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.capufe.gob.mx/" class="sendEstGobierno pull-left">Caminos y Puentes Federales de Ingresos y Servicios Conexos (CAPUFE)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cmm" class="sendEstGobierno pull-left">Casa de Moneda de México (CMM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.elccc.com.mx/sitio/" class="sendEstGobierno pull-left">Centro de Capacitación Cinematográfica A.C (CCC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ceti.mx/" class="sendEstGobierno pull-left">Centro de Enseñanza Técnica Industrial (CETI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://cidesi.com/wsite/index.php" class="sendEstGobierno pull-left">Centro de ingeniería y Desarrollo Industrial (CIDESI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cicy.mx/" class="sendEstGobierno pull-left">Centro de Investigación Científica de Yucatán A.C (CECY)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cicese.edu.mx/#modal-one" class="sendEstGobierno pull-left">Centro de Investigación Científica y de Educación Superior de Ensenada Baja California (CICESE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ciad.mx/" class="sendEstGobierno pull-left">Centro de Investigación en Alimentación y Desarrollo A.C. (CIAD)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.centrogeo.org.mx/" class="sendEstGobierno pull-left">Centro de Investigación en Geografía y Geomática “Ing. Jorge L. Tamayo” A.C. (CentroGeo)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cimat.mx/" class="sendEstGobierno pull-left">Centro de Investigación en Matemáticas A.C. (CIMAT)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cimav.edu.mx/" class="sendEstGobierno pull-left">Centro de Investigación en Materiales Avanzados S.C (CIMAV)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ciqa.mx/" class="sendEstGobierno pull-left">Centro de Investigación en Química Aplicada (CIQA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://ciatej.mx/" class="sendEstGobierno pull-left">Centro de Investigación y Asistencia en Tecnología y Diseño del Estado de Jalisco A.C. (CIATEJ)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cinvestav.mx/" class="sendEstGobierno pull-left">Centro de Investigación y Estudios Avanzados del Instituto Politécnico Nacional (CINVESTAV)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cideteq.mx/es.html" class="sendEstGobierno pull-left">Centro de Investigación y Desarrollo Tecnológico en Electroquímica S.C (CIDETEQ)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cide.edu/" class="sendEstGobierno pull-left">Centro de Investigación y Docencia Económicas A.C. (CIDE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cisen.gob.mx/" class="sendEstGobierno pull-left">Centro de Investigación y Seguridad Nacional (CISEN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cibnor.mx/" class="sendEstGobierno pull-left">Centro de Investigaciones Biológicas del Noreste S.C (Cibnor)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cio.mx/" class="sendEstGobierno pull-left">Centro de Investigaciones en Óptica A.C. (CIO)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ciesas.edu.mx/" class="sendEstGobierno pull-left">Centro de investigaciones y Estudios Superiores en Antropología Social (CIESAS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.pgr.gob.mx/Transparencia/Paginas/Evalucion-y-Control-de-Confianza.aspx" class="sendEstGobierno pull-left">Centro de Evaluación y Control de Confianza	(CECC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://cepropie.gob.mx/" class="sendEstGobierno pull-left">Centro Federal de Protección a Personas</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cenace" class="sendEstGobierno pull-left">Centro Nacional de Control de Energía (CENACE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cenagas" class="sendEstGobierno pull-left">Centro Nacional de Control de Gas Natural (CENEGAS)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://cnegsr.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional de Equidad de Género y Salud Reproductiva (CNEGSR)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cenetec.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional de Excelencia Tecnológica en Salud (CENETEC)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cnts.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional de la Transfusión Sanguínea (CNTS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cenam" class="sendEstGobierno pull-left">Centro Nacional de Metrología (CENAM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cenapred.unam.mx/es/" class="sendEstGobierno pull-left">Centro Nacional de Prevención de Desastres (CENAPRED)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cenaprece.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional de Programas Preventivos y Control de Enfermedades (CENAPRESE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cenatra.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional de Trasplantes (CENATRA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cenadic.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional para la Prevención y el Control de las Adicciones (CENADIC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.censida.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional para la Prevención y el Control del VIH/SIDA (CENSIDA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.censia.salud.gob.mx/" class="sendEstGobierno pull-left">Centro Nacional para la Salud de la Infancia y la Adolescencia (CENSIA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.crae.gob.mx/" class="sendEstGobierno pull-left">Centro Regional de Alta Especialidad de Chiapas (CRAE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cij.gob.mx/" class="sendEstGobierno pull-left">Centros de Integración Juvenil, A.C. (CIJ)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ciatec.mx/" class="sendEstGobierno pull-left">Centro de Innovación Aplicada en Tecnologías Competitivas (CIATEC, A.C.)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ciateq.mx/" class="sendEstGobierno pull-left">Centro de Tecnología Avanzada (CIATEQ, A.C.)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cbachilleres.edu.mx/" class="sendEstGobierno pull-left">Colegio de Bachilleres</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.colpos.mx/" class="sendEstGobierno pull-left">Colegio de Postgraduados (COLPOS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.conalep.edu.mx/" class="sendEstGobierno pull-left">Colegio Nacional de Educación Profesional Técnica (CONALEP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.csaegro.gob.mx/" class="sendEstGobierno pull-left">Colegio Superior Agropecuario del Estado de Guerrero (CSAEGRO)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.conadesuca.gob.mx/" class="sendEstGobierno pull-left">Comité Nacional para el Desarrollo Sustentable de la Caña de Azúcar(CONADESUCA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.conabio.gob.mx/" class="sendEstGobierno pull-left">Comisión Nacional para el Conocimiento y Uso de la Biodiversidad (CONABIO)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/insalud" class="sendEstGobierno pull-left">Comisión Coordinadora de Institutos Nacionales de Salud y Hospitales de Alta Especialidad (CCINSHAE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/ceav" class="sendEstGobierno pull-left">Comisión Ejecutiva de Atención a Víctimas (CEAV)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cdpim.gob.mx/v4/" class="sendEstGobierno pull-left">Comisión para el Diálogo con los Pueblos Indígenas de México (CDPIM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cidge" class="sendEstGobierno pull-left">Comisión Intersecretarial para el Desarrollo del Gobierno Electrónico (CIDGE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cofaa.ipn.mx/" class="sendEstGobierno pull-left">Comisión de Operación y Fomento de Actividades Académicas del Instituto Politécnico Nacional (COFAA IPN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cfe.gob.mx/" class="sendEstGobierno pull-left">Comisión Federal de Electricidad (CFE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cofemer.gob.mx/" class="sendEstGobierno pull-left">Comisión Federal de Mejora Regulatoria (COFEMER)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cofepris.gob.mx/" class="sendEstGobierno pull-left">Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cnbv" class="sendEstGobierno pull-left">Comisión Nacional Bancaria y de Valores (CNBV)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conapesca" class="sendEstGobierno pull-left">Comisión Nacional de Acuacultura y Pesca (CONAPESCA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conamed" class="sendEstGobierno pull-left">Comisión Nacional de Arbitraje Médico (CONAMED)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conanp" class="sendEstGobierno pull-left">Comisión Nacional de Áreas Naturales Protegidas (CONANP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conade" class="sendEstGobierno pull-left">Comisión Nacional de Cultura Física y Deporte (CONADE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cnh" class="sendEstGobierno pull-left">Comisión Nacional de Hidrocarburos (CNH)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conaliteg.gob.mx/" class="sendEstGobierno pull-left">Comisión Nacional de Libros de Texto Gratuitos (CONALITEG)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conasami" class="sendEstGobierno pull-left">Comisión Nacional de los Salarios Mínimos (CONASAMI)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.seguro-popular.gob.mx/" class="sendEstGobierno pull-left">Comisión Nacional de Protección Social en la Salud (CNPSS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cns.gob.mx/portalWebApp/wlp.c?__c=7d1" class="sendEstGobierno pull-left">Comisión Nacional de Seguridad (CNS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cnsns.gob.mx/"class="sendEstGobierno pull-left">Comisión Nacional de Seguridad Nuclear y Salvaguardias (CNSNS)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cnsf"class="sendEstGobierno pull-left">Comisión Nacional de Seguros y Fianzas (CNSF)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conavi" class="sendEstGobierno pull-left">Comisión Nacional de Vivienda (CONAVI)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conaza.gob.mx/" class="sendEstGobierno pull-left">Comisión Nacional de Zonas Áridas (CONAZA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conagua" class="sendEstGobierno pull-left">Comisión Nacional del Agua (CONAGUA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="consar.html" class="sendEstGobierno pull-left">Comisión Nacional del Sistema de Ahorro para el Retiro (CONSAR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conafor" class="sendEstGobierno pull-left">Comisión Nacional Forestal (CONAFOR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cdi" class="sendEstGobierno pull-left">Comisión Nacional para el Desarrollo de los Pueblos Indígenas (CDI)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conuee" class="sendEstGobierno pull-left">Comisión Nacional para el Uso Eficiente de la Energía (CONUEE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conavim" class="sendEstGobierno pull-left">Comisión Nacional para Prevenir y Erradicar la Violencia Contra las Mujeres (CONVIM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.ordenjuridico.gob.mx/listDependencia.php?%20idEst=437&amp;poder=ejecutivo&amp;liberado=no" class="sendEstGobierno pull-left">	Comisión para la Seguridad y el Desarrollo Integral en el Estado de Michoacán</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/condusef" class="sendEstGobierno pull-left">Comisión Nacional para la Protección y la Defensa de los Usuarios de Servicios Financieros (CONDUSEF)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/corett" class="sendEstGobierno pull-left">Comisión para la Regularización de la Tenencia de la Tierra (CORETT)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cre" class="sendEstGobierno pull-left">Comisión Reguladora de Energía Órgano Regulador Coordinado en Materia Energética (CRE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conampros.gob.mx/" class="sendEstGobierno pull-left">Comité Nacional Mixto de Protección al Salario (CONAMPROS)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.comesa.mx/" class="sendEstGobierno pull-left">Compañía Mexicana de Exploraciones S.A de C.V (COMESA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cecut.gob.mx/" class="sendEstGobierno pull-left">Compañía Operadora del Centro Cultural y Turístico de Tijuana S.A de C.V (CECUT)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/cjef" class="sendEstGobierno pull-left">Consejería Jurídica del Ejecutivo Federal (CJEF)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cns.gob.mx/portalWebApp/wlp.c?__c=1014" class="sendEstGobierno pull-left">Consejo de Menores</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.cptm.com.mx/" class="sendEstGobierno pull-left">Consejo de Promoción Turística de México (CPTM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conacyt.mx/" class="sendEstGobierno pull-left">Consejo Nacional de Ciencia y Tecnología (CONACYT)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.coneval.gob.mx/Paginas/principal.aspx" class="sendEstGobierno pull-left">Consejo Nacional de Evaluaciones de la Política de Desarrollo Social (CONEVAL)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conafe" class="sendEstGobierno pull-left">Consejo Nacional de Fomento Educativo (CONAFE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conocer.gob.mx/" class="sendEstGobierno pull-left">Consejo Nacional de Normalización y Certificación de Competencias Laborales (CONOCER)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.conapo.gob.mx/" class="sendEstGobierno pull-left">Consejo Nacional de Población (CONAPO)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.conaculta.gob.mx/" class="sendEstGobierno pull-left">Consejo Nacional para la Cultura y las Artes (CONACULTA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.conapred.org.mx/" class="sendEstGobierno pull-left">Consejo Nacional para Prevenir la Discriminación (CONAPRED)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conadis" class="sendEstGobierno pull-left">Consejo Nacional para el Desarrollo y la Inclusión de las Personas con discapacidad (CONADIS)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/comar" class="sendEstGobierno pull-left">Coordinación General de la Comisión Mexicana de Ayuda a los Refugiados (COMAR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.ordenjuridico.gob.mx/listDependencia.php?idEst=438&amp;poder=ejecutivo&amp;liberado=no" class="sendEstGobierno pull-left">Coordinación Nacional Antisecuestro (CONASE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://servicioprofesionaldocente.sep.gob.mx/" class="sendEstGobierno pull-left">	Coordinación Nacional del Servicio Profesional Docente (CNSPD)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ordenjuridico.gob.mx/listDependencia.php?idEst=440&amp;poder=ejecutivo&amp;liberado=no" class="sendEstGobierno pull-left">Coordinación para la Atención Integral de la Migración en la Frontera Sur (CAIMFS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/aprendemx" class="sendEstGobierno pull-left">Coordinación General @prende.mx (aprendemx)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://av.sectur.gob.mx/" class="sendEstGobierno pull-left">Corporación de Servicios al Turista Ángeles Verdes (AV)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.comimsa.com.mx/" class="sendEstGobierno pull-left">Corporación Mexicana de Investigación en Materiales, S.A. de C.V. (COMIMSA)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/crezcamosjuntos" class="sendEstGobierno pull-left">Crezcamos Juntos</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="d">D</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.gob.mx/diconsa" class="sendEstGobierno pull-left">DICONSA</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="e">E</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.educal.com.mx/" class="sendEstGobierno pull-left">EDUCAL</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.colef.mx" class="sendEstGobierno pull-left">El Colegio de la Frontera Norte (Colef)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ecosur.mx/" class="sendEstGobierno pull-left">El Colegio de la Frontera Sur (ECOSUR)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.colmex.mx/" class="sendEstGobierno pull-left">El Colegio de México (COLMEX)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.colmich.edu.mx/" class="sendEstGobierno pull-left">El Colegio de Michoacán (COLMICH)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.colsan.edu.mx/" class="sendEstGobierno pull-left">El Colegio de San Luis (COLSAN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.estudioschurubusco.com/" class="sendEstGobierno pull-left">Estudios Churubusco Azteca (Estudios Churubusco)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.essa.com.mx/" class="sendEstGobierno pull-left">Exportadora de Sal (ESSA)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="f">F</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.fnm.com.mx/" class="sendEstGobierno pull-left">Ferrocarriles Nacionales de México (FNML) (en proceso de desincorporación)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ferroistmo.com.mx/" class="sendEstGobierno pull-left">Ferrocarril del Istmo de Tehuantepec (FERROISTMO)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fifomi.gob.mx/web/" class="sendEstGobierno pull-left">Fideicomiso de Fomento Minero (FIFOMI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fidena.gob.mx/#" class="sendEstGobierno pull-left">Fideicomiso de Formación y Capacitación para el Personal de la Marina Mercante Nacional (FIDENA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.firco.gob.mx/Paginas/default.aspx" class="sendEstGobierno pull-left">Fideicomiso de Riesgo Compartido (FIRCO)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fifonafe.gob.mx/" class="sendEstGobierno pull-left">Fideicomiso Fondo Nacional de Fomento Ejidal (FIFONAFE)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/fonhapo" class="sendEstGobierno pull-left">Fideicomiso Fondo Nacional de Habitaciones Populares (FONHAPO)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cinetecanacional.net/" class="sendEstGobierno pull-left">Fideicomiso para la Cineteca Nacional</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.gob.mx/fira" class="sendEstGobierno pull-left">Fideicomisos Instituidos en Relación con la Agricultura (FIRA)	</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/fnd" class="sendEstGobierno pull-left">Financiera Nacional de Desarrollo Agropecuario, Rural, Forestal y Pesquero (FND)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.fonaturconstructora.gob.mx/es/index.asp" class="sendEstGobierno pull-left">Fonatur Constructora</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fmt.gob.mx/es/index.asp" class="sendEstGobierno pull-left">Fonatur Mantenimiento Turístico</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fonaturoperadoraportuaria.gob.mx/es/index.asp" class="sendEstGobierno pull-left">Fonatur Operadora Portuaria</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/focir" class="sendEstGobierno pull-left">Fondo de capitalización e Inversión del Sector Rural (FOCIR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.fondodeculturaeconomica.com/" class="sendEstGobierno pull-left">Fondo de Cultura Económica (FCE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.fira.gob.mx/Nd/index.jsp" class="sendEstGobierno pull-left">Fondo de Garantía y Fomento para las Actividades Pesqueras (FOPESCA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.sagarpa.gob.mx/Glosario/Paginas/FEESA.aspx" class="sendEstGobierno pull-left">Fondo de Empresas Expropiadas del Sector Azucarero (FEESA)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="fovissste.html" class="sendEstGobierno pull-left">Fondo de la Vivienda del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (FOVISSSTE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fira.gob.mx/Nd/index.jsp" class="sendEstGobierno pull-left">Fondo de Garantía y Fomento para la Agricultura , Ganadería y Avicultura (FONDO)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fovi.gob.mx/" class="sendEstGobierno pull-left">Fondo de Operación y Financiamiento Bancario a la Vivienda (FOVI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.fira.gob.mx/Nd/index.jsp" class="sendEstGobierno pull-left">Fondo Especial de Asistencia Técnica y Garantía para Créditos Agropecuarios (FEGA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.fonatur.gob.mx/es/index.asp" class="sendEstGobierno pull-left">Fondo Nacional de Fomento al Turismo (FONATUR)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.pensionissste.gob.mx/" class="sendEstGobierno pull-left">Fondo Nacional de Pensiones de los Trabajadores del Estado (PENSIONISSSTE)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.fonart.gob.mx/web/index.php" class="sendEstGobierno pull-left">Fondo Nacional para el Fomento de las Artesanías (FONART)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.fiderh.org.mx/" class="sendEstGobierno pull-left">Fondo nacional para el Desarrollo de los Recursos Humanos (FIDERH)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="g">G</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.gob.mx/naicm" class="sendEstGobierno pull-left">Grupo Aeroportuario de la Ciudad de México (GACM)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="h">H</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.hgm.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital General de México Dr. Eduardo Liceaga (HGM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hospitalgea.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital General Dr. Manuel Gea González</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.himfg.edu.mx/" class="sendEstGobierno pull-left">Hospital Infantil de México Dr. Federico Gómez (HIMFG)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hospitaljuarez.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital Juárez de México (HJM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hraei.gob.mx/" class="sendEstGobierno pull-left">Hospital de Alta Especialidad de Ixtapaluca (HRAEI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hraeoaxaca.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital Regional de Alta Especialidad de Oaxaca (HRAE/OAXACA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hraeyucatan.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital Regional de Alta Especialidad de Yucatán (HRAEPY)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hraeb.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital Regional de Alta Especialidad del Bajío (HRAEB)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.hraev.salud.gob.mx/" class="sendEstGobierno pull-left">Hospital Regional de Alta Especialidad Ciudad Victoria “Bicentenario 2010” I.I.I. Servicios S.A de C.V (HRAEV)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="i">I</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.iiiservicios.com/" class="sendEstGobierno pull-left">I.I.I. Servicios S.A de C.V</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://iepsa.gob.mx/portal/" class="sendEstGobierno pull-left">Impresora y Encuadernadora Progreso (IEPSA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.infotec.mx/#newcomment" class="sendEstGobierno pull-left">INFOTEC Centro de Investigación e Innovación en Tecnologías de la Información y Comunicación (INFOTEC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.pemex.com/organismos/Paginas/instalaciones_inmobiliarias.aspx" class="sendEstGobierno pull-left">Instalaciones Inmobiliarias para Industrias, S.A. de C.V. (IIISA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/indaabin" class="pull-left">Instituto de Administración y Avalúos de Bienes Nacionales (INDAABIN)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.inecol.edu.mx/inecol/index.php/es/" class="sendEstGobierno pull-left">Instituto de Ecología (INECOL)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.gob.mx/pgr/videos/conoce-el-instituto-de-formacion-ministerial-policial-y-pericial-de-la-pgr" class="sendEstGobierno pull-left">Instituto de Formación Ministerial, Policial y Pericial	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.mora.edu.mx/Inicio.html" class="sendEstGobierno pull-left">Instituto de Investigaciones Dr. José María Luis Mora (Instituto Mora)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://vmwl1.iie.org.mx/IIE_site/inicio.html" class="sendEstGobierno pull-left">Instituto de Investigaciones Eléctricas (IIE)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.issfam.gob.mx/" class="sendEstGobierno pull-left">Instituto de Seguridad Social para las Fuerzas Armadas Mexicanas (ISSFAM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/issste" class="sendEstGobierno pull-left">Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado (ISSSTE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.ime.gob.mx/" class="sendEstGobierno pull-left">Instituto de los Mexicanos en el Exterior (IME)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://portal.infonavit.org.mx/wps/wcm/connect/infonavit/inicio" class="sendEstGobierno pull-left">Instituto del Fondo Nacional de la Vivienda para los Trabajadores (INFONAVIT)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.fonacot.gob.mx/Paginas/default.aspx" class="sendEstGobierno pull-left">Instituto del Fondo Nacional para el Consumo de los Trabajadores (INFONACOT)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" class="sendEstGobierno pull-left">Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales (INAI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://imr.sre.gob.mx/" class="sendEstGobierno pull-left">Instituto Matías Romero (IMR)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.imcine.gob.mx/" class="sendEstGobierno pull-left">Instituto Mexicano de Cinematografía (IMCINE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/imjuve" class="sendEstGobierno pull-left">Instituto Mexicano de la Juventud (IMJUVE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/impi" class="sendEstGobierno pull-left">Instituto Mexicano de la Propiedad Industrial (IMPI)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.imer.mx/" class="sendEstGobierno pull-left">Instituto Mexicano de la Radio (IMER)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.gob.mx/imta" class="sendEstGobierno pull-left">Instituto Mexicano de Tecnología del Agua (IMTA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.imp.mx/" class="sendEstGobierno pull-left">Instituto Mexicano del Petróleo (IMP)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.imss.gob.mx/" class="sendEstGobierno pull-left">Instituto Mexicano del Seguro Social (IMSS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inap.mx/portal/" class="sendEstGobierno pull-left">Instituto Nacional de Administración Pública, A.C. (INAP)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inah.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Antropología e Historia (INAH)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www-optica.inaoep.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOEP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.bellasartes.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Bellas Artes y Literatura (INBA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.incan.salud.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Cancerología (INCAN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.cardiologia.org.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Cardiología Ignacio Chávez (INCICH)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.innsz.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Ciencias Médicas y Nutrición Salvador Zubirán (INNSZ)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inacipe.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Ciencias Penales (INACIPE)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://indesol.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Desarrollo Social (INDESOL)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inecc.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Ecología y Cambio Climático (INECC)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.inaes.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de la Economía Social (INAES)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.iner.salud.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Enfermedades Respiratorias Ismael Cosío Villegas (INER)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inehrm.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Estudios Históricos de las Revoluciones de México (INEHRM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.geriatria.salud.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Geriatría (INGER)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inifap.gob.mx/SitePages/default.aspx" class="sendEstGobierno pull-left">Instituto Nacional de Investigaciones Forestales, Agrícolas y Pecuarias (INIFAP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://sener.gob.mx/portal/default.aspx?id=2813" class="sendEstGobierno pull-left">Instituto Nacional de Investigaciones Nucleares (ININ)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/inifed" class="sendEstGobierno pull-left">Instituto Nacional de la Infraestructura Física Educativa (INIFED)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/inmujeres" class="sendEstGobierno pull-left">Instituto Nacional de las Mujeres (INMUJERES)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.inapam.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de las Personas Adultas Mayores (INAPAM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.inali.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Lenguas Indígenas (INALI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inmegen.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Medicina Genómica (INMEGEN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/inm" class="sendEstGobierno pull-left">Instituto Nacional de Migración (INM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.innn.salud.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Neurología y Neurocirugía Manuel Velasco Suárez (INNN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.pediatria.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Pediatría (INP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inper.edu.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Perinatología (INPER)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inapesca.gob.mx/portal/" class="sendEstGobierno pull-left">Instituto Nacional de Pesca (INAPESCA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://inprf.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Psiquiatría Ramón de la Fuente Muñiz (INPRF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inr.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Rehabilitación (INR)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.insp.mx/" class="sendEstGobierno pull-left">Instituto Nacional de Salud Pública (INSP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.indautor.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional del Derecho de Autor (INDAUTOR)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.inadem.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional del Emprendedor (INADEM)	</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inca.gob.mx/" class="sendEstGobierno pull-left">Instituto Nacional para el Desarrollo de Capacidades del Sector Rural (INCA Rural)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.inafed.gob.mx/" class="sendEstGobierno pull-left">	Instituto Nacional para el Federalismo y el Desarrollo Municipal (INAFED)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.inea.gob.mx/#leyenda" class="sendEstGobierno pull-left">Instituto Nacional para la Educación de Adultos (INEA)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.indetec.gob.mx/" class="sendEstGobierno pull-left">Instituto para el Desarrollo Técnico de las Haciendas Públicas (INDETEC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/ipab" class="sendEstGobierno pull-left">Instituto para la Protección al Ahorro Bancario (IPAB)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.ipn.mx/Paginas/aviso.aspx" class="sendEstGobierno pull-left">Instituto Politécnico Nacional (IPN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ipicyt.edu.mx/" class="sendEstGobierno pull-left">Instituto Potosino de Investigación Científica y Tecnológica (IPICYT)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="j">J</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.gob.mx/jfca" class="sendEstGobierno pull-left">Junta Federal de Conciliación y Arbitraje (JFCA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="l">L</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.birmex.gob.mx/" class="sendEstGobierno pull-left">Laboratorio de Biológicos y Reactivos de México (BIRMEX)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/liconsa" class="sendEstGobierno pull-left">LICONSA</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/lotenal" class="sendEstGobierno pull-left">Lotería Nacional para la Asistencia Pública (LOTENAL)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="m">M</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.gob.mx/mexicodigital" class="sendEstGobierno pull-left">Mexico Digital</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="n">N</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.gob.mx/nafin" class="sendEstGobierno pull-left">Nacional Financiera (NAFIN)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.notimex.gob.mx/" class="sendEstGobierno pull-left">Notimex, Agencia de Noticias del Estado (NOTIMEX)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="o">O</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.ssp.gob.mx/portalWebApp/wlp.c?__c=807" class="sendEstGobierno pull-left">Órgano Administrativo Desconcentrado de Prevención y Readaptación Social (OADPRS)</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="p">P</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.pmi.com.mx/Paginas/Inicio.aspx" class="sendEstGobierno pull-left">P.M.I. Comercio Internacional, S.A. de C.V. (PMI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.poi.ipn.mx/Paginas/POI.aspx" class="sendEstGobierno pull-left">Patronato de Obras e Instalaciones del Instituto Politécnico Nacional (POI IPN)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.pep.pemex.com/Paginas/default.aspx" class="sendEstGobierno pull-left">Petróleos Mexicanos Exploración y Producción (PEMEX Exploración y Producción)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gas.pemex.com.mx/portalpublico/" class="sendEstGobierno pull-left">Petróleos Mexicanos Gas y Petroquímica Básica (PEMEX Gas y Petroquímica Básica) </a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.ptq.pemex.com.mx/Paginas/default.aspx" class="sendEstGobierno pull-left">Petróleos Mexicanos Petroquímica (PEMEX Petroquímica) </a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="https://www.comercialrefinacion.pemex.com/portal/" class="sendEstGobierno pull-left">Petróleos Mexicanos Refinación (PEMEX Refinación) </a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.pemex.com/Paginas/default.aspx" class="sendEstGobierno pull-left">Petróleos Mexicanos (PEMEX)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="presidencia.html" class="sendEstGobierno pull-left">Presidencia de la República (PRESIDENCIA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/policiafederal" class="sendEstGobierno pull-left">Policía Federal (PF)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.pa.gob.mx/" class="sendEstGobierno pull-left">Procuraduría Agraria (PA)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.prodecon.gob.mx/" class="sendEstGobierno pull-left">Procuraduría de la Defensa del Contribuyente (PRODECON)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.profedet.gob.mx/profedet/index.html" class="sendEstGobierno pull-left">Procuraduría Federal de la Defensa del Trabajo (PROFEDET)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.profepa.gob.mx/" class="sendEstGobierno pull-left">Procuraduría Federal de Protección al Ambiente (PROFEPA)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/profeco" class="sendEstGobierno pull-left">Procuraduría Federal del Consumidor (PROFECO)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/pgr" class="sendEstGobierno pull-left">Procuraduría General de la República (PGR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.pronabive.gob.mx/" class="sendEstGobierno pull-left">Productora Nacional de Biológicos Veterinarios (PRONABIVE)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/productividad" class="sendEstGobierno pull-left">Programa para Democratizar la Productivdad</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/pronafim" class="sendEstGobierno pull-left">Programa Nacional de Financiamiento a Microempresarios (PRONAFIM)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="https://www.gob.mx/promexico" class="sendEstGobierno pull-left">ProMéxico</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/pronosticos" class="sendEstGobierno pull-left">Pronósticos para la Asistencia Pública (Pronósticos)	</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/prospera" class="sendEstGobierno pull-left">Prospera Programa de Inclusión Social (PROSPERA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="r">R</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.e-radio.edu.mx/Inicio" class="sendEstGobierno pull-left">Radio Educación (E Radio)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/ran" class="sendEstGobierno pull-left">Registro Agrario Nacional (RAN)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="s">S</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://directorio.sre.gob.mx/index.php/oficinas-centrales/seccion-mexicana-de-la-comision-internacional-de-limites-y-aguas-entre-mexico-ee-uu" class="sendEstGobierno pull-left">Sección Mexicana de la Comisión Internacional de Límites y Aguas entre México y Estados Unidos</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://sre.gob.mx/seccion-de-mexicana-de-las-comisiones-internacionales-de-limites-y-aguas-entre-mexico-y-guatemala-y-entre-mexico-y-belice" class="sendEstGobierno pull-left">Secciones Mexicanas de las Comisiones Internacionales de Límites y Aguas entre México y Guatemala, y entre México y Belice</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sagarpa" class="sendEstGobierno pull-left">Secretaría de Agricultura, Ganadería, Desarrollo Rural, Pesca y Alimentación (SAGARPA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sct" class="sendEstGobierno pull-left">Secretaría de Comunicaciones y Transportes (SCT)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.cultura.gob.mx/" class="sendEstGobierno pull-left">Secretaría de Cultura (Cultura)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sedatu" class="sendEstGobierno pull-left">Secretaría de Desarrollo Agrario, Territorial y Urbano (SEDATU)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sedesol" class="sendEstGobierno pull-left">Secretaría de Desarrollo Social (SEDESOL)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/se/" class="sendEstGobierno pull-left">Secretaría de Economía (SE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="https://www.gob.mx/sep" class="sendEstGobierno pull-left">Secretaría de Educación Pública (SEP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sener" class="sendEstGobierno pull-left">Secretaría de Energía (SENER)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/segob" class="sendEstGobierno pull-left">Secretaría de Gobernación (SEGOB)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/hacienda" class="sendEstGobierno pull-left">Secretaría de Hacienda y Crédito Público (SHCP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sedena" class="sendEstGobierno pull-left">Secretaría de la Defensa Nacional (SEDENA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sfp" class="sendEstGobierno pull-left">Secretaría de la Función Pública (SFP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/semar" class="sendEstGobierno pull-left">Secretaría de Marina (SEMAR)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/semarnat" class="sendEstGobierno pull-left">Secretaría de Medio Ambiente y Recursos Naturales (SEMARNAT)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sre" class="sendEstGobierno pull-left">Secretaría de Relaciones Exteriores (SRE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/salud" class="sendEstGobierno pull-left">Secretaría de Salud (SSA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sectur/" class="sendEstGobierno pull-left">Secretaría de Turismo (SECTUR)	</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/stps" class="sendEstGobierno pull-left">Secretaría del Trabajo y Previsión Social (STPS)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/conapo" class="sendEstGobierno pull-left">Secretaría General del Consejo Nacional de Población (CONAPO)	</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.stccpri.gob.mx/" class="sendEstGobierno pull-left">Secretaría Técnica de la Comisión Calificadora de Publicaciones y Revistas Ilustradas (STCCPRI)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.setec.gob.mx/" class="sendEstGobierno pull-left">Secretaría Técnica del Consejo de Coordinación para la Implementación del Sistema de Justicia Penal (SETEC)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://secretariadoejecutivo.gob.mx/index.php" class="sendEstGobierno pull-left">Secretariado Ejecutivo del Sistema Nacional de Seguridad Pública (Secretariado Ejecutivo)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.shf.gob.mx/Aseguradora/Paginas/Inicio.aspx" class="sendEstGobierno pull-left">Seguros de Crédito a la Vivienda SHF, S.A. de C.V. (SCV SHF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.aicm.com.mx/" class="sendEstGobierno pull-left">Servicios Aeroportuarios de la Ciudad de México, S.A. de C.V. (SACM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.sat.gob.mx/Paginas/Inicio.aspx" class="sendEstGobierno pull-left">Servicio de Administración Tributaria (SAT)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/sae" class="sendEstGobierno pull-left">Servicio de Administración y Enajenación de Bienes (SAE)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.sae.gob.mx/es/Paginas/default.aspx" class="sendEstGobierno pull-left">Servicios de Almacenamiento del Norte, S.A. (SERANOR) (en proceso de desincorporación)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://portal.salud.gob.mx/contenidos/tramites/sap.html" class="sendEstGobierno pull-left">Servicios de Atención Psiquiátrica (SAP)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/siap" class="sendEstGobierno pull-left">Servicio de Información Agroalimentaria y Pesquera (SIAP)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.ssp.gob.mx/portalWebApp/wlp.c%3Bjsessionid=vQnJQvWVGScRyTcV1hjDQhH6XRSZvgGF81dlJ2MhHNKl9nJJDfB0!57524707?__c=fc7" class="sendEstGobierno pull-left">Servicio de Protección Federal (SPF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.sgm.gob.mx/" class="sendEstGobierno pull-left">Servicio Geológico Mexicano (SGM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://snics.sagarpa.gob.mx/" class="sendEstGobierno pull-left">Servicio Nacional de Inspección y Certificación de Semillas (SNICS)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/senasica" class="sendEstGobierno pull-left">Servicio Nacional de Sanidad, Inocuidad y Calidad Agroalimentaria (SENASICA)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/correosdemexico" class="sendEstGobierno pull-left">Servicio Postal Mexicano (SEPOMEX)</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.seneam.gob.mx/" class="sendEstGobierno pull-left">Servicios a la Navegación en el Espacio Aéreo Mexicano (SENEAM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://sn.dif.gob.mx/" class="sendEstGobierno pull-left">Sistema Nacional para el Desarrollo Integral de la Familia (DIF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.spr.gob.mx/" class="sendEstGobierno pull-left">Sistema Público de Radiodifusión del Estado Mexicano (SPR)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.shf.gob.mx/Paginas/default.aspx" class="sendEstGobierno pull-left">Sociedad Hipotecaria Federal, S.N.C. (SHF)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.superissste.gob.mx/" class="sendEstGobierno pull-left">SuperISSSTE</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+          <h3 id="t">T</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.tecnm.mx/" class="sendEstGobierno pull-left">Tecnológico Nacional de México (TecNM)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.tgm.com.mx/Paginas/Home.aspx" class="sendEstGobierno pull-left">Talleres Gráficos de México (TGM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.telecomm.net.mx/" class="sendEstGobierno pull-left">Telecomunicaciones de México (Telecomm)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://corporativo.canal22.org.mx/" class="sendEstGobierno pull-left">Televisión Metropolitana (Canal 22)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.tfca.gob.mx/" class="sendEstGobierno pull-left">Tribunal Federal de Conciliación y Arbitraje (TFCA)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.tribunalesagrarios.gob.mx/index.php" class="sendEstGobierno pull-left">Tribunales Agrarios</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/turissste/" class="sendEstGobierno pull-left">TURISSSTE</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="u">U</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.unadmexico.mx/portal/" class="sendEstGobierno pull-left">Universidad Abierta y a Distancia de México (UnADM)</a><span class="pull-left small status"> </span></li>
+            <li class="clearfix"><a href="http://www.upn.mx/" class="sendEstGobierno pull-left">Universidad Pedagógica Nacional (UPN)</a><span class="pull-left small status">Migrando a gob.mx</span></li>
+            <li class="clearfix"><a href="http://www.gob.mx/universidadnaval" class="sendEstGobierno pull-left">Universidad Naval</a><span class="pull-left small status">Sitio en gob.mx</span></li>
+          </ul>
+
+          <h3 id="x">X</h3>
+          <ul class="list-unstyled">
+            <li class="clearfix"><a href="http://www.canalonce.mx/" class="sendEstGobierno pull-left">XEIPN Canal Once</a><span class="pull-left small status"> </span></li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="dependencies top-buffer">
+      <h2 id="estados">Entidades Federativas</h2>
+      <hr class="bottom-buffer red">
+      <div class="row">
+        <div class="col-sm-8 col-sm-offset-3">
+          <ul class="list-unstyled">
+            <li><a href="http://www.aguascalientes.gob.mx" class="sendEstGobierno">Aguascalientes</a></li>
+            <li><a href="http://www.bajacalifornia.gob.mx/portal/index.jsp" class="sendEstGobierno" >Baja California</a></h3></li>
+            <li><a href="http://www.bcs.gob.mx" class="sendEstGobierno">Baja California Sur</a></li>
+            <li><a href="http://www.campeche.gob.mx" class="sendEstGobierno">Campeche</a></li>
+            <li><a href="http://www.chiapas.gob.mx" class="sendEstGobierno">Chiapas</a></li>
+            <li><a href="http://www.chihuahua.gob.mx" class="sendEstGobierno">Chihuahua</a></li>
+            <li><a href="http://coahuila.gob.mx" class="sendEstGobierno">Coahuila</a></li>
+            <li><a href="http://www.colima-estado.gob.mx" class="sendEstGobierno">Colima</a></li>
+            <li><a href="http://www.cdmx.gob.mx" class="sendEstGobierno">Ciudad de México</a></li>
+            <li><a href="http://www.durango.gob.mx" class="sendEstGobierno">Durango</a></li>
+            <li><a href="http://edomex.gob.mx" class="sendEstGobierno">Estado de México</a></li>
+            <li><a href="http://www.guanajuato.gob.mx" class="sendEstGobierno" >Guanajuato</a></li>
+            <li><a href="http://www.guerrero.gob.mx" class="sendEstGobierno" >Guerrero</a></li>
+            <li><a href="http://www.hidalgo.gob.mx" class="sendEstGobierno">Hidalgo</a></li>
+            <li><a href="http://www.jalisco.gob.mx" class="sendEstGobierno" >Jalisco</a></li>
+            <li><a href="http://www.michoacan.gob.mx" class="sendEstGobierno" >Michoacán</a></li>
+            <li><a href="http://www.morelos.gob.mx" class="sendEstGobierno" >Morelos</a></li>
+            <li><a href="http://www.nayarit.gob.mx" class="sendEstGobierno" >Nayarit</a></li>
+            <li><a href="http://www.nl.gob.mx" class="sendEstGobierno">Nuevo León</a></li>
+            <li><a href="http://www.oaxaca.gob.mx" class="sendEstGobierno" >Oaxaca</a></li>
+            <li><a href="http://www.puebla.gob.mx" class="sendEstGobierno" >Puebla</a></li>
+            <li><a href="http://www.queretaro.gob.mx" class="sendEstGobierno" >Querétaro</a></li>
+            <li><a href="http://www.quintanaroo.gob.mx" class="sendEstGobierno" >Quintana Roo</a></li>
+            <li><a href="http://www.slp.gob.mx" class="sendEstGobierno" >San Luis Potosí</a></li>
+            <li><a href="http://www.sinaloa.gob.mx" class="sendEstGobierno" >Sinaloa</a></li>
+            <li><a href="http://www.sonora.gob.mx" class="sendEstGobierno" >Sonora</a></li>
+            <li><a href="http://www.tabasco.gob.mx" class="sendEstGobierno" >Tabasco</a></li>
+            <li><a href="http://www.tamaulipas.gob.mx" class="sendEstGobierno" >Tamaulipas</a></li>
+            <li><a href="http://www.tlaxcala.gob.mx" class="sendEstGobierno" >Tlaxcala</a></li>
+            <li><a href="http://www.veracruz.gob.mx" class="sendEstGobierno" >Veracruz</a></li>
+            <li><a href="http://www.yucatan.gob.mx" class="sendEstGobierno" >Yucatán</a></li>
+            <li><a href="http://www.zacatecas.gob.mx" class="sendEstGobierno">Zacatecas</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+		<footer class="main-footer">
+	<div class="list-info">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<h2>Enlaces</h2>
+					<ul>
+						<li><a href="http://www.gob.mx/accesibilidad" >Declaración de Accesibilidad</a></li>
+						<li><a href="http://www.gob.mx/privacidad" >Política de privacidad</a></li>
+						<li><a href="http://www.gob.mx/terminos">Términos y Condiciones</a></li>
+						<li><a href="http://www.ordenjuridico.gob.mx" target="_blank" class="sendEst" title="Enlace abre en ventana nueva">Marco Jurídico</a></li>
+						<li><a href="http://portaltransparencia.gob.mx" target="_blank" class="sendEst" title="Enlace abre en ventana nueva">Portal de Obligaciones de Transparencia</a></li>
+						<li><a href="https://www.infomex.org.mx/gobiernofederal/home.action" target="_blank" class="sendEst" title="Enlace abre en ventana nueva">Sistema Infomex</a></li>
+						<li><a href="http://inicio.ifai.org.mx/SitePages/ifai.aspx" target="_blank" class="sendEst" title="Enlace abre en ventana nueva">INAI</a></li>
+            <li><a href="http://www.gob.mx/sitemap">Mapa de sitio</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2>¿Qué es gob.mx?</h2>
+					<p>Es el portal único de trámites, información y participación ciudadana. <a href="http://www.gob.mx/que-es-gobmx">Leer más</a></p>
+					<ul>
+                <li><a href="http://www.gob.mx/en/index" title="Versión en inglés del sitio web">English</a></li>
+						<li><a href="http://www.gob.mx/temas">Temas</a></li>
+						<li><a href="http://reformas.gob.mx" target="_blank" class="sendEst" title="Enlace abre en ventana nueva">Reformas</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4">
+					<h2>Contacto</h2>
+					<p>Mesa de ayuda: dudas e información<br>gobmx@funcionpublica.gob.mx</p>
+					<p><a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54">Denuncia contra servidores públicos</a></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-4">
+					<form id="subscribe" action="subscribe" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+						<h2>Mantente informado. Suscríbete.</h2>
+						<div class="form-group-icon">
+							<label class="sr-only" for="email">Suscribirse</label>
+							<input id="email" type="text" name="email" class="form-control" placeholder="Ingresa tu correo electrónico" maxlength="255">
+							<button type="submit" class="blue-button-footer btn registerMail" title="Suscribirse">
+								<span class="icon-caret-right" title=">"></span>
+							</button>
+						</div>
+						<div id="responseEmail" aria-live="polite"></div>
+</form>				</div>
+				<div class="col-sm-4 col-sm-offset-4">
+					<h2>Síguenos en</h2>
+					<ul class="list-inline">
+						<li>
+			              <a href="https://www.facebook.com/gobmx" target="_blank" class="sendEst share-info" title="enlace a facebook abre en una nueva ventana">
+			                <img alt="Facebook" src="https://framework-gb.cdn.gob.mx/assets/images/facebook_footer.png" />
+			              </a>
+			            </li>
+						<li>
+			              <a href="https://twitter.com/gobmx" target="_blank" class="sendEst share-info" title="Enlace a twitter abre en una nueva ventana">
+			                <img alt="Twitter" src="https://framework-gb.cdn.gob.mx/assets/images/twitter_footer.png" />
+			              </a>
+			            </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<img alt="logotipo gob.mx" class="gobmx-footer" src="assets/gobmxlogo.svg" width="126" height="39" />
+			</div>
+			<div class="col-sm-4 col-sm-offset-4">
+			</div>
+		</div>
+	</div>
+</footer>
+		<div id="fb-root"></div>
+
+		<script src="http://www.gob.mx/assets/application.js"></script>
+		
+
+			<script>
+				var _sf_async_config={uid:43659,domain:'www.gob.mx',useCanonical:true};
+        		(function() { function loadChartbeat() { window._sf_endpt = (new Date()).getTime(); var e = document.createElement('script'); e.setAttribute('language', 'javascript'); e.setAttribute('type', 'text/javascript'); e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js'); document.body.appendChild(e); }; var oldonload = window.onload; window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() { oldonload(); loadChartbeat(); }; })();
+		        var siteEls;
+        		var ele = window.location.pathname.split('/');
+        		if( ele.length > 0 ) {
+          			if( ele.length == 2) {
+          				if( ele[1] === "") { siteEls = 'landing.home';
+          				} else { siteEls = ele[1]+'.home'; }
+      				}
+          			else { siteEls = ele[1]; }
+          			for( var i = 2; i < ele.length; i++ ) { siteEls = siteEls+'.'+ele[i]; }
+        		} else { siteEls = 'landing.home'; }
+		        function udm_(e){var t="comScore=",n=document,r=n.cookie,i="",s="indexOf",o="substring",u="length",a=2048,f,l="&ns_",c="&",h,p,d,v,m=window,g=m.encodeURIComponent||escape;if(r[s](t)+1)for(d=0,p=r.split(";"),v=p[u];d<v;d++)h=p[d][s](t),h+1&&(i=c+unescape(p[d][o](h+t[u])));e+=l+"_t="+ +(new Date)+l+"c="+(n.characterSet||n.defaultCharset||"")+"&c8="+g(n.title)+i+"&c7="+g(n.URL)+"&c9="+g(n.referrer),e[u]>a&&e[s](c)>0&&(f=e[o](0,a-8).lastIndexOf(c),e=(e[o](0,f)+l+"cut="+g(e[o](f+1)))[o](0,a)),n.images?(h=new Image,m.ns_p||(ns_p=h),h.src=e):n.write("<","p","><",'img src="',e,'" height="1" width="1" alt="*"',"><","/p",">")};
+		        function uid_call(a, b){ ui_c2 = 17183199; ui_ns_site = 'gobmx'; window.b_ui_event = window.c_ui_event != null ? window.c_ui_event:"",window.c_ui_event = a; var ui_pixel_url = 'http://b.scorecardresearch.com/p?c1=2&c2='+ui_c2+'&ns_site='+ui_ns_site+'&name='+a+'&ns_type=hidden&type=hidden&ns_ui_type='+b; var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));ui_pixel_url+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer)+"&b_ui_event="+b_ui_event+"&c_ui_event="+c_ui_event,ui_pixel_url[h]>i&&ui_pixel_url[f](l)>0&&(j=ui_pixel_url[g](0,i-8).lastIndexOf(l),ui_pixel_url=(ui_pixel_url[g](0,j)+k+"cut="+r(ui_pixel_url[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=ui_pixel_url):c.write("<p><img src='",ui_pixel_url,"' height='1' width='1' alt='*'></p>"); }
+		        udm_('https://sb.scorecardresearch.com/b?c1=2&c2=17183199&ns_site=gobmx&name='+siteEls);
+			</script>
+			<script src="https://sb.scorecardresearch.com/c2/17183199/ct.js" async="async"></script>
+	</body>
+</html>

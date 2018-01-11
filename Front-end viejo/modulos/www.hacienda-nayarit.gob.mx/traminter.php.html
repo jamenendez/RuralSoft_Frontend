@@ -1,0 +1,172 @@
+<script language="JavaScript">
+function valida(accion){
+	forma = document.frmVal;
+	forma.txtRFC.value=forma.txtRFC.value.toUpperCase();  
+	if ((forma.txtRFC.value.length > 11)&&(forma.txtRFC.value.length < 14))
+      {
+	  return true;
+      }	
+	else
+	{  
+	  alert ("La longitud del RFC tiene que ser de 13 o de 12 posiciones\n");
+	  return false;
+
+	}
+}
+</script>
+<html>
+<head>
+
+<title>Secretar&iacute;a de Administaci&oacute;n y Finanzas::Servicios en l&iacute;nea</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="https://www.hacienda-nayarit.gob.mx/estilos.css" />
+<style type="text/css"><!--
+.Estilo1 {font-size: xx-small}
+.Estilo5 {	font-size: x-small;
+	color: #666666;
+	font-style: italic;
+}
+.Estilo14 {font-size: xx-small; color: #999999; }
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+a:link {
+	text-decoration: underline;
+	color: #000000;
+}
+a:visited {
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: underline;
+}
+.Estilo12 {	color: #0000FF;
+	font-size: x-small;
+	font-weight: bold;
+}
+.Estilo17 {font-size: x-small; }
+.Estilo18 {font-size: x-small; color: #666666; }
+-->
+</style>
+
+</head>
+
+<body>
+<table width="52%" align="center">
+  <tr>
+    <td bgcolor="#CCCCCC"><table width="100%" align="center">
+        <tr>
+          <td bgcolor="#FFFFFF"><table width="100%"  border="0">
+              <tr> 
+                <td><img src="https://www.hacienda-nayarit.gob.mx/img/interm.jpg" width="724" height="107"></td>
+              </tr>
+              <tr> 
+                <td background="https://www.hacienda-nayarit.gob.mx/img/bar.png"><div align="right"><span class="Estilo4"><font color="#FFFFFF" size="2">Ventana 
+                    de acceso|<a href="http://www.hacienda-nayarit.gob.mx">Principal</a></font></span></div></td>
+              </tr>
+            </table>
+            <table width="100%"  border="0">
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><span class="Estilo14">A 
+                  partir de Agosto de 2006, presentar&aacute;s t&uacute; declaraci&oacute;n 
+                  mensual del 5% de ISR, en las Recaudaciones de Renta de la Entidad, 
+                  Bancos y V&iacute;a Internet.<br>
+                  De acuerdo a las disposiciones fiscales de la Segunda Resoluci&oacute;n 
+                  de Modificaciones a la RMF 2006, publicada en el DOF de fecha 
+                  12 de Julio de 2006, establecido en la Regla 3.30.2, que menciona 
+                  que los contribuyentes que perciban ingresos a que se refiere 
+                  el articulo 136-Bis de la Ley del ISR en Nayarit realizar&aacute; 
+                  los pagos a que se refiere dicho precepto en las oficinas autorizadas 
+                  por las citadas entidades federativas, a trav&eacute;s de las 
+                  formas oficiales que estas publiquen, mismas que deber&aacute;n 
+                  contener como m&iacute;nimo la informaci&oacute;n que se establece 
+                  en el Anexo 1, rubro F numeral 1 de la presente resoluci&oacute;n. 
+                  </span></font></td>
+              </tr>
+              <tr> 
+                <td><div align="right"></div></td>
+              </tr>
+            </table>
+            <hr> 
+            <div align="center" class="Estilo17">
+              <p><font color="#666666" face="Arial, Helvetica, sans-serif"><img src="https://www.hacienda-nayarit.gob.mx/img/pagalinea.gif" width="603" height="229"></font></p>
+              <p><font color="#666666" face="Arial, Helvetica, sans-serif">Capture 
+                el R.F.C en el siguiente recuadro </font> </p>
+            </div>
+            <form action="intermedios.php" method="post"  name="frmVal" target="_parent" id="frmVal" onSubmit="return valida(1)">
+              <table width="99%" border="0">
+                <tr> 
+                  <td width="21%">&nbsp;</td>
+                  <td width="36%" bgcolor="#E5E5E5"><div align="right" class="Estilo18"><font face="Arial, Helvetica, sans-serif">Registro 
+                      Federal de Contribuyente:</font></div></td>
+                  <td width="13%" bgcolor="#E5E5E5"><font face="Arial, Helvetica, sans-serif">
+                    <input name="txtRFC" type="text" id="txtRFC" title="Capture el Registro Federal de Contrubuyente" onFocus="frmVal.Submit.focus=false">
+                    </font></td>
+                  <td width="30%">&nbsp;</td>
+                </tr>
+              </table
+              >
+              <p align="center"> <font face="Arial, Helvetica, sans-serif">
+                <input type="submit" name="Submit" value="Aceptar" onClick="return valida(1)">
+                </font></p>
+            </form>
+            <p align="left" class="Estilo5">
+			<table width="135" border="0" cellpadding="2" cellspacing="0" title="Haga clic para verificar ? Este sitio ha elegido VeriSign SSL para que la comunicaci&#243;n sea confidencial y el comercio electr&#243;nico sea seguro.">
+<tr>
+<td width="135" align="center" valign="top"><script src="https://seal.verisign.com/getseal?host_name=www.hacienda-nayarit.gob.mx&amp;size=L&amp;use_flash=YES&amp;use_transparent=YES&amp;lang=es"></script><br />
+<a href="http://www.verisign.es/certificados-ssl" target="_blank"  style="color:#000000; text-decoration:none; font:bold 7px verdana,sans-serif; letter-spacing:.5px; text-align:center; margin:0px; padding:0px;">Acerca de los certificados SSL</a></td>
+</tr>
+</table>
+			</p>
+            <p align="left" class="Estilo5"><font face="Arial, Helvetica, sans-serif">Fecha 
+              l&iacute;mite de pago sin recargos: Hasta el d&iacute;a 17 del mes 
+              posterior al bimestre. (con los d&iacute;as h&aacute;biles adicionales 
+              de acuerdo al <a href="https://www.hacienda-nayarit.gob.mx/rmfi.php" target="_self" onClick=""> 6to. 
+              D&iacute;gito num&eacute;rico del R.F.C. establecido en RMF2006).</a> 
+              <br>
+              </font></p>
+            <div align="center" class="Estilo5"><font face="Arial, Helvetica, sans-serif"><a href="http://www.hacienda-nayarit.gob.mx" target="_parent">Inicio</a> 
+              | <a href="http://www.hacienda-nayarit.gob.mx" target="_parent">Secretar&iacute;a 
+              de Administraci&oacute;n y Finanzas</a> <br>
+              <a href="http://www.nayarit.gob.mx" target="_blank">Gobierno del 
+              Estado</a></font></div>
+            <hr> <font face="Arial, Helvetica, sans-serif"><span class="Estilo1"><table width="100%"  border="0">
+                      <tr bgcolor="#FFFFFF"> 
+                        <td width="70%"><p class="Estilo1"><font face="Arial, Helvetica, sans-serif"><span class="Estilo66"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Para 
+                            mayor informaci&oacute;n:<br />
+                            Direcci&oacute;n General de Ingresos<br />
+                            de la Secretar&iacute;a de Administraci&oacute;n y 
+                            Finanzas. .Departamento de Asistencia al Contribuyente<br />
+                            <a href="mailto:asistenciacontribuye@nayarit.gob.mx">asistenciacontribuye@nayarit.gob.mx</a><br />
+                            Av. Allende No.276 Poniente entre Oaxaca y Morelia Col. 
+                            Centro<br />
+                            Tel.(01-311) 2-16-96-49 y 2-58-04-50<br />
+                            Lada sin Costo 01800 72775234
+                            Tepic, Nayarit.</font></span><br />
+                                                 
+ <h6>  <div align="center"><a href="https://www.hacienda-nayarit.gob.mx/politicas_de_uso_y_privacidad.htm" target="_blank" >Politicas de uso y privacidad</a></div> </h6>
+                            </font></p></td>
+                        <td width="30%"><div align="right"> 
+                            <table width="100%"  border="0">
+                              <tr> 
+                                <td width="82%">&nbsp;</td>
+                              </tr>
+                            </table>
+                          </div></td>
+                      </tr>
+            
+                    </table></span></font></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+
+</body>
+</html>
+

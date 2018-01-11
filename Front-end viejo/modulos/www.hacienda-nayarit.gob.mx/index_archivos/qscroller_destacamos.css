@@ -1,0 +1,67 @@
+BODY {
+	FONT-FAMILY: Arial; COLOR: #000000; FONT-SIZE: 11px
+}
+TD {
+	FONT-FAMILY: Arial; COLOR: #000000; FONT-SIZE: 11px
+}
+TH {
+	FONT-FAMILY: Arial; COLOR: #000000; FONT-SIZE: 11px
+}
+BODY {
+	BACKGROUND-COLOR: #ffffff;
+	MARGIN: 0px;
+	text-align: center;
+}
+.hide {
+	POSITION: absolute; VISIBILITY: hidden; TOP: -400px
+}
+#qscroller2 {
+	WIDTH: 394px; HEIGHT: 182px
+}
+.qscroller2-nav {
+	WIDTH: 180px; HEIGHT: 15px; FONT-SIZE: 11px
+}
+.qscroller2-nav A {
+	TEXT-DECORATION: none
+}
+.qscroller2-nav DIV {
+	FLOAT: right
+}
+.qslide2 IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; FLOAT: left; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
+.TituloDestacamos {
+	PADDING-LEFT: 15px; FONT-FAMILY: Arial; COLOR: #d31145; FONT-SIZE: 16px; FONT-WEIGHT: bold
+}
+.destacados { 
+background-image : url("http://www.hacienda-nayarit.gob.mx/index_archivos/bgdestacamos.gif"); 
+position : relative; 
+padding-bottom : 0; 
+padding-left : 0; 
+width : 394px; 
+padding-right : 0; 
+background-repeat : no-repeat; 
+margin-bottom : 5px; 
+height : 182px; 
+overflow : hidden; 
+padding-top : 0; 
+left : 10px; 
+} 
+.subdestacado {
+	TEXT-ALIGN: center; WIDTH: 120px; DISPLAY: inline; MARGIN-BOTTOM: 10px; BACKGROUND: #ffffff; FLOAT: left; HEIGHT: 141px; MARGIN-LEFT: 8px; OVERFLOW: hidden
+}
+.linkdestacados:link {
+	FONT-FAMILY: Arial; COLOR: #737373; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.linkdestacados:visited {
+	FONT-FAMILY: Arial; COLOR: #737373; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.linkdestacados:active {
+	FONT-FAMILY: Arial; COLOR: #737373; FONT-SIZE: 10px; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.linkdestacados:hover {
+	FONT-FAMILY: Arial; COLOR: #d31145; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.img_destacado {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; WIDTH: 120px; MARGIN-BOTTOM: 4px; HEIGHT: 70px; OVERFLOW: hidden; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}

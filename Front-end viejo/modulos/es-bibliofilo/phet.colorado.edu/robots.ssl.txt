@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /en/unsubscribe
+Disallow: /services/metadata/

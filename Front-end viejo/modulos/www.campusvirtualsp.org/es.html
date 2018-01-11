@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head>
+<meta charset="utf-8" />
+<link rel="shortcut icon" href="sites/default/files/favicon_0.ico" type="image/vnd.microsoft.icon" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública." />
+<meta name="abstract" content="Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública." />
+<meta name="keywords" content="campus, virtual, salud, publica, ops, paho, cursos, elearning, educacion, red" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="rights" content="PAHO" />
+<link rel="image_src" href="sites/default/files/header-campusvirtual-es_2.jpg" />
+<link rel="canonical" href="es.html" />
+<link rel="shortlink" href="es.html" />
+<title>Campus Virtual de Salud Pública (CVSP/OPS) | Acercando el conocimiento a la práctica</title>
+<style type="text/css" media="all">@import url("https://www.campusvirtualsp.org/modules/system/system.base.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/system/system.menus.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/system/system.messages.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/system/system.theme.css?opzzu4");
+</style>
+<style type="text/css" media="all">@import url("https://www.campusvirtualsp.org/sites/all/modules/ldap/ldap_user/ldap_user.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/aggregator/aggregator.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/date/date_api/date.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/field/theme/field.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/logintoboggan/logintoboggan.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/mollom/mollom.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/node/node.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/search/search.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/user/user.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/workflow/workflow_admin_ui/workflow_admin_ui.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/views/css/views.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/ckeditor/css/ckeditor.css?opzzu4");
+</style>
+<style type="text/css" media="all">@import url("https://www.campusvirtualsp.org/sites/all/modules/ctools/css/ctools.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/ldap/ldap_servers/ldap_servers.admin.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/lightbox2/css/lightbox.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/shorten/shortener/shortener.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/modules/locale/locale.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/modules/hide_submit/css/hide_submit.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/libraries/superfish/css/superfish.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/libraries/superfish/css/superfish-navbar.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/libraries/superfish/style/ops.css?opzzu4");
+</style>
+<style type="text/css" media="all">@import url("https://www.campusvirtualsp.org/sites/all/themes/blogger_theme/style.css?opzzu4");
+@import url("https://www.campusvirtualsp.org/sites/all/themes/blogger_theme/css/responsive.css?opzzu4");
+</style>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/drupal.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/jquery.cookie.js?v=1.0"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/jquery.form.js?v=2.52"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/ajax.js?v=7.53"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/autoupload/js/autoupload.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/default/files/languages/es_aJTgZ7w835Jm62iwxNPeRMcQtS7FKyoa9qqjpo9O0Ss.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/lightbox2/js/lightbox_video.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/lightbox2/js/lightbox.js?1494897218"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/shorten/shortener/shortener.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/views/js/base.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/misc/progress.js?v=7.53"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/views/js/ajax_view.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/google_analytics/googleanalytics.js?opzzu4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-24887994-1", {"cookieDomain":"auto"});ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/hide_submit/js/hide_submit.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/jquery.hoverIntent.minified.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/sftouchscreen.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/sfsmallscreen.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/supposition.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/superfish.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/libraries/superfish/supersubs.js?opzzu4"></script>
+<script type="text/javascript" src="https://www.campusvirtualsp.org/sites/all/modules/superfish/superfish.js?opzzu4"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"es\/","ajaxPageState":{"theme":"blogger_theme","theme_token":"RopTmwlfKNtp9K4zU5RpPDHOgw0Spqg6HH-mU1ryej8","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/autoupload\/js\/autoupload.js":1,"public:\/\/languages\/es_aJTgZ7w835Jm62iwxNPeRMcQtS7FKyoa9qqjpo9O0Ss.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox_video.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"sites\/all\/modules\/shorten\/shortener\/shortener.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/hide_submit\/js\/hide_submit.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/libraries\/superfish\/sfsmallscreen.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/modules\/superfish\/superfish.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/ldap\/ldap_user\/ldap_user.css":1,"modules\/aggregator\/aggregator.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/ldap\/ldap_servers\/ldap_servers.admin.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox.css":1,"sites\/all\/modules\/shorten\/shortener\/shortener.css":1,"modules\/locale\/locale.css":1,"sites\/all\/modules\/hide_submit\/css\/hide_submit.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/libraries\/superfish\/style\/ops.css":1,"sites\/all\/themes\/blogger_theme\/style.css":1,"sites\/all\/themes\/blogger_theme\/css\/responsive.css":1}},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":1,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":0,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":0,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":1,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":600,"iframe_border":0,"enable_video":1,"flvPlayer":"\/es\/sites\/all\/libraries\/mediaplayer\/player.swf","flvFlashvars":"autoplay=1\u0026amp;playerMode=normal"},"hide_submit":{"hide_submit_status":true,"hide_submit_method":"disable","hide_submit_css":"hide-submit-disable","hide_submit_abtext":"","hide_submit_atext":"","hide_submit_hide_css":"hide-submit-processing","hide_submit_hide_text":"Processing...","hide_submit_indicator_style":"expand-left","hide_submit_spinner_color":"#000","hide_submit_spinner_lines":12,"hide_submit_hide_fx":0,"hide_submit_reset_time":5000},"views":{"ajax_path":"\/es\/views\/ajax","ajaxViews":{"views_dom_id:c8123de6642f740cfe59148b1adda903":{"view_name":"ultimas_noticias","view_display_id":"block_1","view_args":"5","view_path":"node\/1","view_base_path":"taxonomy\/term\/%","view_dom_id":"c8123de6642f740cfe59148b1adda903","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"superfish":{"1":{"id":"1","sf":{"pathClass":"active-trail","animation":{"opacity":"show","height":"show"},"speed":"\u0027fast\u0027","autoArrows":true,"dropShadows":true,"disableHI":false},"plugins":{"touchscreen":{"mode":"window_width"},"smallscreen":{"mode":"window_width","addSelected":false,"menuClasses":false,"hyperlinkClasses":false,"title":"Mobile menu"},"supposition":true,"bgiframe":false,"supersubs":{"minWidth":"12","maxWidth":"27","extraWidth":1}}}},"urlIsAjaxTrusted":{"\/es\/bienvenidos?destination=node\/1":true}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]><script src="/sites/all/themes/blogger_theme/js/html5.js"></script><![endif]-->
+</head>
+<body class="html front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-1 i18n-es">
+    
+<div id="wrap" class="clr container">
+  <div id="header-wrap" class="clr">
+    <header id="header" class="site-header clr">
+      <div id="logo" class="clr">
+                <div class="site-img-logo clr"><a href="es.html" title="Inicio">
+          <img src="sites/default/files/header-campusvirtual-es_2.jpg" alt="Inicio" />
+        </a></div>              </div>
+    </header>
+      </div>
+ 
+<div id="main_menu"><div class="region region-main-menu">
+  <div id="block-superfish-1" class="block block-superfish">
+
+      
+  <div class="content">
+    <ul id="superfish-1" class="menu sf-menu sf-menu-mobile-menu sf-navbar sf-style-ops sf-total-items-8 sf-parent-items-0 sf-single-items-8"><li id="menu-9727-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-no-children"><a href="es.html" title="" class="sf-depth-1 active">Inicio</a></li><li id="menu-15558-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="https://www.campusvirtualsp.org/es/que-es-el-campus" class="sf-depth-1">¿Qué es el Campus?</a></li><li id="menu-9735-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="https://www.campusvirtualsp.org/es/aula-virtual" class="sf-depth-1">Aula Virtual</a></li><li id="menu-9736-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="https://www.campusvirtualsp.org/es/red-de-recursos-educacionales-abiertos-red-reaoer" class="sf-depth-1">Recursos Abiertos</a></li><li id="menu-15456-1" class="middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="https://www.campusvirtualsp.org/es/experiencias-virtuales-educativas" class="sf-depth-1">Experiencias Virtuales</a></li><li id="menu-9737-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="https://clinica.campusvirtualsp.org/" target="_blank" class="sf-depth-1">Clínica Virtual</a></li><li id="menu-15457-1" class="middle odd sf-item-7 sf-depth-1 sf-no-children"><a href="http://www.paho.org/hq/index.php?lang=es" target="_blank" class="sf-depth-1">OPS</a></li><li id="menu-15555-1" class="last even sf-item-8 sf-depth-1 sf-no-children"><a href="http://www.who.int/es/" target="_blank" class="sf-depth-1">OMS</a></li></ul>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+<div id="social"><div class="region region-social">
+  <div id="block-block-70" class="block block-block socialnetworks">
+
+      
+  <div class="content">
+    <p><a href="https://www.facebook.com/campusvirtualsp" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/facebook-new.png" /></a><a href="https://twitter.com/campusvirtualsp" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/twitter.png" style="margin-left: 2px; margin-right: 2px;" /></a><a href="https://www.youtube.com/pahopin" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/40x40_yt_white.png" style="margin-left: 2px; margin-right: 2px;" /></a><a href="https://www.flickr.com/photos/87642443@N05/" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/social_flickr.png" style="margin-left: 4px; margin-right: 4px;" /></a><a href="https://www.linkedin.com/company/pan-american-health-organization" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/linkedin.png" /></a><a href="https://www.campusvirtualsp.org/?q=rss.xml" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/rss.png" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-71" class="block block-block usermenu">
+
+        <h2 ><span>Menú de usuario</span></h2>
+    
+  <div class="content">
+    <p><a href="https://www.campusvirtualsp.org/?q=es/user/register">Crear cuenta</a> | <a href="https://www.campusvirtualsp.org/?q=es/user/password">Recuperar contraseña</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+<div id="user_menu"><div class="region region-user-menu">
+  <div id="block-user-login" class="block block-user">
+
+        <h2 ><span>Iniciar sesión</span></h2>
+    
+  <div class="content">
+    <form action="/es/bienvenidos?destination=node/1" method="post" id="user-login-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Nombre de usuario <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Contraseña <span class="form-required" title="Este campo es obligatorio.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first"><a href="https://www.campusvirtualsp.org/es/user/register" title="Crear una nueva cuenta de usuario.">Crear nueva cuenta</a></li>
+<li class="last"><a href="https://www.campusvirtualsp.org/es/user/password" title="Solicita una contraseña nueva por correo electrónico.">Solicitar una nueva contraseña</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-DoX-c1i5st4LMVvWsquOmhA4MW6tX5-QR4-caObgeXc" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Iniciar sesión" class="form-submit" /></div></div></form>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-locale-language" class="block block-locale">
+
+      
+  <div class="content">
+    <ul class="language-switcher-locale-url"><li class="es first active"><a href="es.html" class="language-link active" xml:lang="es">Español</a></li>
+<li class="en"><a href="https://www.campusvirtualsp.org/en" class="language-link" xml:lang="en">English</a></li>
+<li class="pt-br"><a href="https://www.campusvirtualsp.org/pt-br" class="language-link" xml:lang="pt-br">Português</a></li>
+<li class="fr last"><a href="https://www.campusvirtualsp.org/fr" class="language-link" xml:lang="fr">Français</a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>
+
+    <div id="preface-wrap" class="site-preface clr">
+    <div id="preface" class="clr">
+              <div id="preface-block-wrap" class="clr">
+          <div class="span_1_of_3 col col-1 preface-block ">
+            <div class="region region-preface-first">
+  <div id="block-block-76" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Estos cursos son de libre acceso, puede completarlos a su propio ritmo sin tiempos definidos y de manera autónoma." href="https://www.campusvirtualsp.org/?q=es/cursos/auto-aprendizaje"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-autoaprendizaje-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-82" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Cursos con tutoría actualmente en convocatoria, a los cuales puede postularse para participar." href="https://www.campusvirtualsp.org/?q=es/cursos/en-convocatoria"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-convocatoria-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </div>          <div class="span_1_of_3 col col-2 preface-block ">
+            <div class="region region-preface-middle">
+  <div id="block-block-77" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Cursos con tutoría que han iniciado sus actividades y cuya convocatoria ha finalizado." href="https://www.campusvirtualsp.org/?q=es/cursos/con-tutoria"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-tutoria-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-83" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Propuestas educativas de OPS/OMS que se encuentran en fase de diseño." href="https://www.campusvirtualsp.org/?q=es/cursos/proximos"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-proximos-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </div>          <div class="span_1_of_3 col col-3 preface-block ">
+            <div class="region region-preface-last">
+  <div id="block-block-78" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Son los cursos con tutoría que han finalizado. Puede acceder a los recursos de conocimiento (bibliografía, videos, guías, etc.)." href="https://www.campusvirtualsp.org/?q=es/cursos/abiertos"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-abiertos-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-84" class="block block-block">
+
+      
+  <div class="content">
+    <div>
+	<a data-tooltip="Contiene todos los contenidos que usted necesita para el fácil uso de los servicios que ofrece el CVSP de la OPS/OMS." href="https://ayuda.campusvirtualsp.org/?q=es"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/banner-ayuda-es.jpg" style="width: 100%" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </div>        </div>
+                </div>
+  </div>
+  
+
+  <div id="main" class="site-main clr">
+    <div id="primary" class="content-area clr">
+            <section id="content" role="main" class="site-content left-content clr">
+                        
+                        <div id="content_top"><div class="region region-content-top">
+  <div id="block-block-99" class="block block-block">
+
+      
+  <div class="content">
+    <div style="position: relative;&#9;padding-bottom: 56.25%; padding-top: 25px; height: 0; margin-bottom: 25px;">
+<iframe allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/2bJCjsYtqQw?autoplay=1&amp;autohide=1&amp;controls=0&amp;loop=1&amp;rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-91" class="block block-block">
+
+        <h2 ><span>Bienvenidos al Campus Virtual de Salud Pública de la OPS/OMS</span></h2>
+    
+  <div class="content">
+    <table style="width: 100%;"><tbody><tr><td style="text-align: center; padding: 5px;">
+				<a href="https://cursos.campusvirtualsp.org" target="_blank"><img src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/botones-aulas-regional.jpg" style="width: 80%;" /></a></td>
+<td style="text-align: center; padding: 5px;">
+				<a href="https://cursospaises.campusvirtualsp.org" target="_blank"><img src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/botones-aulas-paises.jpg" style="width: 80%;" /></a></td>
+<td style="text-align: center; padding: 5px;">
+				<a href="https://cursostaff.campusvirtualsp.org" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/botones-aulas-staff.jpg" style="width: 80%;" /></a></td>
+<td style="text-align: center; padding: 5px;">
+				<a href="https://mooc.campusvirtualsp.org" target="_blank"><img src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/botones-aulas-mooc.jpg" style="width: 80%;" /></a></td>
+</tr></tbody></table><div style="position:absolute;visibility:hidden;">
+<h1>
+		Campus Virtual de Salud Pública</h1>
+<p>	Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública. Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública. Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública. Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública. Red de cursos, recursos, actividades, información y gestión del conocimiento, para mejorar competencias de la fuerza de trabajo y prácticas de la salud pública.</p></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-87" class="block block-block">
+
+      
+  <div class="content">
+    <!-- Start WOWSlider.com --><div>
+<iframe marginheight="0" marginwidth="0" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/wowslider-es/wow%20slider.html" style="width:100%;max-width:100%;height:244.5px;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;"></iframe><!-- End WOWSlider.com --></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-103" class="block block-block">
+
+        <h2 ><span> </span></h2>
+    
+  <div class="content">
+    <p class="rtejustify"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/verify-img.png" style="float: left; margin-left: 5px; margin-right: 5px;" /><span style="font-size:16px;"><strong><span style="color: rgb(0, 128, 201);">¿Cómo usted puede verificar la validez de un certificado emitido por el Campus Virtual de Salud Pública?</span></strong></span></p>
+<p class="rteright"><strong><span style="font-size:16px;"><span style="color: rgb(255, 140, 0);">Haga clic para</span></span></strong><a href="https://www.campusvirtualsp.org/es/verificacion-del-certificado" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/verify-button.png" style="width: 170px; height: 43px; float: right; margin-right: 5px; margin-left: 5px; margin-top: -10px;" /></a></p>
+<p> </p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-86" class="block block-block">
+
+        <h2 ><span>Mantente informado a través de nuestros canales de noticias</span></h2>
+    
+  <div class="content">
+    <div style="float:left;width:100%;max-width:290px;">
+	<img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/b-noticias-regionales-es.jpg" style="width: 100%;" /></div>
+<div style="float:right;width:100%;max-width:290px;">
+	<img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/b-noticias-paises-es.jpg" style="width: 100%;" /></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-views-ultimas-noticias-block-1" class="block block-views noticias-izq">
+
+      
+  <div class="content">
+    <div class="view view-ultimas-noticias view-id-ultimas_noticias view-display-id-block_1 view-dom-id-c8123de6642f740cfe59148b1adda903">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.campusvirtualsp.org/es/el-cvsp-estuvo-presente-en-la-reunion-subregional-los-centros-de-formacion-de-recursos-humanos-y">El CVSP estuvo presente en la Reunión Subregional: &quot;Los Centros de Formación de Recursos Humanos y Gestión del Conocimiento en Políticas de Salud en Centroamérica y República Dominicana - su aporte a las políticas públicas hacia la Salud Universal&quot;</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.campusvirtualsp.org/es/la-formacion-de-recursos-humanos-en-salud-mental-en-el-cvsp">La formación de Recursos Humanos en Salud Mental en el CVSP</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="https://www.campusvirtualsp.org/es/x-encuentro-de-la-comision-tecnica-de-desarrollo-de-recursos-humanos-en-salud-de-centroamerica-y">X Encuentro de la Comisión Técnica de Desarrollo de Recursos Humanos en Salud de Centroamérica y República Dominicana: hacia el fortalecimiento de la calidad educativa y el trabajo intersectorial. San José, Costa Rica, 22 al 24 de marzo del 2017</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+      
+<div class="more-link">
+  <a href="https://www.campusvirtualsp.org/es/noticias/noticias-regionales">
+    Más  </a>
+</div>
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-aggregator-category-1" class="block block-aggregator noticias-der">
+
+      
+  <div class="content">
+    <div class="item-list"><ul><li class="first"><a href="https://argentina.campusvirtualsp.org/transformando-los-servicios-de-salud-hacia-redes-integradas-elementos-esenciales-para-fortalecer-un">Transformando los servicios de salud hacia redes integradas: elementos esenciales para fortalecer un modelo de atención hacia el acceso universal a servicios de calidad en la Argentina</a>
+</li>
+<li><a href="https://cuba.campusvirtualsp.org/12-de-mayo-dia-internacional-de-la-enfermeria-mensaje-del-ministro-de-salud-publica">12 de mayo: Día Internacional de la Enfermería. Mensaje del Ministro de Salud Pública</a>
+</li>
+<li class="last"><a href="https://cuba.campusvirtualsp.org/trabajadores-de-la-salud-condecorados-en-ocasion-del-1ro-de-mayo">Trabajadores de la salud condecorados en ocasión del 1ro de mayo</a>
+</li>
+</ul></div><div class="more-link"><a href="https://www.campusvirtualsp.org/es/aggregator/categories/1" title="Ver las noticias recientes de esta categoría.">Más</a></div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-85" class="block block-block facebook_izq">
+
+      
+  <div class="content">
+    <div>
+<iframe allowtransparency="true" frameborder="0" scrolling="no" src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcampusvirtualsp&amp;width&amp;height=590&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=true&amp;show_border=false&amp;appId=352347271577509" style="border:solid 1px #e8e8e8; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; overflow:hidden; height:600px; width:100%;"></iframe></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-69" class="block block-block twitter_der">
+
+      
+  <div class="content">
+    <p><a class="twitter-timeline" data-widget-id="542694540659146752" href="https://twitter.com/campusvirtualsp">Tweets por el @campusvirtualsp.</a> </p>
+<script>
+<!--//--><![CDATA[// ><!--
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+//--><!]]>
+</script>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+</div>		<div id="content-wrap">
+                                                                      <div class="region region-content">
+  <div class="view view-front view-id-front view-display-id-page view-dom-id-545784eeb108c47643a16ec3dfa6b27a">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div></div>
+ <!-- /.region -->
+        </div>
+		      </section>
+
+              <aside id="secondary" class="sidebar-container" role="complementary">
+         <div class="region region-sidebar-first">
+  <div id="block-block-73" class="block block-block">
+
+        <h2 ><span>Red de Nodos CVSP</span></h2>
+    
+  <div class="content">
+    <table style="width: 100%;"><tbody><tr><td class="rtecenter" style="width: 29px;">
+				<img alt="Nodo Regional" src="https://www.campusvirtualsp.org/sites/default/files/flags/regional.png" style="width: 20px; height: 16px;" title="Nodo Regional" /></td>
+<td>
+				<a href="index.html" target="_blank" title="Nodo Regional">Regional</a></td>
+<td class="rtecenter" style="width: 29px;">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo El Salvador" src="https://www.campusvirtualsp.org/sites/default/files/flags/els.png" style="width: 20px; height: 16px;" title="Nodo El Salvador" /></span></td>
+<td>
+				<a href="https://elsalvador.campusvirtualsp.org/" target="_blank" title="Nodo Ecuador">El Salvador</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;" width="22">
+				<img alt="Nodo Argentina" src="https://www.campusvirtualsp.org/sites/default/files/flags/arg.png" style="width: 20px; height: 16px;" title="Nodo Argentina" /></td>
+<td>
+				<a href="https://argentina.campusvirtualsp.org/" target="_blank" title="Nodo Argentina">Argentina</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo México" src="https://www.campusvirtualsp.org/sites/default/files/flags/mex.png" style="width: 20px; height: 16px;" title="Nodo México" /></span></td>
+<td>
+				<a href="https://mexico.campusvirtualsp.org/" target="_blank" title="Nodo México">México</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<img alt="Nodo Brasil" src="https://www.campusvirtualsp.org/sites/default/files/flags/bra.png" style="width: 20px; height: 16px;" title="Nodo Brasil" /></td>
+<td>
+				<a href="http://brasil.campusvirtualsp.org/" target="_blank" title="Nodo Brasil">Brasil</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Panamá" src="https://www.campusvirtualsp.org/sites/default/files/flags/pan.png" style="width: 20px; height: 16px;" title="Nodo Panamá" /></span></td>
+<td>
+				<a href="https://panama.campusvirtualsp.org/" target="_blank" title="Nodo Panamá">Panamá</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<img alt="Nodo Chile" src="https://www.campusvirtualsp.org/sites/default/files/flags/chi.png" style="width: 20px; height: 16px;" title="Nodo Chile" /></td>
+<td>
+				<a href="https://chile.campusvirtualsp.org/" target="_blank" title="Nodo Chile">Chile</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Paraguay" src="https://www.campusvirtualsp.org/sites/default/files/flags/par.png" style="width: 20px; height: 16px;" title="Nodo Paraguay" /></span></td>
+<td>
+				<a href="https://paraguay.campusvirtualsp.org/" target="_blank" title="Nodo Paraguay">Paraguay</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<img alt="Nodo Colombia" src="https://www.campusvirtualsp.org/sites/default/files/flags/col.png" style="width: 20px; height: 16px;" title="Nodo Colombia" /></td>
+<td>
+				<a href="https://colombia.campusvirtualsp.org/" target="_blank" title="Nodo Colombia">Colombia</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Perú" src="https://www.campusvirtualsp.org/sites/default/files/flags/per.png" style="width: 20px; height: 16px;" title="Nodo Perú" /></span></td>
+<td>
+				<a href="https://peru.campusvirtualsp.org/" target="_blank" title="Nodo Perú">Perú</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<img alt="Nodo Costa Rica" src="https://www.campusvirtualsp.org/sites/default/files/flags/cri.png" style="width: 20px; height: 16px;" title="Nodo Costa Rica" /></td>
+<td>
+				<a href="https://costarica.campusvirtualsp.org/" target="_blank" title="Nodo Costa Rica">Costa Rica</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Puerto Rico" src="https://www.campusvirtualsp.org/sites/default/files/flags/puertorico.png" style="width: 20px; height: 16px; " title="Nodo Puerto Rico" /></span></td>
+<td>
+				<a href="https://puertorico.campusvirtualsp.org/" target="_blank" title="Nodo Perú">Puerto Rico</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Cuba" src="https://www.campusvirtualsp.org/sites/default/files/flags/cub.png" style="width: 20px; height: 16px;" title="Nodo Cuba" /></span></td>
+<td>
+				<a href="https://cuba.campusvirtualsp.org/" target="_blank" title="Nodo Cuba">Cuba</a></td>
+<td class="rtecenter" style="width: 29px;">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo República Dominicana" src="https://www.campusvirtualsp.org/sites/default/files/flags/bandera-dominicana.png" style="width: 20px; height: 16px; " title="Nodo República Dominicana" /></span></td>
+<td>
+				<a href="https://dominicana.campusvirtualsp.org/" target="_blank" title="Nodo República Dominicana">Rep. Dominicana</a></td>
+</tr><tr><td class="rtecenter" style="width: 29px;">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Ecuador" src="https://www.campusvirtualsp.org/sites/default/files/flags/ecu.png" style="width: 20px; height: 16px;" title="Nodo Ecuador" /></span></td>
+<td>
+				<a href="https://ecuador.campusvirtualsp.org/" target="_blank" title="Nodo Ecuador">Ecuador</a></td>
+<td class="rtecenter" style="width: 29px;" width="22">
+				<span class="rtecenter" style="width: 29px;"><img alt="Nodo Uruguay" src="https://www.campusvirtualsp.org/sites/default/files/flags/uru.png" style="width: 20px; height: 16px;" title="Nodo Uruguay" /></span></td>
+<td>
+				<a href="https://uruguay.campusvirtualsp.org/" target="_blank" title="Nodo Uruguay">Uruguay</a></td>
+</tr></tbody></table>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-89" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="https://www.campusvirtualsp.org/es/red-de-recursos-educacionales-abiertos-red-reaoer"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/temas-prioritarios-rea-es.jpg" style="width: 100%;" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-92" class="block block-block">
+
+      
+  <div class="content">
+    <p class="rtecenter"><a href="http://www.paho.org/saluduniversal" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/universal-health-coverage-block-es.jpg" style="width: 110px; height: 103px;" /></a></p>
+<p class="rtecenter"><a href="http://www.paho.org/uhexchange/index.php/en/uhexchange-documents/informacion-tecnica/27-estrategia-para-el-acceso-universal-a-la-salud-y-la-cobertura-universal-de-salud/file" target="_blank">Descargar la Estrategía para el acceso universal a la salud y la cobertura universal en salud</a></p>
+<p class="rtecenter"><a href="https://youtu.be/bl5zrIXoK9Q" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/video-salud-universal.png" style="width: 200px; height: 112px;" /><br />
+	Ver video de Salud Universal</a></p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-105" class="block block-block">
+
+      
+  <div class="content">
+    <div class="rtecenter">
+	<a href="http://paltex.paho.org/" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/Paltex50_spaHR.jpg" style="width:60%;" /></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-106" class="block block-block">
+
+      
+  <div class="content">
+    <p class="rtecenter"><a href="http://bvsalud.org/es/" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/bvs-logo-es.png" style="width: 190px; height: 98px;" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-108" class="block block-block">
+
+      
+  <div class="content">
+    <p class="rtecenter"><a href="http://www.observatoriorh.org/" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/obsv-logo-home-es.png" style="width: 188px; height: 129px;" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+<div id="block-block-100" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://whoeducationguidelines.org/" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/whoeducationguidelines.jpg" style="width: 100%;" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+        </aside> 
+          </div>
+  </div>
+
+  
+  <footer id="footer-wrap" class="site-footer clr">
+        <div id="footer" class="clr">
+              <div id="footer-block-wrap" class="clr">
+          <div class="span_1_of_3 col col-1 footer-block ">
+            <div class="region region-footer-first">
+  <div id="block-block-88" class="block block-block">
+
+        <h2 ><span>OPS / OMS WEB SITE</span></h2>
+    
+  <div class="content">
+    <p><a href="http://www.paho.org/hq/index.php?lang=es" target="_blank"><img alt="" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/paho-web-es.png" style="width: 100%;" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </div>                    <div class="span_1_of_3 col col-3 footer-block ">
+            <div class="region region-footer-third">
+  <div id="block-block-75" class="block block-block qrcode">
+
+        <h2 ><span>CVSP Móvil</span></h2>
+    
+  <div class="content">
+    <p><img alt="Código QR - Campus Virtual de Salud Pública" src="https://www.campusvirtualsp.org/sites/default/files/webfiles/images/qr-code-new.png" style="float: left; margin-right: 15px; width: 116px; height: 116px;" title="Código QR - Campus Virtual de Salud Pública" /><span style="color:#ffffff;"><em>Escanee este Código QR desde su dispositivo móvil para acceder al CVSP versión móvil.</em></span></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </div>        </div>
+            
+              <div class="span_1_of_1 col col-1">
+          <div class="region region-footer">
+  <div id="block-block-5" class="block block-block">
+
+      
+  <div class="content">
+    <p><iframe frameborder="0" height="200" scrolling="no" seamless="" src="https://www.campusvirtualsp.org/footer-es.html" width="100%"></iframe></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+        </div>
+          </div>
+      </footer>
+
+</div>  </body>
+</html>

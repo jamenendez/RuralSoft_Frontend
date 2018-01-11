@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:esi="http://java.sun.com/JSP/Page" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Consejos para Usar PhET</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="../../css/phet-v61-min.css"/>
+
+    <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6fix-v3.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/css/ie7fix-v2.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8fix-v1.css"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script defer type="text/javascript" src="/js/pngfix.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie-v1.css"/>
+    <![endif]-->
+    <!-- class edu.colorado.phet.website.templates.StaticPage -->
+    <!-- host phet.colorado.edu -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-5033201-1"]);_gaq.push(["_setDomainName","phet.colorado.edu"]);_gaq.push(["_trackPageview"]);_gaq.push(["_trackPageLoadTime"]);var benchmarkTracker=null;
+        (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";a.onload=a.onreadystatechange=function(){var a=this.readyState;a&&"complete"!=a&&"loaded"!=a||(benchmarkTracker=_gat._getTracker("UA-5033201-1"),benchmarkTracker._setDomainName("phet.colorado.edu"))};var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+        (function(){(function(a,b,f,g,c,d,e){a.GoogleAnalyticsObject=c;a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[c].l=1*new Date;d=b.createElement(f);e=b.getElementsByTagName(f)[0];d.async=1;d.src=g;e.parentNode.insertBefore(d,e)})(window,document,"script","//www.google-analytics.com/analytics.js","hewlettOERTracker");hewlettOERTracker("create","UA-5033010-35","phet.colorado.edu");hewlettOERTracker("send","pageview")})();
+        (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="/js/phet-v36-min.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+        //]]>
+    </script>
+    
+    
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+        
+    
+        <meta property="og:site_name" content="PhET"/><meta property="twitter:site" content="@PhETsims"/><meta property="og:title" content="PhET Interactive Simulations"/><meta property="twitter:title" content="PhET Interactive Simulations"/><meta property="og:url" content="https://phet.colorado.edu/es/teaching-resources/tipsForUsingPhet"/><meta property="twitter:card" content="summary"/><meta property="og:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="twitter:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="og:description" content="Fundado en 2002 por el ganador del Premio Nobel Carl Wieman. El proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemáticas y ciencias. Las simulaciones de PhET se basan en <a {0}>investigación</a> educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo."/><meta property="twitter:description" content="Fundado en 2002 por el ganador del Premio Nobel Carl Wieman. El proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemáticas y ciencias. Las simulaciones de PhET se basan en <a {0}>investigación</a> educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo."/>
+    
+        <script type="text/javascript">var phetLocale = "es";var phetSimulationString = "{0} (simulación)";</script>
+    </head>
+<body dir="ltr" class="ltr" id="other-body">
+<div id="skipNav">
+    <a href="tipsForUsingPhet.html#main-content" accesskey="0" id="skipper" class="white-focus" tabindex="1">
+        Ir directo al contenido principal
+    </a>
+</div>
+
+
+
+
+
+<div id="page-header" class="ltr">
+    <div class="log-in-out" style="z-index: 1000;">
+      
+  <a class="phet-button sign-in-button white-focus" id="login-button" href="tipsForUsingPhet.html#">
+    Ingresar
+  </a>
+  <a class="phet-button register-button white-focus" href="https://phet.colorado.edu/es/register?dest=%2Fes%2Fteaching-resources%2FtipsForUsingPhet">
+    Registro
+  </a>
+
+
+
+<div id="login-form" style="display: none;">
+
+  <div class="login-form-header" id="button-sign-in">
+    Ingresar
+  </div>
+  <div class="login-form-header" style="display: none;" id="access-sign-in">
+    Por favor inicia sesión para acceder
+  </div>
+
+  <div id="login-validation-message" style="display: none">
+    Se ha ingresado un nombre de usuario y/o contraseña incorrecta.
+  </div>
+
+  <form id="id9" method="post" action="https://phet.colorado.edu/../?wicket:bookmarkablePage=:edu.colorado.phet.website.authentication.LoginFormHandlerPage"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id9_hf_0" id="id9_hf_0" /></div>
+
+    <input type="text" name="destination" id="destinationURL" style="display: none;" value=""><br/>
+    <input type="text" name="source" id="sourceURL" style="display: none;" value=""><br/>
+    <label class="bold-label" for="login-email-entry">
+      Dirección de correo electrónico:
+    </label><br/>
+    <input id="login-email-entry" type="text" name="username" class="login-form-text" value=""><br/>
+    <label class="bold-label" for="password">
+      Contraseña:
+    </label><br/>
+    <input type="password" name="password" id="password" class="login-form-text" value=""><br/>
+
+      <span>
+        <input id="sign-in-checkbox" type="checkbox" name="remember:remember-check" checked="checked">
+        <label for="sign-in-checkbox">Remember me</label>
+        <a class="no-underline opposite-float" href="../reset-password-request.html" id="remember-me">Forgot password?</a>
+      </span>
+
+    <br/>
+
+    <input type="submit" value="SIGN IN" class="phet-button login-form-submit"><br/>
+
+      <span>
+        ¿No tienes una cuenta? <a class="no-underline" href="../register-dest=%7C.html">Register</a>.
+      </span>
+
+      <span>
+        <a href="../resend-email-confirmation.html" class="no-underline opposite-float">
+          Enviar de nuevo el email de confirmación
+        </a>
+      </span>
+
+  </form>
+
+</div>
+    </div>
+
+    <div id="page-header-container">
+        <a href="../index.html" class="header-logo-image white-focus" tabindex="2">
+            <img src="../../images/phet-logo-tm.svg" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;" width="156" height="74" id="phet-logo-main-image"/>
+        </a>
+        <div id="page-header-cu">
+            <a tabindex="3" href="http://www.colorado.edu" target="_blank" class="white-focus" style="display: inline-block; color: white">
+              <img src="../../images/logos/cu-logo-grayscale.svg" alt="University of Colorado" width="195" height="40" style="border: none;"/>
+            </a>
+        </div>
+        <div id="page-header-search">
+    <form method="get" id="search-form" class="autocompleteOff" action="/es/search">
+        <div>
+            <label for="search-text-id" class="hidden">
+                Buscar en el sitio web de PhET
+            </label>
+            <div class="search-box">
+                <input type="text" size="15" name="q" class="always-enabled acInput orange-focus" id="search-text-id"/>
+            </div>
+            <button type="submit" form="search-form" id="search-submit" class="phet-button sign-in-button always-enabled autocompleteOff" title="Clic aquí para buscar en el sitio web de PhET">
+                <img id="magnifying-glass" src="../../images/icons/search-icon.png" alt="Buscar"/>
+            </button>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
+<div id="page-content" class="ltr">
+    
+  <div class="menu-page-content" style="width: 1120px;">
+    <div id="side-panel">
+      <div>
+    <div class="side-nav">
+        <div>
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/simulations/category/new" class="nml-link nav0" id="nav-location-nav-simulations">
+                        <span class="nml-link-label">Simulaciones</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../teaching-resources.html" class="nml-link nav0" id="nav-location-nav-teacherIdeas">
+                        <span class="nml-link-label selected teacher-ideas-item">Material para Profesores</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="tipsForUsingPhet.html" class="nml-link nav1" id="nav-location-nav-forTeachers-tipsForUsingPhet">
+                        <span class="nml-link-label selected teacher-ideas-item">Consejos de Uso de PhET</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="browse-activities.html" class="nml-link nav1" id="nav-location-nav-teacherIdeas-browse">
+                        <span class="nml-link-label teacher-ideas-item">Buscar Actividades</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../sign-in-dest=https-%7C%7Cphet.colorado.edu%7Ces%7Cteaching-resources%7Csubmit-activity.html" class="nml-link nav1" id="nav-location-nav-teacherIdeas-submit" onclick="phet.ensureLogin( '/es/teaching-resources/submit-activity' ); return false;">
+                        <span class="nml-link-label teacher-ideas-item">Comparte tus Actividades</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/teaching-resources/manage-activities" class="nml-link nav1" id="nav-location-nav-teacherIdeas-manage" onclick="phet.ensureLogin( '/es/teaching-resources/manage-activities' ); return false;">
+                        <span class="nml-link-label teacher-ideas-item">Mis Actividades</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/teaching-resources/workshops" class="nml-link nav1" id="nav-location-nav-workshops">
+                        <span class="nml-link-label teacher-ideas-item">Talleres</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../research.html" class="nml-link nav0" id="nav-location-nav-research">
+                        <span class="nml-link-label">Investigaciones</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/accessibility" class="nml-link nav0" id="nav-location-nav-accessibility">
+                        <span class="nml-link-label">Accessibility</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../donate.html" class="nml-link nav0" id="nav-location-nav-donate">
+                        <span class="nml-link-label">Donar</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li>
+        </ul>
+    
+</div>
+    </div>
+</div>
+    </div>
+    <div id="main-content" class="main-menu-content">
+      
+      
+    <div>
+        <h1 class="regular-page-title">Consejos de Uso de PhET</h1>
+        
+    <div>
+  <div>
+    <div class="teacher-ideas standard-content" dir="ltr">
+      <table width="880" border="0">
+        <tr>
+          <td width="539" valign="top" style="padding-right: 20px">
+            <p>Las simulaciones PhET son herramientas muy flexibles que se pueden usar de distintas maneras. Aquí encontrarás videos y recursos para aprender cómo integrar las simulaciones PhET en tu clase de manera efectiva.</p>
+            <h3>Una breve introducción a PhET  :</h3>
+
+            <p>Una descripción general de las simulaciones PhET</p>
+
+            <p><iframe width="520" height="293"
+                      src="https://www.youtube.com/embed/gKI-9Ksvgg4" frameborder="0"
+                      allowfullscreen></iframe></p>
+
+            <br/>
+
+            <h2>Consejos y Recursos para Enseñar con PhET</h2>
+
+            <ul>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/planningToUsePhet">Planeado usar PhET</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/usingPhetInLecture">Usando PhET en Clases Expositivas: Una Descripción General</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/lectureDemo">Demostraciones Interactivas</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/clickersDemo">Usando PhET con Sistemas de Votación (Clickers)</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/activities-design">Diseñando Actividades PhET para Primaria y Secundaria - K12</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/facilitatingActivities">Facilitando Actividades PhET para Primaria y Secundaria - K12</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/videoSeriesFacilitatingActivities">Serie de Videos: Facilitando Actividades PhET para Primaria y Secundaria - K12</a></li>
+              <li><a href="https://phet.colorado.edu/es/teaching-resources/virtualWorkshop">Toma un Taller Virtual de PhET</a></li>
+            </ul>
+
+            <h2>Guía para el uso de simulaciones específicas:</h2>
+
+            <ul>
+              <li><a href="browse-activities.html">Busca nuestras actividades propuestas para cada simulación</a></li>
+              <li>Encuentra en la página de cada simulación los "consejos para profesores" sobre el uso de simulaciones específicas (si aplica).</li>
+            </ul>
+          </td>
+          <td width="331" valign="top">
+            
+              <div class="righthandMenu-div">
+  <div
+      style="padding-left: 5px; padding-right: 20px; background-color: #F0F0F0; margin-left: 30px; border-radius: 15px;">
+    <table border="0" cellspacing="0" cellpadding="5">
+      <tr>
+        <td style="height:35px" colspan="3" align="center" valign="top">
+          <h2>***paraProfesores.tipsYRecursos***</h2>
+        </td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><span style="color: #d36a04; font-size: 14px"><a href="https://phet.colorado.edu/es/teaching-resources/planningToUsePhet"><img src="https://phet.colorado.edu/images/WhatisPhET.jpg" alt="" width="100" height="55"/></a></span></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/planningToUsePhet">Consejos para Usar PhET</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/usingPhetInLecture"><img src="https://phet.colorado.edu/images/UsingPhET.jpg" alt="" width="100" height="56"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/usingPhetInLecture">Using PhET in Lecture: An Overview</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/lectureDemo"><img src="https://phet.colorado.edu/images/experiment.jpg" alt="" width="100" height="55"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/lectureDemo">Demostraciones Interactivas</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><span style="color: #d36a04; font-size: 14px"><a href="https://phet.colorado.edu/es/teaching-resources/clickersDemo"><img src="https://phet.colorado.edu/images/PhETClickers.jpg" alt="" width="100" height="54"/></a></span></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/clickersDemo">Usando PhET con Sistemas de Votación (Clikers)</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/activities-design"><img src="https://phet.colorado.edu/images/activities.jpg" alt="" width="100" height="55"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/activities-design">Diseñando Actividades para Primaria-Secundaria (K12)</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/facilitatingActivities"><img src="https://phet.colorado.edu/images/facilitating-activities.png" alt="" width="100" height="55"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/facilitatingActivities">Facilitando Actividades para Primaria-Secundaria (K12)</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/videoSeriesFacilitatingActivities"><img src="https://phet.colorado.edu/images/facilitating-activities.png" alt="" width="100" height="55"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/videoSeriesFacilitatingActivities">Serie de Videos: Facilitando Actividades de PhET en Clases de Primaria-Secundaria (K12)</a></td>
+      </tr>
+      <tr>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/virtualWorkshop"><img src="https://phet.colorado.edu/images/workshop.jpg" alt="" width="100" height="55"/></a></td>
+        <td valign="top"><img src="https://phet.colorado.edu/images/Transparent.gif" alt="downarrow" width="1" height="1"/></td>
+        <td style="height:65px" valign="top"><a href="https://phet.colorado.edu/es/teaching-resources/virtualWorkshop">Toma un Taller Virtual de PhET</a></td>
+      </tr>
+    </table>
+  </div>
+</div>
+            
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+</div>
+
+        
+    </div>
+
+      
+    </div>
+  </div>
+  <div>
+  <div class="main-footer">
+    <div>
+  
+    <hr>
+    <div style="padding: 10px 0; display: inline-block" dir="ltr">
+      <span>
+        <a class="footer-link" href="http://www.facebook.com/pages/PhET-Interactive-Simulations/161503243888932?v=wall" rel="external nofollow" title="Dános un me gusta en Facebook" dir="ltr">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://twitter.com/PhETSims" rel="external nofollow" title="Síguenos en Twitter" dir="ltr">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="https://www.youtube.com/channel/UCMRZ0-ci4ifGBF1bJvrcDRQ" rel="external nofollow" title="Míranos en Youtube" dir="ltr">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://www.pinterest.com/PhETSims" rel="external nofollow" title="Síguenos en Pinterest" dir="ltr">
+          <i class="fa fa-pinterest-p"></i>
+        </a>
+      </span>
+    </div>
+    <hr>
+  
+</div>
+    <div id="footer-nav-links">
+      <div>
+        <a href="../about.html"><span>Acerca de PhET</span></a>
+        <a href="../about/team.html"><span>Nuestro Equipo</span></a>
+        <a href="../about/sponsors.html"><span>Patrocinadores</span></a>
+      </div>
+      <div>
+        <a href="https://phet.colorado.edu/es/offline-access"><span>Offline Access</span></a>
+        <a href="../help-center/getting-started.html"><span>Centro de Ayuda</span></a>
+        <a href="../about/contact.html"><span>Contacto</span></a>
+      </div>
+      <div>
+        <a href="https://phet.colorado.edu/es/about/source-code"><span>Código Fuente</span></a>
+        <a href="https://phet.colorado.edu/es/licensing"><span>Licencias</span></a>
+        <a href="https://phet.colorado.edu/es/for-translators"><span>Para Traductores</span></a>
+      </div>
+      
+    </div>
+    <div class="other-languages">
+      <div class="translation-links">
+    <span class="globe"><i class="fa fa-globe"></i></span>
+    <select onchange="if (this.value) window.location.href=this.value" name="footer:translation-links:translation-links">
+<option value="https://phet.colorado.edu/in/teaching-resources/tipsForUsingPhet">Bahasa Indonesia</option>
+<option value="https://phet.colorado.edu/eu/teaching-resources/tipsForUsingPhet">Basque</option>
+<option value="https://phet.colorado.edu/bs/teaching-resources/tipsForUsingPhet">Bosnian</option>
+<option value="https://phet.colorado.edu/cs/teaching-resources/tipsForUsingPhet">čeština</option>
+<option value="https://phet.colorado.edu/da/teaching-resources/tipsForUsingPhet">Dansk</option>
+<option value="https://phet.colorado.edu/de/teaching-resources/tipsForUsingPhet">Deutsch</option>
+<option value="https://phet.colorado.edu/et/teaching-resources/tipsForUsingPhet">Eesti</option>
+<option value="https://phet.colorado.edu/en/teaching-resources/tipsForUsingPhet">English</option>
+<option selected="selected" value="https://phet.colorado.edu/es/teaching-resources/tipsForUsingPhet">español</option>
+<option value="https://phet.colorado.edu/es_PE/teaching-resources/tipsForUsingPhet">español (Perú)</option>
+<option value="https://phet.colorado.edu/fr/teaching-resources/tipsForUsingPhet">français</option>
+<option value="https://phet.colorado.edu/gl/teaching-resources/tipsForUsingPhet">Gallegan</option>
+<option value="https://phet.colorado.edu/ka/teaching-resources/tipsForUsingPhet">Georgian</option>
+<option value="https://phet.colorado.edu/it/teaching-resources/tipsForUsingPhet">italiano</option>
+<option value="https://phet.colorado.edu/ku/teaching-resources/tipsForUsingPhet">Kurdish</option>
+<option value="https://phet.colorado.edu/ku_TR/teaching-resources/tipsForUsingPhet">Kurdish (Turkey)</option>
+<option value="https://phet.colorado.edu/hu/teaching-resources/tipsForUsingPhet">magyar</option>
+<option value="https://phet.colorado.edu/mr/teaching-resources/tipsForUsingPhet">Marathi</option>
+<option value="https://phet.colorado.edu/nl/teaching-resources/tipsForUsingPhet">Nederlands</option>
+<option value="https://phet.colorado.edu/nb/teaching-resources/tipsForUsingPhet">Norwegian Bokmål</option>
+<option value="https://phet.colorado.edu/nn/teaching-resources/tipsForUsingPhet">Norwegian Nynorsk</option>
+<option value="https://phet.colorado.edu/fa/teaching-resources/tipsForUsingPhet">Persian</option>
+<option value="https://phet.colorado.edu/pt/teaching-resources/tipsForUsingPhet">português</option>
+<option value="https://phet.colorado.edu/pt_BR/teaching-resources/tipsForUsingPhet">português (Brasil)</option>
+<option value="https://phet.colorado.edu/ro/teaching-resources/tipsForUsingPhet">română</option>
+<option value="https://phet.colorado.edu/si/teaching-resources/tipsForUsingPhet">Sinhalese</option>
+<option value="https://phet.colorado.edu/sk/teaching-resources/tipsForUsingPhet">Slovenčina</option>
+<option value="https://phet.colorado.edu/fi/teaching-resources/tipsForUsingPhet">suomi</option>
+<option value="https://phet.colorado.edu/vi/teaching-resources/tipsForUsingPhet">Tiếng Việt</option>
+<option value="https://phet.colorado.edu/tr/teaching-resources/tipsForUsingPhet">Türkçe</option>
+<option value="https://phet.colorado.edu/el/teaching-resources/tipsForUsingPhet">Ελληνικά</option>
+<option value="https://phet.colorado.edu/sr/teaching-resources/tipsForUsingPhet">Српски</option>
+<option value="https://phet.colorado.edu/be/teaching-resources/tipsForUsingPhet">беларускі</option>
+<option value="https://phet.colorado.edu/mk/teaching-resources/tipsForUsingPhet">македонски</option>
+<option value="https://phet.colorado.edu/uk/teaching-resources/tipsForUsingPhet">українська</option>
+<option value="https://phet.colorado.edu/ar_SA/teaching-resources/tipsForUsingPhet">العربية (السعودية)</option>
+<option value="https://phet.colorado.edu/th/teaching-resources/tipsForUsingPhet">ไทย</option>
+<option value="https://phet.colorado.edu/zh_CN/teaching-resources/tipsForUsingPhet">中文 (中国)</option>
+<option value="https://phet.colorado.edu/zh_TW/teaching-resources/tipsForUsingPhet">中文 (台灣)</option>
+<option value="https://phet.colorado.edu/ja/teaching-resources/tipsForUsingPhet">日本語</option>
+<option value="https://phet.colorado.edu/ko/teaching-resources/tipsForUsingPhet">한국어</option>
+</select>
+    <span style="display: none">
+        <a href="https://phet.colorado.edu/en/teaching-resources/tipsForUsingPhet"><span>English</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ar_SA/teaching-resources/tipsForUsingPhet"><span>العربية</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/eu/teaching-resources/tipsForUsingPhet"><span>Euskara</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/be/teaching-resources/tipsForUsingPhet"><span>Беларуская</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/bs/teaching-resources/tipsForUsingPhet"><span>Bosanski</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/zh_CN/teaching-resources/tipsForUsingPhet"><span>简体中文</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/zh_TW/teaching-resources/tipsForUsingPhet"><span>正體中文</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/cs/teaching-resources/tipsForUsingPhet"><span>Česky</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/da/teaching-resources/tipsForUsingPhet"><span>Dansk</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nl/teaching-resources/tipsForUsingPhet"><span>Nederlands</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/et/teaching-resources/tipsForUsingPhet"><span>Eesti</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fi/teaching-resources/tipsForUsingPhet"><span>Suomi</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fr/teaching-resources/tipsForUsingPhet"><span>Français</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/gl/teaching-resources/tipsForUsingPhet"><span>Galego</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ka/teaching-resources/tipsForUsingPhet"><span>ქართული</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/de/teaching-resources/tipsForUsingPhet"><span>Deutsch</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/el/teaching-resources/tipsForUsingPhet"><span>Ελληνικά</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/hu/teaching-resources/tipsForUsingPhet"><span>Magyar</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/in/teaching-resources/tipsForUsingPhet"><span>Bahasa Indonesia</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/it/teaching-resources/tipsForUsingPhet"><span>Italiano</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ja/teaching-resources/tipsForUsingPhet"><span>日本語</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ko/teaching-resources/tipsForUsingPhet"><span>한국어</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ku/teaching-resources/tipsForUsingPhet"><span>كوردي</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ku_TR/teaching-resources/tipsForUsingPhet"><span>Kurdî</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/mk/teaching-resources/tipsForUsingPhet"><span>Македонски</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/mr/teaching-resources/tipsForUsingPhet"><span>मराठी</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nb/teaching-resources/tipsForUsingPhet"><span>Norsk bokmål</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nn/teaching-resources/tipsForUsingPhet"><span>Norsk nynorsk</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fa/teaching-resources/tipsForUsingPhet"><span>فارسی</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/pt/teaching-resources/tipsForUsingPhet"><span>Português</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/pt_BR/teaching-resources/tipsForUsingPhet"><span>Português do Brasil</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ro/teaching-resources/tipsForUsingPhet"><span>Română</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/sr/teaching-resources/tipsForUsingPhet"><span>Српски</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/si/teaching-resources/tipsForUsingPhet"><span>සිංහල</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/sk/teaching-resources/tipsForUsingPhet"><span>Slovensky</span></a>
+    </span><span style="display: none">
+        <a href="tipsForUsingPhet.html"><span class="current-locale">Español</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/es_PE/teaching-resources/tipsForUsingPhet"><span>Español Internacional</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/th/teaching-resources/tipsForUsingPhet"><span>ไทย</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/tr/teaching-resources/tipsForUsingPhet"><span>Türkçe</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/uk/teaching-resources/tipsForUsingPhet"><span>Українська</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/vi/teaching-resources/tipsForUsingPhet"><span>Tiếng Việt</span></a>
+    </span>
+</div>
+      <div class="translation-credits">Traducido al idioma español por <a href="https://co.linkedin.com/in/adrianachisco">Adriana Chisco</a> <br/>Traductora - Profesional en Lenguas Modernas<br/>E-mail: <a href="mailto:achisco94@gmail.com">achisco94@gmail.com</a> <br/>Bogotá, Colombia<br/>y <a href="https://www.linkedin.com/in/dianalt/">Diana López</a><br/>Investigadora en Física Educativa <br/>E-mail: <a href="https://phet.colorado.edu/es/teaching-resources/diana@cicata.edu.mx">diana@cicata.edu.mx</a><br/>Ciudad de México, México<br/><strong>Más información:</strong> <a href="mailto:phethelp@colorado.edu">phethelp@colorado.edu</a></div>
+    </div>
+
+
+  </div>
+  <div class="footer-highlight-background">
+    <div class="footer-bottom">
+      <div class="left">
+        <table>
+          <tr>
+            <td class="sponsor">
+              <a href="http://www.hewlett.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/Hewlett_logo_footer_vv.png"
+                     alt="Hewlett Foundation" width="100" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.nsf.gov/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/NSF_logo_footer-01.png"
+                     alt="National Science Foundation" width="56" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.newschools.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/newschools_logo.png"
+                     alt="New Schools" width="131" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.moore.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/Moore_Foundation_logo_footer-01.png"
+                     alt="Moore Foundation" width="100" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right">
+        <div id="PhET-logo">
+          <a href="../index.html">
+            <img src="https://phet.colorado.edu/images/phet-logo-tm-bw.png" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;"
+                 width="90" id="phet-logo-main-image">
+          </a>
+        </div>
+        <div class="copyright">
+          <a href="https://phet.colorado.edu/es/licensing">
+            <span>&copy;<span>2017 University of Colorado. </span></span>
+            <br />
+            Algunos derechos reservados.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
+

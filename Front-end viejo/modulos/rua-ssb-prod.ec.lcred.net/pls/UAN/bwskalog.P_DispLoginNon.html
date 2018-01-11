@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="../../css/all/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="../../css/web_defaultprint.css" TYPE="text/css" media="print">
+<TITLE>Solicitud de admisión</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Sus cambios ya se enviaron.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="bwskalog.P_DispLoginNon.html#main_content" onMouseover="window.status='Ir a Contenido Principal'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Ir a Contenido Principal'; return true" onBlur="window.status=''; return true" class="skiplinks">Ir a Contenido Principal</A>
+<H1>Sistema Integral Universitario</H1></DIV><DIV class="headerlinksdiv">
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="Esta tabla muestra Elementos de Menú y cuadro de texto de Búsqueda de Banner."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+&nbsp;
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext">
+<SPAN class="pageheaderlinks">
+<A HREF="../../wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">AYUDA</A>
+|
+<A HREF="bwskalog.p_displogoutnon.html" accesskey="3" class="submenulinktext2">SALIR</A>
+</span>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="Esta tabla muestra el título y encabezado estático."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>Solicitud de admisión</H2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext">
+<DIV class="staticheaders">
+Institución actual es UAN
+</div>
+</TD>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="../../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="Esta tabla contiene información que puede ser útil para entender el contenido y funcionalidad de esta página. Puede ser un breve conjunto de instrucciones, una descripción de mensajes de error, u otra info especial."><TR><TD CLASS="indefault"><IMG SRC="../../wtlgifs/web_info.gif" CLASS="headerImg" TITLE=""  NAME="web_info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=28 WIDTH=30></TD><TD CLASS="indefault"><SPAN class="infotext"> Si ya cuentas con tu ID de Acceso y NIP ingresa a la solicitud, de lo contrario da click en "Creación de cuenta de usuario por primera vez".</SPAN></TD></TR></TABLE><P></DIV>
+<FORM ACTION="/pls/UAN/bwskalog.P_ProcLoginNon" METHOD="post">
+<INPUT TYPE="hidden" NAME="newid" VALUE="">
+<INPUT TYPE="hidden" NAME="newpin" VALUE="">
+<INPUT TYPE="hidden" NAME="verifypin" VALUE="">
+
+<TABLE  CLASS="dataentrytable" SUMMARY= 'Esta tabla contiene el nombre de Acceso <ABBR title="Identificador">ID</ABBR> y <ACRONYM title="Núm de Identificación Personal">NIP</ACRONYM> ingresado por usuario no nuevo.'>
+<TR>
+<TD CLASS="delabel" scope="row" abbr="Identificador"><LABEL for=login_id><SPAN class="fieldlabeltext">Acceso <ABBR title="Identificador">ID</ABBR>:</SPAN></LABEL></TD>
+<TD CLASS="dedefault"><INPUT TYPE="text" NAME="in_id" SIZE="10" MAXLENGTH="9" ID="login_id"></TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" abbr='<ACRONYM title="Núm de Identificación Personal">NIP</ACRONYM>'><LABEL for=pin_id><SPAN class="fieldlabeltext"><ACRONYM title="Núm de Identificación Personal">NIP</ACRONYM>:</SPAN></LABEL></TD>
+<TD CLASS="dedefault">
+<INPUT TYPE="password" NAME="pin" SIZE="6" MAXLENGTH="6" ID="pin_id">
+</TD>
+</TR>
+</TABLE>
+<BR>
+<INPUT TYPE="submit" NAME="submit_btn" VALUE="Acceso">
+<BR>
+</FORM>
+<A HREF="bwskalog.p_disploginnew-in_id=&amp;cpbl=&amp;newid=.html" onMouseOver="window.status='Creación de cuenta de usuario por primera vez';  return true" onFocus="window.status='Creación de cuenta de usuario por primera vez';  return true" onMouseOut="window.status='';  return true"onBlur="window.status='';  return true">Creación de cuenta de usuario por primera vez</A>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="Esta tabla muestra separador de línea al final de la página."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="../../wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+<A HREF="bwskalog.P_DispLoginNon.html#top" onMouseover="window.status='Ir a inicio de página'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Ir a inicio de página'; return true" onBlur="window.status=''; return true" class="skiplinks">Ir a inicio de página</A>
+<A HREF="twbkwbis.P_GenMenu-name=homepage.html" onMouseOver="window.status='Regresar a Página Principal';  return true" onMouseOut="window.status='';  return true"onFocus="window.status='Regresar a Página Principal';  return true" onBlur="window.status='';  return true">Regresar a Página Principal</A>
+<p>&nbsp;
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Versión: 8.5.1</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+</BODY>
+</HTML>

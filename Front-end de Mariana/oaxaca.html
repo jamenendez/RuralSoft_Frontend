@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gobierno de Oaxaca</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+
+    .video
+    {
+      display: none;
+    }
+
+    .login
+    {
+      display: none;
+    }
+
+
+
+
+
+    .video img
+    {
+          width: 63px;
+          height: 23px;
+          vertical-align: bottom;
+          float: right;
+          margin-right: 10px;
+          
+    }
+
+    .login img
+    {
+        width: 63px;
+        height: 23px;
+        vertical-align: bottom;
+        float: right;
+        
+    }
+
+    .container_burger {
+     display: none;
+     cursor: pointer;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: white !important;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .bar1_2, .bar2_2, .bar3_2 {
+        width: 22px;
+        height: 2px;
+        background-color: #828282 !important;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+
+
+    #mySidenav2::-webkit-scrollbar-track
+    {
+      -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+      background-color: #F5F5F5;
+    }
+
+    #mySidenav2::-webkit-scrollbar
+    {
+      width: 6px;
+      background-color: #F5F5F5;
+    }
+
+    #mySidenav2::-webkit-scrollbar-thumb
+    {
+      background-color: gray;
+    }
+
+    .scrollbar
+    {
+
+        float: left;
+        
+        overflow-y: scroll;
+    
+    }
+
+    body {
+      margin: 0; padding: 0;
+    }
+
+    .logo {
+      margin: 0;
+      padding-bottom: 0px;
+      padding-top: -20px;
+    }
+
+    .sidenav {
+      height: inherit;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s8
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidenav a:hover,
+    .offcanvas a:focus {
+      color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 20px;
+      margin-left: 50px;
+    }
+
+    #main {
+      transition: margin-left .5s;
+      padding: 0;
+      margin-top: 0;
+      background: #fff none repeat;
+      position: relative;
+      z-index: 10;
+      height: 90%;
+    }
+
+    @media screen and (min-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+      .sidenav a {
+        font-size: 18px;
+      }
+
+      .video
+      {
+        display: inline;
+      }
+
+      .login
+      {
+        display: inline;
+      }
+
+
+
+      .inner-content
+      {
+            height: 210px !important; 
+      }
+
+      .single-content, .big-content
+      {
+        padding-top: 20px !important;
+        min-height: 229px !important;
+      }
+
+       #header_title a:first-child{
+        width: 16% !important;
+        float: left !important;
+      }
+
+      .breadcrumb {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      
+
+    }
+
+    @media screen and (max-width: 744px) {
+      
+     
+     
+
+      .escritorio
+      {
+        display: none;
+      } 
+
+      .video
+      {
+        display: none;
+      }
+
+      .login
+      {
+        display: none;
+      }
+
+
+      #mmenu
+      {
+        /*display: block !important;*/
+        margin-top: 9px !important;
+
+      }
+
+      .container_burger
+      {
+        display: inline-block !important; 
+        margin-top: 17px;
+      }
+
+      .titulo_principal
+      {
+        width: 80% !important;
+
+      }
+
+    }
+
+    .content-area {
+      margin-top: 0px;
+    }
+
+    .content {
+      margin-top: 100px;
+    }
+
+    .content-area {
+      align-items: center;
+      align-content: center;
+    }
+
+    #header_title {
+      font-size: 20px;
+      /*margin-top: 200x;*/
+    }
+
+    .mycontainer{
+      background: #fff none repeat;
+    }
+
+    .single-content, .big-content {
+      background: #ebe9e9 none repeat;
+       margin: 0;
+      padding-top: 40px;
+      min-height: 290px;
+    }
+
+    /*.inner-content {
+      min-height: 310px;
+    }*/
+    .myframe{
+      margin-top: 120px;
+    }
+
+    .closebtn{
+      position: relative;
+      left: 24px;
+      /*left: 170px;*/
+      /*z-index: 999;*/
+      font-size:30px;
+    }
+
+    #mySidenav{
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+  <!-- Menu -->
+  <div  id="mySidenav" >
+    <nav id="mySidenav2" style="height: 100%;" class="col-1 scrollbar">
+
+    <div  style="text-align: right;margin-right: 33px;margin-top: 16px;">
+      <a href="javascript:void(0)" class="closebtn" style="" onclick="closeNav()">
+          <div style="display: inline;font-size: 21px;vertical-align: text-top; color: #828282;">Cerrar</div>
+          <div class="container_burger"> 
+            <div class="bar1_2"> </div> 
+            <div class="bar2_2"> </div> 
+            <div class="bar3_2"></div>  
+          </div>  
+        </a>
+      </div>
+
+      <div class="logo">
+        <img src="assets/img/oaxaca.jpg" alt="image">
+      </div>
+      <ul class="sidebar-menu">
+        <li id="gobierno_btn" class="color-1 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-home"></i>GOBIERNO</a></li>
+        <li id="educacion_btn" class="color-2 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-book"></i>EDUCACIÓN</a></li>
+        <li id="salud_btn" class="color-3 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-medkit"></i>SALUD</a></li>
+        <li id="economia_btn" class="color-4 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-money"></i>ECONOMIA</a></li>
+        <li id="cultura_btn" class="color-5 button"><a style="color:black" onclick="closeNav()"><i class="fa fa-music"></i>CULTURA</a></li>
+      </ul>
+      <div class="sidebar-text">
+        <p class="movil_opciones">
+          <a href="#"><img style="width: 80px;margin-left: 35px;" src="assets/img/botonvideo.jpg"></a></p>
+        <br>
+        <p class="movil_opciones">
+          <a href="#"><img style="width: 80px;margin-left: 35px;" src="assets/img/botonlogin.jpg"></a></p>
+        <br>
+        <p>Gobierno del Estado de Oaxaca</p>
+        <br>
+        <p>Derechos Reservados &copy; 2017</p>
+
+        <br>
+        <br>
+
+      </div>
+    </nav>
+  </div>
+
+  <div id="main">
+      <!-- Header -->
+      <header id="headers">
+        <div class="breadcrumb">
+          <span><a id="header_title"> &nbsp; GOBIERNO</a></span>
+        </div>
+      </header>
+
+      <div class="mycontainer img-responsive" style="background-color:#ebe9e9">
+
+        <!-- Contenido de Gobierno -->
+        <main id="gobierno" class="content-area">
+          <!-- <div class="myframemask"> -->
+
+              <iframe width="100%" class="myframe" id="qrooframe" src="http://www.oaxaca.gob.mx/gobernador/" frameborder="0"></iframe>
+              <script type="text/javascript">
+                
+              </script>
+          <!-- </div> -->
+        </main>
+        <!-- Fin de Contenido de Gobierno -->
+
+               <!-- Contenido de Educación -->
+        <main id="educacion" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/wikiii.gif" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>WIKIPEDIA</h3><br>
+                      <p>Enciclopedia <br>Gratuita</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://es.khanacademy.org/" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/khan.jpeg" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>KHAN ACADEMY</h3><br>
+                      <p>Cursos Educativos <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://recursos.aprende.edu.mx/#/" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/aprende.jpg" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>@prende</h3><br>
+                      <p>Educación de la SEP
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://educalab.es/home" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/educalab1.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>educaLAB</h3><br>
+                      <p>Cursos Educativos
+                         General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://www.paismaravillas.mx/" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/conabio.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>CONABIO</h3><br>
+                      <p>Enciclopedia <br>Geográfica</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://phet.colorado.edu/en/simulations/category/new" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/phet.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>PHET</h3><br>
+                      <p>Aprendizaje Didáctico
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://www.aplicaciones.info/" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/aplicadidac.gif" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>Aplicaciones Didácticas Variadas</h3><br>
+                      <p>Enciclopedia Gratuira </p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://dev.worldpossible.org/mods/es-ebooks/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/ebooks.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>eBOOKS</h3><br>
+                      <p>Libros Electrónicos
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://dev.worldpossible.org/mods/es-blockly-games/blockly-games/es/index.html" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/blocky.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>Blockly Games</h3><br>
+                      <p>Aprender a
+                        <br>Programar</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://moodle.org/?lang=es" target="_blank">
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/moodle.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>MOODLE</h3><br>
+                      <p>Portal para
+                        <br>Profesores</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            
+          </div>
+        </main>
+        <!-- Fin de Contenido de Educación -->
+
+        <!-- Contenido de Salud -->
+        <main id="salud" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="http://dev.worldpossible.org/mods/es-medline_plus/spanish/index.html" target="_blank">
+              
+               <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/mediline.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>MEDLINE PLUS</h3><br>
+                      <p>Información <br>de Salud</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://www.who.int/es/" target="_blank">
+              
+               <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/orgmundialsalud.jpg" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>OMS </h3><br>
+                      <p>Enciclopedia <br> de la Salud</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="http://www.paho.org/hq/?lang=es" target="_blank">
+              
+               <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/orgpanasalud.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>OPS</h3><br>
+                      <p>Enciclopedia 
+                      <br>de Salud</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.misalud.com.mx/" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/misalud.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>MI SALUD</h3><br>
+                      <p>Portal de Salud
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://bvsalud.org/es/" target="_blank">
+              
+               <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/bibliovirtual.jpg" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>BIBLIOTECA <br>VIRTUAL EN SALUD</h3>
+                      <p>Enciclopedia Gratuita</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a href="">ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+        <!-- Fin de Contenido de Salud -->
+
+        <!-- Contenido de Economia -->
+        <main id="economia" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="https://capacitateparaelempleo.org/" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/capaci.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>CAPACÍTATE PARA <br> EL EMPLEO</h3>
+                      <p>Tutoriales de<br>Empleos</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a>PROXIMAMENTE</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="www.gob.mx/index.html" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/gob.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>GOBIERNO</h3><br>
+                      <p>Trámites de Gobierno
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a>ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </main>
+        <!-- Fin de Contenido de Economía -->
+
+        <!-- Contenido de Cultura -->
+        <main id="cultura" class="content-area" style="width: 98%; margin: 0 auto; ">
+          <div class="content">
+            <a href="http://dev.worldpossible.org/mods/es-bibliofilo/" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/bibliof.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>Bibliofilo</h3><br>
+                      <p>Biblioteca Filosófica
+                        <br>Política</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a>ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://dev.worldpossible.org/mods/es-GCF2015/index.html" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/gcf.jpg" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>Aprende Libre</h3><br>
+                      <p>Conocimiento y Cultura
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a>ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="http://dev.worldpossible.org/mods/es-soluciones/index.html" target="_blank">
+              
+              <div class="single-content">
+                <div class="inner-content" style="height: 190px;background-color:white;"  >
+                  <div class="content-info">
+                    <div style="float: left;width: 50%;padding: 14px;height: auto;margin-top: 8px;"><img src="assets/img/soluc.png" style="width:100%; height:100%;" alt="image"></div>
+                    <div class="content-text" style="float: right;width: 50%;padding:14px;text-align: left;">
+                      <h3>Aprende Libre</h3><br>
+                      <p>Conocimiento y Cultura
+                        <br>General</p>
+                      <br>
+                      <div class="content-link" style="text-align: center;">
+                      <a>ENTRAR</a>
+                    </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </main>
+        <!-- Fin de Contenido de Cultura -->
+      </div>
+  </div>
+
+  <!-- Script -->
+  <script src="assets/js/jquery-1.11.3.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/index_conecta.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $('.myframe').height($(document).height()-0);
+      $('.mycontainer').height($('#main').height() + 400);
+      $(window).resize(function() {
+        $('.myframe').height($(document).height()-0);
+        $('.mycontainer').height($('#main').height() + 400);
+      });
+    })
+
+    if ($(window).width() >= 768) {
+      openNav();
+      $(".closebtn").hide();
+    }
+    else {
+      closeNav();
+      $(".closebtn").show();
+    }
+
+    function openNav() {
+      if ($(window).width() < 768) {
+        document.body.style.backgroundColor = "rgba(0,0,0,0.2)";
+        $("#header_title").fadeOut();
+        $(".mycontainer").fadeOut();
+      }
+      $("#mySidenav").fadeIn();
+      document.getElementById("mySidenav").style.width = "280px";
+      document.getElementById("main").style.marginLeft = "280px";
+      document.getElementById("mySidenav").style.display = "block";
+    }
+
+    function closeNav() {
+      document.body.style.backgroundColor = "#fff";
+      if ($(window).width() < 768) {
+        $("#mySidenav").fadeOut();
+        document.getElementById("main").style.marginLeft = "0";
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      $(".mycontainer").fadeIn();
+      $("#header_title").fadeIn();
+    }
+
+    $('#gobierno_btn').on('click', function () {
+      // var iframe = document.getElementById(qrooframe).src(index.html);
+      document.getElementById('qrooframe').src = "http://www.oaxaca.gob.mx/gobernador/"
+      // iframe.src = "www.quintanaroo.gob.mx/index.html";
+      // loaction.reload();
+      // javascript:history.go(0);
+    });
+
+    $(function() {
+      var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+      if(!isMobile) {
+          $(".movil_opciones").css("display", "none");
+      }
+      else
+      {
+        $(".movil_opciones").css("display", "inline");
+      }
+  });
+
+
+  </script>
+</body>

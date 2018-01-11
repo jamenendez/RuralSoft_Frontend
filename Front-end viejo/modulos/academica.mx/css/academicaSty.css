@@ -1,0 +1,844 @@
+/*Font style*/
+
+@font-face {
+    font-family: 'Colaborate';
+    src: url('../fonts/ColabReg-webfont.eot');
+    src: url('../fonts/ColabReg-webfont-.eot#iefix') format('embedded-opentype'),
+    url('../fonts/ColabReg-webfont.woff') format('woff'),
+    url('../fonts/ColabReg-webfont.ttf') format('truetype'),
+    url('../fonts/ColabReg-webfont.svg#colaborate-regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*General styles*/
+body {
+    background: #f7f7f7;
+    /*font-size: 16px;*/
+    /*font-family: Tahoma, Geneva, sans-serif;*/
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+    color:#4a70a8;
+}
+
+/*a:visited{color:#1c9cd6;}*/
+
+h1 {
+    font-family: 'Helvetica;', Verdana, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #123d5b;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+h4 {
+    font-weight: normal;
+    color: #374651;
+}
+
+
+#acaMainHeader {
+    background: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 39px;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(28, 156, 214, .20);
+    position: fixed;
+    font-family: 'Colaborate', Tahoma, Geneva, sans-serif;
+    font-size: 1em;
+    z-index: 999;
+}
+
+#acaMainHeader nav a:hover {
+    color: #1c9cd6;
+    cursor: pointer;
+}
+
+#acaMainHeader nav a:visited {
+    color: #000000;
+}
+
+.acaContainer {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.blueElectric {
+    color: #1c9cd6;
+}
+
+.strongBlue {
+    color: #123d5b;
+}
+
+.bigMargin {
+    margin-top: 100px;
+}
+
+.acaThird {
+    width: 320px;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.acaFourth {
+    width: 231px;
+    display: inline-block;
+    margin-left: 15px;
+    vertical-align: top;
+}
+
+.acaSideFourth {
+    width: 731px;
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+}
+
+.acaInnerSection:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.acaMarginZero {
+    margin-left: 0;
+}
+
+.acaPaddingZero {
+    padding-left: 0;
+}
+
+.noCenter {
+    text-align: left;
+}
+
+.seeMore {
+    width: 25px;
+    height: 25px;
+    display: block;
+    background: url("../images/iconos.png") no-repeat -129px -108px;
+    cursor: pointer;
+}
+
+.bigPlusLink {
+    color: #1c9cd6;
+    font-size: 1.3em;
+    text-align: center;
+    background: url("../images/iconos.png") no-repeat -129px -108px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+
+.moreResults {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*Header styles*/
+.acaLogo {
+    margin-top: -10px;
+    width: 198px;
+    height: 40px;
+    background: url("../images/academicaLogo.png") 0 -46px;
+    margin-right: 0;
+}
+
+.acaMainMenu {
+    text-transform: uppercase;
+}
+
+.acaMainMenu ul {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 0;
+    margin: 0;
+}
+
+.acaMainMenu ul li {
+    display: inline-block;
+}
+
+.acaMainMenu a {
+    margin-left: 35px;
+}
+
+.acaLogin {
+    float: right;
+    line-height: 40px;
+}
+
+.acaLogin a {
+    margin-left: 20px;
+}
+
+.acaMainMenu, .acaLogin, .acaLogo {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*Home header styles*/
+
+.acaHome .acaLogo {
+    background-position: 0 0;
+}
+
+.acaHome .acaMainMenu, .acaHome .acaLogin {
+    color: #ffffff;
+}
+
+.acaHome #acaMainHeader {
+    background: rgba(255, 255, 255, .05);
+}
+
+.acaHome #acaMainHeader nav a:visited {
+    color: #ffffff;
+}
+
+/*Banner home*/
+.acaMainBanner {
+    background: url("../index.html#/notfound") no-repeat center center;
+    background-size: cover;
+    height: 593px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.acaMainBanner h1 {
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .59);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.mainBannerCont {
+    margin-top: 150px;
+    text-align: center;
+}
+
+.mainBannerCont dl {
+    display: inline-block;
+    text-align: left;
+    margin-top: 100px;
+}
+
+.mainBannerCont dl div {
+    width: 224px;
+    display: inline-block;
+}
+
+.mainBannerCont dt {
+    color: white;
+    background: rgba(55, 70, 81, .37);
+    font-family: 'Colaborate', Tahoma, Geneva, sans-serif;
+    font-weight: normal;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.mainBannerCont dd {
+    background: rgba(255, 255, 255, .16);
+    color: #2f3030;
+    font-size: .9em;
+    padding: 10px;
+    margin: 0
+}
+
+/*SearchForm*/
+#acaSearch input[type="text"] {
+    color: #8e9092;
+    font-size: 1.2em;
+    padding: 10px 10px 10px 40px;
+    width: 382px;
+    border-radius: 0 0 5px 5px;
+    background: url("../images/iconos.png") no-repeat -120px 4px #ffffff;
+    border: 1px solid #b5b5b5;
+}
+
+#acaSearch input[type="button"] {
+    background: #1de086;
+    color: #ffffff;
+    padding: 11px 25px;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 0 5px 5px 0;
+    margin-left: -8px;
+}
+
+/*Clean Box*/
+.cleanBox {
+    margin-top: 30px;
+}
+
+.cleanBox img {
+    margin: 0 auto;
+    display: block;
+}
+
+.cleanBox h3 {
+    text-align: center;
+    color: #123d5b;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+
+.cleanBox p {
+    color: #374651;
+    font-size: 1em;
+}
+
+/*Description Box*/
+figure {
+    margin: 0;
+}
+
+.descBox {
+    margin-top: 30px;
+    position: relative;
+}
+
+.descBox div.textDesc {
+    height: 132px;
+    overflow: hidden;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15)
+}
+
+.descBox figcaption {
+    height: 305px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.descBox h3 {
+    color: #123d5b;
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 0;
+}
+
+.descBox a {
+    color: #1de086;
+    font-size: .9em;
+    font-weight: normal;
+    display: block;
+}
+
+.descBox strong {
+    font-size: .9em;
+    margin-top: 10px;
+    display: block;
+}
+
+.descBox strong span {
+    font-weight: normal;
+    display: block;
+}
+
+.descBox p {
+    font-size: .85em;
+    color: #374651;
+    position: relative;
+    top: 20px;
+    max-height: 136px;
+    text-overflow: ellipsis
+}
+
+.descBox .seeMore {
+    right: 20px;
+    bottom: 20px;
+    position: absolute;;
+}
+
+/*Instituciones Home*/
+
+.acaColabora {
+    width: 100%;
+    height: 189px;
+    background: #cfdae2;
+}
+
+.acaColabora div {
+    text-align: center;
+    position: relative;
+    height: 189px;
+}
+
+.acaColabora ul {
+    list-style-type: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 40px;
+}
+
+.acaColabora ul li {
+    display: inline-block;
+    margin-left: 50px;
+    vertical-align: middle;
+}
+
+.acaColabora ul li:first-child {
+    margin-left: 0;
+}
+
+.acaColabora .seeMore {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background: #ffffff;
+    border-bottom: 3px solid #1c9cd6;
+    padding: 15px 0;
+    color: #374651;
+    font-size: .9em;
+    margin-top: 30px;
+}
+
+footer.homeFooter {
+    margin-top: 0;
+}
+
+
+
+/*.acaContact {*/
+    /*display: inline-block;*/
+    /*vertical-align: top;*/
+    /*margin-left: 50px;*/
+/*}*/
+
+/*footer figure {*/
+    /*vertical-align: top;*/
+    /*font-size: .9em;*/
+/*}*/
+
+/*.footLogo {*/
+    /*display: block;*/
+    /*width: 151px;*/
+    /*height: 29px;*/
+    /*background: url("../images/academicaLogo.png") no-repeat 0 -97px;*/
+    /*margin-bottom: 20px;*/
+/*}*/
+
+/*footer ul li:first-child {*/
+    /*font-weight: bold;*/
+/*}*/
+
+/*footer h4 {*/
+    /*font-weight: normal;*/
+    /*font-size: 1.2em;*/
+    /*margin-top: 15px;*/
+    /*margin-bottom: 5px;*/
+/*}*/
+
+/*.contactLink {*/
+    /*display: block;*/
+    /*background: url("../images/iconos.png") -127px -74px no-repeat;*/
+    /*color: #1c9cd6;*/
+    /*font-size: 1.1em;*/
+    /*padding-left: 30px;*/
+    /*min-height: 24px;*/
+/*}*/
+
+/*Social Media*/
+.acaSocial {
+    margin: 0;
+}
+
+.acaSocial li {
+    display: inline-block;
+}
+
+.acaSocial a {
+    text-indent: -999px;
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url("../images/iconos.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.acaFace {
+    background-position: -4px -5px;
+}
+
+.acaTweet {
+    background-position: -4px -81px;
+}
+
+.acaPlus {
+    background-position: -4px -42px;
+}
+
+.acaYouTube {
+    background-position: -4px -119px;
+}
+
+/*Legales footer*/
+.acaLegal {
+    margin-top: 70px;
+    font-size: .8em;
+}
+
+.acaLegal a {
+    text-decoration: underline;
+}
+
+/*Invita a un amigo*/
+#acaInvita input[type="text"] {
+    padding: 7px 7px 7px 33px;
+    background: url("../images/iconos.png") -127px -36px no-repeat;
+    border: 1px solid #b5b5b5;
+}
+
+#acaInvita input[type="button"] {
+    padding: 5px;
+    border: none;
+    background: #1de086 url("../images/iconos.png") -127px -189px no-repeat;
+    width: 34px;
+    height: 34px;
+    margin-left: -10px;
+}
+
+/*Sección index-- Biblioteca | Videoteca | Cursos*/
+.acaBanner {
+    background: url("../images/acaBanner.jpg") no-repeat center center;
+    background-size: cover;
+    height: 322px;
+    overflow: hidden;
+}
+
+.acaBanner h1 {
+    color: #fff;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .59);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+/*Buscador*/
+.acaInnerSection {
+    padding-top: 100px;
+}
+
+.resultBox {
+    background: #FFFFFF;
+    max-height: 315px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.resultBox h2 {
+    color: #123d5b;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin: 0;
+    position: relative;
+}
+
+.resultBox.typeLibrary h2:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -6px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+.resultBox.typeLibrary h2:hover:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -93px -6px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+.resultBox.typeCourse h2:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -65px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+.resultBox.typeCourse h2:hover:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -90px -65px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 5px;
+    margin-right: 5px;
+}
+
+.resultBox.typeVideo h2:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -39px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+.resultBox.typeVideo h2:hover:before {
+    width: 30px;
+    height: 26px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -90px -39px;
+    display: inline-block;
+    margin-left: -30px;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+.resultBox h2 a:hover {
+    text-decoration: underline;
+}
+
+.resultBox a {
+    cursor: pointer;
+}
+
+.autorLink {
+    color: #1de086;
+}
+
+.resultInfo, .resultImage {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.resultInfo {
+    width: 506px;
+    padding-right: 20px;
+    margin-left: 35px;
+}
+
+.resultImage img {
+    width: 135px;
+}
+
+.resultBox p {
+    color: #374651;
+    font-size: .85em;
+    max-height: 190px;
+    overflow: hidden;
+    display: block;
+}
+
+.resultBox ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.resultBox ul li {
+    display: inline-block;
+}
+
+.resultBox ul li a {
+    color: #1c9cd6;
+    font-size: .8em;
+    margin-left: 30px;
+    background-image: url("../images/iconos.png");
+    background-repeat: no-repeat;
+}
+
+.resultBox ul li:first-child a {
+    margin-left: 0;
+}
+
+.addProfile {
+    padding-left: 25px;
+    background-position: -132px -142px;
+    display: block;
+    min-height: 21px;
+    padding-top: 3px;
+}
+
+.shareSocial {
+    padding-left: 25px;
+    background-position: -132px -171px;
+    display: block;
+    min-height: 21px;
+    padding-top: 3px;
+}
+
+/*Lista lateral*/
+.searchCategories {
+    display: block;
+}
+
+.searchCategories ul {
+    list-style-type: none;
+    color: #374651;
+    font-size: .9em;
+    margin-top: 10px;
+    padding-left: 0;
+    display: none;
+}
+
+.searchCategories dd:first-of-type ul {
+    display: block;
+}
+
+.searchCategories ul li a {
+    padding: 5px;
+    display: block;
+}
+
+.searchCategories ul li a:hover, .searchCategories ul li a.active {
+    color: #1c9cd6;
+    cursor: pointer;
+}
+
+.searchCategories ul li a.active:after {
+    width: 11px;
+    height: 10px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -14px -217px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+.searchCategories dt {
+    font-size: 1.1em;
+    color: #215071;
+    padding: 10px 0;
+    border-bottom: 1px solid #1c9cd6;
+    cursor: pointer;
+}
+
+.searchCategories dt.open:after {
+    width: 30px;
+    height: 16px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -4px -189px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+.searchCategories dd {
+    margin-left: 0;
+}
+
+.searchCategories dt:after {
+    width: 30px;
+    height: 16px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -4px -169px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+/*Iconos no activos*/
+.contentLibrary:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -97px;
+    display: inline-block;
+}
+
+.contentVideo:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -117px;
+    display: inline-block;
+}
+
+.contentCourse:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -53px -141px;
+    display: inline-block;
+}
+
+/*Iconos Activos*/
+.active.contentLibrary:before, .contentLibrary:hover:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -90px -97px;
+    display: inline-block;
+}
+
+.active.contentVideo:before, .contentVideo:hover:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -90px -117px;
+    display: inline-block;
+}
+
+.active.contentCourse:before, .contentCourse:hover:before {
+    width: 30px;
+    height: 17px;
+    content: '';
+    background: url("../images/iconos.png") no-repeat -90px -141px;
+    display: inline-block;
+}
+
+.acaLateralMenu {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    background: url("../images/iconos.png") no-repeat 2px -232px;
+    float: right;
+    display: none;
+    border: 1px solid #909090
+}
+
+.searchTitle::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.searchTitle h1 {
+    text-align: left;
+    margin: 0;
+    display: inline-block;
+}
+
+.searchTitle h4 {
+    margin-bottom: 5px;
+}

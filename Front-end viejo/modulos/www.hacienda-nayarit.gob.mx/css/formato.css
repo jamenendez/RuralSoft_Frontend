@@ -1,0 +1,37 @@
+<!--
+	.MenuListaTemas {
+		TEXT-ALIGN: left; WIDTH: 100%; background-color:#F5F5F5;
+	}
+	a:link {
+		color: #333333;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #FF0000;
+		text-decoration: none;
+		background-color:#EFEFEF;
+		background-position:left;
+	}
+	a {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 11px;
+	}
+	a:visited {
+		text-decoration: none;
+		color:#000000;
+	}
+	a:active {
+		text-decoration: none;
+	}
+	.Estilo12 {
+		font-size: 11px;
+		color: #E3413E;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	.Estilo74 {font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10px; }
+	.Estilo79 {font-family: Verdana, Arial, Helvetica, sans-serif;
+		font-size: 9px;
+	}
+	.Estilo95 {color: #FF0000}
+	.Estilo97 {color: #666666; font-family: Arial, Helvetica, sans-serif; }
+

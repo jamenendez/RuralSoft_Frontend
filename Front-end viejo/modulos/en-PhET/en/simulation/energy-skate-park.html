@@ -1,0 +1,2644 @@
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+        "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en">
+
+<!-- Mirrored from phet.colorado.edu/en/simulation/energy-skate-park by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 22 Jan 2014 08:24:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Energy Skate Park - Conservation of Energy, Kinetic Energy, Potential Energy - PhET</title>
+    
+        <meta name="description" content="Learn about conservation of energy with a skater dude! Build tracks, ramps and jumps for the skater and view the kinetic energy, potential energy and friction as he moves. You can also take the skater to different planets or even space!"/>
+    
+    
+    <link rel="stylesheet" type="text/css" href="../../css/phet-v17-min.css"/>
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6fix-v3.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/css/ie7fix-v2.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8fix-v1.css"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script defer type="text/javascript" src="/js/pngfix.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie-v1.css"/>
+    <![endif]-->
+    <!-- class edu.colorado.phet.website.content.simulations.SimulationPage -->
+    <!-- host phet.colorado.edu -->
+    
+    <script type="text/javascript" src="../../js/phet-v12-min.js"></script>
+
+        
+    
+        <meta property="og:title" content="Energy Skate Park"/><meta property="og:type" content="phet:simulation"/><meta property="og:url" content="http://phet.colorado.edu/en/simulation/energy-skate-park"/><meta property="og:image" content="http://phet.colorado.edu/sims/energy-skate-park/energy-skate-park-thumbnail.png"/><meta property="og:site_name" content="PhET"/><meta property="og:description" content="Learn about conservation of energy with a skater dude! Build tracks, ramps and jumps for the skater and view the kinetic energy, potential energy and friction as he moves. You can also take the skater to different planets or even space!"/><meta property="keywords" content="Conservation of Energy, Kinetic Energy, Potential Energy, Friction, Work, Motion, Gravity, Gravitational Force"/>
+    <script type="text/javascript">
+/* <![CDATA[ */
+var phetSimSponsors = {totalWeight:67.0,sponsors:[{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.hewlett.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/hewlett-logo.jpg\" alt=\"The William and Flora Hewlett Foundation logo\" width=\"132\" height=\"32\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.nsf.gov/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/nsf-logo.gif\" alt=\"The National Science Foundation logo\" width=\"38\" height=\"38\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ksu.edu.sa/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ERCSME-combined-logo-regular.png\" alt=\"ERCSME at King Saud University logo\" width=\"130\" height=\"35\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.odf.org/\" class=\"external\" rel=\"nofollow\"><span style=\"padding-top: 5px; border: none;font-size: 14px; padding: 0.3em 0; color: #000; text-decoration: none;\"><span>The O&#39;Donnell Foundation</span></span></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://jila.colorado.edu/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jila_logo_medium.gif\" alt=\"JILA logo\" width=\"136\" height=\"56\" style=\"padding-top: 5px; border: none;padding: 4px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.techsmith.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/techsmith.png\" alt=\"TechSmith logo\" width=\"137\" height=\"31\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://bitrock.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/bitrock-small.png\" alt=\"BitRock logo\" width=\"159\" height=\"65\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.jetbrains.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jetbrains.gif\" alt=\"JetBrains logo\" width=\"124\" height=\"44\" style=\"padding-top: 5px; border: none;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ej-technologies.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ej-small.png\" alt=\"ej-technologies logo\" width=\"150\" height=\"31\" style=\"padding-top: 5px; border: none;padding: 4px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.idahodigitallearning.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/idaho-digital-learning-logo.png\" alt=\"Idaho Digital Learning logo\" width=\"130\" height=\"95\" style=\"padding-top: 5px; border: none;padding: 8px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.compasslearning.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/compass-learning-small.png\" alt=\"CompassLearning logo\" width=\"150\" height=\"39\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.learning.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/learning-com-extra-small.png\" alt=\"Learning.com logo\" width=\"135\" height=\"19\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.wirelessgeneration.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/wireless-generation-160x19.png\" alt=\"Wireless Generation logo\" width=\"160\" height=\"19\" style=\"padding-top: 5px; border: none;padding: 3px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:3.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.ode.state.or.us\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/oregon-doe-black-small.png\" alt=\"Oregon Department of Education logo\" width=\"150\" height=\"27\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.jcesc.k12.oh.us/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/jefferson-county-vla-125x128.png\" alt=\"Jefferson County Virtual Learning Academy logo\" width=\"125\" height=\"128\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.carolina.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/carolina-160x56.png\" alt=\"Carolina Biological Supply Company logo\" width=\"160\" height=\"56\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pearsoned.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pearson-medium.png\" alt=\"Pearson logo\" width=\"150\" height=\"45\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pancopty.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pan-america-medium.png\" alt=\"Pan America Construction logo\" width=\"150\" height=\"77\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://education.ti.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ti-small.png\" alt=\"Texas Instruments logo\" width=\"150\" height=\"37\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.mheonline.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/mcgraw-hill-small.png\" alt=\"McGraw-Hill Education logo\" width=\"155\" height=\"43\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.hark.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/hark-logo-full.png\" alt=\"Hark logo\" width=\"110\" height=\"80\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.zanichelli.it\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/zanichelli-small.png\" alt=\"Zanichelli logo\" width=\"150\" height=\"28\" style=\"padding-top: 5px; border: none;padding: 2px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.cybernetyx.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cybernetyx-small.png\" alt=\"Cybernetyx logo\" width=\"150\" height=\"29\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.cengage.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cengage-small.png\" alt=\"Cengage Learning logo\" width=\"150\" height=\"48\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.noas.com.br/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/cnec-small.png\" alt=\"Campanha Nacional de Escolas da Comunidade logo\" width=\"150\" height=\"59\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://education.whro.org/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/whro-small.png\" alt=\"WHRO Education logo\" width=\"120\" height=\"89\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://ndla.no/en\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/ndla-small.png\" alt=\"Norwegian Digital Learning Arena logo\" width=\"150\" height=\"61\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.zalando.co.uk\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/zalando-small.png\" alt=\"Zalando logo\" width=\"154\" height=\"33\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.whfreeman.com\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/whfreeman-small.png\" alt=\"W. H. Freeman logo\" width=\"150\" height=\"54\" style=\"padding-top: 5px; border: none;padding: 5px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:5.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.rsc.org/learn-chemistry\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/rsc-small.png\" alt=\"Royal Society of Chemistry logo\" width=\"150\" height=\"104\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:1.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.wiley.com/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/wiley-small.png\" alt=\"Wiley logo\" width=\"150\" height=\"60\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:2.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div><a href=\"http://www.pi-usa.us/\" class=\"external\" rel=\"nofollow\"><img src=\"/images/support/pi-small.png\" alt=\"Physik Instrumente logo\" width=\"150\" height=\"75\" style=\"padding-top: 5px; border: none;padding: 0px;\"/></a></div>                      <span>and educators like you.</span>             <br/>                  <span>Thanks!</span>     </div> "},{weight:3.0,html:"     <div style=\"margin: 0 auto; text-align: center; font-size: 10px; color: #666666;\">         <span>PhET is supported by</span>         <div style=\"padding-top: 5px; border: none;border: none;background-color: transparent;\">     <div style=\"margin-top: -10px;border: none;background-color: transparent;\">         <table style=\"width: 160px; height: 100px; background-image:url('/images/support/you.png'); margin: 0 auto;\">             <tr>                 <td style=\"vertical-align: middle;\">                     <a href=\"https://donatenow.networkforgood.org/1437859\"                        rel=\"external,nofollow\"                        style=\"text-decoration: none !important; color: #fff; line-height: normal;\">                         <span style=\"width: 130px; margin: 0 auto; display: block;\">                             <span style=\"font-size: 20px;\">You?</span>                             <br/>                             <span style=\"font-size: 9px;\">(support PhET today and help education worldwide.)</span>                         </span>                     </a>                 </td>             </tr>         </table>     </div> </div>                  <span>Thanks!</span>     </div> "}]};
+/* ]]> */
+</script></head>
+<body dir="ltr" class="ltr" id="offline-installer-body">
+<div id="skipNav">
+    <a href="#main-content" accesskey="0">
+        Skip to Main Content
+    </a>
+</div>
+
+
+
+
+
+<div id="page-header" class="ltr">
+    <div id="page-header-container">
+        <div id="page-header-logo">
+            <a href="../../index.html">
+                <!--<img wicket:id="page-header-logo-image" src="../../../../../../../root/images/phet-logo.gif"-->
+                <img src="../../images/phet-logo-117.svg" alt="PhET Logo" title="Go to the PhET home page" class="header-logo-image" width="223" height="106" id="phet-logo-main-image"/>
+            </a>
+        </div>
+        <div id="page-header-sims-served">
+            <span>Over 110 million simulations delivered</span>
+        </div>
+        <img id="page-header-cu" src="../../images/cu-logo-half.png" alt="University of Colorado Logo" width="150" height="77">
+        <div id="page-header-search">Created 1/22/14. The <a href="http://phet.colorado.edu/en/get-phet/full-install">most up-to-date version</a> is available online.</div>
+    </div>
+</div>
+
+<div class="log-in-out">
+    
+    
+</div>
+<div id="page-content" class="ltr">
+    
+    <div class="menu-page-content" style="width: 820px;">
+        <div id="side-panel">
+            <div>
+    <div class="side-nav">
+        <div>
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../../index.html" class="nml-link nav0" id="nav-location-nav-home">
+                        <span class="nml-link-label">Home</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/new.html" class="nml-link nav0" id="nav-location-nav-simulations">
+                        <span class="nml-link-label selected selected selected selected selected selected">Simulations</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/new.html" class="nml-link nav1" id="nav-location-nav-new">
+                        <span class="nml-link-label">New Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics.html" class="nml-link nav1" id="nav-location-nav-physics">
+                        <span class="nml-link-label">Physics</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/motion.html" class="nml-link nav2" id="nav-location-nav-motion">
+                        <span class="nml-link-label selected">Motion</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/sound-and-waves.html" class="nml-link nav2" id="nav-location-nav-sound-and-waves">
+                        <span class="nml-link-label">Sound &amp; Waves</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/work-energy-and-power.html" class="nml-link nav2" id="nav-location-nav-work-energy-and-power">
+                        <span class="nml-link-label selected">Work, Energy &amp; Power</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/heat-and-thermodynamics.html" class="nml-link nav2" id="nav-location-nav-heat-and-thermodynamics">
+                        <span class="nml-link-label">Heat &amp; Thermo</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/quantum-phenomena.html" class="nml-link nav2" id="nav-location-nav-quantum-phenomena">
+                        <span class="nml-link-label">Quantum Phenomena</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/light-and-radiation.html" class="nml-link nav2" id="nav-location-nav-light-and-radiation">
+                        <span class="nml-link-label">Light &amp; Radiation</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/physics/electricity-magnets-and-circuits.html" class="nml-link nav2" id="nav-location-nav-electricity-magnets-and-circuits">
+                        <span class="nml-link-label">Electricity, Magnets &amp; Circuits</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/biology.html" class="nml-link nav1" id="nav-location-nav-biology">
+                        <span class="nml-link-label">Biology</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/chemistry.html" class="nml-link nav1" id="nav-location-nav-chemistry">
+                        <span class="nml-link-label">Chemistry</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/earth-science.html" class="nml-link nav1" id="nav-location-nav-earth-science">
+                        <span class="nml-link-label">Earth Science</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/math.html" class="nml-link nav1" id="nav-location-nav-math">
+                        <span class="nml-link-label">Math</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/cutting-edge-research.html" class="nml-link nav1" id="nav-location-nav-cutting-edge-research">
+                        <span class="nml-link-label">Cutting Edge Research</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level.html" class="nml-link nav1" id="nav-location-nav-by-level">
+                        <span class="nml-link-label">By Grade Level</span>
+                    </a>
+                    
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/elementary-school.html" class="nml-link nav2" id="nav-location-nav-elementary-school">
+                        <span class="nml-link-label selected">Elementary School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/middle-school.html" class="nml-link nav2" id="nav-location-nav-middle-school">
+                        <span class="nml-link-label selected">Middle School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/high-school.html" class="nml-link nav2" id="nav-location-nav-high-school">
+                        <span class="nml-link-label selected">High School</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/category/by-level/university.html" class="nml-link nav2" id="nav-location-nav-university">
+                        <span class="nml-link-label selected">University</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/index.html" class="nml-link nav1" id="nav-location-nav-all">
+                        <span class="nml-link-label">All Sims</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../simulations/translated.html" class="nml-link nav1" id="nav-location-nav-simulations-translated">
+                        <span class="nml-link-label">Translated Sims</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../for-teachers.html" class="nml-link nav0" id="nav-location-nav-teacherIdeas">
+                        <span class="nml-link-label teacher-ideas-item">For Teachers</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../stay-connected.html" class="nml-link nav0" id="nav-location-nav-stayConnected">
+                        <span class="nml-link-label">Stay Connected</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../troubleshooting.html" class="nml-link nav0" id="nav-location-nav-troubleshooting-main">
+                        <span class="nml-link-label">Troubleshooting</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../faqs.html" class="nml-link nav0" id="nav-location-nav-faqs">
+                        <span class="nml-link-label">FAQs</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../for-translators.html" class="nml-link nav0" id="nav-location-nav-forTranslators">
+                        <span class="nml-link-label">For Translators</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://donatenow.networkforgood.org/1437859" class="nml-link nav0" id="nav-location-nav-donate">
+                        <span class="nml-link-label">Donate</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../research.html" class="nml-link nav0" id="nav-location-nav-research">
+                        <span class="nml-link-label">Research</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="../about.html" class="nml-link nav0" id="nav-location-nav-about">
+                        <span class="nml-link-label">About PhET</span>
+                    </a>
+                    
+                </div>
+            </li>
+        </ul>
+    
+</div>
+    </div>
+</div>
+            <div>
+
+    <div id="spons" dir="ltr">
+        <div class="principalSponsors">
+            Principal Sponsors
+        </div>
+
+        <div class="header">
+        </div>
+        <div class="sponsors-fake-dl">
+            <div class="sponsors-fake-dt">
+                <a class="sponsor-text-link" href="http://www.hewlett.org/">The William and Flora Hewlett Foundation</a>
+
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <a href="http://www.hewlett.org/">
+                    <img src="../../images/support/hewlett-logo.jpg" alt="The Hewlett Logo" class="spons" width="132" height="32"/>
+                </a>
+                <br/>
+
+                <br/>
+                Makes grants to address the most serious social and environmental problems facing society, where risk capital, responsibly invested, may make a difference over time.
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a href="http://www.nsf.gov/">
+                    <img class="spons" src="../../images/support/nsf-logo.gif" alt="The NSF Logo" width="38" height="38"/>
+                    National Science Foundation
+                </a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <br/>
+                An independent federal agency created by Congress in 1950 to promote the progress of science.
+                <br/>
+
+                <br/>
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a href="http://www.ksu.edu.sa/">
+                    Excellence Center of Science and Mathematics Education at King Saud University
+                </a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                <a href="http://www.ksu.edu.sa/">
+                    <img class="spons" src="../../images/support/ERCSME-combined-logo-regular.png" alt="The King Saud (ESCME) Logo" width="130" height="35"/>
+                </a>
+                <br/>
+                <br/>
+                King Saud University seeks to become a leader in educational and technological innovation, scientific discovery and creativity through fostering an atmosphere of intellectual inspiration and partnership for the prosperity of society.
+                <br/>
+                <br/>
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <a class="sponsor-text-link" href="http://www.odf.org/">O'Donnell Foundation</a>
+            </div>
+
+            <div class="sponsors-fake-dd">
+                The O'Donnell Foundation is devoted to building model programs to enhance the quality of education.
+            </div>
+
+            <div class="sponsors-fake-dt">
+                <div class="other-sponsors-holder" dir="ltr">
+                    <table class="other-sponsors-table" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td class="other-sponsors-left">
+
+                            </td>
+                            <td class="other-sponsors-middle">
+                                <a href="../about/sponsors.html" id="sponsors-panel-link">
+                                    Other Sponsors &gt;&gt;
+                                </a>
+                            </td>
+                            <td class="other-sponsors-right">
+
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </div>
+        <div id="main-content" class="main-menu-content">
+            
+                <div class="social-div">
+    <div class="social-sub-div">
+        <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Fenergy-skate-park&amp;t=Energy+Skate+Park+-+Conservation+of+Energy%2C+Kinetic+Energy%2C+Potential+Energy+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Facebook">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -0px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="https://twitter.com/share?url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Fenergy-skate-park&amp;text=Energy+Skate+Park+-+Conservation+of+Energy%2C+Kinetic+Energy%2C+Potential+Energy+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Twitter">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -16px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Fenergy-skate-park&amp;title=Energy+Skate+Park+-+Conservation+of+Energy%2C+Kinetic+Energy%2C+Potential+Energy+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Stumble Upon">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -32px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fphet.colorado.edu%2Fen%2Fsimulation%2Fenergy-skate-park&amp;title=Energy+Skate+Park+-+Conservation+of+Energy%2C+Kinetic+Energy%2C+Potential+Energy+-+PhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Digg">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -48px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="http://www.reddit.com/login?dest=%2Fsubmit%3Furl%3Dhttp%3A%2F%2Fhttp%253A%252F%252Fphet.colorado.edu%252Fen%252Fsimulation%252Fenergy-skate-park%26title%3DEnergy%2BSkate%2BPark%2B-%2BConservation%2Bof%2BEnergy%252C%2BKinetic%2BEnergy%252C%2BPotential%2BEnergy%2B-%2BPhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Reddit">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -64px;"></span>
+        </a>
+    </div><div class="social-sub-div">
+        <a href="https://secure.delicious.com/login?jump=http%3A%2F%2Fwww.delicious.com%2Fsave%3Furl%3Dhttp%253A%252F%252Fphet.colorado.edu%252Fen%252Fsimulation%252Fenergy-skate-park%26title%3DEnergy%2BSkate%2BPark%2B-%2BConservation%2Bof%2BEnergy%252C%2BKinetic%2BEnergy%252C%2BPotential%2BEnergy%2B-%2BPhET" style="padding: 0; margin: 0; text-decoration: none;" rel="external,nofollow" title="Share this on Delicious">
+            <span style="display: block; width: 16px; height: 16px; background-image: url('../../images/icons/social-sprite.png');background-repeat: no-repeat; background-position: 0 -80px;"></span>
+        </a>
+    </div>
+</div>
+            
+            
+    <div dir="ltr">
+    <div class="simulation-main-container" itemscope="itemscope" itemtype="http://schema.org/SoftwareApplication" dir="ltr">
+
+        <!-- educationalAlignment ! teaches for mingradelevel and maxgradelevel -->
+
+        <!-- TODO: the changelog link is included in the software version! -->
+
+        <meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11434E1"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S2373212"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435A9"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114353A"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S2373214"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143638"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114349B"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435A5"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143647"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143636"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114359F"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114354B"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435A7"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143645"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114350F"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143549"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143605"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435F3"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435F5"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114367D"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143614"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114360A"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114367B"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143612"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S2373213"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143531"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S2373215"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143637"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435A4"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114349C"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114353B"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143646"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143635"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11434EA"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435A6"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143600"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114354C"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435AA"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435F2"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435F4"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114367E"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S11435FE"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S114367C"/>
+        </meta><meta itemprop="educationalAlignment" itemscope="itemscope" itemtype="http://schema.org/AlignmentObject">
+            <meta itemprop="alignmentType" content="teaches" />
+            <meta itemprop="targetUrl" content="http://purl.org/ASN/resources/S1143613"/>
+        </meta>
+
+        <!-- Schema.org contributor (for credits, etc.) -->
+
+        <meta itemprop="intendedEndUserRole" content="student"/>
+        <meta itemprop="educationalUse" content="classroom"/>
+        <meta itemprop="educationalUse" content="homework"/>
+        <meta itemprop="educationalUse" content="simulation"/>
+        <!--<meta itemprop="timeRequired" content="TODO"/>-->
+        <!--<meta itemprop="typicalAgeRange" content="TODO"/>-->
+
+        <meta itemprop="useRightsUrl" content="../about/licensing.html"/>
+        <div style="display: none;">
+            <meta itemprop="useRightsUrl" content="http://creativecommons.org/licenses/by/3.0/us/"/>
+        </div><div style="display: none;">
+            <meta itemprop="useRightsUrl" content="http://creativecommons.org/licenses/GPL/2.0/"/>
+        </div>
+
+        <meta itemprop="interactivityType" content="active"/>
+        <meta itemprop="learningResourceType" content="simulation"/>
+
+        <meta itemprop="dateCreated" content="2004-07-01T00:00:00"/>
+        <meta itemprop="dateModified" content="2014-01-17T14:35:34"/>
+
+        <meta itemprop="inLanguage" content="en"/>
+
+        <div style="display: none;" itemprop="author" itemscope="itemscope" itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="PhET Interactive Simulations"/>
+            <meta itemprop="url" content="../../index.html"/>
+        </div>
+        <div style="display: none;" itemprop="publisher" itemscope="itemscope" itemtype="http://schema.org/Organization">
+            <meta itemprop="name" content="PhET Interactive Simulations"/>
+            <meta itemprop="url" content="../../index.html"/>
+        </div>
+
+        <meta itemprop="thumbnailUrl" content="../../sims/energy-skate-park/energy-skate-park-thumbnail.png"/>
+        <!--<meta itemprop="fileFormat" content="TODO"/>-->
+
+        <meta itemprop="applicationCategory" content="Educational"/>
+
+        <h1 class="simulation-main-title" itemprop="name">Energy Skate Park</h1>
+
+        <div class="rating-holder">
+            
+            
+            
+        </div>
+
+        
+
+        <table class="simulation-main-table">
+            <tr>
+                <td style="width: 300px; vertical-align: top;">
+                    <div class="simulation-main-image-panel">
+                        <a href="../../sims/energy-skate-park/energy-skate-park_en.jnlp" rel="external" class="simulation-main-link-run-main" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'en from ' + document.URL])">
+                            <img class="simulation-main-screenshot" src="../../sims/energy-skate-park/energy-skate-park-screenshot.png" width="300" id="simulation-main-screenshot-image" itemprop="image screenshot" alt="Energy Skate Park Screenshot" height="226"/>
+                        </a>
+                        <a class="sim-download sim-button" href="../../sims/energy-skate-park/energy-skate-park_en.jar" itemprop="downloadUrl" onclick="_gaq.push(['_trackEvent', 'Simulation Download', 'energy-skate-park', 'en from ' + document.URL])">
+                            Download
+                        </a>
+                        <a class="sim-run-now sim-button" href="../../sims/energy-skate-park/energy-skate-park_en.jnlp" itemprop="url" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'en from ' + document.URL])">
+                            Run Now!
+                        </a>
+                        <span class="sim-kb" itemprop="fileSize">2,854 kB</span>
+
+                        
+
+                        <div style="clear: both; width: 100%; height: 0; padding: 0; margin: 0; padding-top: 2px;"></div>
+                        <span class="sim-version" itemprop="version softwareVersion">Version: 2.13 (<a href="energy-skate-park/changelog.html">change log</a>)</span>
+                        
+
+                        <div style="float: left; clear: left; width: 500px; display: none;" id="embed-popup">
+                            <div style="position: absolute; background-color: #fff; border: 1px solid #666; width: 500px;">
+                                <div style="text-align: right; width: 100%; position: absolute;"><a href="#"
+                                                                                                    onclick="document.getElementById('embed-popup').style.display = 'none';return false;"
+                                                                                                    style="padding: 0.2em;">
+                                    close
+                                </a></div>
+                                <div style="padding: 0 1em 1em;">
+                                    
+                                    <p style="font-weight: bold; font-size: 14px;">
+                                        Embed an image that will launch the simulation when clicked
+                                    </p>
+                                    <textarea rows="3" cols="50" id="embeddable-text">&lt;div style=&quot;position: relative; width: 300px; height: 226px;&quot;&gt;&lt;a href=&quot;http://phet.colorado.edu/sims/energy-skate-park/energy-skate-park_en.jnlp&quot; style=&quot;text-decoration: none;&quot;&gt;&lt;img src=&quot;http://phet.colorado.edu/sims/energy-skate-park/energy-skate-park-screenshot.png&quot; alt=&quot;Energy Skate Park&quot; style=&quot;border: none;&quot; width=&quot;300&quot; height=&quot;226&quot;/&gt;&lt;div style=&quot;position: absolute; width: 200px; height: 80px; left: 50px; top: 73px; background-color: #FFF; opacity: 0.6; filter: alpha(opacity = 60);&quot;&gt;&lt;/div&gt;&lt;table style=&quot;position: absolute; width: 200px; height: 80px; left: 50px; top: 73px;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center; color: #000; font-size: 24px; font-family: Arial,sans-serif;&quot;&gt;Click to Run&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/a&gt;&lt;/div&gt;</textarea>
+
+                                    <p>
+                                        Use this HTML code to display a screenshot with the words "Click to Run".
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td class="simulation-main-description">
+            <span itemprop="description about">Learn about conservation of energy with a skater dude! Build tracks, ramps and jumps for the skater and view the kinetic energy, potential energy and friction as he moves. You can also take the skater to different planets or even space!</span>
+
+                    <div style="text-align: center; margin-top: 20px; margin-bottom: 10px;">
+                        <a class="simStyleOrange sim-button" href="https://donatenow.networkforgood.org/1437859" target="_blank">
+                            Donate
+                        </a>
+                    </div>
+
+                    <div id="sponsor-spot" style="padding-top: 10px;display: none;"></div>
+                    <script type="text/javascript">
+                        //<![CDATA[
+                        (function() {
+                            var r = Math.random() * phetSimSponsors.totalWeight;
+                            var i;
+                            for ( i = 0; i <= phetSimSponsors.sponsors.length; i++ ) {
+                                r -= phetSimSponsors.sponsors[i].weight;
+                                if ( r <= 0 ) {
+                                    break;
+                                }
+                            }
+                            var html = phetSimSponsors.sponsors[i].html;
+                            var ddToReplace = document.getElementById( 'sponsor-spot' );
+                            ddToReplace.innerHTML = html;
+                            ddToReplace.style.display = "block";
+                        })();
+                        //]]>
+                    </script>
+                    <script type="text/javascript">
+                        (function() {
+                            var otherImageSrc = document.getElementById( "phet-logo-main-image" ).src;
+                            // 0x2F is for a slash, to fool the httrack ripper
+                            var lastIndex = Math.max( otherImageSrc.lastIndexOf( String.fromCharCode( 0x2F ) ), otherImageSrc.lastIndexOf( "\\" ) );
+                            var newImagesDirectory = otherImageSrc.substring( 0, lastIndex );
+                            document.getElementById( 'sponsor-spot' ).innerHTML = document.getElementById( 'sponsor-spot' ).innerHTML.replace( /\/images/g, newImagesDirectory );
+                        })();
+                    </script>
+                    <noscript>
+                        <div style="padding-top: 10px;">
+    <div style="margin: 0 auto; text-align: center; font-size: 10px; color: #666666;">
+        <span>PhET is supported by</span>
+        <div><a href="http://www.compasslearning.com/" class="external" rel="nofollow"><img src="../../images/support/compass-learning-small.png" alt="CompassLearning logo" width="150" height="39" style="padding-top: 5px; border: none;padding: 5px;"/></a></div>
+        
+            <span>and educators like you.</span>
+            <br/>
+        
+        <span>Thanks!</span>
+    </div>
+</div>
+                    </noscript>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <div class="see-below">
+                <h3>
+                    See Below
+                </h3>
+                <ul class="see-below-links">
+                    
+                        <li><a href="#related-simulations">
+                            Related Sims >>
+                        </a></li>
+                        
+                    
+                    <li><a href="#translated-versions">
+                        Translated Versions &gt;&gt;
+                    </a></li>
+                    <li><a href="#software-requirements">
+                        Software Requirements &gt;&gt;
+                    </a></li>
+                    <li><a href="#credits">
+                        Credits &gt;&gt;
+                    </a></li>
+                </ul>
+            </div>
+            <a id="content"></a><a id="teaching-resources"></a>
+
+            <h2 id="simulation-main-panel-content-header-clear">
+                Teaching Resources
+            </h2>
+
+            
+                <h3>
+                    Main Topics
+                </h3>
+                <ul>
+                    <li>
+                        <span itemprop="keywords">Energy</span>
+                    </li><li>
+                        <span itemprop="keywords">Conservation of Energy</span>
+                    </li><li>
+                        <span itemprop="keywords">Kinetic Energy</span>
+                    </li><li>
+                        <span itemprop="keywords">Potential Energy</span>
+                    </li><li>
+                        <span itemprop="keywords">Friction</span>
+                    </li>
+                </ul>
+            
+
+            <div style="display: none;">
+                <!-- TODO get rid of this part -->
+                
+                    <h3>
+                        Keywords
+                    </h3>
+                    <ul class="keyword-list-holder">
+                        <li class="keyword">
+                            <a href="../simulations/keyword/conservationOfEnergy.html">
+                                <span itemprop="keywords">Conservation of Energy</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/kineticEnergy.html">
+                                <span itemprop="keywords">Kinetic Energy</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/potentialEnergy.html">
+                                <span itemprop="keywords">Potential Energy</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/friction.html">
+                                <span itemprop="keywords">Friction</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/work.html">
+                                <span itemprop="keywords">Work</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/motion.html">
+                                <span itemprop="keywords">Motion</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/gravity.html">
+                                <span itemprop="keywords">Gravity</span>
+                            </a>
+                        </li><li class="keyword">
+                            <a href="../simulations/keyword/gravitationalForce.html">
+                                <span itemprop="keywords">Gravitational Force</span>
+                            </a>
+                        </li>
+                    </ul>
+                
+            </div>
+
+            
+                <h3>
+                    Sample Learning Goals
+                </h3>
+                <ul>
+                    <li><span>Explain the Conservation of Mechanical Energy concept using kinetic and gravitational potential energy.</span></li>
+                </ul>
+            
+
+            
+
+            
+                <a id="tips-for-teachers"></a>
+                <h3>
+                    Tips for Teachers
+                </h3>
+                <div class="teachers-tips-holder">The <a href="../../files/teachers-guide/energy-skate-park-guide.pdf" target="_blank">teacher's guide</a> (pdf) contains tips created by the PhET team.</div>
+            
+
+            <a id="teaching-ideas"></a>
+
+            <h3>
+                Teaching Ideas
+            </h3>
+
+            
+
+                <div class="simulation-contributions-pane">
+    <div dir="ltr">
+        
+            <table class="contribution-browse-table" id="ct-table" rel="K-5,Middle School,High School,Undergraduate - Intro,Undergraduate - Advanced,Graduate,Other|Lab,Homework,Concept Questions,Demonstration,Other">
+                <tr id="ct-table-header">
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByTitle()">
+                            Title
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByAuthors()">
+                            Authors
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByLevel()">
+                            Level
+                        </a>
+                    </th>
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByType()">
+                            Type
+                        </a>
+                    </th>
+                    
+                    <th>
+                        <a href="#" onclick="return phet.sortContributionsByUpdated()">
+                            Updated
+                        </a>
+                    </th>
+
+                </tr>
+                <tr class="ct-contribution list-highlight-background" rel="0x1.cc798532ef78p-6">
+
+                    <td>
+                        <a href="../contributions/view/3749.html">
+                            <span class="ct-title">Kinetic and Potential energy</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Cameron Ross</td>
+                    <td class="ct-level" rel="High School,Middle School">HS<br/>MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1373134431360">7/6/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.aab56f2ed779ep-2">
+
+                    <td>
+                        <a href="../contributions/view/3551.html">
+                            <span class="ct-title">mechanical energy - exploring kinetic and potential energy</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Jackie Esler</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1334355797181">4/13/12</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.e8539cecc9ea4p-2">
+
+                    <td>
+                        <a href="../contributions/view/3526.html">
+                            <span class="ct-title">Finding Properties of Energy (via the skate park)</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">jim cibulka</td>
+                    <td class="ct-level" rel="Middle School,High School">MS<br/>HS</td>
+                    <td class="ct-type" rel="Lab,Concept Questions">Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1330707033229">3/2/12</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.287cf92f1f1acp-1">
+
+                    <td>
+                        <a href="../contributions/view/3444.html">
+                            <span class="ct-title">Mechanical energy - Kinetic and Potential</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Jackie Esler</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1312048335202">7/30/11</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.e0a9c9d7408f8p-2">
+
+                    <td>
+                        <a href="../contributions/view/3402.html">
+                            <span class="ct-title">Potential and Kinetic Energy</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">J Smith</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1301590431015">3/31/11</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.482ca7579538ep-2">
+
+                    <td>
+                        <a href="../contributions/view/3268.html">
+                            <span class="ct-title">Energy, Forces, and Motion basics</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Kristi Goodwin</td>
+                    <td class="ct-level" rel="High School,Middle School">HS<br/>MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1266735600000">2/21/10</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.00b6c25185ddcp-3">
+
+                    <td>
+                        <a href="../contributions/view/3186.html">
+                            <span class="ct-title">Conservation of Energy for Middle School</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Jefferson County Middle School Workshop</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1240552800000">4/24/09</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.d5c863f8bd0b7p-1">
+
+                    <td>
+                        <a href="../contributions/view/3134.html">
+                            <span class="ct-title">Energy Skate Park - Four activities (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1374360260022">7/20/13</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.8f7ab6593c818p-4">
+
+                    <td>
+                        <a href="../contributions/view/3112.html">
+                            <span class="ct-title">Concept questions for Physics using PhET (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="High School,Undergraduate - Intro">HS<br/>UG-Intro</td>
+                    <td class="ct-type" rel="Concept Questions">CQs</td>
+                    
+                    <td class="ct-updated" rel="1373214352194">7/7/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.611332e3c151p-1">
+
+                    <td>
+                        <a href="../contributions/view/3016.html">
+                            <span class="ct-title">Energy Skate Park Clicker Questions (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="High School,Undergraduate - Intro">HS<br/>UG-Intro</td>
+                    <td class="ct-type" rel="Concept Questions">CQs</td>
+                    
+                    <td class="ct-updated" rel="1373214779965">7/7/13</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.6f1082f5d4a77p-1">
+
+                    <td>
+                        <a href="../contributions/view/3109.html">
+                            <span class="ct-title">Conservation of Energy 4 Energy Skate Park: Calculations with Conservation of Mechanical Energy using time graphs (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Concept Questions,Lab">CQs<br/>Lab</td>
+                    
+                    <td class="ct-updated" rel="1373214009290">7/7/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.d25c644a38e26p-1">
+
+                    <td>
+                        <a href="../contributions/view/3027.html">
+                            <span class="ct-title">Roller Coaster Physics Investigation</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Scott McCurdy</td>
+                    <td class="ct-level" rel="High School,Middle School">HS<br/>MS</td>
+                    <td class="ct-type" rel="Homework,Lab,Concept Questions">HW<br/>Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1226646000000">11/14/08</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.336a3c95f7734p-3">
+
+                    <td>
+                        <a href="../contributions/view/3031.html">
+                            <span class="ct-title">Algebra-based Physics Semester one lessons, clicker questions, and schedule in pdf (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Homework,Lab,Demonstration,Concept Questions">HW<br/>Lab<br/>Demo<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1374360068437">7/20/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.0779bb0338858p-1">
+
+                    <td>
+                        <a href="../contributions/view/3021.html">
+                            <span class="ct-title">Energy Skate Park for Middle School(Inquiry Based)</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Sarah Borenstein</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1227337200000">11/22/08</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.417e9e8fa7f54p-1">
+
+                    <td>
+                        <a href="../contributions/view/3008.html">
+                            <span class="ct-title">Conservation of Energy 3 Energy Skate Park: Calculations with Mechanical energy (no time graphs) (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="High School,Undergraduate - Intro">HS<br/>UG-Intro</td>
+                    <td class="ct-type" rel="Lab,Concept Questions">Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1373213471807">7/7/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.ab48445130589p-1">
+
+                    <td>
+                        <a href="../contributions/view/2992.html">
+                            <span class="ct-title">Conservation of Energy 2 Energy Skate Park relating graphs position and speed (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Lab,Concept Questions">Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1373213010098">7/7/13</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.57c72a0c3c898p-1">
+
+                    <td>
+                        <a href="../contributions/view/2946.html">
+                            <span class="ct-title">Energy Skater -- Introduction to Mechanical Energy Conservation</span>
+                        </a>
+                        
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Karen King</td>
+                    <td class="ct-level" rel="High School,Middle School">HS<br/>MS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1231138800000">1/5/09</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.6c25ef550ca5fp-1">
+
+                    <td>
+                        <a href="../contributions/view/2856.html">
+                            <span class="ct-title">Conservation of Energy 1 Energy Skate Park introduction (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        <img src="../../images/contributions/gold-star-small.jpg" alt="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful." width="12" height="12" title="This contribution has received a Gold Star because it is a high quality inquiry-based activity that follows the PhET design guidelines  (PDF) and teachers have found it useful."/>
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Lab,Concept Questions">Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1373389059564">7/9/13</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.a3ca274412c42p-2">
+
+                    <td>
+                        <a href="../contributions/view/3505.html">
+                            <span class="ct-title">Thermodynamics of Skating</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Joel Barthel</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1328886722555">2/10/12</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.c7b7db79cbaedp-1">
+
+                    <td>
+                        <a href="../contributions/view/3489.html">
+                            <span class="ct-title">Intro to Energy Conservation</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Bob Schaefer</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Demonstration">Demo</td>
+                    
+                    <td class="ct-updated" rel="1323299160332">12/7/11</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.b7bfbf88db3bp-1">
+
+                    <td>
+                        <a href="../contributions/view/3358.html">
+                            <span class="ct-title">Conservation of Energy</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Sarah Stanhope</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1296162282070">1/27/11</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.7b883c15ba6d4p-2">
+
+                    <td>
+                        <a href="../contributions/view/3292.html">
+                            <span class="ct-title">Energy Simulation</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Pauline Seales</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1281224467172">8/7/10</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.9f203ed5dec95p-1">
+
+                    <td>
+                        <a href="../contributions/view/3277.html">
+                            <span class="ct-title">NRG Sk8r </span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Kim Berg</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1267945200000">3/7/10</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.f914a7f7c6718p-2">
+
+                    <td>
+                        <a href="../contributions/view/2996.html">
+                            <span class="ct-title">Unusual cases of oscillation</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Debra Krause Dandaneau</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Other">Other</td>
+                    
+                    <td class="ct-updated" rel="1244613600000">6/10/09</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.d91020610cf8p-2">
+
+                    <td>
+                        <a href="../contributions/view/3176.html">
+                            <span class="ct-title">PhET Energy Sk8r sim Activity</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Drew Isola</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab,Concept Questions">Lab<br/>CQs</td>
+                    
+                    <td class="ct-updated" rel="1323095732040">12/5/11</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.bdcad6e8df4dp-3">
+
+                    <td>
+                        <a href="../contributions/view/3146.html">
+                            <span class="ct-title">Energy-Skate Park PhET Lab</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Chris Bires</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1280983998901">8/4/10</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.ec1213e58449p-3">
+
+                    <td>
+                        <a href="../contributions/view/3108.html">
+                            <span class="ct-title">Energy Skate Park Learning Goals for four activities (Inquiry Based)</span>
+                        </a>
+                        <img src="../../images/contributions/phet-logo-icon-small.jpg" alt="This contribution was designed by PhET." width="25" height="12" title="This contribution was designed by PhET."/>
+                        
+                    </td>
+                    <td class="ct-authors">Trish Loeblein</td>
+                    <td class="ct-level" rel="Undergraduate - Intro,High School">UG-Intro<br/>HS</td>
+                    <td class="ct-type" rel="Other">Other</td>
+                    
+                    <td class="ct-updated" rel="1373213239718">7/7/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.19a00a3e93101p-1">
+
+                    <td>
+                        <a href="../contributions/view/3083.html">
+                            <span class="ct-title">Rollercoaster, Free Fall &amp; Energy Conservation</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Paulo Pinto</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1207980000000">4/12/08</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.e0b095f16984ap-2">
+
+                    <td>
+                        <a href="../contributions/view/3058.html">
+                            <span class="ct-title">Build a Park</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">stephanie wisely</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1204527600000">3/3/08</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.6b6982bf5eb4p-4">
+
+                    <td>
+                        <a href="../contributions/view/3028.html">
+                            <span class="ct-title">Energy Skatepark Adventures</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Ella Bowling</td>
+                    <td class="ct-level" rel="Middle School">MS</td>
+                    <td class="ct-type" rel="Homework,Lab">HW<br/>Lab</td>
+                    
+                    <td class="ct-updated" rel="1227337200000">11/22/08</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.e3ca5323e891ap-2">
+
+                    <td>
+                        <a href="../contributions/view/2999.html">
+                            <span class="ct-title">Inquiry to the Energy Skate Park</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">beki toussaint</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1190008800000">9/17/07</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.04a38d92d9fp-1">
+
+                    <td>
+                        <a href="../contributions/view/2962.html">
+                            <span class="ct-title">Energy Skate Park</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Gretchen Swanson</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1190095200000">9/18/07</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.6e5876aededc7p-1">
+
+                    <td>
+                        <a href="../contributions/view/2937.html">
+                            <span class="ct-title">Graphing Energy at the Skate Park</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Jessica Mullins</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1190095200000">9/18/07</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.67c42afef3a9p-1">
+
+                    <td>
+                        <a href="../contributions/view/2900.html">
+                            <span class="ct-title">Energy Skate Park Lesson</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Chris Nichols</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1190095200000">9/18/07</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.817a958de33e2p-2">
+
+                    <td>
+                        <a href="../contributions/view/2896.html">
+                            <span class="ct-title">Skate Park and Energy Conservation</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Don Cameron</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1160892000000">10/15/06</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.2991c25c80388p-1">
+
+                    <td>
+                        <a href="../contributions/view/2858.html">
+                            <span class="ct-title">Conservation of Energy (Energy Skate Park)</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Amy Jordan</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1187330400000">8/17/07</td>
+
+                </tr><tr class="ct-contribution list-highlight-background" rel="0x1.9bbffe7d60c66p-1">
+
+                    <td>
+                        <a href="../contributions/view/3768.html">
+                            <span class="ct-title">W, Ek en Ez, Energie vergelijkingen laten leven.</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Loran de Vries</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Lab">Lab</td>
+                    
+                    <td class="ct-updated" rel="1379663176023">9/20/13</td>
+
+                </tr><tr class="ct-contribution" rel="0x1.fba6903100b89p-1">
+
+                    <td>
+                        <a href="../contributions/view/3380.html">
+                            <span class="ct-title">Conservación de la energía mecánica</span>
+                        </a>
+                        
+                        
+                    </td>
+                    <td class="ct-authors">Félix A. Gutiérrez Múzquiz</td>
+                    <td class="ct-level" rel="High School">HS</td>
+                    <td class="ct-type" rel="Homework">HW</td>
+                    
+                    <td class="ct-updated" rel="1299173619213">3/3/11</td>
+
+                </tr>
+            </table>
+        
+    </div>
+</div>
+
+            
+
+            <p style="text-align: center;">You can <a href="http://phet.colorado.edu/en/for-teachers/submit-activity">submit your own ideas and activities</a>.</p>
+
+            
+                <a id="related-simulations"></a>
+
+                <h2>
+                    Related Simulations
+                </h2>
+                <div style="margin: 0; padding: 0; margin-bottom: -15px;">
+    <div dir="ltr">
+        <table>
+            <tr>
+                <td class="simulation-list-item">
+                    <a href="collision-lab.html" class="simulation-link">
+                        <img class="simulation-list-thumbnail" src="../../sims/collision-lab/collision-lab-thumbnail.png" id="simulation-display-thumbnail-collision-lab" alt="Screenshot of the simulation Collision Lab" width="130" height="96"/><br/>
+                        <strong><span class="simulation-list-title">Collision Lab</span></strong><br/>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="energy-skate-park-basics.html" class="simulation-link">
+                        <img class="simulation-list-thumbnail" src="../../sims/energy-skate-park/energy-skate-park-basics-thumbnail.png" id="simulation-display-thumbnail-energy-skate-park-basics" alt="Screenshot of the simulation Energy Skate Park: Basics" width="130" height="98"/><br/>
+                        <strong><span class="simulation-list-title">Energy Skate Park: Basics</span></strong><br/>
+                    </a>
+                </td><td class="simulation-list-item">
+                    <a href="mass-spring-lab.html" class="simulation-link">
+                        <img class="simulation-list-thumbnail" src="../../sims/mass-spring-lab/mass-spring-lab-thumbnail.jpg" id="simulation-display-thumbnail-mass-spring-lab" alt="Screenshot of the simulation Masses &amp; Springs" width="130" height="85"/><br/>
+                        <strong><span class="simulation-list-title">Masses &amp; Springs</span></strong><br/>
+                    </a>
+                </td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+</div>
+            
+
+            <a id="translated-versions"></a>
+
+            <h2>
+                Translated Versions:
+            </h2>
+
+            
+                <table class="translations-table">
+                    <tr>
+                        <th>
+                            Language
+                        </th>
+                        <th>
+                            Language (Translated)
+                        </th>
+                        <th>
+                            Simulation Title
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    <tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ar.html">
+                                <span>Arabic</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ar.html">
+                                <span>العربية</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>منتزه الطاقة للتزحلق</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ar.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ar from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ar_SA.html">
+                                <span>Arabic, Saudi Arabia</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ar_SA.html">
+                                <span>العربية (السعودية)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>منتزه الطاقة للتزحلق</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ar_SA.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ar_SA from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/eu.html">
+                                <span>Basque</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/eu.html">
+                                <span>Basque</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia Skate Parkean</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_eu.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'eu from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/bs.html">
+                                <span>Bosnian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/bs.html">
+                                <span>Bosnian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energija u skejt-parku</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_bs.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'bs from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/pt_BR.html">
+                                <span>Brazilian Portuguese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/pt_BR.html">
+                                <span>português (Brasil)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Parque Energético para Skatistas</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_pt_BR.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'pt_BR from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/zh_CN.html">
+                                <span>Chinese - Simplified</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/zh_CN.html">
+                                <span>中文 (中国)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>能量滑板竞技场</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_zh_CN.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'zh_CN from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/zh_TW.html">
+                                <span>Chinese - Traditional</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/zh_TW.html">
+                                <span>中文 (台灣)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>能量滑板競技場</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_zh_TW.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'zh_TW from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/hr.html">
+                                <span>Croatian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/hr.html">
+                                <span>hrvatski</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Zakon sačuvanja energije</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_hr.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'hr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/cs.html">
+                                <span>Czech</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/cs.html">
+                                <span>čeština</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energetický Skate Park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_cs.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'cs from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/da.html">
+                                <span>Danish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/da.html">
+                                <span>Dansk</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energiskaterpark</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_da.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'da from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/nl.html">
+                                <span>Dutch</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/nl.html">
+                                <span>Nederlands</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>EnergieSkatepark</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_nl.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'nl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/et.html">
+                                <span>Estonian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/et.html">
+                                <span>Eesti</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia rula park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_et.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'et from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/fr.html">
+                                <span>French</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/fr.html">
+                                <span>français</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Skate parc de l&#039;énergie</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_fr.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'fr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/gl.html">
+                                <span>Galician</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/gl.html">
+                                <span>Gallegan</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Enerxía Parque Patinaxe</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_gl.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'gl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/de.html">
+                                <span>German</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/de.html">
+                                <span>Deutsch</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energieskatepark</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_de.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'de from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/el.html">
+                                <span>Greek</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/el.html">
+                                <span>Ελληνικά</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Ενεργειακό Πάρκο Skate</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_el.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'el from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ht.html">
+                                <span>Haitian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ht.html">
+                                <span>Haitian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Enèji paten an sou pis </span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ht.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ht from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/iw.html">
+                                <span>Hebrew</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/iw.html">
+                                <span>עברית</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>פארק שעשועים: אנרגיה</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_iw.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'iw from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/hu.html">
+                                <span>Hungarian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/hu.html">
+                                <span>magyar</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia Gördeszkapark</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_hu.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'hu from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/in.html">
+                                <span>Indonesian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/in.html">
+                                <span>Bahasa Indonesia</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energi Skate </span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_in.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'in from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ga.html">
+                                <span>Irish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ga.html">
+                                <span>Gaeilge</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Fuinneamh Pairc scatail</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ga.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ga from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/it.html">
+                                <span>Italian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/it.html">
+                                <span>italiano</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia con lo Skateboard</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_it.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'it from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ja.html">
+                                <span>Japanese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ja.html">
+                                <span>日本語</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>スケートパーク（Energy Skate Park）</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ja.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ja from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/kn.html">
+                                <span>Kannada</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/kn.html">
+                                <span>Kannada</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>ಶಕ್ತಿ-ಸ್ಕೇಟ್ ಉದ್ಯಾನವನ</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_kn.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'kn from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/kk.html">
+                                <span>Kazakh</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/kk.html">
+                                <span>Kazakh</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energy Skate Park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_kk.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'kk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/km.html">
+                                <span>Khmer</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/km.html">
+                                <span>Khmer</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energy Skate Park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_km.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'km from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/ko.html">
+                                <span>Korean</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ko.html">
+                                <span>한국어</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>에너지 스케이트 공원</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ko.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ko from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/lt.html">
+                                <span>Lithuanian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/lt.html">
+                                <span>Lietuvių</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energijos riedlenčių parkas</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_lt.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'lt from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/mk.html">
+                                <span>Macedonian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/mk.html">
+                                <span>македонски</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Енергија во скејт-паркот</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_mk.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'mk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/mr.html">
+                                <span>Marathi</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/mr.html">
+                                <span>Marathi</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>एनर्जी स्केट पार्क </span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_mr.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'mr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/mn.html">
+                                <span>Mongolian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/mn.html">
+                                <span>Mongolian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energy Skate Park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_mn.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'mn from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/nb.html">
+                                <span>Norwegian Bokmal</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/nb.html">
+                                <span>Norwegian Bokmål</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energiskatepark</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_nb.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'nb from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/fa.html">
+                                <span>Persian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/fa.html">
+                                <span>Persian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>انرژی پارک اسکیت</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_fa.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'fa from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/pl.html">
+                                <span>Polish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/pl.html">
+                                <span>polski</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia w Skate Parku</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_pl.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'pl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/pt.html">
+                                <span>Portuguese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/pt.html">
+                                <span>português</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia do Parque de Skate</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_pt.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'pt from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/ru.html">
+                                <span>Russian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/ru.html">
+                                <span>русский</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Энергетический каток</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_ru.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'ru from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/sr.html">
+                                <span>Serbian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sr.html">
+                                <span>Српски</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Енергија у скејт-парку</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_sr.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'sr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/sk.html">
+                                <span>Slovak</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sk.html">
+                                <span>Slovenčina</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energia a skejt park</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_sk.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'sk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/sl.html">
+                                <span>Slovenian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sl.html">
+                                <span>Slovenščina</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Park energije drsanja</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_sl.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'sl from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/es.html">
+                                <span>Spanish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/es.html">
+                                <span>español</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Pista de patinar &quot;Energía&quot;</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_es.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'es from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/es_CO.html">
+                                <span>Spanish (Colombia)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/es_CO.html">
+                                <span>español (Colombia)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Parque de la Energía</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_es_CO.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'es_CO from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/es_PE.html">
+                                <span>Spanish (Peru)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/es_PE.html">
+                                <span>español (Perú)</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energía en el Parque del Patinador</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_es_PE.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'es_PE from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/sv.html">
+                                <span>Swedish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/sv.html">
+                                <span>svenska</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Skatepark för energi</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_sv.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'sv from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/tr.html">
+                                <span>Turkish</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/tr.html">
+                                <span>Türkçe</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Enerji kaykayı parkı</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_tr.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'tr from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/tk.html">
+                                <span>Turkmen</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/tk.html">
+                                <span>Turkmen</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Energiýa skeýt meýdançasy</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_tk.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'tk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list">
+                        <td>
+                            <a href="../simulations/translated/uk.html">
+                                <span>Ukrainian</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/uk.html">
+                                <span>українська</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Парк для скейтів</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_uk.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'uk from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr><tr class="simulation-main-translation-list list-highlight-background">
+                        <td>
+                            <a href="../simulations/translated/vi.html">
+                                <span>Vietnamese</span>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="../simulations/translated/vi.html">
+                                <span>Tiếng Việt</span>
+                            </a>
+                        </td>
+                        <td>
+                            <span>Công viên trượt ván.</span>
+                        </td>
+                        <td>
+                            <a href="../../sims/energy-skate-park/energy-skate-park_vi.jnlp" rel="external" class="sim-run-now-play" onclick="_gaq.push(['_trackEvent', 'Simulation Run', 'energy-skate-park', 'vi from ' + document.URL])">
+                                Run&nbsp;Now
+                            </a>
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </table>
+            
+
+            <a id="software-requirements"></a>
+
+            <h2>
+                Software Requirements
+            </h2>
+
+            <table class="system-requirements-table">
+                <tr>
+                    <th>Windows</th>
+                    <th>Macintosh</th>
+                    <th>Linux</th>
+                </tr>
+                <tr>
+                    <td>
+                        Microsoft Windows
+                        <br/>
+                        XP/Vista/7
+                        <br/>
+                        <span>Sun Java 1.5.0_15 or later</span>
+                    </td>
+                    <td>
+                        OS 10.5 or later
+                        <br/>
+                        <span>Sun Java 1.5.0_19 or later</span>
+                    </td>
+                    <td>
+                        <span>Sun Java 1.5.0_15 or later</span>
+                    </td>
+                </tr>
+            </table>
+
+            <a id="credits"></a>
+
+            <h2>
+                Credits
+            </h2>
+
+            <table class="credits-table">
+                <tr>
+                    <th>
+                        Design Team
+                    </th>
+                    <th>
+                        Third-party Libraries
+                    </th>
+                    <th>
+                        Thanks To
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        
+                            <ul>
+                                <li><span>Wendy Adams</span></li><li><span>Michael Dubson</span></li><li><span>Trish Loeblein</span></li><li><span>Kathy Perkins</span></li><li><span>Sam Reid (developer/lead)</span></li><li><span>Carl Wieman</span></li><li><span>Interviewer: Danielle Harlow</span></li>
+                            </ul>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+            
+        </div>
+        <div class="main-footer">
+            <div class="main-footer-spacer"></div>
+            <div class="other-languages">
+                
+                
+            </div>
+            <div class="copyright">&copy; 2013 University of Colorado. <a href="../about/licensing.html">
+                Some rights reserved.
+            </a></div>
+        </div>
+    </div>
+
+</div>
+</body>
+
+<!-- Mirrored from phet.colorado.edu/en/simulation/energy-skate-park by HTTrack Website Copier/3.x [XR&CO'2010], Wed, 22 Jan 2014 08:24:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+</html>
+

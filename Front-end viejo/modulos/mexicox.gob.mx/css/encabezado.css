@@ -1,0 +1,45 @@
+    .barra{background: white; }   
+    .btnmorado{
+        font-weight: bold;
+        border-radius: 108px 108px 108px 108px;
+        -moz-border-radius: 108px 108px 108px 108px;
+        -webkit-border-radius: 108px 108px 108px 108px;
+        background: #34294f !important;
+        color: white;
+        margin-top: 7px;
+        padding:10px 20px 10px 20px;}
+    .btnverde{
+        font-weight: bold;
+        border-radius: 108px 108px 108px 108px;
+        -moz-border-radius: 108px 108px 108px 108px;
+        -webkit-border-radius: 108px 108px 108px 108px;
+        background: #06BB3A !important;
+        color: white;
+        margin-top: 7px;
+        padding:10px 20px 10px 20px;
+    }
+    .btnverde:hover{background: #05CB3D !important;}
+    .btnmorado:hover{background: #503F7C !important;}
+    .buscar{margin-top: 7px;}
+    .dropdown-menu > li > a:hover {
+        background-color: #503F7C;
+        color: white;
+    }   
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:focus,
+    .navbar-default .navbar-nav > .open > a:hover {
+        background: white !important;
+    }
+	.logoPrincipal{
+		margin-left:10px;
+	}
+    @media(max-width:767px){
+        .esquinaDerecha{
+            float: left !important;            
+        }
+    }
+    @media(min-width:768px){
+        .esquinaDerecha{
+            float: right !important;            
+        }
+    }

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://www.hacienda-nayarit.gob.mx/favicon.ico">
+
+    <title>Modulo de actualzación de Ingresos</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://www.hacienda-nayarit.gob.mx/contenidos/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://www.hacienda-nayarit.gob.mx/contenidos/signin.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://www.hacienda-nayarit.gob.mx/contenidos/assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+
+  <script>
+  $(function() {
+    $( document ).tooltip({
+      position: {
+        my: "center bottom-20",
+        at: "center top",
+        using: function( position, feedback ) {
+          $( this ).css( position );
+          $( "<div>" )
+            .addClass( "arrow" )
+            .addClass( feedback.vertical )
+            .addClass( feedback.horizontal )
+            .appendTo( this );
+        }
+      }
+    });
+  });
+  </script>
+  <style>.ui-tooltip, .arrow:after {
+    background: black;
+    border: 2px solid white;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px;
+    font: bold 14px "Helvetica Neue", Sans-Serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 7px black;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+  }
+  .btn-primary {
+    color: #FFF;
+    background-color: #EF1515;
+    border-color: #682615;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    color: #FFF;
+    background-color: #AA0F0F;
+    border-color: #CE0A0A;
+}
+
+  </style>  
+
+    <script language="JavaScript">
+
+function upperMe() {
+var field =document.frmPlacas.txtplaca;
+var upperCaseVersion = field.value.toUpperCase();
+field.value = upperCaseVersion;
+
+var field =document.frmPlacas.txtSerie;
+var upperCaseVersion = field.value.toUpperCase();
+field.value = upperCaseVersion;
+
+}
+
+function valida(accion){
+  forma = document.frmPlacas;
+
+  if ((forma.txtplaca.value.length > 1)&&(forma.txtSerie.value.length >1))
+      {
+            if (forma.rdo[0].checked==true || forma.rdo[1].checked==true)
+      {
+
+return true;
+       
+        
+      }
+      else
+      {
+         alert ("Para continuar deberá indicar alguna de las siguientes opciones:\n\n-Pago en una exhibición con descuento\n\n-Pago a Meses sin intereses");                
+         return false;
+
+      } 
+      }
+      else
+      {  
+      alert ("La longitud del los campos Placa y Número de serie no pueden estar vacios");
+      return false;
+      }
+    
+    
+
+
+//alert (forma.rdo[1].checked);
+
+  
+    
+
+    
+    
+    
+}
+</script>
+<script>
+function abrir() {
+open('http://www.hacienda-nayarit.gob.mx/pagostab.html','','top=300,left=300,width=800,height=800' ) ;
+}
+</script>
+  </head>
+
+  <body>
+
+<div align="center">
+<img src="https://www.hacienda-nayarit.gob.mx/img/banner_SAF.png" >
+</div>
+
+
+<!-- <meta http-equiv="refresh" content="0;URL=http://172.16.52.111/sii/"> -->
+
+
+
+    <div class="container">
+      <div align="center">
+        <h3>Refrendo Vehicular (Motocicletas)</h3><br/>
+
+
+        <h5 class="form-signin-heading">Capture los siguientes datos de su vehiculo asi como se informa en su
+  tarjeta de circulación vigente:
+  </h5>
+</div>
+      <form class="form-signin" role="form" action="ejerciciosm.php" method="POST" name="frmPlacas" target="_self" id="frmPlacas" onSubmit="return valida(1)";>
+    
+        <input  name="txtplaca" class="form-control" placeholder="Placa" autofocus onChange="upperMe();" title="Incluya guiones en la placa en caso que asi lo indique su tarjeta de circulación vigente.">
+     <BR/>
+        <input name="txtSerie" class="form-control" placeholder="Serie" required onChange="upperMe();">
+       <BR/> 
+        <button class="btn btn-lg btn-primary btn-block" type="submit" style="font-size:14px">Acceder al pago</button>
+      </form>
+        <div align="center">
+          <div class="alert alert-warning" role="alert">
+<h6><strong>Nota:</strong> Incluya guiones en la placa en caso que asi lo indique su tarjeta de circulación vigente.</h6> 
+          </div>
+
+  <div>
+    <h6><a href="tenenciamotos.php.html#" onclick="abrir();" target="_blank" >Conozca las opciones de pago disponibles aqu&iacute;</a></h6>
+  </div>
+
+</div>
+
+
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://www.hacienda-nayarit.gob.mx/contenidos/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+
+<h6>  <div align="center"><a href="https://www.hacienda-nayarit.gob.mx/politicas_de_uso_y_privacidad.htm" target="_blank" >Politicas de uso y privacidad</a></div> </h6>
+    
+  </body>
+
+</html>

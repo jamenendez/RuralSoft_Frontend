@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:esi="http://java.sun.com/JSP/Page" xml:lang="es" lang="es">
+<head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Registrarse</title>
+    
+    
+    <link rel="stylesheet" type="text/css" href="../css/phet-v61-min.css"/>
+
+    <link rel="stylesheet" href="../css/font-awesome/css/font-awesome.min.css">
+  <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="/css/ie6fix-v3.css"/>
+    <![endif]-->
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="/css/ie7fix-v2.css"/>
+    <![endif]-->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8fix-v1.css"/>
+    <![endif]-->
+    <!--[if lt IE 7]>
+    <script defer type="text/javascript" src="/js/pngfix.js"></script>
+    <![endif]-->
+    <!--[if IE]>
+    <link rel="stylesheet" type="text/css" href="/css/ie-v1.css"/>
+    <![endif]-->
+    <!-- class edu.colorado.phet.website.authentication.RegisterPage -->
+    <!-- host phet.colorado.edu -->
+    <script type="text/javascript">
+        //<![CDATA[
+        var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-5033201-1"]);_gaq.push(["_setDomainName","phet.colorado.edu"]);_gaq.push(["_trackPageview"]);_gaq.push(["_trackPageLoadTime"]);var benchmarkTracker=null;
+        (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";a.onload=a.onreadystatechange=function(){var a=this.readyState;a&&"complete"!=a&&"loaded"!=a||(benchmarkTracker=_gat._getTracker("UA-5033201-1"),benchmarkTracker._setDomainName("phet.colorado.edu"))};var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+        (function(){(function(a,b,f,g,c,d,e){a.GoogleAnalyticsObject=c;a[c]=a[c]||function(){(a[c].q=a[c].q||[]).push(arguments)};a[c].l=1*new Date;d=b.createElement(f);e=b.getElementsByTagName(f)[0];d.async=1;d.src=g;e.parentNode.insertBefore(d,e)})(window,document,"script","//www.google-analytics.com/analytics.js","hewlettOERTracker");hewlettOERTracker("create","UA-5033010-35","phet.colorado.edu");hewlettOERTracker("send","pageview")})();
+        (function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="/js/phet-v36-min.js";var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)})();
+        //]]>
+    </script>
+    
+    
+
+
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+    <script type="text/javascript" src="../js/confirm-navigation-dialog.js"></script>
+  
+        <meta property="og:site_name" content="PhET"/><meta property="twitter:site" content="@PhETsims"/><meta property="og:title" content="Simulaciones Interactivas PhET"/><meta property="twitter:title" content="Simulaciones Interactivas PhET"/><meta property="og:url" content="https://phet.colorado.edu/es/register"/><meta property="twitter:card" content="summary"/><meta property="og:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="twitter:image" content="https://phet.colorado.edu/images/phet-social-media-logo.png"/><meta property="og:description" content="Fundado en 2002 por el ganador del Premio Nobel Carl Wieman. El proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemáticas y ciencias. Las simulaciones de PhET se basan en <a {0}>investigación</a> educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo."/><meta property="twitter:description" content="Fundado en 2002 por el ganador del Premio Nobel Carl Wieman. El proyecto de simulaciones interactivas de PhET de la Universidad de Colorado en Boulder crea simulaciones interactivas gratuitas de matemáticas y ciencias. Las simulaciones de PhET se basan en <a {0}>investigación</a> educativa extensiva e involucran a los estudiantes mediante un ambiente intuitivo y similar a un juego, en donde aprenden explorando y descubriendo."/>
+    
+        <script type="text/javascript">var phetLocale = "es";var phetSimulationString = "{0} (simulación)";</script>
+    
+    <style type="text/css" id="edu-colorado-phet-website-authentication-panels-RegisterPanel-0">.register-holder {
+        margin: 0 auto;
+      }
+
+      .register-holder select {
+        width: 250px;
+        padding-left: 5px;
+
+      }
+
+      .register-text-field {
+        margin-bottom: 10px;
+        display: block;
+        width: 100%;
+        line-height: 18px;
+        border: 1px solid #d3d3d3;
+        box-sizing: border-box;
+        padding: 0 5px;
+        height: 20px;
+      }
+
+      .other-input-holder input[type="text"] {
+        width: 100%
+      }
+
+      .other-input-holder span {
+        display: block;
+        overflow: hidden;
+      }
+
+      div.ltr .other-input-holder span {
+        padding-right: 10px;
+      }
+
+      div.rtl .text-holder {
+        padding: 0 10px;
+      }
+
+      div.ltr .checkbox-holder {
+        float: left;
+      }
+
+      div.rtl .checkbox-holder {
+        float: right;
+      }
+
+      .half-width {
+        width: 47%;
+        display: inline;
+      }
+
+      .register-errors {
+        color: red;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      table.grade-table {
+        border-collapse: collapse;
+      }
+
+      table.grade-table td {
+        min-width: 55px;
+        padding: 0;
+      }
+
+      table.grade-table td:first-child {
+        min-width: 100px;
+      }
+
+      #check-all {
+        color: gray;
+        position: relative;
+        display: none;
+      }
+
+      #privacy-policy {
+        color: gray;
+      }
+
+      #privacy-policy a {
+        text-decoration: none;
+      }
+
+      #privacy-policy a:hover {
+        text-decoration: underline;
+      }
+
+      .phet-button .login-form-submit {
+        margin-top: 5px;
+      }
+
+      #donate-dialog {
+        border-radius: 5px;
+        background-color: rgb(243, 245, 243);
+        width: 475px;
+      }
+
+      #donate-dialog td {
+        padding: 0;
+      }
+
+      #top-section {
+        background-color: #2a326a;
+        height: 75px;
+        line-height: 75px;
+        color: white;
+        text-align: center;
+        font-size: 1.75em;
+        margin-bottom: 20px;
+      }
+
+      #donate-button {
+        background-color: #2a326a;
+        color: white;
+      }
+
+      #donate-button:hover {
+        background-color: rgb(62, 70, 126);
+      }
+
+      #donate-buttons-holder {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+      }
+
+      #maybe-later-button {
+        color: black;
+        text-decoration: none;
+        margin-right: 10px;
+        font-weight: bold;
+      }
+
+      #new-user-ask {
+        display: none;
+      }
+
+      #power-user-ask {
+        display: none;
+      }
+    </style>
+
+    <script type="text/javascript" src="https://phet.colorado.edu/js/register-page-v7.js"></script>
+  <script type="text/javascript" src="https://phet.colorado.edu/resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="https://phet.colorado.edu/resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+</head>
+<body dir="ltr" class="ltr" id="other-body">
+<div id="skipNav">
+    <a href="register-dest=%7C.html#main-content" accesskey="0" id="skipper" class="white-focus" tabindex="1">
+        Ir directo al contenido principal
+    </a>
+</div>
+
+
+
+
+
+<div id="page-header" class="ltr">
+    <div class="log-in-out" style="z-index: 1000;">
+      
+  <a class="phet-button sign-in-button white-focus" id="login-button" href="register-dest=%7C.html#">
+    Ingresar
+  </a>
+  <a class="phet-button register-button white-focus" href="https://phet.colorado.edu/es/register?dest=%2Fes%2Fregister%3Fdest%3D%2F">
+    Registro
+  </a>
+
+
+
+<div id="login-form" style="display: none;">
+
+  <div class="login-form-header" id="button-sign-in">
+    Ingresar
+  </div>
+  <div class="login-form-header" style="display: none;" id="access-sign-in">
+    Por favor inicia sesión para acceder
+  </div>
+
+  <div id="login-validation-message" style="display: none">
+    Se ha ingresado un nombre de usuario y/o contraseña incorrecta.
+  </div>
+
+  <form id="id1" method="post" action="https://phet.colorado.edu/../?wicket:bookmarkablePage=:edu.colorado.phet.website.authentication.LoginFormHandlerPage"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id1_hf_0" id="id1_hf_0" /></div>
+
+    <input type="text" name="destination" id="destinationURL" style="display: none;" value=""><br/>
+    <input type="text" name="source" id="sourceURL" style="display: none;" value=""><br/>
+    <label class="bold-label" for="login-email-entry">
+      Dirección de correo electrónico:
+    </label><br/>
+    <input id="login-email-entry" type="text" name="username" class="login-form-text" value=""><br/>
+    <label class="bold-label" for="password">
+      Contraseña:
+    </label><br/>
+    <input type="password" name="password" id="password" class="login-form-text" value=""><br/>
+
+      <span>
+        <input id="sign-in-checkbox" type="checkbox" name="remember:remember-check" checked="checked">
+        <label for="sign-in-checkbox">Remember me</label>
+        <a class="no-underline opposite-float" href="reset-password-request.html" id="remember-me">Forgot password?</a>
+      </span>
+
+    <br/>
+
+    <input type="submit" value="SIGN IN" class="phet-button login-form-submit"><br/>
+
+      <span>
+        ¿No tienes una cuenta? <a class="no-underline" href="register-dest=%7C.html">Register</a>.
+      </span>
+
+      <span>
+        <a href="resend-email-confirmation.html" class="no-underline opposite-float">
+          Enviar de nuevo el email de confirmación
+        </a>
+      </span>
+
+  </form>
+
+</div>
+    </div>
+
+    <div id="page-header-container">
+        <a href="index.html" class="header-logo-image white-focus" tabindex="2">
+            <img src="../images/phet-logo-tm.svg" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;" width="156" height="74" id="phet-logo-main-image"/>
+        </a>
+        <div id="page-header-cu">
+            <a tabindex="3" href="http://www.colorado.edu" target="_blank" class="white-focus" style="display: inline-block; color: white">
+              <img src="../images/logos/cu-logo-grayscale.svg" alt="University of Colorado" width="195" height="40" style="border: none;"/>
+            </a>
+        </div>
+        <div id="page-header-search">
+    <form method="get" id="search-form" class="autocompleteOff" action="/es/search">
+        <div>
+            <label for="search-text-id" class="hidden">
+                Buscar en el sitio web de PhET
+            </label>
+            <div class="search-box">
+                <input type="text" size="15" name="q" class="always-enabled acInput orange-focus" id="search-text-id"/>
+            </div>
+            <button type="submit" form="search-form" id="search-submit" class="phet-button sign-in-button always-enabled autocompleteOff" title="Clic aquí para buscar en el sitio web de PhET">
+                <img id="magnifying-glass" src="../images/icons/search-icon.png" alt="Buscar"/>
+            </button>
+        </div>
+    </form>
+</div>
+    </div>
+</div>
+<div id="page-content" class="ltr">
+    
+  <div class="menu-page-content" style="width: 820px;">
+    <div id="side-panel">
+      <div>
+    <div class="side-nav">
+        <div>
+    
+        <ul class="nav-ul" dir="ltr">
+            <li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/simulations/category/new" class="nml-link nav0" id="nav-location-nav-simulations">
+                        <span class="nml-link-label">Simulaciones</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="teaching-resources.html" class="nml-link nav0" id="nav-location-nav-teacherIdeas">
+                        <span class="nml-link-label teacher-ideas-item">Material para Profesores</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="research.html" class="nml-link nav0" id="nav-location-nav-research">
+                        <span class="nml-link-label">Investigaciones</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="https://phet.colorado.edu/es/accessibility" class="nml-link nav0" id="nav-location-nav-accessibility">
+                        <span class="nml-link-label">Accessibility</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    <a href="donate.html" class="nml-link nav0" id="nav-location-nav-donate">
+                        <span class="nml-link-label">Donar</span>
+                    </a>
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li><li class="nav-li">
+                <div class="link-holder">
+                    
+                    
+                </div>
+            </li>
+        </ul>
+    
+</div>
+    </div>
+</div>
+    </div>
+    <div id="main-content" class="main-menu-content">
+      
+      
+  <h2>
+    Registro
+  </h2>
+  <div>
+  <div class="register-holder" dir="ltr">
+    <p class="register-errors"></p>
+
+    
+
+    <form onsubmit="register.disabled = true; return true;" id="id1" method="post" action="../;jsessionid=A159E50A416FC09257187A341828F2BE?wicket:interface=:0:register-panel:register-form::IFormSubmitListener::"><div style="width:0px;height:0px;position:absolute;left:-100px;top:-100px;overflow:hidden"><input type="hidden" name="id1_hf_0" id="id1_hf_0" /></div>
+
+      <div class="contribution-edit-column">
+        <label class="bold-label" for="rp-username">Correo electrónico</label>
+        <input id="rp-username" class="register-text-field" type="text" value="" name="username"/>
+
+        <label class="bold-label" for="rp-username-confirm">Confirmar correo electrónico</label>
+        <input id="rp-username-confirm" class="register-text-field" type="text" value="" name="usernameConfirm"/>
+
+        <label class="bold-label" for="rp-password">Contraseña</label>
+        <input id="rp-password" class="register-text-field" type="password" value="" name="password"/>
+
+        <label class="bold-label" for="rp-passwordCopy">Confirmar contraseña</label>
+        <input id="rp-passwordCopy" class="register-text-field" type="password" value="" name="passwordCopy"/>
+
+        <br/>
+
+        <label class="bold-label" for="rp-firstName" style="float: left; display: inline-block; width: 46%;">
+          Nombre
+        </label>
+        <label class="bold-label right-label" for="rp-lastName">
+          Apellido
+        </label>
+
+        <input id="rp-firstName" class="register-text-field half-width" type="text" value="" style="float: left; display: inline-block; width: 46%;" name="firstName"/>
+        <input id="rp-lastName" class="register-text-field half-width" type="text" value="" style="float: right;" name="lastName"/>
+
+
+        <label class="bold-label" for="rp-organizationSchool">
+          Organización/Institución educativa
+        </label>
+        <input class="register-text-field" type="text" value="" name="organization"/>
+
+        <div>
+  <div dir="ltr">
+    <label class="bold-label" for="country-select-container">
+      País
+    </label>
+    <br/>
+
+    <div id="country-select-container">
+      <select name="countryState:country" id="id2" onchange="var wcall=wicketAjaxPost('../;jsessionid=A159E50A416FC09257187A341828F2BE?wicket:interface=:0:register-panel:register-form:countryState:country::IBehaviorListener:0:1', wicketSerialize(Wicket.$('id2')),function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id2') != null;}.bind(this));">
+<option selected="selected" value="">Choose One</option>
+<option value="0">Afghanistan</option>
+<option value="1">Aland Islands</option>
+<option value="2">Albania</option>
+<option value="3">Algeria</option>
+<option value="4">American Samoa</option>
+<option value="5">Andorra</option>
+<option value="6">Angola</option>
+<option value="7">Anguilla</option>
+<option value="8">Antarctica</option>
+<option value="9">Antigua and Barbuda</option>
+<option value="10">Argentina</option>
+<option value="11">Armenia</option>
+<option value="12">Aruba</option>
+<option value="13">Australia</option>
+<option value="14">Austria</option>
+<option value="15">Azerbaijan</option>
+<option value="16">Bahamas</option>
+<option value="17">Bahrain</option>
+<option value="18">Bangladesh</option>
+<option value="19">Barbados</option>
+<option value="20">Belarus</option>
+<option value="21">Belgium</option>
+<option value="22">Belize</option>
+<option value="23">Benin</option>
+<option value="24">Bermuda</option>
+<option value="25">Bhutan</option>
+<option value="26">Bolivia</option>
+<option value="27">Bonaire, Saint Eustatius and Saba </option>
+<option value="28">Bosnia and Herzegovina</option>
+<option value="29">Botswana</option>
+<option value="30">Bouvet Island</option>
+<option value="31">Brazil</option>
+<option value="32">British Indian Ocean Territory</option>
+<option value="33">British Virgin Islands</option>
+<option value="34">Brunei</option>
+<option value="35">Bulgaria</option>
+<option value="36">Burkina Faso</option>
+<option value="37">Burundi</option>
+<option value="38">Cambodia</option>
+<option value="39">Cameroon</option>
+<option value="40">Canada</option>
+<option value="41">Cape Verde</option>
+<option value="42">Cayman Islands</option>
+<option value="43">Central African Republic</option>
+<option value="44">Chad</option>
+<option value="45">Chile</option>
+<option value="46">China</option>
+<option value="47">Christmas Island</option>
+<option value="48">Cocos Islands</option>
+<option value="49">Colombia</option>
+<option value="50">Comoros</option>
+<option value="51">Cook Islands</option>
+<option value="52">Costa Rica</option>
+<option value="53">Croatia</option>
+<option value="54">Cuba</option>
+<option value="55">Curacao</option>
+<option value="56">Cyprus</option>
+<option value="57">Czechia</option>
+<option value="58">Democratic Republic of the Congo</option>
+<option value="59">Denmark</option>
+<option value="60">Djibouti</option>
+<option value="61">Dominica</option>
+<option value="62">Dominican Republic</option>
+<option value="63">East Timor</option>
+<option value="64">Ecuador</option>
+<option value="65">Egypt</option>
+<option value="66">El Salvador</option>
+<option value="67">Equatorial Guinea</option>
+<option value="68">Eritrea</option>
+<option value="69">Estonia</option>
+<option value="70">Ethiopia</option>
+<option value="71">Falkland Islands</option>
+<option value="72">Faroe Islands</option>
+<option value="73">Fiji</option>
+<option value="74">Finland</option>
+<option value="75">France</option>
+<option value="76">French Guiana</option>
+<option value="77">French Polynesia</option>
+<option value="78">French Southern Territories</option>
+<option value="79">Gabon</option>
+<option value="80">Gambia</option>
+<option value="81">Georgia</option>
+<option value="82">Germany</option>
+<option value="83">Ghana</option>
+<option value="84">Gibraltar</option>
+<option value="85">Greece</option>
+<option value="86">Greenland</option>
+<option value="87">Grenada</option>
+<option value="88">Guadeloupe</option>
+<option value="89">Guam</option>
+<option value="90">Guatemala</option>
+<option value="91">Guernsey</option>
+<option value="92">Guinea</option>
+<option value="93">Guinea-Bissau</option>
+<option value="94">Guyana</option>
+<option value="95">Haiti</option>
+<option value="96">Heard Island and McDonald Islands</option>
+<option value="97">Honduras</option>
+<option value="98">Hong Kong</option>
+<option value="99">Hungary</option>
+<option value="100">Iceland</option>
+<option value="101">India</option>
+<option value="102">Indonesia</option>
+<option value="103">Iran</option>
+<option value="104">Iraq</option>
+<option value="105">Ireland</option>
+<option value="106">Isle of Man</option>
+<option value="107">Israel</option>
+<option value="108">Italy</option>
+<option value="109">Ivory Coast</option>
+<option value="110">Jamaica</option>
+<option value="111">Japan</option>
+<option value="112">Jersey</option>
+<option value="113">Jordan</option>
+<option value="114">Kazakhstan</option>
+<option value="115">Kenya</option>
+<option value="116">Kiribati</option>
+<option value="117">Kosovo</option>
+<option value="118">Kuwait</option>
+<option value="119">Kyrgyzstan</option>
+<option value="120">Laos</option>
+<option value="121">Latvia</option>
+<option value="122">Lebanon</option>
+<option value="123">Lesotho</option>
+<option value="124">Liberia</option>
+<option value="125">Libya</option>
+<option value="126">Liechtenstein</option>
+<option value="127">Lithuania</option>
+<option value="128">Luxembourg</option>
+<option value="129">Macao</option>
+<option value="130">Macedonia</option>
+<option value="131">Madagascar</option>
+<option value="132">Malawi</option>
+<option value="133">Malaysia</option>
+<option value="134">Maldives</option>
+<option value="135">Mali</option>
+<option value="136">Malta</option>
+<option value="137">Marshall Islands</option>
+<option value="138">Martinique</option>
+<option value="139">Mauritania</option>
+<option value="140">Mauritius</option>
+<option value="141">Mayotte</option>
+<option value="142">Mexico</option>
+<option value="143">Micronesia</option>
+<option value="144">Moldova</option>
+<option value="145">Monaco</option>
+<option value="146">Mongolia</option>
+<option value="147">Montenegro</option>
+<option value="148">Montserrat</option>
+<option value="149">Morocco</option>
+<option value="150">Mozambique</option>
+<option value="151">Myanmar</option>
+<option value="152">Namibia</option>
+<option value="153">Nauru</option>
+<option value="154">Nepal</option>
+<option value="155">Netherlands</option>
+<option value="156">Netherlands Antilles</option>
+<option value="157">New Caledonia</option>
+<option value="158">New Zealand</option>
+<option value="159">Nicaragua</option>
+<option value="160">Niger</option>
+<option value="161">Nigeria</option>
+<option value="162">Niue</option>
+<option value="163">Norfolk Island</option>
+<option value="164">North Korea</option>
+<option value="165">Northern Mariana Islands</option>
+<option value="166">Norway</option>
+<option value="167">Oman</option>
+<option value="168">Pakistan</option>
+<option value="169">Palau</option>
+<option value="170">Palestinian Territory</option>
+<option value="171">Panama</option>
+<option value="172">Papua New Guinea</option>
+<option value="173">Paraguay</option>
+<option value="174">Peru</option>
+<option value="175">Philippines</option>
+<option value="176">Pitcairn</option>
+<option value="177">Poland</option>
+<option value="178">Portugal</option>
+<option value="179">Puerto Rico</option>
+<option value="180">Qatar</option>
+<option value="181">Republic of the Congo</option>
+<option value="182">Reunion</option>
+<option value="183">Romania</option>
+<option value="184">Russia</option>
+<option value="185">Rwanda</option>
+<option value="186">Saint Barthelemy</option>
+<option value="187">Saint Helena</option>
+<option value="188">Saint Kitts and Nevis</option>
+<option value="189">Saint Lucia</option>
+<option value="190">Saint Martin</option>
+<option value="191">Saint Pierre and Miquelon</option>
+<option value="192">Saint Vincent and the Grenadines</option>
+<option value="193">Samoa</option>
+<option value="194">San Marino</option>
+<option value="195">Sao Tome and Principe</option>
+<option value="196">Saudi Arabia</option>
+<option value="197">Senegal</option>
+<option value="198">Serbia</option>
+<option value="199">Serbia and Montenegro</option>
+<option value="200">Seychelles</option>
+<option value="201">Sierra Leone</option>
+<option value="202">Singapore</option>
+<option value="203">Sint Maarten</option>
+<option value="204">Slovakia</option>
+<option value="205">Slovenia</option>
+<option value="206">Solomon Islands</option>
+<option value="207">Somalia</option>
+<option value="208">South Africa</option>
+<option value="209">South Georgia and the South Sandwich Islands</option>
+<option value="210">South Korea</option>
+<option value="211">South Sudan</option>
+<option value="212">Spain</option>
+<option value="213">Sri Lanka</option>
+<option value="214">Sudan</option>
+<option value="215">Suriname</option>
+<option value="216">Svalbard and Jan Mayen</option>
+<option value="217">Swaziland</option>
+<option value="218">Sweden</option>
+<option value="219">Switzerland</option>
+<option value="220">Syria</option>
+<option value="221">Taiwan</option>
+<option value="222">Tajikistan</option>
+<option value="223">Tanzania</option>
+<option value="224">Thailand</option>
+<option value="225">Togo</option>
+<option value="226">Tokelau</option>
+<option value="227">Tonga</option>
+<option value="228">Trinidad and Tobago</option>
+<option value="229">Tunisia</option>
+<option value="230">Turkey</option>
+<option value="231">Turkmenistan</option>
+<option value="232">Turks and Caicos Islands</option>
+<option value="233">Tuvalu</option>
+<option value="234">U.S. Virgin Islands</option>
+<option value="235">Uganda</option>
+<option value="236">Ukraine</option>
+<option value="237">United Arab Emirates</option>
+<option value="238">United Kingdom</option>
+<option value="239">United States</option>
+<option value="240">United States Minor Outlying Islands</option>
+<option value="241">Uruguay</option>
+<option value="242">Uzbekistan</option>
+<option value="243">Vanuatu</option>
+<option value="244">Vatican</option>
+<option value="245">Venezuela</option>
+<option value="246">Vietnam</option>
+<option value="247">Wallis and Futuna</option>
+<option value="248">Western Sahara</option>
+<option value="249">Yemen</option>
+<option value="250">Zambia</option>
+<option value="251">Zimbabwe</option>
+</select>
+    </div>
+
+    <br/>
+    <br/>
+
+    <label class="bold-label" for="state-select-container">
+      Estado / Provincia:
+    </label>
+    <label class="bold-label right-label" id="city-label" for="city-field" style="width: 41%;">
+      Ciudad
+    </label>
+    <br/>
+
+    <div id="state-select-container">
+      <select style="float: left;" name="countryState:state" id="id3">
+<option selected="selected" value="">Choose One</option>
+<option value="0"></option>
+</select>
+
+      <input id="city-field" class="register-text-field" type="text" value="" style="float: right; width: 190px; top: -1px; position: relative;" name="countryState:city" placeholder="Ciudad"/>
+    </div>
+
+    <br/>
+  </div>
+</div>
+
+        <br/><br/>
+
+        <span class="bold">
+          Soy...
+        </span>
+
+        <div id="role-checkboxes">
+          <div>
+            <input type="checkbox" id="teacher-checkbox" name="roleContainer:teacher"/>
+            <label for="teacher-checkbox">
+              Docente
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="student-checkbox" name="roleContainer:student"/>
+            <label for="student-checkbox">
+              Estudiante
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="researcher-checkbox" name="roleContainer:researcher"/>
+            <label for="researcher-checkbox">
+              Investigador
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="translator-checkbox" name="roleContainer:translator"/>
+            <label for="translator-checkbox">
+              Traductor
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="educator-checkbox" name="roleContainer:teacherEducator"/>
+            <label for="educator-checkbox">
+              Formador/ capacitador de docentes
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="parent-checkbox" name="roleContainer:parent"/>
+            <label for="parent-checkbox">
+              Padre de familia
+            </label>
+          </div>
+          <div class="other-input-holder">
+            <span class="checkbox-holder">
+              <input type="checkbox" id="other-role-checkbox" name="roleContainer:otherRoleContainer:otherRole"/>
+              <label for="other-role-checkbox">
+                Otro
+              </label>
+            </span>
+            <span class="text-holder">
+              <input type="text" value="" class="other-input" id="other-role" name="roleContainer:otherRoleContainer:otherRoleInput"/>
+            </span>
+          </div>
+        </div>
+
+        <br/><br/>
+
+        <span class="bold">
+          Materia(s)
+        </span>
+
+        <div id="subject-checkboxes">
+          <div>
+            <input type="checkbox" id="general-sciences-checkbox" name="subjectContainer:generalSciences"/>
+            <label for="general-sciences-checkbox">
+              Ciencias Generales
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="earth-science-checkbox" name="subjectContainer:earthScience"/>
+            <label for="earth-science-checkbox">
+              Ciencia de la Tierra
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="biology-checkbox" name="subjectContainer:biology"/>
+            <label for="biology-checkbox">
+              Biología
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="physics-checkbox" name="subjectContainer:physics"/>
+            <label for="physics-checkbox">
+              Física
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="chemistry-checkbox" name="subjectContainer:chemistry"/>
+            <label for="chemistry-checkbox">
+              Química
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="astronomy-checkbox" name="subjectContainer:astronomy"/>
+            <label for="astronomy-checkbox">
+              Astronomía
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="math-checkbox" name="subjectContainer:math"/>
+            <label for="math-checkbox">
+              Matemáticas
+            </label>
+          </div>
+          <div class="other-input-holder">
+            <span class="checkbox-holder">
+              <input type="checkbox" id="other-subject-checkbox" name="subjectContainer:otherSubjectContainer:otherSubject"/>
+              <label for="other-subject-checkbox">
+                Otro
+              </label>
+            </span>
+            <span class="text-holder">
+              <input type="text" value="" class="other-input" id="other-subject" name="subjectContainer:otherSubjectContainer:otherSubjectInput"/>
+            </span>
+          </div>
+        </div>
+
+        <br/><br/>
+
+        <span class="bold">
+          Educación
+        </span>
+        <span id="check-all">
+          Marca todo lo que aplique
+        </span>
+
+        <div id="grade-checkboxes">
+          <table class="grade-table">
+            <tr id="elementary-row">
+              <td>
+                <input type="checkbox" id="elementary-checkbox" name="gradeContainer:elementary"/>
+                <label for="elementary-checkbox">
+                  Primaria
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade-k-checkbox" name="gradeContainer:gradeK"/>
+                <label for="grade-k-checkbox">
+                  Kínder
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade1-checkbox" name="gradeContainer:grade1"/>
+                <label for="grade1-checkbox">
+                  1
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade2-checkbox" name="gradeContainer:grade2"/>
+                <label for="grade2-checkbox">
+                  2
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade3-checkbox" name="gradeContainer:grade3"/>
+                <label for="grade3-checkbox">
+                  3
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade4-checkbox" name="gradeContainer:grade4"/>
+                <label for="grade4-checkbox">
+                  4
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade5-checkbox" name="gradeContainer:grade5"/>
+                <label for="grade5-checkbox">
+                  5
+                </label>
+              </td>
+            </tr>
+
+            <tr id="middle-row">
+              <td>
+                <input type="checkbox" id="middle-checkbox" name="gradeContainer:middle"/>
+                <label for="middle-checkbox">
+                  Secundaria
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade6-checkbox" name="gradeContainer:grade6"/>
+                <label for="grade6-checkbox">
+                  6
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade7-checkbox" name="gradeContainer:grade7"/>
+                <label for="grade7-checkbox">
+                  7
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade8-checkbox" name="gradeContainer:grade8"/>
+                <label for="grade8-checkbox">
+                  8
+                </label>
+              </td>
+            </tr>
+
+            <tr id="high-row">
+              <td>
+                <input type="checkbox" id="high-checkbox" name="gradeContainer:high"/>
+                <label for="high-checkbox">
+                  Bachillerato/Preparatoria
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade9-checkbox" name="gradeContainer:grade9"/>
+                <label for="grade9-checkbox">
+                  9
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade10-checkbox" name="gradeContainer:grade10"/>
+                <label for="grade10-checkbox">
+                  10
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade11-checkbox" name="gradeContainer:grade11"/>
+                <label for="grade11-checkbox">
+                  11
+                </label>
+              </td>
+              <td>
+                <input type="checkbox" id="grade12-checkbox" name="gradeContainer:grade12"/>
+                <label for="grade12-checkbox">
+                  12
+                </label>
+              </td>
+            </tr>
+
+            <tr id="university-row">
+              <td>
+                <input type="checkbox" id="university-checkbox" name="gradeContainer:university"/>
+                <label for="university-checkbox">
+                  Universidad
+                </label>
+              </td>
+              <td colspan="2">
+                <input type="checkbox" id="year1-checkbox" name="gradeContainer:year1"/>
+                <label for="year1-checkbox">
+                  1 Año
+                </label>
+              </td>
+              <td colspan="2">
+                <input type="checkbox" id="year2plus-checkbox" name="gradeContainer:year2plus"/>
+                <label for="year2plus-checkbox">
+                  Más de 2 años
+                </label>
+              </td>
+              <td colspan="2">
+                <input type="checkbox" id="graduate-checkbox" name="gradeContainer:graduate"/>
+                <label for="graduate-checkbox">
+                  Graduado
+                </label>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <input type="checkbox" id="adult-education-checkbox" name="gradeContainer:adultEducation"/>
+                <label for="adult-education-checkbox">
+                  Educación de adulto
+                </label>
+              </td>
+            </tr>
+          </table>
+
+          <div class="other-input-holder">
+            <span class="checkbox-holder">
+              <input type="checkbox" id="other-grade-checkbox" name="gradeContainer:otherGradeContainer:otherGrade"/>
+              <label for="other-grade-checkbox">
+                Otro
+              </label>
+            </span>
+            <span class="text-holder">
+              <input type="text" value="" class="other-input" id="other-grade" name="gradeContainer:otherGradeContainer:otherGradeInput"/>
+            </span>
+          </div>
+        </div>
+      </div>
+
+
+      <br/><br/>
+
+      <span class="bold">
+        Teaching Experience
+      </span>
+
+      <div>
+        
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="id4" value="radio0" class="wicket-id5">
+            <label for="id4">
+              Ninguno / No aplica
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="id6" value="radio1" class="wicket-id5">
+            <label for="id6">
+              1-2 años
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="id7" value="radio2" class="wicket-id5">
+            <label for="id7">
+              3-5 años
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="id8" value="radio3" class="wicket-id5">
+            <label for="id8">
+              6-10 años
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="id9" value="radio4" class="wicket-id5">
+            <label for="id9">
+              11-20 años
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="teachingExperienceContainer:teachingExperienceRadios" id="ida" value="radio5" class="wicket-id5">
+            <label for="ida">
+              más de 21 años
+            </label>
+          </div>
+        
+      </div>
+
+      <br/><br/>
+
+      <span class="bold">
+        PhET Experience
+      </span>
+
+      <div>
+        
+          <div>
+            <input type="radio" name="phetExperienceContainer:phetExperienceRadios" id="idb" value="radio6" class="wicket-idc">
+            <label for="idb">
+              Nuevo usuario (acabo de empezar a usar PhET sims)
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="phetExperienceContainer:phetExperienceRadios" id="idd" value="radio7" class="wicket-idc">
+            <label for="idd">
+              Usuario ocasional (he usado un poco PhET sims)
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="phetExperienceContainer:phetExperienceRadios" id="ide" value="radio8" class="wicket-idc">
+            <label for="ide">
+              Usuario experto (uso frecuentemente PhET sims en mi aula de clases)
+            </label>
+          </div>
+          <div>
+            <input type="radio" name="phetExperienceContainer:phetExperienceRadios" id="idf" value="radio9" class="wicket-idc">
+            <label for="idf">
+              Usuario influyente (¡hablo a todos acerca de PhET!)
+            </label>
+          </div>
+        
+      </div>
+
+      <br/>
+
+      <input type="checkbox" id="receive-email" checked="checked" name="receiveEmail"/>
+      <label for="receive-email">
+        Enviarme por correo electrónico los boletines de PhET(~4/año)
+      </label>
+
+      
+
+      <div>
+        
+        
+      </div>
+
+      <input type="hidden" id="ask-datetime" value="" name="askDatetime">
+      <input type="hidden" id="ask-type" value="" name="askType">
+
+      <div id="privacy-policy">
+        <br>
+        <span>Al registrarte, aceptas la <a href="http://www.cu.edu/privacy-policy" target="_blank"> Política de privacidad </a> de la Universidad de Colorado.</span>
+      </div>
+      <input id="donate-dialog-open" type="submit" name="register" class="phet-button login-form-submit" value="Registro"><br/>
+
+      <div id="last-ask"></div>
+
+      <div id="donate-dialog" style="padding-bottom: 20px; display: none">
+        <div style="margin: 10px;">
+
+          <div id="top-section">
+            Thanks for registering!
+          </div>
+
+          <div>
+            <table>
+              <tr>
+                <td>
+                  <img id="superhero" src="https://phet.colorado.edu/images/phetgirl_superhero.png" width="200" style="display: inline-block;">
+                  <img id="labcoat" src="https://phet.colorado.edu/images/phetgirl_labcoat.png" width="200" style="display: inline-block;">
+                </td>
+                <td style="display: block;">
+                  <div>
+                    Phet es un proyecto sin ánimo de lucro con un equipo dedicado de diseñadores, investigadores, educadores y desarrolladores. Confiamos que nuestros usuarios mantengan a Phet gratis para todo el mundo.
+
+                    <p id="donate-ask" style="margin-top: 50px;">Suggested donation amounts:</p>
+                    <ul>
+                      <li>$15 (if you use 1-4 sims)</li>
+                      <li>$25 (if you use 5-14 sims)</li>
+                      <li>$50+ (if you use 15 or more sims)</li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </table>
+
+            <div id="donate-buttons-holder">
+              <a href="register-dest=%7C.html#" id="maybe-later-button">Maybe later</a>
+              <a target="_blank" href="donate.html" class="phet-button" id="donate-button" onclick="_gaq.push(['_trackEvent', 'Donation', 'Ask', document.URL]); return true;">Donate Now!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p id="power-user-ask">
+        Una donación de $ 10 por cada usuario registrado <br> financiaría 20 conversiones sim HTML5 .
+      </p>
+
+      <p id="new-user-ask">
+        Cada $ 10 que donas brinda apoyo a más de <br> 500 estudiantes.
+      </p>
+
+    </form>
+  </div>
+</div>
+
+      
+    </div>
+  </div>
+  <div>
+  <div class="main-footer">
+    <div>
+  
+    <hr>
+    <div style="padding: 10px 0; display: inline-block" dir="ltr">
+      <span>
+        <a class="footer-link" href="http://www.facebook.com/pages/PhET-Interactive-Simulations/161503243888932?v=wall" rel="external nofollow" title="Dános un me gusta en Facebook" dir="ltr">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://twitter.com/PhETSims" rel="external nofollow" title="Síguenos en Twitter" dir="ltr">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="https://www.youtube.com/channel/UCMRZ0-ci4ifGBF1bJvrcDRQ" rel="external nofollow" title="Míranos en Youtube" dir="ltr">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </span><span>
+        <a class="footer-link" href="http://www.pinterest.com/PhETSims" rel="external nofollow" title="Síguenos en Pinterest" dir="ltr">
+          <i class="fa fa-pinterest-p"></i>
+        </a>
+      </span>
+    </div>
+    <hr>
+  
+</div>
+    <div id="footer-nav-links">
+      <div>
+        <a href="about.html"><span>Acerca de PhET</span></a>
+        <a href="about/team.html"><span>Nuestro Equipo</span></a>
+        <a href="about/sponsors.html"><span>Patrocinadores</span></a>
+      </div>
+      <div>
+        <a href="https://phet.colorado.edu/es/offline-access"><span>Offline Access</span></a>
+        <a href="help-center/getting-started.html"><span>Centro de Ayuda</span></a>
+        <a href="about/contact.html"><span>Contacto</span></a>
+      </div>
+      <div>
+        <a href="https://phet.colorado.edu/es/about/source-code"><span>Código Fuente</span></a>
+        <a href="https://phet.colorado.edu/es/licensing"><span>Licencias</span></a>
+        <a href="https://phet.colorado.edu/es/for-translators"><span>Para Traductores</span></a>
+      </div>
+      
+    </div>
+    <div class="other-languages">
+      <div class="translation-links">
+    <span class="globe"><i class="fa fa-globe"></i></span>
+    <select onchange="if (this.value) window.location.href=this.value" name="footer:translation-links:translation-links">
+<option value="https://phet.colorado.edu/in/register">Bahasa Indonesia</option>
+<option value="https://phet.colorado.edu/eu/register">Basque</option>
+<option value="https://phet.colorado.edu/bs/register">Bosnian</option>
+<option value="https://phet.colorado.edu/cs/register">čeština</option>
+<option value="https://phet.colorado.edu/da/register">Dansk</option>
+<option value="https://phet.colorado.edu/de/register">Deutsch</option>
+<option value="https://phet.colorado.edu/et/register">Eesti</option>
+<option value="https://phet.colorado.edu/en/register">English</option>
+<option selected="selected" value="https://phet.colorado.edu/es/register">español</option>
+<option value="https://phet.colorado.edu/es_PE/register">español (Perú)</option>
+<option value="https://phet.colorado.edu/fr/register">français</option>
+<option value="https://phet.colorado.edu/gl/register">Gallegan</option>
+<option value="https://phet.colorado.edu/ka/register">Georgian</option>
+<option value="https://phet.colorado.edu/it/register">italiano</option>
+<option value="https://phet.colorado.edu/ku/register">Kurdish</option>
+<option value="https://phet.colorado.edu/ku_TR/register">Kurdish (Turkey)</option>
+<option value="https://phet.colorado.edu/hu/register">magyar</option>
+<option value="https://phet.colorado.edu/mr/register">Marathi</option>
+<option value="https://phet.colorado.edu/nl/register">Nederlands</option>
+<option value="https://phet.colorado.edu/nb/register">Norwegian Bokmål</option>
+<option value="https://phet.colorado.edu/nn/register">Norwegian Nynorsk</option>
+<option value="https://phet.colorado.edu/fa/register">Persian</option>
+<option value="https://phet.colorado.edu/pt/register">português</option>
+<option value="https://phet.colorado.edu/pt_BR/register">português (Brasil)</option>
+<option value="https://phet.colorado.edu/ro/register">română</option>
+<option value="https://phet.colorado.edu/si/register">Sinhalese</option>
+<option value="https://phet.colorado.edu/sk/register">Slovenčina</option>
+<option value="https://phet.colorado.edu/fi/register">suomi</option>
+<option value="https://phet.colorado.edu/vi/register">Tiếng Việt</option>
+<option value="https://phet.colorado.edu/tr/register">Türkçe</option>
+<option value="https://phet.colorado.edu/el/register">Ελληνικά</option>
+<option value="https://phet.colorado.edu/sr/register">Српски</option>
+<option value="https://phet.colorado.edu/be/register">беларускі</option>
+<option value="https://phet.colorado.edu/mk/register">македонски</option>
+<option value="https://phet.colorado.edu/uk/register">українська</option>
+<option value="https://phet.colorado.edu/ar_SA/register">العربية (السعودية)</option>
+<option value="https://phet.colorado.edu/th/register">ไทย</option>
+<option value="https://phet.colorado.edu/zh_CN/register">中文 (中国)</option>
+<option value="https://phet.colorado.edu/zh_TW/register">中文 (台灣)</option>
+<option value="https://phet.colorado.edu/ja/register">日本語</option>
+<option value="https://phet.colorado.edu/ko/register">한국어</option>
+</select>
+    <span style="display: none">
+        <a href="https://phet.colorado.edu/en/register?dest=%2F"><span>English</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ar_SA/register?dest=%2F"><span>العربية</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/eu/register?dest=%2F"><span>Euskara</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/be/register?dest=%2F"><span>Беларуская</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/bs/register?dest=%2F"><span>Bosanski</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/zh_CN/register?dest=%2F"><span>简体中文</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/zh_TW/register?dest=%2F"><span>正體中文</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/cs/register?dest=%2F"><span>Česky</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/da/register?dest=%2F"><span>Dansk</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nl/register?dest=%2F"><span>Nederlands</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/et/register?dest=%2F"><span>Eesti</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fi/register?dest=%2F"><span>Suomi</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fr/register?dest=%2F"><span>Français</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/gl/register?dest=%2F"><span>Galego</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ka/register?dest=%2F"><span>ქართული</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/de/register?dest=%2F"><span>Deutsch</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/el/register?dest=%2F"><span>Ελληνικά</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/hu/register?dest=%2F"><span>Magyar</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/in/register?dest=%2F"><span>Bahasa Indonesia</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/it/register?dest=%2F"><span>Italiano</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ja/register?dest=%2F"><span>日本語</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ko/register?dest=%2F"><span>한국어</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ku/register?dest=%2F"><span>كوردي</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ku_TR/register?dest=%2F"><span>Kurdî</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/mk/register?dest=%2F"><span>Македонски</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/mr/register?dest=%2F"><span>मराठी</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nb/register?dest=%2F"><span>Norsk bokmål</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/nn/register?dest=%2F"><span>Norsk nynorsk</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/fa/register?dest=%2F"><span>فارسی</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/pt/register?dest=%2F"><span>Português</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/pt_BR/register?dest=%2F"><span>Português do Brasil</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/ro/register?dest=%2F"><span>Română</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/sr/register?dest=%2F"><span>Српски</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/si/register?dest=%2F"><span>සිංහල</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/sk/register?dest=%2F"><span>Slovensky</span></a>
+    </span><span style="display: none">
+        <a href="register-dest=%7C.html"><span class="current-locale">Español</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/es_PE/register?dest=%2F"><span>Español Internacional</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/th/register?dest=%2F"><span>ไทย</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/tr/register?dest=%2F"><span>Türkçe</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/uk/register?dest=%2F"><span>Українська</span></a>
+    </span><span style="display: none">
+        <a href="https://phet.colorado.edu/vi/register?dest=%2F"><span>Tiếng Việt</span></a>
+    </span>
+</div>
+      <div class="translation-credits">Traducido al idioma español por <a href="https://co.linkedin.com/in/adrianachisco">Adriana Chisco</a> <br/>Traductora - Profesional en Lenguas Modernas<br/>E-mail: <a href="mailto:achisco94@gmail.com">achisco94@gmail.com</a> <br/>Bogotá, Colombia<br/>y <a href="https://www.linkedin.com/in/dianalt/">Diana López</a><br/>Investigadora en Física Educativa <br/>E-mail: <a href="https://phet.colorado.edu/es/diana@cicata.edu.mx">diana@cicata.edu.mx</a><br/>Ciudad de México, México<br/><strong>Más información:</strong> <a href="mailto:phethelp@colorado.edu">phethelp@colorado.edu</a></div>
+    </div>
+
+
+  </div>
+  <div class="footer-highlight-background">
+    <div class="footer-bottom">
+      <div class="left">
+        <table>
+          <tr>
+            <td class="sponsor">
+              <a href="http://www.hewlett.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/Hewlett_logo_footer_vv.png"
+                     alt="Hewlett Foundation" width="100" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.nsf.gov/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/NSF_logo_footer-01.png"
+                     alt="National Science Foundation" width="56" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.newschools.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/newschools_logo.png"
+                     alt="New Schools" width="131" />
+              </a>
+            </td>
+            <td class="sponsor">
+              <a href="http://www.moore.org/" rel="external" dir="ltr">
+                <img src="https://phet.colorado.edu/images/support/Moore_Foundation_logo_footer-01.png"
+                     alt="Moore Foundation" width="100" />
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="right">
+        <div id="PhET-logo">
+          <a href="index.html">
+            <img src="https://phet.colorado.edu/images/phet-logo-tm-bw.png" alt="PhET Home Page" title="Go to the PhET home page" style="border: none;"
+                 width="90" id="phet-logo-main-image">
+          </a>
+        </div>
+        <div class="copyright">
+          <a href="https://phet.colorado.edu/es/licensing">
+            <span>&copy;<span>2017 University of Colorado. </span></span>
+            <br />
+            Algunos derechos reservados.
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</body>
+</html>
+

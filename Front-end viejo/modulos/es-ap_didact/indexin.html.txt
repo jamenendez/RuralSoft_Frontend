@@ -1,0 +1,966 @@
+<html>
+
+
+<!-- Mirrored from www.aplicaciones.info/indexin.html by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 03:00:38 GMT -->
+<head>
+<title>Educational applications </title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta charset="UTF-8"> 
+<meta name="MobileOptimized" content="width" /> 
+<meta name="HandheldFriendly" content="true" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<script language="JavaScript"> 
+if (screen.width < 420) 
+	   window.location = "indexi.html";
+</script> 
+
+<!-- Publidicad de La tarea de educar. Copiar dos códigos:
+1. En HEAD: de 14 a 49; Ver: 1-index; 2-ortogra/oafines; 3-valores; 4-valpri; 5-valsec; 6-valorcc; 7-valorpv
+2. En DODY: de 192 a 208 ; Iguales a index: valorat, orienta, artículo, dni y actua2 
+-->
+<meta http-equiv="imagetoolbar" content="no">
+<link href="estilos3.css" type="text/css" rel="stylesheet">
+<SCRIPT src="javascript.js"></SCRIPT>
+
+<script language="JavaScript1.2" src="coolmenus4.js"></script>
+<meta http-equiv="Content-Type" content="text/html; ISO-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="title" content="Educational applications">
+<meta name="DC.Title" content="Educational applications">
+<meta http-equiv="title" content="Educational applications">
+<meta name="keywords"
+content="reading, property, calculations, mathematics, religion, self-education, boyriends, aplications, family, religion, life of Jesus">
+<meta name="description"
+content="Page of educational resources for teachers students immediate application. Interactive exercises.">
+<meta name="author" content="Arturo Ramo">
+<meta name="DC.Creator" content="Arturo Ramo">
+<link REV="made" href="mailto:arturo@aplicaciones.info">
+<meta http-equiv="keywords"
+content="reading, property, calculations, mathematics, religión, self-education, boyriends, aplications, family, religion, life of Jesus">
+<meta http-equiv="description"
+content="Page of educational resources for teachers students immediate application. Interactive exercises.">
+<meta http-equiv="DC.Description"
+content="Page of educational resources for teachers students immediate application. Interactive exercises.">
+
+<script>
+
+var coldColor = "#0000CC"
+// azul oscuro=0000FF y 0000CC-B;  rojo oscuro=FF0000 y CC0000.
+var hotColor  = "#0066CC"
+// azul claros: 0099FF,  6699FF y 99CCFF; 3399CC-B, 0066CC-B, 3366CC y 6699CC ;
+// rojo claros: FF6699, FF99CC y FF3366; CC6666, CC6699 y CC9999.
+var motionPix = "0"
+
+// do not edit below this line
+// ======================================
+
+var a='<style>'+
+'A.InstantLink:link {'+
+'  color:'+coldColor+';'+
+'  text-decoration:none;'+
+'  padding:0 '+motionPix+' 0 0;'+
+'  }'+  
+'A.InstantLink:visited {'+
+'  color:'+coldColor+';'+
+'  text-decoration:none;'+
+'  padding:0 '+motionPix+' 0 0;}'+  
+'A.InstantLink:active {'+
+'  color:'+coldColor+';'+
+'  text-decoration:none;'+
+'  padding:0 '+motionPix+' 0 0;'+
+'  }'+  
+'A.InstantLink:hover {'+
+'  color:'+hotColor+';'+
+'  text-decoration:underline;'+
+'  padding:0 0 0 '+motionPix+';'+
+'  }'+
+'</style>'
+if (document.all || document.getElementById){
+    document.write(a)
+}
+</script>
+</script>
+<script language="JavaScript">
+
+function jRoute_onChange(form_elem) {
+
+  nav_name = navigator.appName;
+
+  if (nav_name != "Netscape") { new_page = eval("document.selections." + form_elem + ".value"); }
+
+else { optionIndex = eval("document.selections." + form_elem + ".selectedIndex"); 
+
+    new_page = eval("document.selections." + form_elem + ".options[" + optionIndex + "].value"); }
+
+  if (new_page != "0") { window.location = new_page; return true; }
+
+  return false; }
+
+</script>
+
+<style>
+/* CoolMenus 4 - default styles - do not edit */
+.clCMAbs{position:absolute; left:0; top:70}
+/* CoolMenus 4 - default styles - end; visibility:hidden;   */
+  
+/*Style for the background-bar*/
+.clBar{position:absolute; width:0; height:10; background-color:Navy; layer-background-color:Navy; visibility:hidden}
+
+/*Styles for level 0*/
+.clLevel0,.clLevel0over{position:absolute; padding:2px; font-family:verdana,tahoma,arial,helvetica; font-size:14px; font-weight:bold}
+.clLevel0{background-color:Navy; layer-background-color:Navy; color:white;}
+.clLevel0over{background-color:#336699; layer-background-color:#336699; color:Yellow; cursor:pointer; cursor:hand; }
+.clLevel0border{position:absolute; visibility:hidden; background-color:#006699; layer-background-color:#006699}
+
+/*Styles for level 1*/
+.clLevel1, .clLevel1over{position:absolute; padding:2px; font-family:verdana,tahoma, arial,helvetica; font-size:13px; font-weight:bold}
+.clLevel1{background-color:#F98173; layer-background-color:#F98173; color:#FFFFFF;}
+.clLevel1over{background-color:#FDBAB0; layer-background-color:#FDBAB0; color:Red; cursor:pointer; cursor:hand; }
+.clLevel1border{position:absolute; visibility:hidden; background-color:Red; layer-background-color:Red}
+
+/*Styles for level 2*/
+.clLevel2, .clLevel2over{position:absolute; padding:2px; font-family:verdana,tahoma,arial,helvetica; font-size:12px; font-weight:bold}
+.clLevel2{background-color:00CA00; layer-background-color:00CA00; color:white}
+.clLevel2over{background-color:#00FF00; layer-background-color:#00FF00; color:Green; cursor:pointer; cursor:hand; }
+.clLevel2border{position:absolute; visibility:hidden; background-color:Green; layer-background-color:Green}
+//background-color:#006699;
+
+/*Styles for level 3*/
+.clLevel3
+//  .clLevel3over{position:absolute; padding:2px; font-family:verdana,tahoma,arial,helvetica; font-size:12px}
+.clLevel3{background-color:4B9CF5; layer-background-color:4B9CF5; color:white; font-family:verdana,tahoma,arial,helvetica; font-size:12px; font-weight:bold}
+.clLevel3over{background-color:#00FFFF; layer-background-color:#00FFFF; color:#0000FF; cursor:pointer; cursor:hand;font-family:verdana,tahoma,arial,helvetica; font-size:12px; font-weight:bold}
+.clLevel3border{position:absolute; visibility:hidden; background-color:Navy; layer-background-color:Navy}
+//background-color:#006699;  ; font-weight:bold  ; font-weight:bold ; font-weight:bold
+
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43416434-2', 'aplicaciones.info');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body BGCOLOR="#F5E6CF" TEXT="#000000" LINK="#0000FF" ALINK="#0000FF" VLINK="#0000FF">
+<script type="text/javascript">
+window.google_analytics_uacct = "UA-43416434-2";
+</script>
+
+<table border="0" cellpadding=" 0" cellspacing="0" width="100%">
+  <tr>
+    <td width="12%" bgcolor="#00FFFF"><p align="center">&nbsp;<a
+    onclick="addToFavorite('Educational Applications')" href="javascript:;"><font
+    face="Verdana" size="2" color="#CC0066"><b>To add <br>favorites</b> </font></a></td>
+    <td width="6%" bgcolor="#00FFFF"><p align="center"><a
+    onclick="addToFavorite('Educational Applications')" href="javascript:;"><img border="0"
+    src="imagtin5.gif" width="32" height="32"> </a></td>
+    <td width="64%"><table border="5" width="100%" CELLSPACING="0" CELLPADDING="0"
+    bgcolor="#F3F78A">
+      <tr>
+        <td width="100%"><p align="center"><b><font face="Arial" size="5" color="#FF0000">Educational applications</td>
+      </tr>
+    </table>
+    </td>
+    <td width="6%" bgcolor="#00FFFF" align="center"><img border="0" src="archiv.gif"
+    width="34" height="32"></td>
+    <td width="12%" bgcolor="#00FFFF" align="center"><p align="center"><b><a class="rojo"
+    href="mailto:?subject=You can visit Educational Applications&body=In%20this%20website%20you%20will%20find%20abundant%20exercises%20for%20all%20students%20:%20http://www.aplicaciones.info/indexin.html">&nbsp;
+    <font face="Verdana" size="2" color="#CC0066">To send&nbsp; <br>
+    a friend </font></a></b></td>
+  </tr>
+</table>
+
+<!--  Búsqueda Google  -->
+<center>
+<form action="http://www.google.es/" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-3496076724806497:1537803457" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="55" />
+    <input type="submit" name="sa" value="Buscar" />
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.es/coop/cse/brand?form=cse-search-box&amp;lang=es"></script>
+</center>
+
+<table border="0" width="100%">
+   <tr>
+     <td width="100%">
+<script>
+
+/*** 
+This is the menu creation code - place it right after you body tag
+Feel free to add this to a stand-alone js file and link it to your page.
+**/
+
+//Menu object creation
+oCMenu=new makeCM("oCMenu") //Making the menu object. Argument: menuname
+
+oCMenu.frames = 0
+
+//Menu properties   
+oCMenu.pxBetween=0   //Espacio izquierda y derecha
+oCMenu.fromLeft=0    //Espacio entre palabras
+oCMenu.fromTop=75    //Altura de la barra de menús (antes 152 y 62)
+oCMenu.rows=1 
+oCMenu.menuPlacement="lefth"
+                                                             
+oCMenu.offlineRoot="file:///C|/Inetpub/wwwroot/dhtmlcentral/projects/coolmenus/examples/" 
+oCMenu.onlineRoot="coolmenus/index.html" 
+oCMenu.resizeCheck=1 
+oCMenu.wait=1000
+oCMenu.fillImg="cm_fill.html"
+oCMenu.zIndex=0
+
+//Background bar properties
+oCMenu.useBar=1
+oCMenu.barWidth="100%"
+oCMenu.barHeight="menu" 
+oCMenu.barClass="clBar"
+oCMenu.barX=0 
+oCMenu.barY=75   //Altura de la barra de menús (antes 152 y 62)
+oCMenu.barBorderX=0
+oCMenu.barBorderY=0
+oCMenu.barBorderClass=""
+
+//Level properties - ALL properties have to be spesified in level 0
+oCMenu.level[0]=new cm_makeLevel() //Add this for each new level
+oCMenu.level[0].width=100
+oCMenu.level[0].height=20 
+oCMenu.level[0].regClass="clLevel0"
+oCMenu.level[0].overClass="clLevel0over"
+oCMenu.level[0].borderX=1
+oCMenu.level[0].borderY=1
+oCMenu.level[0].borderClass="clLevel0border"
+oCMenu.level[0].offsetX=0
+oCMenu.level[0].offsetY=0
+oCMenu.level[0].rows=0
+oCMenu.level[0].arrow=0
+oCMenu.level[0].arrowWidth=0
+oCMenu.level[0].arrowHeight=0
+oCMenu.level[0].align="bottom"
+//Property added ---- Doesn't apply to the top level. This gives you a border around all items.
+oCMenu.level[0].roundBorder=2    //Anchura del borde
+
+//EXAMPLE SUB LEVEL[1] PROPERTIES - You have to specify the properties you want different from LEVEL[0] - If you want all items to look the same just remove this
+oCMenu.level[1]=new cm_makeLevel() //Add this for each new level (adding one to the number)
+oCMenu.level[1].width=oCMenu.level[0].width-2
+oCMenu.level[1].height=20
+oCMenu.level[1].regClass="clLevel1"
+oCMenu.level[1].overClass="clLevel1over"
+oCMenu.level[1].borderX=0
+oCMenu.level[1].borderY=0
+oCMenu.level[1].align="right" 
+oCMenu.level[1].offsetX=-(oCMenu.level[0].width-2)/2+45
+oCMenu.level[1].offsetY=0
+oCMenu.level[1].borderClass="clLevel1border"
+
+
+//EXAMPLE SUB LEVEL[2] PROPERTIES - You have to spesify the properties you want different from LEVEL[1] OR LEVEL[0] - If you want all items to look the same just remove this
+oCMenu.level[2]=new cm_makeLevel() //Add this for each new level (adding one to the number)
+oCMenu.level[2].width=oCMenu.level[0].width-2   //150
+oCMenu.level[2].height=20
+oCMenu.level[2].offsetX=-(oCMenu.level[0].width-2)/2+45
+oCMenu.level[2].offsetY=0
+// oCMenu.level[2].roundBorder=2    //Anchura del borde
+oCMenu.level[2].regClass="clLevel2"
+oCMenu.level[2].overClass="clLevel2over"
+oCMenu.level[2].borderClass="clLevel2border"
+
+//EXAMPLE SUB LEVEL[3] PROPERTIES - You have to spesify the properties you want different from LEVEL[1] OR LEVEL[0] - If you want all items to look the same just remove this
+oCMenu.level[3]=new cm_makeLevel() //Add this for each new level (adding one to the number)
+oCMenu.level[3].width=150
+oCMenu.level[3].height=20
+oCMenu.level[3].offsetX=-(oCMenu.level[2].width-2)/2+45
+   //+(oCMenu.level[0].width-2)/2
+oCMenu.level[3].offsetY=0
+oCMenu.level[3].roundBorder=1    //Anchura del borde
+oCMenu.level[3].regClass="clLevel3"
+oCMenu.level[3].overClass="clLevel3over"
+oCMenu.level[3].borderClass="clLevel3border"
+
+
+
+/******************************************
+Menu item creation:
+myCoolMenu.makeMenu(name, parent_name, text, link, target, width, height, regImage, overImage, regClass, overClass , align, rows, nolink, onclick, onmouseover, onmouseout) 
+*************************************/
+
+
+oCMenu.makeMenu('top0','','Reading','lectura/lecturain.htm')
+   oCMenu.makeMenu('sub00','top0','Reading. From 6 to 9 years','lectura/lecturapin.htm','',200,0)
+		oCMenu.makeMenu('sub001','sub00','&nbsp; Several lectures with tests of comprehension','lectura/lecturapin.htm','',360,25)
+   oCMenu.makeMenu('sub01','top0','&nbsp;Reading. Of 10 and more','lectura/lecturamin.htm','',200,0)
+		oCMenu.makeMenu('sub011','sub01','&nbsp; Several lectures with tests of comprehension','lectura/lecturamin.htm','',360,25)
+   oCMenu.makeMenu('sub02','top0','&nbsp;Poetry. From 6 to 9 years','poesia/poesiapin.htm','',200,0)
+		oCMenu.makeMenu('sub021','sub02','&nbsp; Several lectures with tests of comprehension','poesia/poesiapin.htm','',360,25)
+   oCMenu.makeMenu('sub03','top0','&nbsp;Poetry. Of 10 and more','poesia/poesiamin.htm','',200,0)
+		oCMenu.makeMenu('sub031','sub03','&nbsp; Several poetry with tests of comprehension','poesia/poesiamin.htm','',360,25)
+		
+oCMenu.makeMenu('top1','','Mathematics','calculo/calculoin.htm')
+	oCMenu.makeMenu('sub10','top1','&nbsp;Calculation','calculo/calculoin.htm','',115,0)
+	   oCMenu.makeMenu('sub101','sub10','&nbsp; Simple operations, combined operations and poblems','calculo/calculoin.htm','',390,25)
+	oCMenu.makeMenu('sub12','top1','&nbsp;Mathematics','decimales/matesin.htm','',115,0)
+	   oCMenu.makeMenu('sub121','sub12','&nbsp; Decimal, fractions, metric system and geometry','decimales/matesin.htm','',390,25)
+	oCMenu.makeMenu('sub13','top1','&nbsp;Algebra','algebra/algebrain.htm','',115,0)
+	   oCMenu.makeMenu('sub131','sub13','&nbsp; Algebraic language, polynomials and equations','algebra/algebrain.htm','',390,25)
+
+oCMenu.makeMenu('top2','','  Sciences','naturales/naturalesin.htm')
+	oCMenu.makeMenu('sub20','top2','&nbsp;Natural Sciences','naturales/naturalesin.htm','',185,0)
+	   oCMenu.makeMenu('sub201','sub20','&nbsp; Minerals, vegetbles, animals and the man','naturales/naturalesin.htm','',390,25)
+	oCMenu.makeMenu('sub21','top2','&nbsp;Universal Geography','sociales/geografiain.htm','',185,0)
+	   oCMenu.makeMenu('sub211','sub21','&nbsp; The universe, the Earth, the races and the continents','sociales/geografiain.htm','',390,25)
+	oCMenu.makeMenu('sub22','top2','&nbsp;Universal History','sociales/historia/historiain.htm','',185,0)
+	   oCMenu.makeMenu('sub221','sub22','&nbsp; Prehistoric times, Middle, Modern age and actuality','sociales/histotia/historiain.htm','',390,25)
+	oCMenu.makeMenu('sub23','top2','&nbsp;Philosophy for children','filosofia/pequenosin.htm','',185,0)
+	   oCMenu.makeMenu('sub231','sub23','&nbsp; debates, discussions, opinions, truths, doubts','filosofia/pequenosin.htm','',390,25)
+	oCMenu.makeMenu('sub24','top2','&nbsp;Philosophy for young','filosofia/mayoresin.htm','',185,0)
+	   oCMenu.makeMenu('sub241','sub24','&nbsp; Cosmology, psycology, ethics, metaphysics, theodicy','filosofia/mayoresin.htm','',390,25)
+
+oCMenu.makeMenu('top3','','Formation','autoedu/autoeduin.htm')
+	oCMenu.makeMenu('sub30','top3','&nbsp;Self-education','autoedu/autoeduin.htm','',113,0)
+	   oCMenu.makeMenu('sub301','sub30','&nbsp; Responsability, prudence, friendships','autoedu/autoeduin.htm','',280,25)
+	oCMenu.makeMenu('sub31','top3','&nbsp;Boyfriends','novios/noviosin.htm','',113,0)
+	   oCMenu.makeMenu('sub311','sub31','&nbsp; Love, partner, exits and affection','novios/noviosin.htm','',280,25)
+	oCMenu.makeMenu('sub32','top3','&nbsp;Family','novios/familiain.htm','',113,0)
+	   oCMenu.makeMenu('sub321','sub32','&nbsp; Marriage, comunication and divorce','novios/familiain.htm','',280,25)
+
+oCMenu.makeMenu('top4','','Religion','religion/religionin.htm')
+	oCMenu.makeMenu('sub40','top4','&nbsp;Religion for children','religion/repein.htm','',173,0)
+	   oCMenu.makeMenu('sub401','sub40','&nbsp; Several lessons','religion/repein.htm','',150,25)	
+	oCMenu.makeMenu('sub41','top4','&nbsp;Religion for adults','religion/remain.htm','',173,0)
+	   oCMenu.makeMenu('sub411','sub41','&nbsp; Several lessons','religion/remain.htm','',150,25)	
+	oCMenu.makeMenu('sub42','top4','&nbsp;Life of Jesus for children','jesus/jespein.htm','',173,0)
+	   oCMenu.makeMenu('sub421','sub42','&nbsp; Several lessons','jesus/jespein.htm','',150,25)	
+	oCMenu.makeMenu('sub43','top4','&nbsp;Life of Jesus for adults','jesus/jesmain.htm','',173,0)
+	   oCMenu.makeMenu('sub431','sub43','&nbsp; Several lessons','jesus/jesmain.htm','',150,25)	   
+
+
+//Leave this line - it constructs the menu
+oCMenu.construct()		
+
+</script>        
+
+     </td>
+   </tr>
+</table>
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3496076724806497";
+/* aplica */
+google_ad_slot = "3948043053";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<!-- Verde claro=C4FFC4;  azul claro=B9DCFF; -->
+<table border="0" width="100%">
+  <tr>
+    <td width="30%" bgcolor="#C4FFC4">
+    
+  <table border="0" width="100%" bgcolor="#F5E6CF">
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><a class="InstantLink" href="lectura/lecturapin.htm"><strong><font
+    color="#CC0066" face="Verdana" size="2">Reading for children</font></strong></a></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><small><strong>
+	<a class="InstantLink" href="lectura/lecturamin.htm">
+	<font color="#339900"
+    face="Verdana" size="2">Reading for adults</font></a></strong></small></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><font
+    face="Verdana" color="#0000CC" size="2"><b>
+	<a class="InstantLink" href="poesia/poesiapin.htm">Poetry for children</a></b></font></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><a class="InstantLink" href="poesia/poesiamin.htm"><font
+    face="Verdana" color="#996600" size="2"><b>Poetry for adults</b></font></a></td>
+  </tr>
+    <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center">
+	<a class="InstantLink" href="calculo/calculoin.htm">
+	<font
+    face="Verdana" color="#CC0066" size="2"><b>Calculation</b></font></a></td>
+  </tr>  
+
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><a class="InstantLink" href="decimales/matesin.htm"><strong><font
+    color="#0000CC" face="Verdana" size="2"><b>Mathematics</b></font></strong></a></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><a class="InstantLink" href="algebra/algebrain.htm"><font
+    face="Verdana" color="#FF33CC" size="2"><b>Algebra</b></font></a></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><a class="InstantLink" href="naturales/naturalesin.htm"><font
+    color="#CC0066" face="Verdana" size="2"><strong>Natural Sciences</strong></font></a></td>
+  </tr>  
+
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><font face="Verdana" size="2"><script
+    language="JavaScript">
+<!--
+				Nommes = new Array("january","febraury","march","april","may","june","july","august","september","october","november","december");
+				var fecha= new Date();
+				var hoy =fecha.getDate()+" of "+(Nommes[fecha.getMonth()])+" of "+(fecha.getYear());
+				document.write(hoy);
+		// --> 
+</script> </font></td>
+ 
+  
+</table>
+     
+     </td>
+     <td width="40%">
+<table border="0">     
+<tr>
+<td>
+     <p align="center">
+     <img border="0" src="pubschls.gif" Alt="Recursos para el profesorado" width="263" height="236">
+     <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="index-2.html">Educational applications IN SPANISH</a></b><br>
+     Mobile: www.aplicaciones.info/indexi.htm      
+	</td>
+</tr>     
+</table>
+</td>
+     <td width="30%">
+<table border="0" width="100%" bgcolor="#F5E6CF">
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><small><a class="InstantLink" href="sociales/geografiain.htm"><strong><font
+    color="#339900" face="Verdana" size="2">Geography</font></strong></a></small></td>
+  </tr>
+  
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4" height="20"><p align="center"><font
+    face="Verdana" color="#996600" size="2"><b>
+	<a class="InstantLink" href="sociales/historia/historiain.htm">History</a></b></font></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center">
+	<strong><font color="#339900"
+    face="Verdana" size="2"><b>
+	<a class="InstantLink" href="autoedu/autoeduin.htm">Self-education</a></b></font></strong></td>
+  </tr>
+  
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><strong>
+	<font
+    color="#0000CC" face="Verdana" size="2"><b>
+	<a class="InstantLink" href="novios/noviosin.htm">Boyfriends</a></b></font></strong></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><small><strong>
+	<a class="InstantLink" href="novios/familiain.htm"><font color="#339900"
+    face="Verdana" size="2">Family</font></a></strong></small></td>
+  </tr>  
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><strong><font
+    color="#0000CC" face="Verdana" size="2"><b>
+	<a class="InstantLink" href="religion/repein.htm">Religion for children</a></b></font></strong></td>
+  </tr>  
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><small><strong>
+	<a class="InstantLink" href="religion/remain.htm"><font color="#FF33CC"
+    face="Verdana" size="2">Religion for adults</font></a></strong></small></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><font
+    face="Verdana" color="#CC6600" size="2"><b>
+	<a class="InstantLink" href="jesus/jespein.htm">V. Jesus for children</a></b></font></td>
+  </tr>
+  <tr>
+    <td width="100%" bgcolor="#C4FFC4"><p align="center"><strong>
+	<a class="InstantLink" href="jesus/jesmain.htm"><font
+    color="#CC0066" face="Verdana" size="2">V. Jesus for adults</font></a></strong></td>
+  </tr>
+  
+</table>
+   </td>
+</table>
+
+
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3496076724806497";
+/* aplica */
+google_ad_slot = "3948043053";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+
+<!--  Comienzo de la Magazine  -->
+
+<p>
+&nbsp;</p></font><font face="Verdana" size="2">
+
+<center>
+<table BORDER="6" CELLSPACING="0" CELLPADDING="0" bgcolor="#F3F78A" width="285">
+  <tr>
+    <td WIDTH="271"><p align="center"><strong>
+	<font face="Verdana" size="4" color="#FF0000">Magazine of education<br>
+                                  N. 5.&nbsp;August 2014</font></strong></td>
+  </tr>
+</table>
+<p align="left">
+<span style="background-color: #00FFFF; font-weight:700">
+<font color="#0000FF">
+&nbsp;</font>
+<font face="Verdana" color="#0000FF">Articles&nbsp; </font>
+</span></p>
+</center>
+
+<p align="left"><a href="http://indeforum.wordpress.com/?p=11"><strong>Light thought</strong></a>, by Agustín Pérez,
+<p align="left"><a href="http://indeforum.wordpress.com/?p=550"><strong>The drug, a one-way trip</strong></a>, by Gabriel Roselló,
+<p align="left"><a href="http://aramo.wordpress.com/?p=322"><strong>El poder y la autoridad</strong></a>, de Arturo Ramo,
+<p align="left"><a href="http://apli.wordpress.com/?p=1876"><strong>La manipulación de los alumnos</strong></a>, de Benedicto Cuervo, 
+<p align="left"><a href="http://aramo.wordpress.com/?p=168"><strong>Por una verdadera cultura por la tolerancia</strong></a>,&nbsp; de Alfonso Aguiló,
+<p align="left"><a href="http://aramo.wordpress.com/?p=354"><strong>Coherencia educativa entre la pareja... ¿se puede conseguir?</strong></a>, de Elena Roger Gamir y Arturo Guerra Arias, 
+<p align="left"><a href="http://aramo.wordpress.com/?p=341"><strong>Cómo ser más persuasivos</strong>,</a> de www.edufam.com,
+<p align="left"><a href="http://aramo.wordpress.com/?p=954"><strong>¿Una institución opresora y anticuada?</strong></a>,&nbsp; de Alfonso Aguiló,
+<p align="left"><a href="http://apli.wordpress.com/?p=1031"><strong>Cómo parar los pies a los matones de la clase</strong></a>, de Juan Meseguer, 
+<p align="left"><a href="http://aramo.wordpress.com/?p=3606"><strong>Adictos a la pornografía infantil en Internet</strong>,</a> de Gerardo Elorriaga,
+<p align="left"><a href="http://aramo.wordpress.com/?p=3942"><strong>Halloween no tiene origen pagano</strong>,</a> de Juanjo Romero,
+
+
+</font><font face="Verdana"><p align="left">
+<span style="background-color: #00FFFF; font-weight:700">
+<font color="#0000FF">
+&nbsp;</font>
+<font face="Verdana" color="#0000FF">School exercises&nbsp; </font>
+</span>
+
+<p align="left"><font face="Verdana" size="2">You can free all interactive exercises</font></p>
+
+<font face="Verdana" size="2">
+
+<p align="left">
+<b>Readings for children</b> (6 to 9 years). With 40 exercises in
+<b><a href="lectura/lecturapin.htm">English</a></b>&nbsp; and 40 
+in <b><a href="lectura/lecturap.htm">Spanish</a></b>.&nbsp; 
+
+
+</font>
+
+<font face="Verdana" size="2">
+
+<p align="left"><b>Reading for adults</b> (10 and more years). With 42 exercises in <b>
+<a href="lectura/lecturamin.htm">English</a></b> 
+and 40 in <b><a href="lectura/lecturam.htm">
+Spanish</a></b>.
+
+
+<p align="left"><b>Calculation. </b>(6 to 9 years). Operations and poblems. With 70 exercises in <b>
+<a href="calculo/calculoin.htm">English</a></b> and 
+70 in <b>
+<a href="calculo/calculo.htm">Spanish</a></b>.
+
+ <p align="left"><b>Mathematics. </b>&nbsp;(10 and more years). With 42 exercises in <b>
+<a href="decimales/matesin.htm">English</a></b> and 
+42 in <b><a href="decimales/mates.htm">Spanish</a></b>.
+
+<p align="left"><b>Natural sciences. </b>&nbsp;(10 and more years). With 23 exercises in <b>
+<a href="naturales/naturalesin.htm">English</a></b> and 
+23 in <b><a href="naturales/naturales.htm">
+Spanish</a></b>.
+
+<p align="left"><b>Religion for children. </b>&nbsp;(6 to 9 years). With 35 exercises in <b>
+<a href="religion/repein.htm">English</a></b> and 
+35 in <b><a href="religion/repe.htm">Spanish</a></b>.
+
+<p align="left"><b>Poetry for children</b> (6 to 9 years). With 3 exercises in <b>
+<a href="poesia/poesiapin.htm">English</a></b> and 
+40 in <b><a href="poesia/poesiap.htm">Spanish</a></b>.
+
+&nbsp; <p align="left"><b>Poetry for adults</b> (10 and more years). With 3 exercises in <b>
+<a href="poesia/poesiamin.htm">English</a></b> and 
+40 in <b><a href="poesia/poesiam.htm">Spanish</a></b>.
+
+<p align="left"><b>Algebra. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="algebra/algebrain.htm">English</a></b> and 
+10 in <b><a href="algebra/algebra.htm">Spanish</a></b>.
+
+<p align="left"><b>Philosophy for children. </b>&nbsp;(6 to 9 years). With 3 exercises in <b>
+<a href="filosofia/pequenosin.htm">English</a></b> and 3 in <b>
+<a href="filosofia/pequenos.htm">Spanish</a></b>.
+
+<p align="left"><b>Philosophy for adults. </b>&nbsp;(10 and more years). With 9 exercises in <b>
+<a href="filosofia/mayoresin.htm">English</a></b> and 30 in <b>
+<a href="filosofia/mayores.htm">Spanish</a></b>.
+
+<p align="left"><b>Universal Geography. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="sociales/geografiain.htm">English</a></b> and 
+40 in <b><a href="sociales/geografia.htm">
+Spanish</a></b>.
+
+<p align="left"><b>Universal History. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="sociales/historia/historiain.htm">English</a></b> 
+and 40 in <b>
+<a href="sociales/historia/historia.htm">Spanish</a></b>.
+
+<p align="left"><b>Self-education. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="autoedu/autoeduin.htm">English</a></b> and 
+40 in <b><a href="autoedu/autoedu.htm">Spanish</a></b>.
+
+<p align="left"><b>Boyfriends. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="novios/noviosin.htm">English</a></b> and 
+40 in <b><a href="novios/novios.htm">Spanish</a></b>.
+
+<p align="left"><b>Family. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="novios/familiain.htm">English</a></b> y 
+35 in <b><a href="novios/familia.htm">Spanish</a></b>.
+
+<p align="left"><b>Religion for adults. </b>&nbsp;(10 and more years). With 3 exercises in <b>
+<a href="religion/remain.htm">English</a></b> and 
+60 in <b><a href="religion/rema.htm">Spanish</a></b>.
+
+<p align="left"><b>Life of Jesus for children. </b>&nbsp;(6 to 9 years). With 3 exercises in
+<b><a href="jesus/jespein.htm">English</a></b> and 
+30 in <b><a href="jesus/jespe.htm">Spanish</a></b>.
+
+<p align="left"><b>Life of Jesus for adults. </b>&nbsp;(10 and more years). With 3 exercises in<b>
+<a href="jesus/jesmain.htm">English</a></b> y 
+50 in <b><a href="jesus/jesma.htm">Spanish</a></b>.
+
+&nbsp; <p align="left"><b>Adivinanzas</b>. (De 6 y más años). Hay 40 ejercicios de lectura en <b>
+<a href="adivina/adivina.htm">español</a></b> y 
+prueba de comprensión.
+
+<p align="left"><b>Pasatiempos. </b>(De 6 y más años). Con 455 <b><a href="pasatiempos/pasatiempos.htm">ejercicios</a></b> 
+de sopas de letras, juegos de palabras y crucigramas.
+
+<p align="left"><b>Lengua española. </b>&nbsp;(10 y más años). Con 39 ejercicios en <b>
+<a href="lengua/lengua.htm">español</a></b> de 
+morfología y sintaxis.
+
+<p align="left"><b>Redacción. </b>(10 y más años).&nbsp;Con 18 <b>
+<a href="redaccion/redaccion.htm">ejercicios</a></b> 
+interactivos para aprender a redactar.
+
+<p align="left"><b>Ortografía. </b>(6 y más años)&nbsp;Hay 218 <b>
+<a href="ortogra/ortogra.htm">ejercicios</a></b> 
+interactivos y otros tantos para imprimir: BV, GJ, H, y más.
+
+<p align="left"><b>Técnicas de estudio. </b>&nbsp;(10 y más años). Con un <b>
+<a href="utiles/tecnicas.htm">cuestionario</a></b> 
+interactivo y varios temas relacionados.
+
+<p align="left"><b>Orientación profesional. </b>&nbsp;(10 y más años). Con cuatro <b>
+<a href="utiles/orienta.htm">cuestionarios</a></b> 
+y otros temas.</font>
+
+<p align="left"><font face="Verdana" size="2"><b>Plan de formación. </b>&nbsp;(6 y más años). Con seis <b>
+<a href="http://aramo.wordpress.com/?page_id=250">ejercicios</a></b> 
+para cada mes del año.</font></font></font>
+
+<font face="Verdana" size="2">
+
+<p align="left">
+<a style="text-decoration: none; font-weight: 700" href="deago14.htm">&nbsp;Deberes 
+de agosto</a>
+
+
+</font>
+<p align="left">
+<span style="background-color: #00FFFF; font-weight:700">
+<font color="#0000FF">
+&nbsp;</font>
+<font face="Verdana" color="#0000FF">Videos&nbsp; </font>
+</span>
+<font face="Verdana" size="2">
+
+<p align="left"><u>Cultura de la vida</u>:
+<a href="http://aramo.wordpress.com/?page_id=2553" style="text-decoration: none; font-weight: 700">Cuidados paliativos</a>
+
+<p align="left"><u>Educación para la ciudadanía</u>: 
+<a href="http://aramo.wordpress.com/?page_id=1969" style="text-decoration: none; font-weight: 700">
+Derecho y justicia</a>
+
+<p align="left"><u>El aborto</u>:<a href="http://aramo.wordpress.com/?page_id=2740" style="text-decoration: none; font-weight: 700">Madres valientes</a><p align="left">
+<u>Juan Pablo II</u>:
+<a style="text-decoration: none; font-weight: 700" href="http://aramo.wordpress.com/?page_id=3325">
+En Cuatro Vientos</a>
+
+<p align="left"><u>Música clásica</u>:
+<a style="text-decoration: none; font-weight: 700" href="http://aramo.wordpress.com/?page_id=3297">Vangelis</a></font>
+
+<p align="left"><font face="Verdana" size="2"><u>JMJ 2011 Madrid</u>:
+<a style="text-decoration: none; font-weight: 700" href="http://aramo.wordpress.com/?page_id=3644">
+San Juan de la Cruz</a></font>
+
+<p align="left"><font face="Verdana" size="2"><u>San Josemaría</u>:<a style="text-decoration: none; font-weight: 700" href="http://aramo.wordpress.com/?page_id=4261"> Comprensión y diálogo</a></font>
+
+<p align="left"><span style="background-color: #00FFFF; font-weight:700">
+<font color="#0000FF">
+&nbsp;</font>
+<font face="Verdana" color="#0000FF">Utilities&nbsp; </font>
+</span>
+<font face="Verdana" size="2">
+
+<p align="left">
+<u>Utilities</u>: <b><u>
+<a style="text-decoration: none" href="utiles/suscriin.htm">
+Free</a></u></b> subscription,&nbsp; <b>
+<a style="text-decoration: none" href="ayumatriin.htm">
+Free</a></b> registration, other
+<a style="text-decoration: none; font-weight: 700" href="revista/revistain.htm">
+magazines</a> y <b>
+<a class="rojo"
+    href="mailto:?subject=You can visit Educational applications&body=There are many interactive exercises:%20http://www.aplicaciones.info/utiles/suscriin.htm">
+Gift </a></b>&nbsp; a subscription.
+
+</font><p align="left"><u><font face="Verdana" size="2">Observarás las respuestas, a través de las encuestas:</font></u><font face="Verdana" size="2">&nbsp;&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="php/encuesta082f.html?a=8">
+Conductas positivas del profesor</a></font><font face="Verdana" size="2"><p align="left">
+<u>Bastantes encontrarás y artículos leerás:&nbsp;&nbsp; </u>
+<a style="text-decoration: none; font-weight: 700" href="http://aramo.wordpress.com/?page_id=46">
+Profesores</a>
+<p align="left"><u>Entretenimiento</u>:
+<a href="samuel/index-2.html" style="text-decoration: none; font-weight: 700">L</a><a href="utiles/utilesl.htm" style="text-decoration: none; font-weight: 700">ibros</a>,
+<a href="utiles/utilesp.htm" style="text-decoration: none; font-weight: 700">películas</a> ,
+<a href="utiles/utilesw.htm" style="text-decoration: none; font-weight: 700">páginas web</a> y
+<a href="argente/index.html" style="text-decoration: none; font-weight: 700">hostal Argente</a>.
+
+ <p align="left"><u>Autores de los artículos</u>:&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="http://apli.wordpress.com/?p=1171">
+Otros autores (4),</a> de diversas fuentes
+
+<p align="left"><u>Pintura</u>: 
+<a href="pintura/roman.htm" style="text-decoration: none; font-weight: 700">
+Romanticismo</a>, con Delacroix, Goya y otros.
+
+<p align="left"><u>Aumentarás la cultura, leyendo literatura:</u><b><a href="calculo/calculo.htm" style="text-decoration: none">
+</a>&nbsp;&nbsp; </b>
+<a style="text-decoration: none; font-weight: 700" href="samuel/sol.htm">
+Las luciérnagas y el sol</a>
+<p align="left"><u>Te recomendamos ver, esta interesante web</u>:&nbsp;&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="http://www.primeroscristianos.com.com/">
+http://www.</a><a style="text-decoration: none; font-weight: 700" href="http://www.gnoss.com/home">gnoss.com/home</a>&nbsp; 
+y páginas sobre la <b><a href="enla29.htm">Iglesia</a></b>
+<p align="left"><u>Santoral del mes</u>: 
+<a style="text-decoration: none; font-weight: 700" href="http://www.santopedia.com/santoral-del-mes/agosto/">
+Agosto</a></font><p align="left">
+<span style="background-color: #00FFFF; font-weight:700">
+<font color="#0000FF">
+&nbsp;</font>
+<font face="Verdana" color="#0000FF">Leisure&nbsp; </font>
+</span>
+
+<font face="Verdana" size="2"><p align="left">
+<font face="Verdana" size="2">
+
+<u>Se alegran los corazones, entonando las canciones:&nbsp;&nbsp; </u></font>
+<a style="text-decoration: none; font-weight: 700" href="cancion/canci46.htm">
+Mira que eres linda</a>
+
+</font>
+
+<p align="left">
+<font face="Verdana" size="2">
+
+<u>Te sentirás más contento, si practicas este juego:</u>&nbsp;&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="juegos/juego35b.htm">
+Las canicas</a>
+
+</font>
+<p align="left"><font face="Verdana" size="2"><u>Tendrás más satisfacciones, con estas presentaciones</u>:
+</font>
+<p align="left">
+<font face="Verdana" size="2">
+<b>
+<a style="text-decoration: none" href="pps/presen161.pps">
+Servir</a>,
+<a style="text-decoration: none" href="pps/presen162.pps">
+El mundo en tus manos</a> y
+<a style="text-decoration: none" href="pps/presen163.pps">
+Quizás nunca hayas visto esto</a></b>
+
+</font>
+
+<p align="left"><font face="Verdana" size="2"><u>Nos sentiremos dichosos, con los enlaces curiosos</u>:&nbsp;
+</font>
+<p align="left"><font face="Verdana" size="2"><b>
+<a style="text-decoration: none" href="http://www.rtve.es/alacarta/videos/el-documental/documental-comprar-tirar-comprar/983391/">Comprar 
+y tirar</a> ,
+<a style="text-decoration: none" href="http://www.youtube.com/watch_popup?v=EVwlMVYqMu4&amp;vq=medium#t=125">
+Almuerzo especial</a> y
+<a style="text-decoration: none" href="http://www.fluvium.org/textos/etica/eti592.htm">
+Delincuencia animal</a></b>
+
+</font>
+<p align="left"><font face="Verdana" size="2"><u>Sopas de letras</u>. Pasatiempos interactivos:&nbsp;
+<b>
+<a style="text-decoration: none" href="autoedu/educa19s.htm">
+Alegría</a></b>, 
+<b>
+<a style="text-decoration: none" href="autoedu/educa22s.htm">
+Autoeducación</a></b>,
+<b>
+<a style="text-decoration: none" href="autoedu/educa25s.htm">
+La libertad</a></b>, 
+<b>
+<a style="text-decoration: none" href="autoedu/educa28s.htm">
+Vencer la timidez</a></b>
+
+</font>
+<p align="left"><font face="Verdana" size="2"><u>Juegos de palabras</u>. Pasatiempos interactivos:&nbsp;&nbsp;
+<b>
+<a style="text-decoration: none" href="autoedu/educa02p.htm">
+Responsabilidad</a></b>, 
+<b>
+<a style="text-decoration: none" href="autoedu/educa05p.htm">Lealtad</a></b>,
+<b>
+<a style="text-decoration: none" href="autoedu/educa08p.htm">
+Obediencia</a></b> 
+
+</font>
+<p align="left"><font face="Verdana" size="2"><u>Crucigramas</u>. Pasatiempos para imprimir:<b>&nbsp;&nbsp;
+<a style="text-decoration: none" href="autoedu/educa21c.htm">
+¿Qué es el carácter?</a></b>, 
+<b>
+<a style="text-decoration: none" href="autoedu/educa24c.htm">
+El vigor</a></b>,
+<b>
+<a style="text-decoration: none" href="autoedu/educa27c.htm">
+Razones para sonreír</a></b> 
+
+</font>
+<p align="left"><font face="Verdana" size="2"><u>Junto al trabajo y unión, alegría y buen humor</u>:&nbsp;&nbsp;&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="humor/humo57.htm">
+Lopezdebega</a></font><p align="left">
+<font face="Verdana" size="2">
+<u>Serás alegre en la vida, con Charles Chaplin y Gila:</u>
+	<a href="http://www.youtube.com/watch?v=GjzEdbVF4iM" style="text-decoration: none; font-weight: 700">El inmigrante</a> (Chaplin),
+	<a href="http://www.youtube.com/watch?v=KxZe5GiqS54" style="text-decoration: none; font-weight: 700">Gila soldado</a> (Gila) 
+y
+	<a href="http://www.youtube.com/watch?v=N8JWyT_E-8U" style="text-decoration: none; font-weight: 700">Antifranquistas</a> (Gila)
+	
+	</font>
+	
+	<p align="left">
+<font face="Verdana" size="2">
+<u>El ocio terminarás, y chistes gráficos verás</u>:&nbsp;
+<a style="text-decoration: none; font-weight: 700" href="chistes/chiste35.htm">
+Serie 35</a></font></font> 
+<p>You can forward this magazine to your 
+friends and colleagues. </p>
+<p>If you do not want to continue receiving the magazine click <b>
+<a href="mailto:arturo@aplicaciones.info?subject=Cancel Magazine.&body=I do not want to receive the magazine of education.">
+HERE</a></b>
+</p>
+<p>Educational applications in English:<b>
+<a href="indexin.html">http://www.aplicaciones.info/indexin.html</a></b><br>
+<br>
+Educational applications for mobile in English:&nbsp; <b>
+<a href="indexi.html">www.aplicaciones.info/indexi.html</a></b>
+</p>
+<p><b>Innovation</b>: Free <b>App</b> of Google Play &quot;Educational Applications&quot; 
+green notebook</p>
+<p>A cordial greeting of&nbsp; Arturo Ramo. Inspector of education.</p>
+</font>
+<p align="left"><font face="Arial" size="2">®Arturo Ramo García.-Record of intellectual property of Teruel (Spain) 
+No 141, of 29-IX-1999 Plaza Playa de Aro, 3, 1º 
+DO 44002-TERUEL<br>
+&nbsp;</font></p>
+
+<!--  Fin de Magazine  -->
+
+<table border="5" width="100%" cellpadding="5" cellspacing="5">
+   <tr>
+     <td width="20%" bgcolor="#F5E6CF">
+     <p align="center"><b>To teach</b></td>
+     <td width="60%" bgcolor="#F5E6CF">
+     
+    <p align="center">
+
+<font face="Verdana" size="2">
+
+	<b><font color="#ff0000" size="2"><marquee height="20" width="380"
+    BORDER="0" ALIGN="bottom" style="color: rgb(255,0,0)"> Educational Applications for to teach and to form.</marquee></font></b></font>     
+     </td>
+     <td width="20%" bgcolor="#F5E6CF">
+     <p align="center"><b>Form</b></td>
+
+   </tr>
+</table>
+<br>
+<table border="0" width="100%">
+   <tr>
+     <td width="50%" height="152">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3496076724806497";
+/* aplica3 */
+google_ad_slot = "6987614256";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="../pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+     </td>
+     <td width="50%" height="152" bgcolor="#FFFFFF">
+<center>
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="396" height="296" id="Untitled.swf" align="middle">
+	<param name="allowScriptAccess" value="sameDomain">
+	<param name="movie" value="electura.swf">
+	<param name="quality" value="high">
+	<param name="bgcolor" value="#ffffff">
+	<embed src="electura.swf" quality="high" bgcolor="#ffffff" width="396" height="296" name="electura.swf" align="middle" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer">
+</object>
+</center>             
+        </td>
+   </tr>  
+</table>
+
+<b>
+
+<font face="Verdana" size="2">
+
+<u><br>
+</u>You will increase the culture, across the </font>
+
+<u>
+<font face="Verdana">
+<a href="lectura/lecturain.htm">lectures</a></font><font face="Verdana" size="2">
+</font></u></b>
+<p><font face="Comic Sans MS" size="4"> <font face="Verdana" size="2"><b>You will be able to offer this page to a </b>
+<a class="InstantLink"
+    href="mailto:?subject=You can visit Didactics Applications&body=On%20this%20page%20you%20find%20abundanes%20interactive%20exercices%20for%20all%20the%20pupils%20:%20http://www.aplicaciones.info">
+<b>friend</b></b></a></font></font></p>
+<center>
+<table border="4" width="95%" id="table1">
+	<tr>
+		<td><b><font face="Verdana" size="2">"Aplicaciones didácticas" for computer in
+		</font> 
+		<a href="index-2.html"><font face="Verdana">Spanish</font></a><font face="Verdana" size="2">&nbsp;</font></b></td>
+	</tr>
+	<tr>
+		<td><b><font face="Verdana" size="2">"Educational applications" for mobiles In English: http://www.aplicaciones.info/indexi.html&nbsp;</font></b></td>
+	</tr>
+	<tr>
+		<td><b><font face="Verdana" size="2">"Aplicaciones didácticas" for mobiles in Spanish: http://www.aplicaciones.info/indexe.html&nbsp;</font></b></td>
+	</tr>
+</table></center>
+<p align="center">®Arturo Ramo García. Bachelor of Pedagogics. Inspector of Education. <a href="mailto:arturo@aplicaciones.info">e-mail</a> 
+	.Intellectual Property Register of Teruel No 141,29-IX-1999.&nbsp;Plaza Playa de Aro, 3, 1º DO 44002-TERUEL 
+(Spain)</font></p>
+      
+</body>
+
+<!-- Mirrored from www.aplicaciones.info/indexin.html by HTTrack Website Copier/3.x [XR&CO'2008], Fri, 25 Jul 2014 03:00:42 GMT -->
+</html>
